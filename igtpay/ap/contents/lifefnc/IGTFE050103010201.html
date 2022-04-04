@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>은행증권사선택 | 계좌 직접 입력 | 내 계좌 등록 | 오픈뱅킹 등록 | 송금 | 생활금융</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('LF10BS01'); //은행증권사선택 bottom sheet open
+    //WIP.popup.close('LF10BS01'); //은행증권사선택 bottom sheet close
+});
+</script>
+</head>
+<body>
+    <!-- bottom sheet -->
+    <div class="bottom-sheet be-tab" data-lyr-id="LF10BS01">
+        <div class="in-wrap">
+            <div class="sheet-head">
+                <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                <a href="javascript:void(0);" class="sheet-close"><span class="blind">닫기</span></a>
+                <div class="sheet-title">
+                    <strong>은행/증권사 선택</strong>
+                </div>
+            </div>
+            <div class="sheet-contents pd-ini">
+                <div class="tab-container">
+                    <div class="tab">
+                        <a href="javascript:void(0);" class="tab-menu crnt"><span>은행</span></a>
+                        <a href="javascript:void(0);" class="tab-menu"><span>증권사</span></a>
+                    </div>
+
+                    <div class="tab-conts">
+                        <!-- 은행컨텐츠 -->
+                        <div class="tab-cont crnt">
+                            <div class="finance-selection">
+                                <ul class="finance-section">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="020"></div>
+                                                <div class="inf">
+                                                    <span>우리은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="002"></div>
+                                                <div class="inf">
+                                                    <span>산업은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="003"></div>
+                                                <div class="inf">
+                                                    <span>기업은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="004"></div>
+                                                <div class="inf">
+                                                    <span>국민은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="011"></div>
+                                                <div class="inf">
+                                                    <span>농협은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="023"></div>
+                                                <div class="inf">
+                                                    <span>SC제일은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="027"></div>
+                                                <div class="inf">
+                                                    <span>씨티은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="031"></div>
+                                                <div class="inf">
+                                                    <span>대구은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="032"></div>
+                                                <div class="inf">
+                                                    <span>부산은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="034"></div>
+                                                <div class="inf">
+                                                    <span>광주은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="035"></div>
+                                                <div class="inf">
+                                                    <span>제주은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="037"></div>
+                                                <div class="inf">
+                                                    <span>전북은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="039"></div>
+                                                <div class="inf">
+                                                    <span>경남은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="081"></div>
+                                                <div class="inf">
+                                                    <span>하나은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="088"></div>
+                                                <div class="inf">
+                                                    <span>신한은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="089"></div>
+                                                <div class="inf">
+                                                    <span>케이뱅크</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="090"></div>
+                                                <div class="inf">
+                                                    <span>카카오뱅크</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="092"></div>
+                                                <div class="inf">
+                                                    <span>토스뱅크</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="007"></div>
+                                                <div class="inf">
+                                                    <span>수협</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="012"></div>
+                                                <div class="inf">
+                                                    <span>지역농축협</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="045"></div>
+                                                <div class="inf">
+                                                    <span>새마을금고</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="048"></div>
+                                                <div class="inf">
+                                                    <span>신협</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="050"></div>
+                                                <div class="inf">
+                                                    <span>저축은행</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="064"></div>
+                                                <div class="inf">
+                                                    <span>산림조합</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="071"></div>
+                                                <div class="inf">
+                                                    <span>우체국</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //은행컨텐츠 -->
+                        <!-- 증권사컨텐츠 -->
+                        <div class="tab-cont">
+                            <div class="finance-selection">
+                                <ul class="finance-section">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="218"></div>
+                                                <div class="inf">
+                                                    <span>KB증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="227"></div>
+                                                <div class="inf">
+                                                    <span>KTB투자증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="238"></div>
+                                                <div class="inf">
+                                                    <span>미래에셋증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="240"></div>
+                                                <div class="inf">
+                                                    <span>삼성증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="243"></div>
+                                                <div class="inf">
+                                                    <span>한국투자증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="247"></div>
+                                                <div class="inf">
+                                                    <span>NH투자증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="261"></div>
+                                                <div class="inf">
+                                                    <span>교보증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="262"></div>
+                                                <div class="inf">
+                                                    <span>하이투자증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="263"></div>
+                                                <div class="inf">
+                                                    <span>현대차증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="264"></div>
+                                                <div class="inf">
+                                                    <span>키움증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="265"></div>
+                                                <div class="inf">
+                                                    <span>이베스트투자증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="266"></div>
+                                                <div class="inf">
+                                                    <span>SK증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="267"></div>
+                                                <div class="inf">
+                                                    <span>대신증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="269"></div>
+                                                <div class="inf">
+                                                    <span>한화투자증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="270"></div>
+                                                <div class="inf">
+                                                    <span>하나금융투자</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="278"></div>
+                                                <div class="inf">
+                                                    <span>신한금융투자</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="279"></div>
+                                                <div class="inf">
+                                                    <span>DB금융투자</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="280"></div>
+                                                <div class="inf">
+                                                    <span>유진투자증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="finance-item">
+                                                <div class="img-fnc" data-fnc-code="287"></div>
+                                                <div class="inf">
+                                                    <span>메리츠증권</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //증권사컨텐츠 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //bottom sheet -->
+</body>
+</html>

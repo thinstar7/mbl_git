@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>결제 | 현장결제</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('ST04LP01'); //popup open
+        // WIP.popup.close('ST04LP01'); //popup close
+
+        // [통합결제플랫폼] : 코드 수정(주석처리) 2022.01.17
+        // const barcode_area = $('#tabs-barcode');
+        // const barcode_btn = $('.js_pay_method_spot_barcode_btn');
+        const qr_area = $('#tabs-qr');
+        const qr_btn = $('.js_pay_method_spot_qr_btn');
+        // barcode_area.addClass('on');
+        // barcode_btn.on('click', (e) => {
+        //   e.preventDefault();
+        //   if(barcode_area.hasClass('on')) {
+        //     barcode_area.toggleClass('on');
+        //     qr_area.toggleClass('on');
+        //   } else {
+        //     barcode_area.toggleClass('on');
+        //     qr_area.toggleClass('on');
+        //   }
+        // });
+
+        // qr_btn.on('click', (e) => {
+        //   e.preventDefault();
+        //   if(qr_area.hasClass('on')) {
+        //     // barcode_area.toggleClass('on');
+        //     qr_area.toggleClass('on');
+        //   } else {
+        //     // barcode_area.toggleClass('on');
+        //     qr_area.toggleClass('on');
+        //   }
+        // });
+        // [통합결제플랫폼]
+
+        // [통합결제플랫폼] : 스크립트 수정 2022.01.18
+        WIP.swiper_pay_cards();
+        // [통합결제플랫폼]
+      });
+    </script>
+  </head>
+  <body>
+    <!-- M1IGT401S04 와 M1IGT401S05 는 동일한 파일임 -->
+    <!-- layer popup -->
+    <div
+      class="lyr-popup lyr-popup-pay-method-spot process-payment"
+      data-lyr-id="ST04LP01"
+    >
+      <div class="in-lyr">
+        <!-- layer popup header -->
+        <div class="lyr-header">
+          <div class="lyr-topper">
+            <a href="javascript:void(0);" class="lyr-cntr-ty1"
+              ><span class="blind"
+                >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및
+                화면 닫기)</span
+              ></a
+            >
+            <!-- [통합결제플랫폼] : 텍스트 수정 2022.01.17 -->
+            <strong class="lyr-title">연세 Pay</strong>
+            <!-- [통합결제플랫폼] -->
+          </div>
+          <div class="lyr-head">
+            <ul class="pay-method-menu">
+              <li class="pay-method-menu-list active">
+                <a href="#">현장결제</a>
+              </li>
+              <li class="pay-method-menu-list">
+                <a href="#">PC결제</a>
+              </li>
+            </ul>
+            <!-- [통합결제플랫폼] : class 수정 2022.01.17 -->
+            <a href="javascript:void(0);" class="btn-my on"
+              ><span class="txt">MY</span></a
+            >
+            <!-- [통합결제플랫폼] -->
+          </div>
+        </div>
+        <!-- //layer popup header -->
+        <!-- layer popup contents -->
+        <div class="lyr-contents">
+          <div id="tabs-pay-method-spot" class="tabs-pay-method-spot">
+            <!-- [통합결제플랫폼] : 마크업 주석 처리 2022.01.17 -->
+            <!-- <div id="tabs-barcode" class="pay-method-state">
+                <div class="pay-method-img-wrap">
+                  <img
+                    class="barcode-img"
+                    src="/igtpay/ap/res/images/contents/img_barcode.png"
+                    alt="바코드 이미지"
+                  />
+                  <div class="barcode-number-wrap">
+                    <span class="barcode-number">2020</span>
+                    <span class="barcode-number">1412</span>
+                    <span class="barcode-number">1234</span>
+                    <span class="barcode-number">1244</span>
+                    <span class="barcode-number">8745</span>
+                    <span class="barcode-number">8956</span>
+                  </div>
+                </div>
+              </div> -->
+            <!-- [통합결제플랫폼] -->
+            <!--
+                바코드 버튼 & QR 버튼 상태 3가지 :
+              - 비활성 : disabled
+              - 활성(인증전) : active
+              - 인증됨 : certified
+              상태를 변경하려면 pay-method-state 옆에 넣어주세요.
+              -->
+            <div id="tabs-qr" class="pay-method-state on">
+              <div class="pay-method-img-wrap">
+                <!-- [통합결제플랫폼] : 이미지 변경 2022.01.27 -->
+                <!-- [통합결제플랫폼] : QR 이미지 변경 2022.03.04 -->
+                <!-- size1 : active -->
+                <!-- <img
+                  class="qr-img"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAEVElEQVR42u3aUQ4bIQwE0Nz/0u0JKjVaz2Cybz4jZTeBh2QMnz8igXwMgYAlYAlYImAJWAKWCFgCloAlApaAJWCJgCVgCVgiYMnPwfoE8q/nf/v51PO//e7UWH37e5rzAhZYYIEFFlhg9WA9KvGGYCXe++RdTejN8QELLLDAAgsssM7ASg/oVDHbLJDTv6c5L2CBBRZYYIEFFlj/O0CJgr1Z1IMFFlhggQUWWGBN/oFEId+c1GaDFCywwAILLLDAuhtW8zA4cUlt9rLbXQsVLLDAAgsssMDaBWsq6cL5bZ8n5gUsn4MFBFhggZWFdSpTE9BsnCYm/oKZAgsssMACCyywBov3JwM6NRmJhmf6vacWwDW7QrDAAgsssMB6Caz0wWe66ZoY3PSB+pPf0zzIBwsssMACCyyw5mElitBEc3Lqu08W2LZDerDAAgsssMACa1eDdENDL7EhSBfpU0X3qc0WWGCBBRZYYIGVLd4TA9S81JaAki7AE79t3a4QLLDAAgsssF4OK31Yu2GjsGGBpRuws4sZLLDAAgsssMBqF+/NwUrAfYJ1auPSLPDBAgsssMACC6werPTEbCiup+BuftfUhgwssMACCyywwNrVIL3lcLrZ2HyyANK/ASywwAILLLDAOg8rcTg9NalTzdtEoT21SXryXrDAAgsssMAC6zysqQZgIulNQxNlc3Oz7nYDWGCBBRZYYIE1PqnNBmb6gDaxSBJjBRZYYIEFFlhgnb/ol0CWODDedgidbiCf3QSABRZYYIEFFliNJP78VLGcmOwm0PRGASywwAILLLDAuq9B2pzIU3AThXMazfWdd7DAAgsssMD6YVhTF/ESB8PNC4aJsUqAuOZ2A1hggQUWWGC9BNapw9HZht7ZZmO6gXxl8Q4WWGCBBRZYL4e1bfLSB8PppnFzEV5/uwEssMACCyywfhhW4mB46jlpiFNN3cSYJBCDBRZYYIEFFlhZWOkLd1ODnnh+ulHZ3LiABRZYYIEFFlj3Fe/NIjfR5Hzy/ETjsVnsr26QggUWWGCBBdYPw2o2KhOAmo3EJtCphbdiVwgWWGCBBRZYL4SVKPA3YEoU12ncU+MMFlhggQUWWGDthXWqqZho0iYOwpsN5CZosMACCyywwAIr2yBNTGqzcN7Q2EygTF+iBAsssMACCyywzjRIpxqq6WL/VOM0vYFIN4fBAgsssMACC6xs8Z4oGNOX4DY0Nqf+7/WH0GCBBRZYYIEF1nhhe2ryppq3T3Cnm5mJpjRYYIEFFlhggdWDtWGSphbD7ZcW+5jAAgsssMACC6ztsNKH2Z3LbrnG5tnmJ1hggQUWWGCB9cuwmpfdvv0vt4DILSqwwAILLLDAAmsSVhpouqmYXiSJg+pTYw4WWGCBBRZYYGVhnTocnboA2Ly4t2Ejck3xDhZYYIEFFlgvhCUCloAlYImAJWAJWCJgCVgClghYApaAJQKWgCVgiYAlYMm1+QsdiQzdCBN0DQAAAABJRU5ErkJggg=="
+                  style="width: 140px; height: 140px"
+                  alt="큐알코드 이미지"
+                /> -->
+                <!-- size1 : disabled -->
+                <img
+                  src="/igtpay/ap/res/images/contents/qr_size1_disabled.png"
+                  style="width: 140px; height: 140px"
+                />
+
+                <!-- size2 : active -->
+                <!-- <img
+                  class="qr-img"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAEVElEQVR42u3aUQ4bIQwE0Nz/0u0JKjVaz2Cybz4jZTeBh2QMnz8igXwMgYAlYAlYImAJWAKWCFgCloAlApaAJWCJgCVgCVgiYMnPwfoE8q/nf/v51PO//e7UWH37e5rzAhZYYIEFFlhg9WA9KvGGYCXe++RdTejN8QELLLDAAgsssM7ASg/oVDHbLJDTv6c5L2CBBRZYYIEFFlj/O0CJgr1Z1IMFFlhggQUWWGBN/oFEId+c1GaDFCywwAILLLDAuhtW8zA4cUlt9rLbXQsVLLDAAgsssMDaBWsq6cL5bZ8n5gUsn4MFBFhggZWFdSpTE9BsnCYm/oKZAgsssMACCyywBov3JwM6NRmJhmf6vacWwDW7QrDAAgsssMB6Caz0wWe66ZoY3PSB+pPf0zzIBwsssMACCyyw5mElitBEc3Lqu08W2LZDerDAAgsssMACa1eDdENDL7EhSBfpU0X3qc0WWGCBBRZYYIGVLd4TA9S81JaAki7AE79t3a4QLLDAAgsssF4OK31Yu2GjsGGBpRuws4sZLLDAAgsssMBqF+/NwUrAfYJ1auPSLPDBAgsssMACC6werPTEbCiup+BuftfUhgwssMACCyywwNrVIL3lcLrZ2HyyANK/ASywwAILLLDAOg8rcTg9NalTzdtEoT21SXryXrDAAgsssMAC6zysqQZgIulNQxNlc3Oz7nYDWGCBBRZYYIE1PqnNBmb6gDaxSBJjBRZYYIEFFlhgnb/ol0CWODDedgidbiCf3QSABRZYYIEFFliNJP78VLGcmOwm0PRGASywwAILLLDAuq9B2pzIU3AThXMazfWdd7DAAgsssMD6YVhTF/ESB8PNC4aJsUqAuOZ2A1hggQUWWGC9BNapw9HZht7ZZmO6gXxl8Q4WWGCBBRZYL4e1bfLSB8PppnFzEV5/uwEssMACCyywfhhW4mB46jlpiFNN3cSYJBCDBRZYYIEFFlhZWOkLd1ODnnh+ulHZ3LiABRZYYIEFFlj3Fe/NIjfR5Hzy/ETjsVnsr26QggUWWGCBBdYPw2o2KhOAmo3EJtCphbdiVwgWWGCBBRZYL4SVKPA3YEoU12ncU+MMFlhggQUWWGDthXWqqZho0iYOwpsN5CZosMACCyywwAIr2yBNTGqzcN7Q2EygTF+iBAsssMACCyywzjRIpxqq6WL/VOM0vYFIN4fBAgsssMACC6xs8Z4oGNOX4DY0Nqf+7/WH0GCBBRZYYIEF1nhhe2ryppq3T3Cnm5mJpjRYYIEFFlhggdWDtWGSphbD7ZcW+5jAAgsssMACC6ztsNKH2Z3LbrnG5tnmJ1hggQUWWGCB9cuwmpfdvv0vt4DILSqwwAILLLDAAmsSVhpouqmYXiSJg+pTYw4WWGCBBRZYYGVhnTocnboA2Ly4t2Ejck3xDhZYYIEFFlgvhCUCloAlYImAJWAJWCJgCVgClghYApaAJQKWgCVgiYAlYMm1+QsdiQzdCBN0DQAAAABJRU5ErkJggg=="
+                  style="width: 200px; height: 200px"
+                  alt="큐알코드 이미지"
+                /> -->
+
+                <!-- size2 : disabled -->
+                <!-- <img
+                  src="/igtpay/ap/res/images/contents/qr_size2_disabled.png"
+                  style="width: 200px; height: 200px"
+                /> -->
+
+                <!-- size3 : active -->
+                <!-- <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADcCAIAAACUOFjWAAAErElEQVR42u3cQXLjMAwEQP//084LcnABA4JSz9G1kRSyuWVA2P18RZblYwkEShEoBUoRKAVKESgFShEoRaAUKEWgFChFoBQoRaAUKEWgFIFSoBSBUqAUgVKgFIFSBEqBUuQ4yk8g/13/18+7rv/rz3at1a/PM7kvUEIJJZRQQgkllCmUiet0gajct3KvyUMyuT5QQgkllFBCCSWUEyjTm9H1xX+ymEg/z+S+QAkllFBCCSWUUL4dZQVuV3Ew+RIBSiihhBJKKKGE8u0oKw3qxJ9PgJhsnkMJJZRQQgkllFDehDKNu7LQCehPOuRQQgkllFBCCSWUJ1F2JV1kvO3zxL5A6XMooYQSSiihfEK6Nm+yqZ5Ac/0+QgkllFBCCSWUUH4z/9iqayMTzfD0fU8dnldU31BCCSWUUEIJ5RWFTmIIIN2QT2xMerik8jyTQy1QQgkllFBCCSWUJ4ueRPM8/bOVw7ltYAVKKKGEEkoooYTyZPN8Q7M3UTylC5quAuVUYQollFBCCSWUUEI5cuPAF/bJA9b1/KeKklcPZEAJJZRQQgkllFc3zxMINhRVGw5nujk/+hcBlFBCCSWUUEIJZXEzJhc6gb4CvavImyyGoIQSSiihhBJKKL8L/zOCroIgXYh0od98r67iFUoooYQSSiihhPJk8/yWQY3Jpnfl8KSfAUoooYQSSiihhHIaZWJQowtEV2M/UZR0FZSV+0IJJZRQQgkllFBOo+xqDieSLrAmQU8Wgo+aEoISSiihhBJKKK9G2bUBk83t9LBC4oAl1gpKKKGEEkoooYRyAmVl8yaHFdLXPHUIE3txfaEDJZRQQgkllFA+ptBJI04UFgkok7jTRRWUUEIJJZRQQgnl9ub5JIJT6BNFRhrcq9/oQAkllFBCCSWUq1B2DeEmhiQmh4sTa5XA9IopISihhBJKKKGEci3KU4MCo83eBYVFYp0fW+hACSWUUEIJJZRXFzobNj49JJF+oTB5gF89JQQllFBCCSWUUF5R6HQ1xivXSSPuavgn1iRxAKCEEkoooYQSSii3Q0w0pRPXTzexJ4s8KKGEEkoooYQSyu2FzmRBkGiAV66faEpPFkaPbZ5DCSWUUEIJJZRrC510EzuBb7LJPIm769BeX31DCSWUUEIJJZTXFTpdCDZATBzU9MHoWmcooYQSSiihhBLKLShPNZwTDfzEUMjky4XJwwAllFBCCSWUUEI5gS89SPGkpncCdHqAGkoooYQSSiihhHJjEl/wK9ffVvxte3EAJZRQQgkllFBCOdH47WoOdxUTlc2Y/L0SuDdghRJKKKGEEkoooUwVAac2vquxXzkY6UZ34oUFlFBCCSWUUEIJZQrlhg3uOki3DyxvgwgllFBCCSWUUEI5jXLbcyZeNCQO54bGOJRQQgkllFBCCeVNKCcHXX/9XW7BlD6QUEIJJZRQQgkllJ0gunCnG87pA5YY2ji15lBCCSWUUEIJJZSpL8iTgwJdw7+TQ7sbirZXFDpQQgkllFBCCeUVKEWgFChFoBQoRaAUgVKgFIFSoBSBUqAUgVKgFIFSBEqBUgRKgVIESoFSBEoRKAVKESgFShEoBUqRsfwBqUAgK4OJlrgAAAAASUVORK5CYII="
+                      style="width: 220px; height: 220px"
+                      alt="큐알코드 이미지"
+                    /> -->
+
+                <!-- size3 : disabled -->
+                <!-- <img
+                      src="/igtpay/ap/res/images/contents/qr_size3_disabled.png"
+                      style="width: 220px; height: 220px"
+                    /> -->
+
+                <!-- size4 : active -->
+                <!-- <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAAEECAIAAABBat1dAAAFsUlEQVR42u3aMY5bMRBEwb3/pdeAnTsRp6dJ1UsFSH8/WQxm+fMr6W8/XoEEgwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgwTDv29M9f/f/eTTud/95KvmXvsnz1yy+jDAAAMMMMAAAwwwwAADDPdjiH3z3D47+FQHH6MEcMl7hgEGGGCAAQYYYIABBhhgeA7D1hLOTUhKRjFbz1yy+jDAAAMMMMAAAwwwwAADDDD0YTgoZ26cUnKxBQYYYIABBhhggAEGGGCAAYbL5wmx4VLJPpv7KhhggAEGGGCAAQYYYIABBhgiQ48Ys4OrElM3141bFgYYYIABBhhggAEGGGCA4XUMc20Nanw6dCkmdkLB4FMYYPApDDD4FAYYfApDB4bO5pb/4Pgo9hhtu7Blk8AAAwwwwAADDDDAAAMMMBRNkw4u4dxuOPgXzf29c+q2eH/daBUGGGCAAQYYYIABBhhg+HYMn7z3uZ0UszG3ogdtbD3zwaeCAQYYYIABBhhggAEGGGB4HUNsjvHJTir5qoPHytxZMPcpDDDAAAMMMMAAAwwwwADD6xhu/Fd/bGy1NS+am/l0ThphgAEGGGCAAQYYYIABBhgunCbFlqHkzcY29NYIKPYnPDhahQEGGGCAAQYYYIABBhhgmJoYlMyLYru/81jZugaSP91ggAEGGGCAAQYYYIABBhiunSaVrEoM4UF1c4O4ktETDDDAAAMMMMAAAwwwwADD/Ri2NscVU505hA88xtxYEgYYYIABBhhggAEGGGCA4YZp0twIqG0WsfsXlfDeekgYYIABBhhggAEGGGCAAYbXMRykMvfp3Nxma1w2t4PnrmPAAAMMMMAAAwwwwAADDDC8juHg1tlqa8ZV4qpkavfCdQwYYIABBhhggAEGGGCAAYapEVBsEtW5ZUsOnZLXDgMMMMAAAwwwwAADDDDA8ByGg8sfex2dP9R5cMSW+4VpEgwwwAADDDDAAAMMMMAAw86saevdlcxeOpltDbVggAEGGGCAAQYYYIABBhhexxC72jC3sToRxgY1W/vb3SQYYIABBhhggAEGGGCA4bsxHFzgT957ycAktpOu2LL54RIMMMAAAwwwwAADDDDAAMMqhrk5xsE51e9SV0xmYiv4/jQJBhhggAEGGGCAAQYYYIDhtZ108HpCbEXnzoLYGbR+YMEAAwwwwAADDDDAAAMMMBRPkz7Z33NyYts9Nk3aerExkzDAAAMMMMAAAwwwwAADDBdiiC1S7PJC7He3Lj6UDOJggAEGGGCAAQYYYIABBhi+DMMnC7w1P4ndoTj4u7HLCyWTqEAwwAADDDDAAAMMMMAAAwyr06Stiw+x7V5yAaGE2dyh88JoFQYYYIABBhhggAEGGGCAYWf0dMXuj50yW2LnVhAGGGCAAQYYYIABBhhggOG7MXTeR4jdGZm72nBwyDM3xdpaXxhggAEGGGCAAQYYYIABhkoMc5sjNiD6tksTMVdzJmGAAQYYYIABBhhggAEGGC7EsFVsBnLwd28c0914kwUGGGCAAQYYYIABBhhggOHCaVJsvBAbxRxcwpK3EWPWRgUGGGCAAQYYYIABBhhggGEVQ+ybO13FdlLnkTTnCgYYYIABBhhggAEGGGCA4XUMV+yVOe2xSxMlp0z57ocBBhhggAEGGGCAAQYYYPhKDIPvaOwvmnvIrWNl7odggAEGGGCAAQYYYIABBhhg2MAQm73M7eD3tuzWOQIDDDDAAAMMMMAAAwwwwFCJYYtZDHDJWXDQ5Nwejd03gQEGGGCAAQYYYIABBhhguAFD5234g+td8pBzVGKjp/enSTDAAAMMMMAAAwwwwAADDNILwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgwSDBIMEgXd0fU3jfxkbEMusAAAAASUVORK5CYII="
+                      style="width: 260px; height: 260px"
+                    /> -->
+
+                <!-- size4 : disabled -->
+                <!-- <img
+                      src="/igtpay/ap/res/images/contents/qr_size4_disabled.png"
+                      style="width: 260px; height: 260px"
+                    /> -->
+                <!-- //[통합결제플랫폼] : QR 이미지 변경 2022.03.04 -->
+                <!-- //[통합결제플랫폼] -->
+              </div>
+            </div>
+            <!--
+                남은시간 상태 2가지 :
+                - 활성 : active
+                - 비활성 : disabled 
+                pay-method-time 에 해당 클래스를 넣어 UI를 변경합니다. -->
+            <div class="pay-method-time active">
+              <span>남은 시간</span>
+              <strong class="time">03:00</strong>
+              <!-- [통합결제플랫폼] 2022.03.07 -->
+              <button class="refresh-btn on"><span class="blind">QR코드 재생성</span></button>
+              <!-- //[통합결제플랫폼] 2022.03.07 -->
+            </div>
+            <div class="pay-method-spot-btn-wrap">
+              <!-- 2201141301 바코드 결제 제외 -->
+              <!-- <a
+                  class="pay-method-spot-btn pay-method-spot-barcode-btn js_pay_method_spot_barcode_btn certified"
+                  href="#tabs-barcode"
+                >
+                  <div class="icon"></div>
+                  <span>바코드결제</span>
+                </a> -->
+              <a
+                class="pay-method-spot-btn pay-method-spot-qr-btn js_pay_method_spot_qr_btn disabled"
+                href="#"
+              >
+                <div class="icon"></div>
+                <span>QR 결제</span>
+              </a>
+            </div>
+          </div>
+          <div class="last-slide-promotion">
+            <div class="promotion">
+              <!-- [통합결제플랫폼] : 텍스트 수정 2022.02.18 -->
+              <a href="#"
+                ><img
+                  src="/igtpay/ap/res/images/contents/img_event_member2.png"
+                  alt="연세 Pay 오픈! 지금 바로 결제해보세요!"
+              /></a>
+              <!-- //[통합결제플랫폼] : 텍스트 수정 2022.02.18 -->
+              <!-- <a href="javascript:void(0);" class="btn promotion-btn"><span>자세히 보기</span></a> -->
+            </div>
+          </div>
+
+          <!-- Slider main container -->
+          <!-- [통합결제플랫폼] : class 변경 2022.01.18 -->
+          <div class="swiper-card-pay js_swiper_card_pay">
+            <!-- [통합결제플랫폼] -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-main-card">
+                <div class="card">
+                  <div class="card-img-wrap">
+                    <img
+                      class="card-img"
+                      src="/igtpay/ap/res/images/temp/temp_card01.png"
+                      alt="카드 이름"
+                    />
+                    <div class="card-count">
+                      <strong class="card-count-currunt">1</strong>
+                      <span>/</span>
+                      <span class="card-count-total">4</span>
+                    </div>
+                    <div class="card-info-name">카드의 정석 UniMile (2541)</div>
+                  </div>
+                  <div class="card-info-wrap">
+                    <div class="card-info-sign">
+                      <img
+                        src="/igtpay/ap/res/images/contents/img_card_sign.png"
+                        alt="카드 서명 이미지"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img-wrap">
+                    <img
+                      class="card-img"
+                      src="/igtpay/ap/res/images/temp/temp_card02.png"
+                      alt="카드 이름"
+                    />
+                    <div class="card-count">
+                      <strong class="card-count-currunt">2</strong>
+                      <span>/</span>
+                      <span class="card-count-total">4</span>
+                    </div>
+                    <div class="card-info-name">
+                      카드의 정석 POINT AIR (8683)
+                    </div>
+                  </div>
+                  <div class="card-info-wrap">
+                    <div class="card-info-sign">
+                      <img
+                        src="/igtpay/ap/res/images/contents/img_card_sign.png"
+                        alt="카드 서명 이미지"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img-wrap">
+                    <img
+                      class="card-img"
+                      src="/igtpay/ap/res/images/temp/temp_card03.png"
+                      alt="카드 이름"
+                    />
+                    <div class="card-count">
+                      <strong class="card-count-currunt">3</strong>
+                      <span>/</span>
+                      <span class="card-count-total">4</span>
+                    </div>
+                    <div class="card-info-name">
+                      카드의 정석 UNTACT AIR (7959)
+                    </div>
+                  </div>
+                  <div class="card-info-wrap">
+                    <div class="card-info-sign">
+                      <img
+                        src="/igtpay/ap/res/images/contents/img_card_sign.png"
+                        alt="카드 서명 이미지"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img-wrap">
+                    <img
+                      class="card-img"
+                      src="/igtpay/ap/res/images/temp/temp_card04.png"
+                      alt="카드 이름"
+                    />
+                    <div class="card-count">
+                      <strong class="card-count-currunt">4</strong>
+                      <span>/</span>
+                      <span class="card-count-total">4</span>
+                    </div>
+                    <div class="card-info-name">카드의 정석 PET (3421)</div>
+                  </div>
+                  <div class="card-info-wrap">
+                    <div class="card-info-sign">
+                      <img
+                        src="/igtpay/ap/res/images/contents/img_card_sign.png"
+                        alt="카드 서명 이미지"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-paycard-add">
+                <div class="card">
+                  <div class="card-img-wrap">
+                    <img
+                      class="card-img"
+                      src="/igtpay/ap/res/images/contents/pay_method_add.png"
+                      alt="결제수단 등록/추가"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //button area -->
+        </div>
+        <!-- //layer popup contents -->
+      </div>
+    </div>
+    <!-- //layer popup -->
+  </body>
+</html>

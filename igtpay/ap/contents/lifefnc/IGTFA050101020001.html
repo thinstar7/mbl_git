@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>오픈뱅킹 등록 후 | 메인 | 송금 | 생활금융</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('LF12LP01'); // layer poup open
+        //WIP.popup.close('LF12LP01'); // layer popup close
+
+        //WIP.popup.open('LF12TP01'); //받는 분 정보 pop-toast open
+        //WIP.popup.close('LF12TP01'); //받는 분 정보 pop-toast close
+
+        WIP.swiper_remit_main();
+      });
+    </script>
+  </head>
+  <body>
+    <!-- layer popup -->
+    <div class="lyr-popup lyr-remit-main tab-comfort" data-lyr-id="LF12LP01">
+      <!-- tab메뉴가 상단에 위치한 타입 : .tab-comfort 추가 -->
+      <div class="in-lyr">
+        <!-- layer popup header -->
+        <div class="lyr-header">
+          <div class="lyr-topper">
+            <a href="javascript:void(0);" class="lyr-cntr-ty1"
+              ><span class="blind"
+                >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및
+                화면 닫기)</span
+              ></a
+            >
+            <strong class="lyr-title">제휴사명</strong>
+          </div>
+          <div class="lyr-head">
+            <h1 class="lyr-sub-title hide">MY</h1>
+            <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a>
+                    <a href="javascript:void(0);" class="btn-close"><span class="blind">닫기</span></a> -->
+            <a href="javascript:void(0);" class="btn-my"
+              ><span class="txt">MY</span></a
+            >
+          </div>
+        </div>
+        <!-- //layer popup header -->
+        <!-- layer popup contents -->
+        <div class="lyr-contents">
+          <div class="tab">
+            <a href="javascript:void(0);" class="tab-menu"
+              ><span>현장결제</span></a
+            >
+            <a href="javascript:void(0);" class="tab-menu"
+              ><span>PC결제</span></a
+            >
+            <a href="javascript:void(0);" class="tab-menu crnt"
+              ><span>송금</span></a
+            >
+          </div>
+
+          <div class="tab-contents">
+            <div class="wrap-money">
+              <div class="wrap-txt">
+                <p class="txt">연세 머니</p>
+                <p class="num"><span class="ls-ini">10,000,000</span> <span class="unit">원</span></p>
+              </div>
+              <button type="button" class="btn-ty3 remit-btn"><span>송금</span></button>
+            </div>
+
+            <div class="my-account cont-box">
+              <div class="wrap-account-info">
+                <div class="img-wrap"><div class="img-fnc" data-fnc-code="020"></div></div>
+                <div class="txt-wrap">
+                  <p class="name">NH뱅크 SUPER 주거래통장</p>
+                  <p class="txt">우리은행 123456789</p>
+                </div>
+                <button
+                  type="button"
+                  class="arrow-btn"
+                  onclick="WIP.popup.open('MY01BS01')"
+                ></button>
+              </div>
+              <div class="wrap-balance">
+                <a href="#" class="anchor">
+                <p class="num-wrap">
+                    <span class="num ls-ini">12,000,000</span> <span class="unit">원</span>
+                  </p>
+                </a>
+              </div>
+              <div class="wrap-btn">
+                <a href="#" class="link-btn">내 계좌 관리</a>
+                <a href="#" class="link-btn">송금</a>
+              </div>
+            </div>
+
+            <div class="receiver cont-box">
+              <div class="receiver-header">
+                <p class="tit">받는 분</p>
+                <div class="wrap-btn">
+                  <button type="button" class="slide-btn active">최근</button>
+                  <button type="button" class="slide-btn">자주</button>
+                  <button type="button" class="slide-btn">내계좌</button>
+                </div>
+              </div>
+              <div class="receiver-content">
+                <!-- 계좌 내역이 없는 경우 -->
+                <!-- <p class="receiver-content-empty">계좌 내역이 없네요.<br>직접입력하여 송금을 진행하세요.</p> -->
+
+                <div class="wrap-slide active">
+                  <div class="js_swiper js_swiper_recently">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrap-slide">
+                  <div class="js_swiper js_swiper_frequently">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrap-slide">
+                  <div class="js_swiper js_swiper_my">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="slide swiper-slide">
+                        <div class="img-fnc" data-fnc-code="020"></div>
+                        <p class="txt">김연세<br />(<span class="ls-ini">1234</span>)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn-ty5 btn-receiver"><span>받는 분 계좌 직접입력</span></button>
+            </div>
+
+            <div class="bank-guide cont-box">
+              <a href="#">
+                <p>오픈뱅킹 관련 안내</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- //layer popup contents -->
+      </div>
+    </div>
+    <!-- //layer popup -->
+
+    <!-- layer popup(toast style) -->
+    <div class="pop-toast" data-lyr-id="LF12TP01">
+      <div class="in-wrap">
+        <a href="javascript:void(0);" class="pop-close" onclick="WIP.popup.close('LF01TP01')"
+            ><span class="blind">닫기</span></a
+          >
+        <div class="pop-contents">
+          <div class="box-txt">
+            <a href="#">
+              <div>국민은행 <span class="ls-ini">12345678901234</span></div>
+              <div class="txt-act"><span class="ls-ini">20,000</span>원 송금하기 &gt;</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //layer popup(toast style) -->
+  </body>
+</html>

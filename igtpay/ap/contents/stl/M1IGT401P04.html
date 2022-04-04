@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>결제 | 결제요청 (할부개월수 선택)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('M1IGT401P04'); //popup open
+    //WIP.popup.close('M1IGT401P04'); //popup close
+});
+</script>
+</head>
+<body>
+    <!-- 콤보 박스라서 이 파일은 사용 안하게 됐음 -->
+    <!-- bottom sheet -->
+    <div class="bottom-sheet bottom-sheet-payment" data-lyr-id="M1IGT401P04">
+        <div class="in-wrap">
+            <div class="sheet-head">
+                <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                <a href="javascript:void(0);" class="sheet-close"><span class="blind">닫기</span></a>
+                <div class="sheet-title">
+                    <strong>할부개월수 선택</strong>
+                </div>
+            </div>
+            <div class="sheet-contents">
+                <div class="sec">
+                    <ul class="installment-list-wrap">
+                        <li class="installment-list">
+                            <p class="name">일시불</p>
+                            <div class="marker"></div>
+                        </li>
+                        <li class="installment-list">
+                            <p class="name">2개월(무이자)</p>
+                            <div class="marker"></div>
+                        </li>
+                        <li class="installment-list active">
+                            <p class="name">3개월(무이자)</p>
+                            <div class="marker"></div>
+                        </li>
+                        <li class="installment-list">
+                            <p class="name">4개월</p>
+                            <div class="marker"></div>
+                        </li>
+                        <li class="installment-list">
+                            <p class="name">5개월</p>
+                            <div class="marker"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //bottom sheet -->
+</body>
+</html>

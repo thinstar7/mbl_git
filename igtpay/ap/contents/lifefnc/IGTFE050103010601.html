@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>중복 송금 안내 | 송금 정보 입력 | 간편 송금 | 송금 | 생활금융</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('LF21BS01'); //내 계좌 선택 bottom sheet open
+        //WIP.popup.close('LF21BS01'); //내 계좌 선택 bottom sheet close
+      });
+    </script>
+  </head>
+  <body>
+    <!-- bottom sheet -->
+    <div
+      class="bottom-sheet remit-duplicate-bottom-sheet"
+      data-lyr-id="LF21BS01"
+    >
+      <div class="in-wrap">
+        <div class="sheet-head">
+          <a href="javascript:void(0);" class="lyr-cntr-ty2"
+            ><span class="blind"
+              >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면
+              닫기)</span
+            ></a
+          >
+          <a href="javascript:void(0);" class="sheet-close"
+            ><span class="blind">닫기</span></a
+          >
+          <div class="sheet-title">
+            <strong>중복 송금 안내</strong>
+          </div>
+        </div>
+        <div class="sheet-contents">
+          <div class="sec">
+            <div class="box-desc">
+              <p>금일 <em class="num emp-nd">중복된 송금거래</em>가 있습니다.<br>그래도 송금하시겠습니까?</p>
+            </div>
+
+            <div class="wrap-info-list ty2">
+              <dl class="info-list">
+                  <dt class="tit">송금시간</dt>
+                  <dd class="con">
+                    <span class="ls-ini">14:29:01</span>
+                  </dd>
+              </dl>
+              <dl class="info-list">
+                  <dt class="tit">출금계좌</dt>
+                  <dd class="con">
+                    <div>우리은행 <span class="ls-ini">98765432322342</span></div>
+                  </dd>
+              </dl>
+              <dl class="info-list">
+                  <dt class="tit">받는 분</dt>
+                  <dd class="con">
+                    <div>홍길동</div>
+                    <div>우리은행 <span class="ls-ini">98765432322342</span></div>
+                  </dd>
+              </dl>
+              <dl class="info-list">
+                  <dt class="tit">송금금액</dt>
+                  <dd class="con">
+                    <span class="ls-ini">10,000</span> 원
+                  </dd>
+              </dl>
+            </div>
+
+            <div class="btn-area">
+              <a href="javascript:void(0);" class="btn-cancel"><span>취소</span></a>
+                <a href="javascript:void(0);" class="btn"><span>송금진행</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //bottom sheet -->
+  </body>
+</html>

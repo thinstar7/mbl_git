@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>인증비밀번호 변경 | MY | 우리페이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('MY08LP01'); //인증비밀번호 변경 layer popup open
+    //WIP.popup.close('MY08LP01'); //인증비밀번호 변경 layer popup close
+
+    //WIP.popup.open('MY08MD01'); //modal open
+    //WIP.popup.close('MY08MD01'); //modal close
+
+    //WIP.popup.open('MY08MD02'); //modal open
+    //WIP.popup.close('MY08MD02'); //modal close
+
+    //WIP.popup.open('MY08MD03'); //modal open
+    //WIP.popup.close('MY08MD03'); //modal close
+
+    //WIP.popup.open('MY08MD04'); //modal open
+    //WIP.popup.close('MY08MD04'); //modal close
+
+	//  [통합결제플랫폼] : 코드 추가 2022.01.17
+    //WIP.popup.open('MB04BS01'); //bottom sheet open
+    //WIP.popup.close('MB04BS01'); //bottom sheet close
+});
+</script>
+</head>
+<body>
+    <!-- layer popup -->
+    <div class="lyr-popup lyr-certify-reset" data-lyr-id="MY08LP01">
+        <div class="in-lyr">
+            <!-- layer popup header -->
+            <div class="lyr-header">
+                <div class="lyr-topper">
+                    <a href="javascript:void(0);" class="lyr-cntr-ty1"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                    <!-- [통합결제플랫폼] : 텍스트 수정 2022.01.17 -->	
+                    <strong class="lyr-title">연세 Pay</strong>
+                    <!-- [통합결제플랫폼] -->
+                </div>
+                <div class="lyr-head">
+                    <h1 class="lyr-sub-title">인증비밀번호 변경</h1>
+                    <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+                    <a href="javascript:void(0);" class="btn-close"><span class="blind">닫기</span></a>
+                </div>
+            </div>
+            <!-- //layer popup header -->
+            <!-- layer popup contents -->
+            <div class="lyr-contents">
+                <div class="sec">
+                    <div class="certify">
+                        <div class="box-desc2">
+                            <p>변경할 인증비밀번호를<br> 다시 한번 입력해 주세요.</p>
+                        </div>
+
+                        <!-- [통합결제플랫폼] : 2022.02.05 -->
+                        <button type="button" class="certify-entry re" aria-label="보안키패드 인증비밀번호 입력">
+                            <span class="on"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <!-- //[통합결제플랫폼] : 2022.02.05 -->
+                        <!--
+                        <div class="certify-entry re">
+                            <span class="entry"><input type="password" name="" title="첫번째자리" value="2"></span>
+                            <span><input type="password" name="" title="두번째자리" value="2"></span>
+                            <span><input type="password" name="" title="세번째자리" value="2"></span>
+                            <span><input type="password" name="" title="네번째자리" value="2"></span>
+                            <span><input type="password" name="" title="다섯번째자리" value="2"></span>
+                            <span><input type="password" name="" title="여섯번째자리" value="2"></span>
+                        </div> -->
+
+                        <div class="box-btn">
+                        	<!-- [통합결제플랫폼] : 이벤트 설치 2022.01.17 -->
+                            <a href="javascript:void(0);" class="btn-txt" onclick="WIP.popup.open('MB04BS01')"><span>인증비밀번호 안내</span></a>
+                        	<!-- [통합결제플랫폼] -->
+                        </div>
+                    </div>
+                </div>               
+            </div>
+            <!-- //layer popup contents -->
+        </div>
+    </div>
+    <!-- //layer popup -->
+
+	<!-- [통합결제플랫폼] : 마크업 추가 2022.01.17 -->
+    <!-- bottom sheet -->
+    <div class="bottom-sheet" data-lyr-id="MB04BS01">
+        <div class="in-wrap">
+            <div class="sheet-head">
+                <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                <a href="javascript:void(0);" class="sheet-close"><span class="blind">닫기</span></a>
+                <div class="sheet-title">
+                    <strong>인증비밀번호 안내</strong>
+                </div>
+            </div>
+            <div class="sheet-contents">
+                <div class="sec">
+                    <ul class="lst bu-ty1">
+                        <li>연속된 4자리 숫자, 동일한 6자리 숫자, 생년월일, 휴대전화번호는 인증비밀번호로 설정할 수 없습니다.</li>
+                        <li>설정한 인증비밀번호는 로그인, 결제, 카드 등록 등의 거래 시에 사용됩니다.</li>
+                        <li>등록한 기기 1대로만 이용하실 수 있습니다.</li>
+                        <li>기기를 변경하거나 앱을 재설치하는 경우 다시 등록해야 합니다.</li>
+                        <li>인증비밀번호 당일 연속 3회 또는 누적 5회 오류 시 연세페이 결제수단 정보가 초기화되니 신중하게 입력해주세요.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //bottom sheet -->
+    <!-- [통합결제플랫폼] -->
+    <!-- modal -->
+    <div class="modal" data-lyr-id="MY08MD01">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                    인증비밀번호 변경을<br>
+                    중단하시겠습니까?<br>
+                    취소하시면 변경이 되지 않습니다.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn-cancel"><span>취소</span></a>
+                <a href="javascript:void(0);" class="p-btn"><span>계속 진행</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="MY08MD02">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                    순차적 4자리 숫자, 동일한 4자리 숫자,<br>
+                    생년월일, 휴대전화번호는<br>
+                    인증 비밀번호로 설정할 수 없습니다.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="MY08MD02">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                    입력한 새로운 인증비밀번호와 현재<br>
+                    인증비밀번호가 동일합니다.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="MY08MD04">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                    입력한 인증비밀번호가 서로 일치하지<br>
+                    않습니다. 다시 설정해 주세요.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+</body>
+</html>

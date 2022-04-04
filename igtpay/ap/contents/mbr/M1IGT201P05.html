@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>회원가입| 결제수단 등록 안내</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('MB07BT01'); //popup open
+    //WIP.popup.close('MB07BT01'); //popup close
+
+	// [통합결제플랫폼] : 소스 추가 2022.01.17
+    $('.sheet-close-btn').click(function () {
+		var sheetH = $(this).closest('.in-wrap').height();
+				
+		$(this).closest('.in-wrap').animate({bottom: '-' + sheetH + 'px'}, 300, function () {
+			$(this).closest('.bottom-sheet').hide();
+		});
+	});
+});
+</script>
+</head>
+<body>
+    <!-- bottom sheet -->
+    <div class="bottom-sheet bottom-sheet-register-payment-method" data-lyr-id="MB07BT01">
+        <div class="in-wrap">
+            <div class="sheet-head">
+                <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                <a href="javascript:void(0);" class="sheet-close"><span class="blind">닫기</span></a>
+                <div class="sheet-title">
+                    <strong>결제수단 등록 안내</strong>
+                </div>
+            </div>
+            <div class="sheet-contents">
+                <div class="sec">
+                    <div class="desc">보유하신 연세대 학생증(유니체크카드)를<br>쉽고 빠르게 지금 추가할 수 있어요.</div>
+                    <!-- [통합결제플랫폼] : 수정 2022.01.11 -->
+                    <div class="desc"><strong>[결제수단 등록] </strong>선택 시<br>보유하신 결제수단 목록을 불러옵니다.</div>
+                    <!-- //[통합결제플랫폼] -->
+                    <div class="btn-area">
+                    	<!-- [통합결제플랫폼] : class 추가 2022.01.17 -->
+                        <a href="javascript:void(0);" class="btn-cancel sheet-close-btn" onclick=""><span>나중에 등록</span></a>
+                        <!-- [통합결제플랫폼] -->
+                        <a href="javascript:void(0);" class="btn"><span>결제수단 등록</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //bottom sheet -->
+</body>
+</html>

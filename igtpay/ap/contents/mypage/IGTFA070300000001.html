@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>결제수단 관리 | MY | 우리페이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('MY02LP01'); //결제수단 관리 layer popup open
+    //WIP.popup.close('MY02LP01'); //결제수단 관리 layer popup close
+    //WIP.popup.open('MY02BS01'); //카드관리 bottom sheet open
+    //WIP.popup.close('MY02BS01'); //카드관리 bottom sheet close
+});
+</script>
+</head>
+<body>
+    <!-- layer popup -->
+    <!-- [통합결제플랫폼] : class 수정 2022.01.17 -->
+    <div class="lyr-popup lyr-popup-payment-method-management payment-method" data-lyr-id="MY02LP01">
+        <div class="in-lyr">
+            <!-- layer popup header -->
+            <div class="lyr-header">
+                <div class="lyr-topper">
+                    <a href="javascript:void(0);" class="lyr-cntr-ty1"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                    <strong class="lyr-title">연세 Pay</strong>
+                </div>
+                <div class="lyr-head">
+                    <h1 class="lyr-sub-title">결제수단 관리</h1>
+                    <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+                    <a href="javascript:void(0);" class="btn-close"><span class="blind">닫기</span></a>
+                </div>
+            </div>
+            <!-- //layer popup header -->
+            <!-- layer popup contents -->
+            <div class="lyr-contents">
+                <div class="sec">
+                    <div class="wrap-data-lst">
+                        <div class="data-lst-top">
+                        	<!-- [통합결제플랫폼] : 텍스트 수정 2022.01.17 -->
+                            <div>내 카드<em class="emp">3</em></div>
+                            <!-- [통합결제플랫폼] -->
+                        </div>
+                        <!-- [통합결제플랫폼] : 2022.02.24 --><ul class="data-lst be-more"><!-- //[통합결제플랫폼] : 2022.02.24 -->
+                            <li>
+                                <!-- [통합결제플랫폼] : tag추가 2022.02.17 -->
+                                <a href="#" title="카드관리" onclick="WIP.popup.open('MY02BS01')">
+                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card01.png" alt="카드의 정석 UniMile"></div>
+                                    <div class="inf">
+                                        <div class="box-lab">
+                                            <span class="lab">대표</span><span class="lab ty2">NEW</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>카드의 정석 UniMile</p>
+                                        </div>
+                                        <div class="num">
+                                            <p>4214-****-****-1580</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- //[통합결제플랫폼] : tag추가 2022.02.17 -->
+                            </li>
+                            <li>
+                                <!-- [통합결제플랫폼] : tag추가 2022.02.17 -->
+                                <a href="#" title="카드관리" onclick="WIP.popup.open('MY02BS01')">
+                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card02.png" alt="WON POINT AIR"></div>
+                                    <div class="inf">
+                                        <div class="box-lab">
+                                            <span class="lab">대표</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>WON POINT AIR</p>
+                                        </div>
+                                        <div class="num">
+                                            <p>4214-****-****-1580</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- //[통합결제플랫폼] : tag추가 2022.02.17 -->
+                            </li>
+                            <li>
+                                <!-- [통합결제플랫폼] : tag추가 2022.02.17 -->
+                                <a href="#" title="카드관리" onclick="WIP.popup.open('MY02BS01')">
+                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card04.png" alt="WON POINT AIR"></div>
+                                    <div class="inf">
+                                        <div class="box-lab">
+                                        </div>
+                                        <div class="item">
+                                            <p>WON POINT AIR</p>
+                                        </div>
+                                        <div class="num">
+                                            <p>4214-****-****-1580</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- //[통합결제플랫폼] : tag추가 2022.02.17 -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-notice">
+                        <div class="in-box">
+                            <p class="str-main">현재 등록한 결제수단이<br> 없습니다.</p>
+                            <p class="str-sub">
+                                결제수단을 등록해 주세요
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="box-notice">
+                        <div class="in-box">
+                            <p class="str-main">등록가능한 결제수단이<br> 없습니다.</p>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- button area -->
+                <div class="btn-area">
+                	<!-- [통합결제플랫폼] : 텍스트 수정 2022.01.17 -->
+                    <a href="javascript:void(0);" class="btn"><span>추가 등록</span></a>
+                    <!-- [통합결제플랫폼] -->
+                    <!-- 현재 등록 결제수단이 없을 경우; 
+                        <a href="javascript:void(0);" class="btn"><span>결제수단 등록</span></a> -->
+                    <!-- 등록 가능 결제수단이 없을 경우; 
+                        <a href="javascript:void(0);" class="btn"><span>홈</span></a> -->
+                </div>
+                <!-- //button area -->                
+            </div>
+            <!-- //layer popup contents -->
+        </div>
+    </div>
+    <!-- //layer popup -->
+    <!-- bottom sheet -->
+    <div class="bottom-sheet sheet-card-adm" data-lyr-id="MY02BS01">
+        <div class="in-wrap">
+            <div class="sheet-head">
+                <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                <a href="javascript:void(0);" class="sheet-close"><span class="blind">닫기</span></a>
+                <div class="sheet-title">
+                    <strong>카드관리</strong>
+                </div>
+            </div>
+            <div class="sheet-contents">
+                <div class="sec">
+                    <div class="card-info">
+                        <span class="lab">대표</span>
+                        <!-- [통합결제플랫폼] : class 수정 2022.01.17 -->
+                        <p class="item">WON POINT AIR</p>
+                        <!-- [통합결제플랫폼] -->
+                        <div class="infs">
+                            <span>우리카드</span><span class="ls-ini">(1580)</span>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <a href="javascript:void(0);" class="btn-cancel"><span>카드 삭제</span></a>
+                        <a href="javascript:void(0);" class="btn"><span>대표카드 설정</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //bottom sheet -->
+</body>
+</html>

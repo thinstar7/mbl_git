@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>MY | 우리페이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('MY01LP01'); //MY layer poup open
+    //WIP.popup.close('MY01LP01'); //MY layer popup close
+
+    //WIP.popup.open('MY01BS01'); //자동로그인 설정안내 bottom sheet open
+    //WIP.popup.close('MY01BS01'); //자동로그인 설정안내 bottom sheet close
+
+    //WIP.popup.open('MY01MD01'); //서명관리 confirm open
+    //WIP.popup.close('MY01MD01'); //서명관리 confirm close
+
+    //WIP.popup.open('MY01MD02'); //자동로그인 confirm open
+    //WIP.popup.close('MY01MD02'); //자동로그인 confirm close
+
+    //WIP.popup.open('MY01TS01'); //서명변경 toast open
+    //WIP.popup.close('MY01TS01'); //서명변경 toast close
+
+    //WIP.popup.open('MY01TS02'); //서명변경 toast open
+    //WIP.popup.close('MY01TS02'); //서명변경 toast close
+
+    //WIP.popup.open('MY01TS03'); //자동로그인 설정/해지 toast open
+    //WIP.popup.close('MY01TS03'); //자동로그인 설정/해지 toast close
+
+    //WIP.popup.open('MY01TS04'); //마케팅 정보 수신 관리 toast open
+    //WIP.popup.close('MY01TS04'); //마케팅 정보 수신 관리 toast close
+});
+</script>
+</head>
+<body>
+    <!-- layer popup -->
+    <div class="lyr-popup lyr-my h-tall" data-lyr-id="MY01LP01">
+        <div class="in-lyr">
+            <!-- layer popup header -->
+            <div class="lyr-header">
+                <div class="lyr-topper">
+                    <a href="javascript:void(0);" class="lyr-cntr-ty1"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                    <!-- [통합결제플랫폼] : 텍스트 수정 2022.01.17 -->
+                    <strong class="lyr-title">연세 Pay</strong>
+                    <!-- [통합결제플랫폼] -->
+                </div>
+                <div class="lyr-head">
+                    <h1 class="lyr-sub-title hide">MY</h1>
+                    <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a>
+                    <a href="javascript:void(0);" class="btn-close"><span class="blind">닫기</span></a> -->
+                    <a href="javascript:void(0);" class="btn-my"><span class="txt">MY</span></a>
+                </div>
+            </div>
+            <!-- //layer popup header -->
+            <!-- layer popup contents -->
+            <div class="lyr-contents">
+                <div class="wrap-my">
+                    <div class="tab">
+                        <a href="javascript:void(0);" class="tab-menu"><span>현장결제</span></a>
+                        <a href="javascript:void(0);" class="tab-menu"><span>PC결제</span></a>
+                    </div>
+
+                    <div class="my-adm">
+                        <div class="inf-log">
+                            <div class="log-tit"><!-- [통합결제플랫폼] : 태그추가 2022.02.17 -->
+                                <em>김연세</em> 님<br>
+                                <p class="log-data">최근 접속 <span>2021.12.20 12:12</span></p>
+                            </div>
+                            <a href="javascript:void(0);" class="btn-ty1"><span>로그아웃</span></a>
+                        </div>
+                        <!-- [통합결제플랫폼] : 로그아웃시 class명 .inf-log명 logout추가 2022.02.17 -->
+                        <div class="inf-log logout">
+                            <a href="javascript:void(0);" class="btn-ty1"><span>로그인</span></a>
+                        </div>
+
+                        <div class="adm-cont">
+                            <strong class="adm-tit">결제</strong>
+                            <ul class="lst arrow">
+                                <!-- [통합결제플랫폼] : 마크업 수정 2022.02.16 -->
+                                <li><a href="#none"><span>이용내역</span></a></li>
+                                <!-- //[통합결제플랫폼] : 마크업 수정 2022.02.16 -->
+                                <li><a href="#none"><span>결제수단 관리</span></a></li>
+                                <li><a href="#none"><span>서명 관리</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="adm-cont">
+                            <strong class="adm-tit">인증/보안</strong>
+                            <ul class="lst arrow">
+                                <li><a href="#none"><span>인증비밀번호 변경</span></a></li>
+                                <!-- [통합결제플랫폼] : 텍스트 수정 2022.02.17 -->
+                                <li><a href="#none"><span>인증비밀번호 재설정</span></a></li>
+                                <!-- [통합결제플랫폼] : 마크업 수정 2022.01.17 -->
+                                <li class="auto-login"><span>자동 로그인<button type="button" class="btn-tooltip" onclick="WIP.popup.open('MY01BS01');"><span class="blind">도움말 보기</span></button></span><button type="button" class="btn-set"><span class="blind">세팅 설정<!-- 해제 --></span><i class="switch"></i></button></li>
+                            	<!-- [통합결제플랫폼] -->
+                            </ul>
+                        </div>
+                        <!-- [통합결제플랫폼] : 연세페이 오픈 시 미적용 2022.01.27  -->
+                        <!-- <div class="adm-cont">
+                            <strong class="adm-tit">알림</strong>
+                            <ul class="lst arrow">
+                                <li><a href="#none"><span>마케팅 정보 수신 동의</span></a></li>
+                            </ul>
+                        </div> -->
+                        <!-- //[통합결제플랫폼] -->
+                        <div class="adm-cont">
+                            <strong class="adm-tit">이용안내</strong>
+                            <ul class="lst arrow">
+                                <li><a href="#none"><span>FAQ</span></a></li><!-- [통합결제플랫폼] : 메뉴추가 2022.02.11 -->
+                                <li><a href="#none"><span>약관 및 정책</span></a></li>
+                                 <!-- [통합결제플랫폼] : 텍스트 수정 2022.02.17 -->
+                                <li><a href="#none"><span>연세Pay 서비스 초기화</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- [통합결제플랫폼] : 마크업 수정 2022.01.17 -->
+                    <!-- footer area -->
+                    <div class="footer-area">
+                        <div class="inf-corp accordion">
+                            <div class="inf-titl toggle-anchor">
+                                <a href="javascript:void(0);" title="내용 보기">연세 Pay 사업자 정보</a>
+                            </div>
+                            <div class="inf-cont toggle-contents">
+                                <address class="address">
+                                    (주)우리카드<br>
+                                    서울특별시 종로구 종로1길 50 더케이트윈타워<br>
+                                    사업자등록번호 101-86-79070
+                                </address>
+                                <dl class="cust-center">
+                                    <dt class="tit">고객센터</dt>
+                                    <dd class="inf"><a href="tel:1588-9955">1588-9955</a></dd>
+                                    <dd class="inf"><a href="tel:1599-9955">1599-9955</a></dd>
+                                </dl>
+                                <p class="note">연세 Pay 서비스 제공과 그 책임은 (주)우리카드에 있습니다.</p>
+                            </div>
+                        </div>
+                        <p class="copyright">© WOORICARD. All Rights Reserved.</p>
+                    </div>
+                    <!-- //footer arear -->
+                </div>
+                
+                <!-- [통합결제플랫폼] : 주석 처리 2022.01.17 -->
+                <!-- footer area --
+                <div class="footer-area">
+                    <div class="inf-corp accordion">
+                        <div class="inf-titl toggle-anchor">
+                            <a href="javascript:void(0);" title="내용 보기">연세 Pay 사업자 정보</a>
+                        </div>
+                        <div class="inf-cont toggle-contents">
+                            <address class="address">
+                                (주)우리카드<br>
+                                서울특별시 종로구 종로1길 50 더케이트윈타워<br>
+                                사업자등록번호 101-86-79070
+                            </address>
+                            <dl class="cust-center">
+                                <dt class="tit">고객센터</dt>
+                                <dd class="inf"><a href="tel:1588-9955">1588-9955</a></dd>
+                                <dd class="inf"><a href="tel:1599-9955">1599-9955</a></dd>
+                            </dl>
+                            <p class="note">연세 Pay 서비스 제공과 그 책임은 (주)우리카드에 있습니다.</p>
+                        </div>
+                    </div>
+                    <p class="copyright">© WOORICARD. All Rights Reserved.</p>
+                </div>
+                -- //footer arear -->
+                <!-- [통합결제플랫폼] -->
+            </div>
+            <!-- //layer popup contents -->
+        </div>
+    </div>
+    <!-- //layer popup -->
+<style>
+
+
+
+</style>
+    <!-- bottom sheet -->
+    <div class="bottom-sheet" data-lyr-id="MY01BS01">
+        <div class="in-wrap">
+            <div class="sheet-head">
+                <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                <a href="javascript:void(0);" class="sheet-close"><span class="blind">닫기</span></a>
+                <div class="sheet-title">
+                    <strong>자동 로그인 설정안내</strong>
+                </div>
+            </div>
+            <div class="sheet-contents">
+                <div class="sec">
+                    <ul class="lst bu-ty1">
+                        <li>60일간 미사용시 자동 로그인 설정이 초기화됩니다.</li>
+                        <li>등록한 기기 1대로만 이용하실 수 있습니다.</li>
+                        <li>기기를 변경하거나 앱을 재설치하는 경우 자동로그인이 해제됩니다.</li>
+                        <li>보안을 위해 휴대폰에 잠금 설정이 되어있는 경우에만 이용하실 수 있습니다.</li>
+                        <li>My 메뉴에서 자동로그인 설정을 변경하실 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //bottom sheet -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="MY01MD01">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                   서명 관리를 하시려면, <br>
+                   먼저, 결제수단을 등록하셔야 합니다. <br>
+                   결제수단을 등록하시겠습니까? 
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn-cancel"><span>취소</span></a>
+                <a href="javascript:void(0);" class="p-btn"><span>결제수단 등록</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="MY01MD02">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                   보안을 위해 휴대폰이 잠금 설정이<br>
+                   되어있는 경우에만 자동로그인 설정이<br>
+                   가능합니다.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- toast -->
+    <div class="toast" data-lyr-id="MY01TS01">
+        <div class="in-wrap">
+            <p>서명이 변경되었습니다.</p>
+        </div>
+    </div>
+    <!-- //toast -->
+
+    <!-- toast -->
+    <div class="toast" data-lyr-id="MY01TS02">
+        <div class="in-wrap">
+            <p>인증비밀번호가 변경되었습니다.</p>
+        </div>
+    </div>
+    <!-- //toast -->
+
+    <!-- toast -->
+    <div class="toast" data-lyr-id="MY01TS03">
+        <div class="in-wrap">
+            <p>자동로그인이 해지 되었습니다.</p>
+            <!-- <p>자동로그인이 설정 되었습니다.</p> -->
+        </div>
+    </div>
+    <!-- //toast -->
+
+    <!-- toast -->
+    <div class="toast" data-lyr-id="MY01TS04">
+        <div class="in-wrap">
+            <p><span class="ls-ini">2021.12.20</span>에 수신차단 마케팅 정보 수신 <br>동의하셨습니다.</p>
+            <!-- <p><span class="ls-ini">2021.12.20</span>에 수신차단 마케팅 정보 수신 철회하셨습니다.</p> -->
+            <!-- <p><span class="ls-ini">2021.12.20</span>에 SMS, 전화 마케팅 정보 수신 철회 및 E-mail에 수신 동의하셨습니다.</p> -->
+        </div>
+    </div>
+    <!-- //toast -->
+</body>
+</html>

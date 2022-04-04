@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>이벤트 상세 | 이벤트</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('NE05LP01'); //FAQ layer poup open
+        //WIP.popup.close('NE05LP01'); //FAQ layer poup open
+
+        // WIP.popup.open('NE05BS01'); // 이벤트 응모 완료 open
+        //WIP.popup.close('NE05BS01'); // 이벤트 응모 완료 open
+
+        // WIP.popup.open('NE05MD01'); // modal open
+        //WIP.popup.close('NE05MD01'); // modal close
+        // WIP.popup.open('NE05MD02'); // modal open
+        //WIP.popup.close('NE05MD02'); // modal close
+      });
+    </script>
+  </head>
+  <body>
+    <!-- layer popup -->
+    <div class="lyr-popup lyr-event-view" data-lyr-id="NE05LP01">
+      <div class="in-lyr">
+        <!-- layer popup header -->
+        <div class="lyr-header">
+          <div class="lyr-topper">
+            <a href="javascript:void(0);" class="lyr-cntr-ty1"
+              ><span class="blind"
+                >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및
+                화면 닫기)</span
+              ></a
+            >
+            <strong class="lyr-title">연세 Pay</strong>
+          </div>
+          <div class="lyr-head">
+            <h1 class="lyr-sub-title">이벤트 상세</h1>
+            <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+            <a href="javascript:void(0);" class="btn-close"
+              ><span class="blind">닫기</span></a
+            >
+          </div>
+        </div>
+        <!-- //layer popup header -->
+        <!-- layer popup contents -->
+        <div class="lyr-contents">
+          <div
+            class="img"
+            style="background-image: url('https://via.placeholder.com/100')"
+          ></div>
+          <div class="event-view-contents">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            maxime qui placeat, veritatis ipsam ad. Obcaecati, eius nostrum
+            debitis soluta neque dolorum deserunt, iste quaerat tenetur magni
+            ducimus sapiente distinctio.
+          </div>
+
+          <!-- SNS 공유하기 : 이 기능은 기획 상 두 가지 페이지 타입에 따라 포함되거나 숨겨짐 -->
+          <div class="util-wrap">
+            <p class="util-title">SNS 공유하기</p>
+            <div class="util-sns">
+              <a href="#" class="util-sns-icon util-sns-icon-facebook"><span class="blind">페이스북 공유</span></a>
+              <a href="#" class="util-sns-icon util-sns-icon-kakaotalk"></a><span class="blind">카카오톡 공유</span></a>
+              <a href="#" class="util-sns-icon util-sns-icon-url"><span class="blind">URL 공유</span></a>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:void(0);" class="btn-ty4"><span>목록</span></a>
+            <a href="javascript:void(0);" class="btn" onclick="WIP.popup.open('NE05MD02')"><span>응모 하기</span></a>
+            <!-- 응모 완료 상태 -->
+            <!-- <a href="javascript:void(0);" class="btn-cancel" onclick=""><span>응모 완료</span></a> -->
+          </div>
+        </div>
+        <!-- //layer popup contents -->
+      </div>
+    </div>
+    <!-- //layer popup -->
+
+    <!-- bottom sheet -->
+    <div class="bottom-sheet bottom-sheet-event-view" data-lyr-id="NE05BS01">
+      <div class="in-wrap">
+        <div class="sheet-head">
+          <a href="javascript:void(0);" class="lyr-cntr-ty2"
+            ><span class="blind"
+              >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면
+              닫기)</span
+            ></a
+          >
+          <a href="javascript:void(0);" class="sheet-close" onclick="WIP.popup.close('NE05BS01')"
+            ><span class="blind">닫기</span></a
+          >
+          <div class="sheet-title">
+            <strong>이벤트 응모 완료</strong>
+          </div>
+        </div>
+        <div class="sheet-contents">
+          <div class="box-notice">
+            <div class="in-box">
+              <p class="str-main">이벤트 응모가 완료되었습니다.</p>
+              <p class="str-sub">응모내역 및 당첨 결과는<br>이벤트 응모내역에서 확인해 주세요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //bottom sheet -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="NE05MD01">
+      <div class="in-wrap">
+        <div class="modal-contents">
+          <p class="txt">
+            <!-- <p>의 텍스트가 4줄이하일 경우 : <p class="txt">으로 설정하여 텍스트 문단이 중심에 오도록 함. -->
+            이벤트 응모내역을 확인하기 위해<br />
+            로그인이 필요합니다.<br />
+            로그인 하시겠습니까?
+          </p>
+        </div>
+        <div class="p-btn-area">
+          <a href="javascript:void(0);" class="p-btn"><span>로그인</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" data-lyr-id="NE05MD02">
+      <div class="in-wrap">
+        <div class="modal-contents">
+          <p class="txt">
+            <!-- <p>의 텍스트가 4줄이하일 경우 : <p class="txt">으로 설정하여 텍스트 문단이 중심에 오도록 함. -->
+            이벤트에 응모하시겠습니까?
+          </p>
+        </div>
+        <div class="p-btn-area">
+          <a href="javascript:void(0);" class="p-btn-cancel"
+            ><span>취소</span></a
+          >
+          <a href="javascript:void(0);" class="p-btn" onclick="WIP.popup.close('NE05MD02');WIP.popup.open('NE05BS01');"><span>확인</span></a>
+        </div>
+      </div>
+    </div>
+    <!-- //modal -->
+  </body>
+</html>

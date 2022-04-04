@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>내보내기 정보 입력 | 내보내기 | 전환 | 선불</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+    $(document).ready(function () {
+      WIP.popup.open('PP28LP01'); //popup open
+      // WIP.popup.close('PP28LP01'); //popup close
+
+      WIP.remitKeypad(777);
+      WIP.noticeToggleBox();
+    });
+</script>
+</head>
+<body>
+    <!-- IGTFA060401020001 와 구조 동일 -->
+    <!-- layer popup -->
+    <div class="lyr-popup lyr-ppay-export process-ppay" data-lyr-id="PP28LP01">
+        <div class="in-lyr">
+            <!-- layer popup header -->
+            <div class="lyr-header">
+                <div class="lyr-topper">
+                    <a href="javascript:void(0);" class="lyr-cntr-ty1"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                    <strong class="lyr-title">연세 Pay</strong>
+                </div>
+                <div class="lyr-head">
+                    <h1 class="lyr-sub-title">내보내기</h1>
+                    <a href="javascript:void(0);" class="btn-close"><span class="blind">닫기</span></a>
+                </div>
+            </div>
+            <!-- //layer popup header -->
+            <!-- layer popup contents -->
+            <div class="lyr-contents">
+                <div class="content">
+                  <div class="value-transform">
+                    <div class="title">연세대포인트를<br>연세머니로 가져옵니다.</div>
+                    <div class="item-wrap">
+                      <p class="txt">전환 가능 포인트</p>
+                      <div class="value">
+                        <span class="num ls-ini">100,000</span>
+                        <span class="unit">P</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sec">
+                    <div class="form-box2 input-wrap">
+                      <div class="txt-wrap">
+                        <p class="tit">전환 금액 입력</p>
+                      </div>
+                      <div class="con">
+                        <div class="inp-wrap">
+                          <div class="inp-box be-del">
+                            <span class="inp"><input type="number" max="8" title="전환 금액 입력" class="inp-remit" placeholder="전환할 금액을 입력해 주세요."></span>
+                            <button type="button" class="btn-delete" style="display: none;"><span class="blind">삭제</span></button>
+                          </div>
+                          <div class="inp-bottom-util">
+                            <span class="inp-chk">
+                              <input type="checkbox" id="chkB01" name="chkB">
+                              <label for="chkB01">모두 전환</label>
+                          </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-box2 input-wrap value-wrap">
+                      <div class="txt-wrap">
+                        <p class="tit">전환 후 우리꿀머니</p>
+                      </div>
+                      <div class="con">
+                        <div class="value">
+                          <span class="num ls-ini">100,000</span>
+                          <span class="unit">P</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-box2 input-wrap terms-wrap">
+                      <div class="txt-wrap">
+                        <p class="tit">개인<span style="font-family:'SpoqaHanSansNeo-Regular'">(신용)</span>정보 제3자 제공동의 철회</p>
+                      </div>
+                      <div class="con">
+                        <p class="txt">연세대 회원여부 확인 및 %제휴사명%머니 전환을 위해 기 동의했던 내용을 철회할 수 있습니다.</p>
+                        <button type="button" class="btn-ty2"><span>철회하기</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="notice">
+                    <div class="notice-header">
+                      <div class="icon"></div>
+                      <p class="title">이용안내</p>
+                      <button type="button" class="expand-btn">
+                        <span class="blind">이용안내 열기</span>
+                      </button>
+                    </div>
+                    <div class="notice-content">
+                      <ul class="lst bu-ty1">
+                        <li>1원당 1머니가 충전됩니다.</li>
+                        <li>최대 <span class="ls-ini">200</span>만 머니(적립+충전)까지 보유 가능합니다.</li>
+                        <li>
+                          오픈뱅킹을 통해 내 계좌 연동을 한 경우에만 충전
+                          가능합니다.
+                        </li>
+                        <li>
+                          자세한 사항은 우리카드 고객센터 <span class="ls-ini">(1588-9955,1599-9955)</span>로
+                          문의 바랍니다.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-area">
+                    <a href="javascript:void(0);" class="btn disabled"><span>전환</span></a>
+                </div>
+            </div>
+            <!-- //layer popup contents -->
+        </div>
+    </div>
+    <!-- //layer popup -->
+
+    <!-- keypad -->
+    <div class="common-key-pad remit-key-pad">
+      <div class="remit-unit-wrap">
+        <button type="button" class="btn-ty2 remit-unit-btn" value="1">+1만</button>
+        <button type="button" class="btn-ty2 remit-unit-btn" value="5">+5만</button>
+        <button type="button" class="btn-ty2 remit-unit-btn" value="10">+10만</button>
+        <button type="button" class="btn-ty2 remit-unit-btn" value="100">+100만</button>
+        <button type="button" class="btn-ty2 remit-unit-btn" value="999">전액</button>
+      </div>
+      <div class="keypad-btn-wrap">
+        <button class="keypad-btn keypad-number-btn" value='1'>1</button>
+        <button class="keypad-btn keypad-number-btn" value='2'>2</button>
+        <button class="keypad-btn keypad-number-btn" value='3'>3</button>
+        <button class="keypad-btn keypad-number-btn" value='4'>4</button>
+        <button class="keypad-btn keypad-number-btn" value='5'>5</button>
+        <button class="keypad-btn keypad-number-btn" value='6'>6</button>
+        <button class="keypad-btn keypad-number-btn" value='7'>7</button>
+        <button class="keypad-btn keypad-number-btn" value='8'>8</button>
+        <button class="keypad-btn keypad-number-btn" value='9'>9</button>
+        <button class="keypad-btn keypad-btn-delete"></button>
+        <button class="keypad-btn keypad-number-btn" value='0'>0</button>
+        <!-- 받는분 계좌정보(은행/증권사명 + 계좌번호) 및 올바른 금액 입력 시 버튼 활성화. 활성화 시 on 클래스를 붙혀주세요. -->
+        <button class="keypad-btn keypad-btn-confirm on">확인</button>
+      </div>
+    </div>
+    <!-- //keypad -->
+</body>
+</html>

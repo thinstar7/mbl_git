@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>내 계좌 관리 | 송금 | 생활/금융 | 우리페이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () { 
+    WIP.popup.open('LF14LP01'); //layer poup open
+    //WIP.popup.close('LF14LP01'); //layer poup open
+    
+    //WIP.popup.open('LF14TS01'); //계좌 잔액 숨김 설정 toast open
+    //WIP.popup.close('LF14TS01'); //계좌 잔액 숨김 설정 toast open
+
+    //WIP.popup.open('LF14TS02'); //계좌 연결이 해제 toast open
+    //WIP.popup.close('LF14TS02'); //계좌 연결이 해제 toast open
+
+    //WIP.popup.open('LF14TS03'); //계좌번호 복사 toast open
+    //WIP.popup.close('LF14TS03'); //계좌번호 복사 toast open
+
+    //WIP.popup.open('LF14MD01'); //계좌 연결 해제 modal open
+    //WIP.popup.close('LF14MD01'); //계좌 연결 해제 modal close
+
+    //WIP.popup.open('LF14MD02'); //오픈배킹서비스 해지 modal open
+    //WIP.popup.close('LF14MD02'); //오픈배킹서비스 해지 modal close
+});
+</script>
+</head>
+<body>
+    <!-- layer popup -->
+    <div class="lyr-popup" data-lyr-id="LF14LP01">
+        <div class="in-lyr">
+            <!-- layer popup header -->
+            <div class="lyr-header">
+                <div class="lyr-topper">
+                    <a href="javascript:void(0);" class="lyr-cntr-ty1"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                    <strong class="lyr-title">%제휴사% Pay</strong>
+                </div>
+                <div class="lyr-head">
+                    <h1 class="lyr-sub-title">내 계좌 관리<button type="button" class="btn-tooltip" onclick="WIP.popup.open('')"><span class="blind">도움말 보기</span></button></h1>
+                    <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+                    <a href="javascript:void(0);" class="btn-close"><span class="blind">닫기</span></a>
+                </div>
+            </div>
+            <!-- //layer popup header -->
+            <!-- layer popup contents -->
+            <div class="lyr-contents pdt0 pdb0 not-scr">
+                <div class="tab-container ty-flex">
+                    <div class="tab">
+                        <a href="javascript:void(0);" class="tab-menu crnt"><span>우리금융</span></a>
+                        <a href="javascript:void(0);" class="tab-menu"><span>다른금융</span></a>
+                    </div>
+                    
+                    <div class="tab-conts">
+                        <!-- 우리금융 -->
+                        <div class="tab-cont crnt">
+                            <div class="account-management">
+                                <div class="manage-info">
+                                    <div class="info-top">
+                                        <dl class="total-balance"> 
+                                            <dt class="tit"><span class="emp txt-bold ls-ini">5</span>개 계좌 총 잔액</dt>
+                                            <dd class="con">
+                                                <div class="balance">
+                                                    <span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                                    <div class="hide-amount">잔액 숨김</div>
+                                                </div>
+                                                <!-- tooltip -->
+                                                <div class="tooltip-wrap">
+                                                    <button type="button" class="btn-tooltip"><span class="blind">도움말 보기</span></button>
+                                                    
+                                                    <div class="tooltip-msg">
+                                                        <div class="tooltip-msg-header">
+                                                            <button type="button" class="tooltip-close"><span class="blind">닫기</span></button>
+                                                        </div>
+                                                        <div class="tooltip-msg-txt">
+                                                            <p class="txt">총 잔액에서 대출/외화는 제외됩니다.<br>
+                                                            펀드는 평가금액 기준입니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- //tooltip -->
+                                            </dd>
+                                        </dl>
+                                        <button type="button" class="btn-set2 on"><span class="txt">숨김</span><i class="switch"></i></button>
+                                    </div>
+                                    <div class="accounts">
+                                        <!-- 입출금 -->
+                                        <div class="account-box accordion">
+                                            <div class="account-title toggle-anchor">
+                                                <a href="javascript:void(0);" title="내용 보기" class="anc">
+                                                    <div class="group-name">
+                                                        <span class="name">입출금</span> 
+                                                        <span class="count">1</span>
+                                                    </div>
+                                                    <div class="total-amount">
+                                                        <span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="account-content toggle-contents">
+                                                <div class="info-card">
+                                                    <div class="layer-more">
+                                                        <div class="in-wrap">
+                                                            <button type="button" class="btn-more"><span class="blind">더보기</span></button>
+                                                            <div class="content-more">
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 상세 조회</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 순서 변경</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌번호 복사</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 연결 해제</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-inf">
+                                                        <div class="finance-info">
+                                                            <div class="img-fnc" data-fnc-code="020"></div>
+                                                            <div class="bank-inf text-ty1">
+                                                                <a href="javascript:void(0);" class="copy-account">
+                                                                    <span>우리은행</span>
+                                                                    <span class="ls-ini">12345678901234</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="bank-inf text-ty2 ellipsis">우리은행 SUPER 주거래 통장</div>
+                                                        </div>
+                                                        <div class="balance">
+                                                            <div class="amount">
+                                                                <span class="txt">잔액</span><span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                                            </div>
+                                                            <div class="hide-amount">잔액 숨김</div>
+                                                            <!-- <div class="inquiry">
+                                                                <button type="button" class="btn-initialize2"><span class="txt">잔액 조회 실패</span><span class="blind">(다시 조회하기)</span></button>
+                                                            </div> -->
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="btn-arrow"><span>0.2% 추가적립! 계좌결제 서비스 등록</span></a>
+                                                    </div>
+                                                    <div class="box-btn">
+                                                        <a href="javascript:void(0);" class="btn"><span>송금내역 조회</span></a>
+                                                        <a href="javascript:void(0);" class="btn"><span>송금</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //입출금 -->
+                                        
+                                        <!-- 종합계좌 -->
+                                        <div class="account-box accordion">
+                                            <div class="account-title toggle-anchor">
+                                                <a href="javascript:void(0);" title="내용 보기" class="anc">
+                                                    <div class="group-name">
+                                                        <span class="name">종합계좌</span> 
+                                                        <span class="count">2</span>
+                                                    </div>
+                                                    <div class="total-amount">
+                                                        <span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="account-content toggle-contents">
+                                                <div class="info-card">
+                                                    <div class="layer-more">
+                                                        <div class="in-wrap">
+                                                            <button type="button" class="btn-more"><span class="blind">더보기</span></button>
+                                                            <div class="content-more">
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 상세 조회</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 순서 변경</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌번호 복사</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 연결 해제</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-inf">
+                                                        <div class="finance-info">
+                                                            <div class="img-fnc" data-fnc-code="020"></div>
+                                                            <div class="bank-inf text-ty1">
+                                                                <a href="javascript:void(0);" class="copy-account">
+                                                                    <span>우리은행</span>
+                                                                    <span class="ls-ini">12345678901234</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="bank-inf text-ty2 ellipsis">종합계좌</div>
+                                                        </div>
+                                                        <div class="balance">
+                                                            <div class="amount">
+                                                                <span class="txt">잔액</span><span class="ls-ini">26,400,000</span><span class="unit">원</span>
+                                                            </div>
+                                                            <div class="hide-amount">잔액 숨김</div>
+                                                            <!-- <div class="inquiry">
+                                                                <button type="button" class="btn-initialize2"><span class="txt">잔액 조회 실패</span><span class="blind">(다시 조회하기)</span></button>
+                                                            </div> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-btn">
+                                                        <a href="javascript:void(0);" class="btn"><span>송금내역 조회</span></a>
+                                                        <a href="javascript:void(0);" class="btn"><span>송금</span></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-card">
+                                                    <div class="layer-more">
+                                                        <div class="in-wrap">
+                                                            <button type="button" class="btn-more"><span class="blind">더보기</span></button>
+                                                            <div class="content-more">
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 상세 조회</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 순서 변경</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌번호 복사</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 연결 해제</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-inf">
+                                                        <div class="finance-info">
+                                                            <div class="img-fnc" data-fnc-code="020"></div>
+                                                            <div class="bank-inf text-ty1">
+                                                                <a href="javascript:void(0);" class="copy-account">
+                                                                    <span>우리은행</span>
+                                                                    <span class="ls-ini">12345678901234</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="bank-inf text-ty2 ellipsis">종합계좌</div>
+                                                        </div>
+                                                        <div class="balance">
+                                                            <div class="amount">
+                                                                <span class="txt">잔액</span><span class="ls-ini">25,200,000</span><span class="unit">원</span>
+                                                            </div>
+                                                            <div class="hide-amount">잔액 숨김</div>
+                                                            <!-- <div class="inquiry">
+                                                                <button type="button" class="btn-initialize2"><span class="txt">잔액 조회 실패</span><span class="blind">(다시 조회하기)</span></button>
+                                                            </div> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-btn only">
+                                                        <a href="javascript:void(0);" class="btn"><span>거래내역 조회</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //종합계좌 -->
+
+                                        <!-- 예적금 -->
+                                        <div class="account-box accordion">
+                                            <div class="account-title toggle-anchor">
+                                                <a href="javascript:void(0);" title="내용 보기" class="anc">
+                                                    <div class="group-name">
+                                                        <span class="name">예적금</span> 
+                                                        <span class="count">1</span>
+                                                    </div>
+                                                    <div class="total-amount">
+                                                        <span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="account-content toggle-contents">
+                                                <div class="info-card">
+                                                    <div class="layer-more">
+                                                        <div class="in-wrap">
+                                                            <button type="button" class="btn-more"><span class="blind">더보기</span></button>
+                                                            <div class="content-more">
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 상세 조회</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 순서 변경</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌번호 복사</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 연결 해제</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-inf">
+                                                        <div class="finance-info">
+                                                            <div class="img-fnc" data-fnc-code="020"></div>
+                                                            <div class="bank-inf text-ty1">
+                                                                <a href="javascript:void(0);" class="copy-account">
+                                                                    <span>우리은행</span>
+                                                                    <span class="ls-ini">12345678901234</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="bank-inf text-ty2 ellipsis">정기적금</div>
+                                                        </div>
+                                                        <div class="balance">
+                                                            <div class="amount">
+                                                                <span class="txt">잔액</span><span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                                            </div>
+                                                            <div class="hide-amount">잔액 숨김</div>
+                                                            <!-- <div class="inquiry">
+                                                                <button type="button" class="btn-initialize2"><span class="txt">잔액 조회 실패</span><span class="blind">(다시 조회하기)</span></button>
+                                                            </div> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-btn only">
+                                                        <a href="javascript:void(0);" class="btn"><span>거래내역 조회</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //예적금 -->
+
+                                        <!-- 펀드 -->
+                                        <div class="account-box accordion">
+                                            <div class="account-title toggle-anchor">
+                                                <a href="javascript:void(0);" title="내용 보기" class="anc">
+                                                    <div class="group-name">
+                                                        <span class="name">펀드</span> 
+                                                        <span class="count">1</span>
+                                                    </div>
+                                                    <div class="total-amount">
+                                                        <span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="account-content toggle-contents">
+                                                <div class="info-card">
+                                                    <div class="layer-more">
+                                                        <div class="in-wrap">
+                                                            <button type="button" class="btn-more"><span class="blind">더보기</span></button>
+                                                            <div class="content-more">
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 상세 조회</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 순서 변경</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌번호 복사</span></a>
+                                                                <a href="javascript:void(0);" class="more-menu"><span>계좌 연결 해제</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-inf">
+                                                        <div class="finance-info">
+                                                            <div class="img-fnc" data-fnc-code="020"></div>
+                                                            <div class="bank-inf text-ty1">
+                                                                <a href="javascript:void(0);" class="copy-account">
+                                                                    <span>우리은행</span>
+                                                                    <span class="ls-ini">12345678901234</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="bank-inf text-ty2 ellipsis">종합매매</div>
+                                                        </div>
+                                                        <div class="balance">
+                                                            <div class="amount">
+                                                                <span class="txt">잔액</span><span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                                            </div>
+                                                            <div class="hide-amount">잔액 숨김</div>
+                                                            <!-- <div class="inquiry">
+                                                                <button type="button" class="btn-initialize2"><span class="txt">잔액 조회 실패</span><span class="blind">(다시 조회하기)</span></button>
+                                                            </div> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //펀드 -->
+                                    </div>
+                                </div>
+
+                                <div class="box-notice" style="display:none;">
+                                    <div class="in-box">
+                                        <p class="str-main">등록된 계좌가 없습니다.</p>
+                                        <p class="str-sub">
+                                            내 계좌를 등록해 주세요.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="box-button">
+                                    <button class="btn-ty4 large wid-full"><span>내 계좌 추가 등록</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //우리금융 -->
+
+                        <!-- 다른금융 -->
+                        <div class="tab-cont">
+                            //다른금융
+                        </div>
+                        <!-- //다른금융 -->
+                    </div>
+                </div>              
+            </div>
+            <!-- //layer popup contents -->
+        </div>
+    </div>
+    <!-- //layer popup -->
+
+    <!-- toast : 계좌 잔액 숨김 설정 -->
+    <div class="toast" data-lyr-id="LF14TS01">
+        <div class="in-wrap">
+            <p>계좌 잔액 숨김 설정 되었습니다.</p>
+            <!-- <p>계좌 잔액 노출 설정 되었습니다.</p> -->
+        </div>
+    </div>
+    <!-- //toast -->
+
+    <!-- toast : 계좌 연결이 해제 -->
+    <div class="toast" data-lyr-id="LF14TS02">
+        <div class="in-wrap">
+            <p>계좌 연결이 해제 되었습니다.</p>
+        </div>
+    </div>
+    <!-- //toast -->
+
+    <!-- toast : 계좌번호 복사 -->
+    <div class="toast" data-lyr-id="LF14TS03">
+        <div class="in-wrap">
+            <p>계좌번호가 복사되었습니다.</p>
+        </div>
+    </div>
+    <!-- //toast -->
+
+    <!-- modal : 계좌 연결 해제 -->
+    <div class="modal" data-lyr-id="LF14MD01">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                    <span>우리은행</span> <span class="ls-ini">12345678901234</span><br>
+                    계좌 연결을 해제 하시겠습니까?<br>
+                    (계좌 연결 해제 시 조회/송금이)<br>
+                    불가하며, 당행 오픈뱅킹에서만<br>
+                    해제됩니다.)
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn-cancel"><span>취소</span></a>
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal : 오픈배킹서비스 해지 -->
+    <div class="modal" data-lyr-id="LF14MD02">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                    계좌 전체를 연결 해제할 경우<br>
+                    오픈뱅킹 서비스가 해지됩니다.<br>
+                    해지하시겠습니까?<br>
+                    (확인 시 인증비밀번호 입력 후 해지<br>
+                    완료 됩니다.)
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn-cancel"><span>취소</span></a>
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+</body>
+</html>

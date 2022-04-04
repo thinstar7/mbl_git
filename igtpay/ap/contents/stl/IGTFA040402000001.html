@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>결제 | QR코드유효확인</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('M1IGT401P01'); //popup open
+    //WIP.popup.close('M1IGT401P01'); //popup close
+});
+</script>
+</head>
+<body>
+    <!-- full popup -->
+    <div class="popup popup-qrcode-validation popup-paymethod-validation" data-lyr-id="M1IGT401P01">
+        <div class="popup-wrap">
+            <a href="javascript:void(0);" class="popup-close"><span class="blind">닫기</span></a>
+            <div class="popup-title">
+                <strong>QR 결제</strong>
+            </div>
+            <div class="popup-contents">
+                <div class="pop-sec">
+                    <p class="title">카드의 정석 UniMile <span class="card-number">(2541)</span></p>
+                    <!-- [통합결제플랫폼] : 이미지 변경 2022.01.27 -->
+                    <div class="paymethod-img-area">
+                        <img src="/igtpay/ap/res/images/contents/qr_tall.png" alt="qr코드 이미지" class="qr-img img">
+                        <!-- <img src="/igtpay/ap/res/images/contents/qr_tall_disable.png" alt="qr코드 이미지" class="qr-img img"> -->
+                    </div><!-- //[통합결제플랫폼] -->
+                    <div class="txt-wrap">
+                        <div class="time">03:00</div>
+                        <div class="time-msg">유효시간이 초과하였습니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //full popup -->
+</body>
+</html>

@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>코딩 컨벤션</title>
+<meta name="title" content="" />
+<meta name="language" content="ko">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="robots" content="ALL">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="../css/swiper.css">
+<link rel="stylesheet" href="../css/guide.css">
+<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="../js/swiper.js"></script>
+<script type="text/javascript" src="../js/guide.js"></script>
+</head>
+<body>
+    <div class="g-wrap">
+        <!-- header -->
+        <div id="g-header">
+            <h1>코딩 컨벤션</h1>
+            <div>
+                <a href="style.html">스타일 가이드</a><a href="list.html">퍼블리싱 리스트</a>
+            </div>    
+        </div>
+        <!-- //header -->
+
+        <!-- contents -->
+        <div id="g-contents">
+            <div class="convention">
+                <!-- tab menu -->
+                <div class="g-tab swiper-container">
+                    <!-- control -->
+                    <button type="button" class="swiper-button-prev"><span class="blind">이전</span></button>
+                    <button type="button" class="swiper-button-next"><span class="blind">다음</span></button>
+                    <!-- //control -->
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#none">네이밍 규칙</a></li>
+                        <li class="swiper-slide"><a href="#none">HTML</a></li>
+                        <li class="swiper-slide"><a href="#none">CSS</a></li>
+                        <li class="swiper-slide"><a href="#none">JS</a></li>
+                        <li class="swiper-slide"><a href="#none">Accessibility</a></li>
+                        <li class="swiper-slide"><a href="#none">기타</a></li>
+                    </ul>
+                </div>
+                <!-- //tab menu -->
+
+                <div class="g-tab-conts">
+                    <!-- 네이밍 규칙 -->
+                    <div class="g-tab-cont crnt">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">객체 네이밍 규칙</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-quad">
+                                    <li>영문 소문자, 숫자, 하이픈('-') 으로 작성하고 '_'(underscore)와 숫자로 시작하지 않는 이름 사용.</li>
+                                    <li>객체 약속어
+                                        <div class="g_tbl_wrap gap-ver-lower g-align-c">
+                                            <table>
+                                                <caption>객체 약속어</caption>
+                                                <colgroup>
+                                                    <col style="width:30%;" />
+                                                    <col style="width:70%;" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>page</th>
+                                                        <td>부모창 &lt;body&gt; 내부의 최상위 element. class로 지정함.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>popup</th>
+                                                        <td>풀팝업의 최상위 element에 class로 지정함.</td>
+                                                    </tr>
+													<tr>
+                                                        <th>lyr-popup</th>
+                                                        <td>레이어팝업의 최상위 element에 class로 지정함.</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th>bottom-sheet</th>
+                                                        <td>화면아래에서 슬라이드로 노출되는 레이어팝업. 툴팁, 정보제공 등에 사용. class로 지정함.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>modal</th>
+                                                        <td>confirm창으로 사용되는 레이어팝업. class로 지정함.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>toast</th>
+                                                        <td>처리 메시지 등 노출에 사용. class로 지정함.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>header</th>
+                                                        <td>로고, 서비스화면 타이틀, GNB영역 등을 포함하는 상단의 공통영역. id로 지정함.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>contents</th>
+                                                        <td>본문을 구성하는 최상위 element. id로 지정하여 본문바로가기로 이동할 수 있도록 함.</td>
+                                                    </tr>
+                                                    <!-- <tr>
+                                                        <th>affi</th>
+                                                        <td>제휴사별 커스터마이징 대상 객체에 class지정.</td>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">이미지 네이밍 규칙</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-quad">
+                                    <li>'_'(underscore)연결 조합</li>
+                                    <li>'형태_의미_상태' 순서로 조합한다.</li>
+                                    <li>h1*, text_blue, div_mt30과 같이 특정요소, 특정색깔, 특정 수치 등을 활용하여 네이밍을 하지 않아야 함.</li>
+                                    <li>이미지 약속어
+                                        <div class="g_tbl_wrap gap-ver-lower g-align-c">
+                                            <table>
+                                                <caption>이미지 약속어</caption>
+                                                <colgroup>
+                                                    <col style="width:30%;" />
+                                                    <col style="width:70%;" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>스프라이트 이미지 파일</th>
+                                                        <td>set</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>제목</th>
+                                                        <td>h_</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>단어, 문장 텍스트</th>
+                                                        <td>txt_</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>탭</th>
+                                                        <td>tab_</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>버튼</th>
+                                                        <td>btn_</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>불릿</th>
+                                                        <td>bu_</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>아이콘</th>
+                                                        <td>ico_</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>배경</th>
+                                                        <td>bg_</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>이미지 컨텐츠</th>
+                                                        <td>img_</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>상태 변화</th>
+                                                        <td>_off, _over, _on</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //네이밍 규칙 -->
+
+                    <!-- HTML -->
+                    <div class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">기본규칙</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-quad">
+                                    <li>DTD를 제외한 모든 요소와 애트리뷰트는 소문자로 작성.</li>
+                                    <li>태그의 속성값은 큰따옴표로 묶음.</li>
+                                    <li>'&amp;', '&gt;' 등 특수 기호는 문자 엔티티 코드변환.</li>
+                                    <li>들여쓰기는 중첩구조마다 1탭 들여 쓰기로 함.</li>
+                                    <li>빈 줄은 레이아웃 구조와 같은 의미있는 구조를 구분할 필요가 있을때, 1줄씩 두는 것을 원칙으로 함.</li>
+                                    <li>주석표기는 시작부부분과 끝부분을 다음과 같이 표기함. 
+                                        <span>
+                                            &lt;!-- 주석표기내용 --&gt;..중략..&lt;!-- //주석표기내용 --&gt;
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">DTD와 기본언어, 인코딩</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-quad gap">
+                                    <li>DTD
+                                        <p class="g-bu-line">HTML 문서는 반드시 DTD를 선언함.</p>
+                                        <div class="g-box-detail">
+                                            [HTML 5]
+                                            <p class="gap-ver-lower">
+                                            &lt;!DOCTYPE html&gt;
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>기본언어
+                                        <div class="g-box-detail">
+                                            &lt;html lang=&quot;ko&quot;&gt;
+                                        </div>
+                                    </li>
+                                    <li>인코딩
+                                        <div class="g-box-detail">
+                                            &lt;meta charset=&quot;utf-8&quot; /&gt;
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">요소별 작성 규칙</strong>
+                            <div class="g-cont">
+                                <strong class="g-tit">[1] 속성 작성 순서</strong>
+                                <p>class속성과 style속성은 가장 뒤에 작성함. 속성의 작성 순서는 다음의 코드예를 참고.</p>
+                                <div class="g-box-detail gap-ver-lower">
+                                    &lt;input type=&quot;text&quot; id=&quot;user_id&quot; title=&quot;사용자ID&quot; class=&quot;input_txt&quot; style=&quot;width:100px&quot; /&gt;
+                                </div>
+
+                                <strong class="g-tit">[2] &lt;title&gt;</strong>
+                                <p>현재의 서비스 화면명 또는 콘텐츠명이 가장 먼저 기술됨.</p>
+
+                                <strong class="g-tit">[3] 테이블 요소</strong>
+                                <div>
+                                    <strong class="g-tit-nd">1. &lt;table&gt;</strong>
+                                    <p>summary 애트리뷰트로 표의 요약 내용을 표기.</p>
+                                    <p>
+                                        <span class="txt-bold">[표기예]</span> &lt;table <span class="g-emp-rd">summary=&quot;보험상품을 주계약과 특약사항의 항목으로 구성하여 설명함.&quot;&gt;</span>
+                                    </p>
+                                </div>
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">2. &lt;caption&gt;</strong>
+                                    <p>caption 요소는 선언하여 표의 제목을 표현.</p>
+                                    <p>
+                                        <span class="txt-bold">[표기예]</span> &lt;caption&gt;보험상품 안내&lt;/caption&gt;
+                                    </p>
+                                </div>
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">3. &lt;colgroup&gt;과 &lt;col&gt;</strong>
+                                    <p>필요시 선택 사용, &lt;col&gt;의 width는 style애트리뷰트를 사용하여 설정함.</p>
+                                    <p>
+                                        <span class="txt-bold">[표기예]</span> &lt;colgroup&gt;&lt;col <span class="g-emp-rd">style=&quot;width:100px&quot;</span> /&gt;&lt;/colgroup&gt;
+                                    </p>
+                                </div>
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">4. &lt;thead&gt;</strong>
+                                    <p>표 머리글을 그루핑할 때 선언</p>
+                                </div>                              
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">5. &lt;tfoot&gt;</strong>
+                                    <p>표 바닥글을 그루핑할 때 선택적으로 선언하고 thead와 tbody 요소 사이에 위치함.</p>
+                                </div>                               
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">6. &lt;th&gt;</strong>
+                                    <p>scope 애트리뷰트는 현재의 셀이 어느 셀의 제목인지 범위를 명시하므로 반드시 선언함.(id, headers 사용시 사용하지 않음.) scope 애트리뷰트의 값으로는 col, colgroup, row, rowgroup이 있고 적절히 구분해서 사용함.</p>
+                                </div>
+
+                                <strong class="g-tit">[4] 폼 요소</strong>
+                                <div>
+                                    <strong class="g-tit-nd">1. &lt;legend&gt;</strong>
+                                    <p>&lt;fieldset&gt; 사용시  폼 컨트롤 요소들의 그룹명인 &lt;legend&gt;을 반드시 선언.</p>
+                                </div>
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">2. &lt;input&gt;</strong>
+                                    <ul class="g-txt-indent">
+                                        <li>① 동일한 스타일의 input요소의 텍스트, 너비값을 다르게 설정 해야 하는경우 style애트리뷰트를 이용해서 width를 설정함.</li>
+                                        <li>② readonly=&quot;readonly&quot;와 기본 선택 표현시, checked=&quot;checked&quot;의 표준표기법 사용.</li>
+                                        <li>③ type이 image인 경우 alt속성을 반드시 선언.</li>
+                                    </ul>
+                                </div>
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">3. &lt;select&gt;</strong>
+                                    <ul class="g-txt-indent">
+                                        <li>① 동일한 스타일의 select요소의 너비값을 다르게 설정 해야 하는경우 style애트리뷰트를 이용해서 width를 설정함.</li>
+                                        <li>② selected=&quot;selected&quot;의 표준표기법 사용.</li>
+                                    </ul>
+                                </div>
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">4. &lt;label&gt;</strong>
+                                    <ul class="g-txt-indent">
+                                        <li>① &lt;input&gt;(text, checkbox, radio, file, password), &lt;select&gt;, &lt;textarea&gt;의 온라인 서식의 id와 &lt;label&gt; 요소의 for속성을 1:1매칭하는 것을 기본원칙으로 함.</li>
+                                        <li>② 명시적인 제공을 기본원칙으로 함.</li>
+                                        <li>③ 전화번호와 같이 입력 양식이 1개 2개 이상인 경우, 가장 앞의 요소에만 label의 for속성과 id를 매칭함. 가장 앞의 요소를 포함하여 title속성을 추가해서 접근성 처리를 함.</li>
+                                        <li>④ &lt;select&gt;, &lt;textarea&gt;에 연결할 label요소가 위치 할 수 없는 경우에는 title속성을 추가함.</li>
+                                    </ul>
+                                </div>
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">5. &lt;button&gt;</strong>
+                                    <p>동적 기능 제어를 위해 포커스 요소를 마크업 할 경우, 사용에 따라 &lt;button&gt;과 &lt;a&gt;를 적절히 구분하여 병행 사용.</p>
+                                </div>
+                                
+                                <strong class="g-tit">[5] 기타 요소</strong>
+                                <div>
+                                    <strong class="g-tit-nd">1. &lt;h*&gt; (헤딩)</strong>
+                                    <p>서비스 화면 전체 내용의 흐름으로 보아, 타이틀성인 본문 또는 단락의 제목에 순차 사용.</p>
+                                </div>
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">2. &lt;a&gt;</strong>
+                                    <ul class="g-txt-indent">
+                                        <li>① 새창이동시 <span class="g-emp-rd">target=&quot;_blank&quot; title=&quot;새창열림&quot;</span> 추가.</li>
+                                        <li>② 문법에 따라 &lt;a&gt;요소 안에 블록 속성의 요소를 포함할 수 없음.</li>
+                                    </ul>
+                                </div>
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">3. &lt;img&gt;와 &lt;area&gt;</strong>
+                                    <p>alt속성은 반드시 선언해야함.</p>
+                                </div>
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">4. &lt;iframe&gt;</strong>
+                                    <p>스크린 리더 사용자를 위해 title 애트리뷰트 반드시 추가.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //HTML -->
+
+                    <!-- CSS -->
+                    <div class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">기본규칙</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-quad">
+                                    <li>특정 브라우저 또는 버전에서 최적화하기 위한 Hack의 사용은 지양.</li>
+                                    <li>속성은 영문 소문자로만 작성</li>
+                                    <li>공백이 포함된 폰트명, 한글 폰트명, 문자열 데이터 타입, filter 속성의 파라미터값은 작은따옴표(' ')로 감싼다.</li>
+                                    <li>url 데이터 타입에는 작은 따옴표를 사용하지 않는다.</li>
+                                    <li>@charset 선언 시에는 속성 값을 큰따옴표(&quot; &quot;)로 감싼다.</li>
+                                </ul>
+                                <div class="g-box-detail gap-ver-lower">
+                                    font-family: <span class="g-emp-rd">'</span>돋움<span class="g-emp-rd">'</span><br /><br />
+                                    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=<span class="g-emp-rd">'</span>bg.png<span class="g-emp-rd">'</span>, sizingMethod=<span class="g-emp-rd">'</span>scale<span class="g-emp-rd">'</span>)<br /><br />
+                                    background:url<span class="g-emp-rd">(bg.gif)</span> no-repeat<br /><br />
+                                    content:<span class="g-emp-rd">'</span>※<span class="g-emp-rd">'</span><br /><br />
+                                    @charset <span class="g-emp-rd">"</span>utf-8<span class="g-emp-rd">"</span>;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">들여쓰기</strong>
+                            <div class="g-cont">
+                                <p>CSS 코드를 작성할 때는 들여쓰기를 하지 않음.<br />
+                                단, <span class="g-emp-rd">@media</span>를 사용하는 경우와 같이 중괄호가 중첩되는 경우에는 1탭 들여 쓰기로 함.</p>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">공백</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-quad">
+                                    <li>속성 간 공백 제거</li>
+                                    <li>중괄호 좌우 공백 제거</li>
+                                </ul>
+                                <div class="g-box-detail gap-ver-lower">
+                                    .class p{color:#000;line-height:18px}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">빈 줄, 줄바꿈</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-quad">
+                                    <li>의미 또는 관련 있는 단락 사이를 구분할 목적으로 빈 줄을 넣는경우, 1줄씩 빈 줄로 함.
+                                        <div class="g-box-detail">
+                                            .class p{color:#000;line-height:18px}
+                                        </div>
+                                    </li>
+                                    <li>속성은 개행하지 않음.<br />
+                                        단, <span class="g-emp-rd">@media</span> 작성시 줄바꿈 한 후, 1탭 들여쓰기 함.
+                                        <div class="g-box-detail">
+                                            @media print{<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;#header{display:none}<br />
+                                            }
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">인코딩</strong>
+                            <div class="g-cont">
+                                <p>반드시 문서 첫 줄에 @charset 선언을 하고 파일 인코딩도 동일한 것으로 선택하여 설정해 준다.</p>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">선택자</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-quad">
+                                    <li>일반적인 작성에 공통 선택자 '*'를 사용은 지양.</li>
+                                    <li>id선택자의 범위는 레이아웃 class사용보다 효율적인 경우로 함.</li>
+                                    <li>다중선택자 설정은 4개 이하로 함.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">속성</strong>
+                            <div class="g-cont">
+                                <strong class="g-tit">[1] 속성 선언 순서</strong>
+                                <div class="g_tbl_wrap">
+                                    <table>
+                                        <caption>속성 작성 순서</caption>
+                                        <colgroup>
+                                            <col style="width:10%;" />
+                                            <col style="width:20%;" />
+                                            <col style="width:70%;" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">순서</th>
+                                                <th scope="col">의미</th>
+                                                <th scope="col">속성</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="g-align-c">1</td>
+                                                <td class="g-align-c">레이아웃</td>
+                                                <td>
+                                                    <ol>
+                                                        <li>①display</li>
+                                                        <li>→ ②visibility</li>
+                                                        <li>→ ③overflow</li>
+                                                        <li>→ ④float, clear</li>
+                                                        <li>→ ⑤position, top, right, bottom, left, zindex</li>
+                                                    </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">2</td>
+                                                <td class="g-align-c">박스</td>
+                                                <td>
+                                                    <ol>
+                                                        <li>①width, height</li>
+                                                        <li>→ ②margin, padding</li>
+                                                        <li>→ ③border</li>
+                                                    </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">3</td>
+                                                <td class="g-align-c">배경</td>
+                                                <td>background</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">4</td>
+                                                <td class="g-align-c">폰트</td>
+                                                <td>
+                                                    <ol>
+                                                        <li>①font, color, letter-spacing</li>
+                                                        <li>→ ②text-align, text-decoration, text-indent, vertical-align</li>
+                                                        <li>→ ③white-space</li>
+                                                    </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">5</td>
+                                                <td class="g-align-c">기타</td>
+                                                <td>그 외 속성들. 기타 속성들간의 순서는 무관.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <strong class="g-tit">[2] 속성값 표기</strong>
+                                <ul class="g-bu-quad">
+                                    <li>속성 값이 0 일 경우 단위를 표시하지 않는다.</li>
+                                    <li>속성 값의 표기 순서 :<br /> 
+                                        top → right → bottom → left</li>
+                                    <li>background의 속성값 표기 순서 :<br />
+                                        background-color<br />
+                                            → background-image<br />
+                                            → background-repeat<br />
+                                            → background-position<br />
+                                            → background-size<br />
+                                            → background-attachment<br />
+                                            → background-origin<br />
+                                            → background-clip
+                                    </li>
+                                </ul>
+
+                                <strong class="g-tit">[3] 주석</strong>
+                                <ul class="g-bu-quad">
+                                    <li>종료 주석은 사용하지 않음.</li>
+                                    <li>작업일과 같은 처리 정보 표시를 위한 주석을 추가하는 경우, 처리 완료 또는 반영시점에 삭제함.</li>
+                                </ul>
+                                <div class="g-box-detail gap-ver-lower">
+                                    /* 주석 내용 */
+                                </div>
+
+                                <strong class="g-tit">[4] !important의 사용 제한</strong>
+                                <p>무분별한 사용은 유사 요소의 스타일을 유기적으로 상속 및 재설정 할 수 없게하여 소스의 통일성, 간결성, 효율성을 저해. 콘텐츠 스타일소스 작성에서의 일반적인 사용은 제한.</p>
+
+                                <strong class="g-tit">[5] 타겟 환경 고려</strong>
+                                <p>css속성은 브라우저와 OS, 모바일 기종에 따라 그 지원 여부와 정도가 다르다. 타겟 디바이스에서 공통적으로 적용할 수있는 속성과 처리 방식을 선택해야 한다. 예) line-height는 흔히 버튼 구현에 사용되지만, 같은 안드로이드 기종이라 하더라도 지원하지 않는 모바일기종이 있으므로 padding로 처리하는 등 다른 방식으로 구현하는 것이 바람직하다.</p>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">파일분기</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-quad">
+                                    <li>리셋 스타일, 기본 스타일 : ini.css</li>
+                                    <li>공통 스타일 : common.css</li>
+                                    <li>모듈화 요소 스타일 : module.css</li>
+                                    <li>컨텐츠 스타일 : contents.css</li>
+                                    <li>※ 큰 그룹단위의 메뉴뎁스의 스타일 또는 큰 구분 단위의 용도의 스타일을 위한 분기(불필요한 파일분기는 지양)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //CSS -->
+
+                    <!-- JS -->
+                    <div class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">사용 스크립트</strong>
+                            <div class="g-cont">
+                                <div class="g_tbl_wrap">
+                                    <table>
+                                        <caption>사용 스크립트</caption>
+                                        <colgroup>
+                                            <col style="width:30%;" />
+                                            <col style="width:70%;" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="line-r">jQuery library</th>
+                                                <td class="g-align-c">jQuery v3.6.0</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="line-r">plug in</th>
+                                                <td class="g-align-c">swiper.js</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="line-r">ui 사용자 기능정의</th>
+                                                <td class="g-align-c">ui.js</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //JS -->
+
+                    <!-- Accessibility -->
+                    <div class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">대체 텍스트 제공</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-circle">
+                                    <li>title과는 그 쓰임이 다르고, 그래픽(이미지)접근성에서의 우선순위는 alt가 더 높으므로 반드시 alt로 제공함.</li>
+                                    <li>텍스트 이미지의 경우 : 이미지의 텍스트와 동일한 문구를 alt값에 삽입.</li>
+                                    <li>사진 또는 장면의 경우 : alt=&quot;○○를 나타내는 자료 화면&quot;, alt=&quot;○○의 장면&quot; 으로 설명 문구 통일하여 제공함.</li>
+                                    <li>약도 또는 그래프의 이미지에 대한 alt속성의 경우 : 설명만으로도 전체의 내용을 파악할 수 있도록 직관적이고 간결하게 내용을 정리하여 제공.</li>
+                                    <li>텍스트 아닌 콘텐츠에 대한 대체 텍스트는 그 의미나 기능을 동등한 수준으로 짧고 명확하게 제공.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">동영상 콘텐츠의 대체 콘텐츠 제공</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-circle">
+                                    <li>최소한 다음 중 한가지 선택 제공.
+                                        <ul class="g-bu-line">
+                                            <li>1. 화면과 동기화된 자막 또는 수화 제공</li>
+                                            <li>2. 대본 제공</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">콘텐츠 검색과 제어</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-circle">
+                                    <li>순차검색과 임의검색이 모두 가능해야 함.</li>
+                                    <li>모바일 기기의 모든 컨트롤은 누르기 동작으로 제어 가능해야 함.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">초점</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-circle">
+                                    <li>논리적으로 이동해야 함 : 좌→우, 상→하.</li>
+                                    <li>시각적으로 구별되어야 함: css에서 outline속성을 '0'과 'none'으로 설정하지 않는다. 또, js에서 blur처리하지 말아야 함.</li>
+                                    <li>클릭이나 터치하는 부분에만 정확히 초점이 이동 될 수 있도록 처리해야 함. 예) 모바일 화면에서, 상단의 전체보기 버튼을 터치해서 레이어를 노출시켰다가 닫기버튼이나 'dim'레이어의 일부를 터치하면 다시 감추는 기능을 구현하는 경우 : 닫기버튼과 'dim'을 묶어 한개의 이벤트로 처리하기 위해 닫기 버튼을 배경처리하는경우 버튼에 해당하지 않는 영역에 까지 초점이 생기는 결과가 되어 바람직하지 않으므로 초점이 생겨야 하는 부분에 영역을 정확히 설정하도록 구현해야 한다.</li>
+                                    <li>표시되는 초점의 영역은 콘텐츠의 위치와 크기가 맞도록 제공.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">콘텐츠 제어</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-line">
+                                    <li>자동으로 변경되는 콘텐츠는 정지기능을 제공.</li>
+                                    <li>
+                                        <strong>※ 롤링 배너(콘텐츠)의 구조 구현 순서</strong>
+                                        <ul class="g-txt-indent">
+                                            <li>1. 제어(재생/정지) 버튼</li>
+                                            <li>2. 이전/다음 버튼</li>
+                                            <li>3. 배너의 번호, 페이저 버튼 따위의 컨트롤 버튼</li>
+                                            <li>4. 배너(콘텐츠)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">반복 영역 건너뛰기</strong>
+                            <div class="g-cont">
+                                <p>핵심 콘텐츠 부터 접근하도록 제공.</p>
+                                <div class="g-box-detail gap-ver-lower">
+                                    &lt;body&gt;<br />
+                                        &nbsp;&lt;div id=&quot;wrap&quot;&gt;<br />
+                                            <div class="g-emp-rd">&nbsp;&nbsp;&lt;ul class=&quot;skip_navigation&quot;&gt;<br />
+                                            &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#content&quot;&gt;본문 바로가기&lt;/a&gt;&lt;/li&gt;<br />
+                                            &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#gnb&quot;&gt;주 메뉴 바로가기&lt;/a&gt;&lt;/li&gt;<br />
+                                            &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#lnb&quot;&gt;하위 메뉴 바로가기&lt;/a&gt;&lt;/li&gt;<br />
+                                            &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#footer&quot;&gt;페이지하단 바로가기&lt;/a&gt;&lt;/li&gt;<br />
+                                            &nbsp;&nbsp;&lt;/ul&gt;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">제목 제공</strong>
+                            <div class="g-cont">
+                                <strong class="g-tit">[1] 페이지 제목 제공</strong>
+                                <p>현재 서비스의 화면명 또는 콘텐츠명을 명시함.</p>
+                                <div class="g-box-detail gap-ver-lower">
+                                    &lt;title&gt;공지사항(목록) &lt; 커뮤니티 | 우리은행&lt;/title&gt;
+                                </div>
+
+                                <strong class="g-tit">[2] 프레임 제목 제공</strong>
+                                <p>프레임에 삽입되는 document의 제목. 즉, 프레임의 용도를 설명하는 콘텐츠 타이틀을 제공하여야 하고 프로그램 처리용 빈 프레임이라 하더라도 그 용도를 콘텐츠 타이틀로 제공하여야 함.</p>
+                                <div class="g-box-detail gap-ver-lower">
+                                    &lt;iframe name=&quot;actionframe&quot; width=&quot;0&quot; height=&quot;0&quot; <span class="g-emp-rd">title=&quot;프로그램처리용 빈 프레이입니다.&quot;</span>&gt;&lt;/iframe&gt;
+                                    <br /><br />
+                                    &lt;iframe name=&quot;actionframe&quot; width=&quot;0&quot; height=&quot;0&quot; <span class="g-emp-rd">title=&quot;무배당 변액보험 광고 동영상&quot;</span>&gt;&lt;/iframe&gt;
+                                </div>
+
+                                <strong class="g-tit">[3] 콘텐츠 영역 제목 제공</strong>
+                                <ul class="g-bu-line">
+                                    <li>헤딩태그의 적절한 사용.</li>
+                                    <li>탭메뉴의 콘텐츠 : 헤딩이 있어 콘텐츠의 내용이 명시되지 않는 경우, 숨김처리를 하더라도 본문위에 헤딩태그 또는 strong태그를 사용하여 타이틀을 제공해 준다.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">적절한 링크 텍스트와 예측 가능성</strong>
+                            <div class="g-cont">
+                                <strong class="g-tit">[1] 적절한 링크 텍스트 제공</strong>
+                                <p>링크의 용도나 목적을 이해할 수 있도록 제공함.</p>
+                                <div class="g-box-detail gap-ver-lower">
+                                    &lt;a href=&quot;/notice/brd_list&quot; <span class="g-emp-rd">title=&quot;공지사항 더보기&quot;</span>&gt;더보기&lt;/a&gt;<br /><br />
+                                    &lt;a href=&quot;/cst/qna_list&quot; <span class="g-emp-rd">title=&quot;고객센터 질문하기 페이지로 바로가기&quot;</span>&gt;바로가기&lt;/a&gt;
+                                </div>
+
+                                <strong class="g-tit">[2] 예측 가능성</strong>
+                                <ul class="g-bu-circle">
+                                    <li>사용자가 의도하지 않은 새창, 초점변화 등의 기능은 실행되지 않아야 함.</li>
+                                    <li>target=&quot;_blank&quot; title=&quot;새창열림&quot; 으로 표현문구 통일하여 제공함.</li>
+                                    <li>새창열림 링크가 이미지에 설정되어 있는 경우 : &lt;a&gt;에 title를 제공하지 않고 &lt;img&gt;의 alt속성에 함께 명시함.
+                                        <div class="g-box-detail gap-ver-lower">
+                                            &lt;a href=&quot;http://www.fss.or.kr/fss/kr/law/legal/precedentlist.jsp&quot;&gt;&lt;img src=&quot;/www/image/img_01.gif&quot; alt=&quot;금융감독원<span class="g-emp-rd">(새창열림)</span>&quot; /&gt;&lt;/a&gt;
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">온라인 서식</strong>
+                            <div class="g-cont">
+                                <strong class="g-tit">[1] 레이블 제공</strong>
+                                <p>'HTML 작성 규칙 - 3) 요소별 작성 규칙 - 4. 폼 요소의 내용 중, &lt;label&gt; 규칙을 기본으로 함.</p> 
+                                <p class="g-txt-indent">※ 스크린리더에서 인식 할 수 없으므로 레이블을 이미지로 구현하지 않는다.</p>
+
+                                <strong class="g-tit">[2] title제공시 표현 문구 규칙</strong>
+                                <p>다음의 표현문구는 홈페이지 전체에 통일해서 제공한다.</p>
+                                <div class="g_tbl_wrap gap-ver-lower">
+                                    <table>
+                                        <caption>title제공시 표현 문구 규칙</caption>
+                                        <colgroup>
+                                            <col style="width:30%;" />
+                                            <col style="width:70%;" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">항목</th>
+                                                <th scope="col">title속성의 표현 문구 규칙</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="g-align-c">연락처</td>
+                                                <td>
+                                                    <ul class="g-bu-line">
+                                                        <li>title=&quot;연락처 앞자리 입력&quot;</li>
+                                                        <li>title=&quot;연락처 가운데자리 입력&quot;</li>
+                                                        <li>title=&quot;연락처 뒷자리 입력&quot;</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">휴대폰번호</td>
+                                                <td>
+                                                    <ul class="g-bu-line">
+                                                        <li>title=&quot;휴대폰번호 앞자리 입력&quot;</li>
+                                                        <li>title=&quot;휴대폰번호 가운데자리 입력&quot;</li>
+                                                        <li>title=&quot;휴대폰번호 뒷자리 입력&quot;</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">전화번호</td>
+                                                <td>
+                                                    <ul class="g-bu-line">
+                                                        <li>title=&quot;전화 지역번호 입력&quot;</li>
+                                                        <li>title=&quot;전화 국번 입력&quot;</li>
+                                                        <li>title=&quot;전화번호 뒷자리 입력&quot;</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">이메일 주소</td>
+                                                <td>
+                                                    <ul class="g-bu-line">
+                                                        <li>title=&quot;이메일 아이디&quot;</li>
+                                                        <li>title=&quot;이메일 도메인&quot;</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">주소</td>
+                                                <td>
+                                                    <ul class="g-bu-line">
+                                                        <li>title=&quot;주소&quot;</li>
+                                                        <li>title=&quot;상세주소&quot;</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">필수 입력 사항</td>
+                                                <td>
+                                                    <ul class="g-bu-line">
+                                                        <li>&lt;span title=&quot;별 표기(필수 입력 사항)&quot;&gt;*&lt;/span&gt;</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">탭메뉴와 스탭, FAQ와 같은 아코디언 형식의 콘텐츠</strong>
+                            <div class="g-cont">
+                                <p>컨텐츠의 구현에 따라, 현재의 상태를 나타내는 텍스트 또는 title을 제공.</p>
+
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">1. 탭메뉴</strong>
+                                    <ul class="g-bu-circle">
+                                        <li>표현 문구 규칙 : OO 탭 활성, 선택/해제</li>
+                                        <li>개별적인 컨텐츠의 탭메뉴의 경우, 수동으로 활성 탭에 추가 해주어야 함.</li>
+                                    </ul>
+                                    <div class="g-box-detail gap-ver-lower">
+                                        &lt;div class=&quot;g_tab_01&quot;&gt;<br />
+                                            &nbsp;&lt;ul class=&quot;n6&quot;&gt;<br />
+                                                &nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#catelist01&quot; role=&quot;button&quot;&gt;전체&lt;/a&gt;&lt;/li&gt;<br />
+                                                &nbsp;&nbsp;&lt;li class=&quot;on&quot;&gt;&lt;a href=&quot;#none&quot; role=&quot;button&quot;&gt;분양/현장/입주&lt;span class=&quot;state&quot;&gt;선택&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                                                &nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#none&quot; role=&quot;button&quot;&gt;부동산 정보&lt;/a&gt;&lt;/li&gt;<br />
+                                                &nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#none&quot; role=&quot;button&quot;&gt;재개발/재건축&lt;/a&gt;&lt;/li&gt;<br />
+                                                &nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#none&quot; role=&quot;button&quot;&gt;A/S&lt;/a&gt;&lt;/li&gt;<br />
+                                                &nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#none&quot; role=&quot;button&quot;&gt;홈페이지/기타&lt;/a&gt;&lt;/li&gt;<br />
+                                            &nbsp;&lt;/ul&gt;<br />
+                                        &lt;/div&gt;
+                                    </div>
+                                </div>
+
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">2. 스탭</strong>
+                                    <p>표현 문구 규칙 : title=&quot;현재 진행 단계&quot;</p>
+                                    <div class="g-box-detail gap-ver-lower">
+                                        &lt;div class=&quot;g_step&quot;&gt;<br />
+                                            &nbsp;&lt;ol class=&quot;join&quot;&gt;<br />
+                                                &nbsp;&nbsp;&lt;li class=&quot;step1&quot;&gt;<br />
+                                                    &nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;step&quot;&gt;STEP 1&lt;/span&gt;<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;process&quot;&gt;가입여부 및&lt;br /&gt;본인인증&lt;/span&gt;<br />
+                                                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                &nbsp;&nbsp;&lt;/li&gt;<br />
+                                                &nbsp;&nbsp;&lt;li class=&quot;step2&quot;&gt;<br />
+                                                    &nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;step&quot;&gt;STEP 2&lt;/span&gt;<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;process&quot;&gt;약관동의 &lt;br /&gt;및 회원구분 선택&lt;/span&gt;<br />
+                                                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                &nbsp;&nbsp;&lt;/li&gt;<br />
+                                                &nbsp;&nbsp;&lt;li class=&quot;step3 on&quot;&gt;<br />
+                                                    &nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;step&quot;&gt;STEP 3&lt;/span&gt;<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;process&quot;&gt;개인정보 입력&lt;/span&gt;<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;state&quot;&gt;현재 진행 단계&lt;/span&gt;<br />
+                                                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                &nbsp;&nbsp;&lt;/li&gt;<br />
+                                                &nbsp;&nbsp;&lt;li class=&quot;step4&quot;&gt;<br />
+                                                    &nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;step&quot;&gt;STEP 4&lt;/span&gt;<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;process&quot;&gt;회원가입 완료&lt;/span&gt;<br />
+                                                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                &nbsp;&nbsp;&lt;/li&gt;<br />
+                                            &nbsp;&lt;/ol&gt;<br />
+                                        &lt;/div&gt;
+                                    </div>
+                                </div>
+
+                                <div class="gap-ver">
+                                    <strong class="g-tit-nd">3. FAQ와 같은 아코디언 형식의 콘텐츠</strong>
+                                    <ul class="g-bu-circle">
+                                        <li>표현 문구 규칙 : 
+                                            <ul class="g-bu-line">
+                                                <li>title=&quot;답변 보기&quot; / title=&quot;답변 숨기기&quot;</li>
+                                                <li>title=&quot;내용 보기&quot; / title=&quot;내용 숨기기&quot;</li>
+                                            </ul>
+                                        </li>
+                                        <li>공통 콘텐츠의 경우 스크립트 기능에 함께 처리되어 있음.</li>
+                                        <li>개별적인 처리의 경우, 수동으로 추가 해주어야 함.</li>
+                                        <li>Q와 A와 같이 의미가 있는 이미지는 &lt;img&gt;를 사용하여 alt=&quot;Q(질문)&quot;, alt=&quot;A(답변)&quot;으로 명시. 배경처리 방식으로 구현을 한 경우에는 접근성을 고려한 숨김처리를 한다.</li>
+                                    </ul>
+                                </div>   
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">표</strong>
+                            <div class="g-cont">
+                                <p>'HTML 작성 규칙 - 요소별 작성 규칙 - [3] 테이블 요소'의 규칙을 기본으로 함.</p>
+                                <div class="g_tbl_wrap gap-ver-lower">
+                                    <table>
+                                        <caption>표 제공시 표현 문구 규칙</caption>
+                                        <colgroup>
+                                            <col style="width:30%;" />
+                                            <col style="width:70%;" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">항목</th>
+                                                <th scope="col">caption속성과 summary속성의 표현 문구 규칙</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="g-align-c">목록</td>
+                                                <td>
+                                                    예) &lt;caption&gt;공지사항&lt;/caption&gt;
+                                                    <br /><br />
+                                                    summary=&quot;○○,○○,○○<span class="g-emp-rd">의 항목으로 구성하여 제공</span>&quot;<br />
+                                                    예) summary=&quot;제목,등록일,조회수의 항목으로 구성하여 제공&quot;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">상세</td>
+                                                <td>
+                                                    예) &lt;caption&gt;공지사항 상세내용&lt;/caption&gt;
+                                                    <br /><br />
+                                                    summary=&quot;○○,○○,○○<span class="g-emp-rd">의 항목으로 정보 제공</span>&quot; <br />
+                                                    예) summary=&quot;제목,첨부파일,등록일의 항목으로 정보 제공&quot;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">입력/수정</td>
+                                                <td>
+                                                    예) &lt;caption&gt;고객불만 및 개선사항 접수 <span class="g-emp-rd">정보 입력</span>&lt;/caption&gt;
+                                                    <br /><br />
+                                                    summary=&quot;○○,○○,○○,○○,○○,○○,○○,○○의 항목에 정보 입력&quot; <br />
+                                                    예) summary=&quot;날짜,계약고객여부,휴대폰번호,메일,질문구분,내용,요구사항,비밀번호의 항목에 정보 입력&quot;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">기타 데이타 표</td>
+                                                <td>
+                                                    표의 내용을 요약하여 제공함.
+                                                    예) summary=&quot;연도별 가입 고객 현황을 성별과 연령의 항목으로 정리하여 제공함.&quot;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c"><strong>HTML5 DTD</strong></td>
+                                                <td>
+                                                    HTML5 DTD문서에서 summary속성을 사용할 경우 HTML Validator 오류로 인식하므로 summary속성을 직접 제공하지 않고 summary속성으로 제공할 내용을 caption에 포함하는 것이 바람직하다. <br />
+                                                    예) &lt;caption&gt;주계약 보장내역; 급부명, 지급사유, 지급금액의 항목으로 정보 제공&lt;/caption&gt;
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">숨김처리</strong>
+                            <div class="g-cont">
+                                <ul class="g-bu-circle">
+                                    <li>의미가 있는 컨텐츠를 영역 배경으로 처리하거나 가상선택자를 사용하여 표현하는 방식의 구현은 하지 않아야 함.</li>
+                                    <li>반응형구현의 경우, pc웹과 모바일웹앱을 원소스 구현을 해야 하기 때문에 접근성 처리는 pc와 모바일 모두 적용할 수 있는 방식으로 처리하는 것을 원칙으로 함.</li>
+                                    <li>
+                                        <strong>※ 대체 콘텐츠의 처리와 IR구현시 숨김처리의 주의 사항:</strong>
+                                        <ul class="g-bu-line">
+                                            <li>visibility:hidden, display:none, width:0, height:0, font-size:0, line-height:0 속성의 이와 같은 설정은 하지 말아야 함.</li>
+                                            <li>
+                                                <p class="g-txt-indent">1. 화면밖으로 내보내어 감추기 위해 position:absolute에 top또는 left의 속성값으로 큰 음수를 설정하는 것</p>
+                                                <p class="g-txt-indent">2. text-indent의 속성값으로 큰 음수를 설정하는 것</p>
+                                                이 두가지 방식은 로딩시 문서크기를 크게 계산하여 속도에 영향을 미치고, 모바일 디바이스에서 포커스를 화면에서 잃어버리게 하므로 사용하지 않음.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">WAI-ARIA</strong>
+                            <div class="g-cont">
+                                <p>스크린리더 및 보조기기 등에서 접근성 및 상호 운용성을 향상시키기 위한 추가 처리.</p>
+                                <div class="g_tbl_wrap gap-ver-lower">
+                                    <table>
+                                        <caption>WAI-ARIA 처리 항목</caption>
+                                        <colgroup>
+                                            <col style="width:30%;" />
+                                            <col style="width:70%;" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">항목</th>
+                                                <th scope="col">WAI-ARIA 처리 항목</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="g-align-c">role=&quot;&quot;</td>
+                                                <td>
+                                                    예) &lt;a href=&quot;/&quot; onclick=&quot;playApp()&quot; role=&quot;button&quot;&gt;재생&lt;/a&gt;
+                                                    <br /><br />
+                                                    &lt;a&gt; 요소에 role=&quot;button&quot;을 지정하면 스크린리더 사용자는 링크가 아닌 버튼으로 읽어준다.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">aria-label=&quot;&quot;</td>
+                                                <td>
+                                                    레이블 제공.
+                                                    <br><br>
+                                                    예) &lt;button aria-label=&quot;닫기&quot; onclick=&quot;myDialog.close()&quot;&gt; X &lt;/button&gt;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">aria-hidden=&quot;&quot;</td>
+                                                <td>
+                                                    숨김 콘텐츠. true/false.
+                                                    <br><br>
+                                                    예) &lt;button aria-hidden=&quot;true&quot;&gt; 버튼 &lt;/button&gt;
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Accessibility -->
+
+                    <!-- 기타 -->
+                    <div class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">타겟 환경 및 크로스 브라우징 범위</strong>
+                            <div class="g-cont">
+                                <div class="g_tbl_wrap">
+                                    <table>
+                                        <caption>사용환경 정의 상세</caption>
+                                        <colgroup>
+                                            <col style="width:15%;" />
+                                            <col style="width:15%;" />
+                                            <col style="width:70%;" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th rowspan="2" class="g-align-c line-r">OS</th>
+                                                <td class="g-align-c">Android</td>
+                                                <td class="line-t">version : 5, 6, 7.1, 8.1, 9</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">iOS</td>
+                                                <td>version : 9, 10, 13, 15</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="2" class="g-align-c line-r">device</th>
+                                                <td class="g-align-c">Android</td>
+                                                <td>갤럭시6S(ver. 7.0), 갤럭시8(ver. 8.0), 픽셀3(ver. 12.0), 갤럭시 Z플립(ver. 11.0), G910S(ver. 4.4.2), 노트10Plus(ver. 10.0) 등 타겟 OS가 설치된 단말.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="g-align-c">iOS</td>
+                                                <td>iPhone Xs(ver. 12.3.1), iPhone X(ver. 11.3), iPhone Xs Max(ver. 14.3) 등 타겟 OS가 설치된 단말.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">특수처리 사항</strong>
+                            <div class="g-cont">
+                                //제휴사 개발관련 내용 확인 필요
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //기타 -->
+                </div>
+            </div>
+        </div>
+        <!-- //contents -->
+    </div>
+
+    <a href="#g-contents" class="g-btn-top">TOP</a>
+</body>
+</html>

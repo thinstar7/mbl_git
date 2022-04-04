@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>결제수단 관리 | MY | 우리페이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('MY02BS01'); //카드관리 bottom sheet open
+    //WIP.popup.close('MY02BS01'); //카드관리 bottom sheet close
+
+    //WIP.popup.open('MY02MD01'); //대표카드 설정 안내 confirm open
+    //WIP.popup.close('MY02MD01'); //대표카드 설정 안내 confirm close
+
+    //WIP.popup.open('MY02MD02'); //대표카드 설정 확인 confirm open
+    //WIP.popup.close('MY02MD02'); //대표카드 설정 확인 confirm close
+
+    //WIP.popup.open('MY02MD03'); //카드삭제 confirm open
+    //WIP.popup.close('MY02MD03'); //카드삭제 confirm close
+});
+</script>
+</head>
+<body>
+    <!-- bottom sheet -->
+    <div class="bottom-sheet sheet-card-adm" data-lyr-id="MY02BS01">
+        <div class="in-wrap">
+            <div class="sheet-head">
+                <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                <a href="javascript:void(0);" class="sheet-close"><span class="blind">닫기</span></a>
+                <div class="sheet-title">
+                    <strong>카드관리</strong>
+                </div>
+            </div>
+            <div class="sheet-contents">
+                <div class="sec">
+                    <div class="card-info">
+                        <span class="lab">대표</span>
+                        <!-- [통합결제플랫폼] : class 수정 2022.01.17 -->
+                        <p class="item">WON POINT AIR</p>
+                        <!-- [통합결제플랫폼] -->
+                        <div class="infs">
+                            <span>우리카드</span><span class="ls-ini">(1580)</span>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <a href="javascript:void(0);" class="btn-cancel"><span>카드 삭제</span></a>
+                        <a href="javascript:void(0);" class="btn"><span>대표카드 설정</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //bottom sheet -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="MY02MD01">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                   대표카드로 설정된 카드입니다. 
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="MY02MD02">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                   해당 카드를 대표카드로<br>
+                   설정하시겠습니까?
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn-cancel"><span>취소</span></a>
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="MY02MD03">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                   선택한 카드를 삭제하시겠습니까? 
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn-cancel"><span>취소</span></a>
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+</body>
+</html>

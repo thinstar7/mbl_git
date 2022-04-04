@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>송금 정보 확인 | 송금 정보 입력 | 간편 송금 | 송금 | 생활금융</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('LF21BS01'); //내 계좌 선택 bottom sheet open
+        //WIP.popup.close('LF21BS01'); //내 계좌 선택 bottom sheet close
+      });
+    </script>
+  </head>
+  <body>
+    <!-- bottom sheet -->
+    <div
+      class="bottom-sheet remit-info-bottom-sheet"
+      data-lyr-id="LF21BS01"
+    >
+      <div class="in-wrap">
+        <div class="sheet-head">
+          <a href="javascript:void(0);" class="lyr-cntr-ty2"
+            ><span class="blind"
+              >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면
+              닫기)</span
+            ></a
+          >
+          <a href="javascript:void(0);" class="sheet-close"
+            ><span class="blind">닫기</span></a
+          >
+          <div class="sheet-title">
+            <strong>송금 정보 확인</strong>
+          </div>
+        </div>
+        <div class="sheet-contents">
+          <div class="sec">
+            <div class="box-msg2 ico-none pdt0">
+              <div class="in-box">
+                <div class="str-main">
+                  <p class="txt-thin">
+                    <em>김연세님</em>에게<br>
+                    <em><span class="txt-bold emp ls-ini">100,000,000</span>원</em>을<br>
+                    보내시겠습니까?
+                  </p>
+                </div>
+              
+                <div class="box-account">
+                  <div class="img-fnc small" data-fnc-code="020"></div>
+                  <p class="inf">
+                    우리은행 <span class="ls-ini">12345678901234</span> 
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <ul class="remit-info-list-wrap">
+              <li class="remit-info-list">
+                <div class="name">출금계좌</div>
+                <div class="value">우리은행 <span class="ls-ini">98765432322342</span></div>
+              </li>
+              <li class="remit-info-list">
+                <div class="name">수수료</div>
+                <div class="value">예약송금 실행 시 확정</div>
+              </li>
+              <li class="remit-info-list">
+                <div class="name">받는 분 통장 표시</div>
+                <div class="value">홍길동</div>
+              </li>
+              <li class="remit-info-list">
+                <div class="name">내 통장 표시</div>
+                <div class="value">홍길동</div>
+              </li>
+              <!-- 입력 받은 경우에만 영역 노출 -->
+              <li class="remit-info-list">
+                <div class="name">집금(CMS)번호</div>
+                <div class="value">BANK 123</div>
+              </li>
+              <!-- 예약송금을 설정한 경우에만 영역 노출 -->
+              <li class="remit-info-list">
+                <div class="name">예약송금</div>
+                <div class="value"><span class="ls-ini">2022.02.03</span> 오전 8시~9시</div>
+              </li>
+            </ul>
+
+            <div class="btn-area">
+                <a href="javascript:void(0);" class="btn" onclick="WIP.popup.close('LF21BS01')"><span>송금</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //bottom sheet -->
+  </body>
+</html>

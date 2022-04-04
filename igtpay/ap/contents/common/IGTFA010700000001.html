@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>휴대폰 본인인증 | 생활금융</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/transkey.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/transkey.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('CM17LP01'); //popup open
+    //WIP.popup.close('CM17LP01'); //popup close
+
+    //WIP.popup.open('AU03BS01'); //bottom sheet open
+    //WIP.popup.close('AU03BS01'); //bottom sheet close
+    
+    //WIP.popup.open('AU03MD01'); //인증번호 발송 modal open
+    //WIP.popup.close('AU03MD01'); //인증번호 발송 modal close
+
+    //WIP.popup.open('AU03MD02'); //인증번호 재요청 횟수 초과 modal open
+    //WIP.popup.close('AU03MD02'); //인증번호 재요청 횟수 초과 modal close
+
+    //WIP.popup.open('AU03MD03'); //인증시간 초과 modal open
+    //WIP.popup.close('AU03MD03'); //인증시간 초과 modal close
+
+    //WIP.popup.open('AU03TS01'); //인증이 완료 toast open
+    //WIP.popup.close('AU03TS01'); //인증이 완료 toast close
+});
+</script>
+</head>
+<body>
+    <!-- layer popup -->
+    <div class="lyr-popup lyr-popup-phon-terms-accept process-member-register popup-me-request" data-lyr-id="CM17LP01">
+        <div class="in-lyr">
+            <!-- layer popup header -->
+            <div class="lyr-header">
+                <div class="lyr-topper">
+                    <a href="javascript:void(0);" class="lyr-cntr-ty1"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                    <strong class="lyr-title">연세 Pay</strong>
+                </div>
+                <div class="lyr-head">
+                    <h1 class="lyr-sub-title">휴대폰 본인인증</h1>
+                    <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+                    <a href="javascript:void(0);" class="btn-close"><span class="blind">닫기</span></a>
+                </div>
+            </div>
+            <!-- //layer popup header -->
+            <!-- layer popup contents -->
+            <div class="lyr-contents">
+                <div class="content">
+                    <div class="content-title">
+                        <p>본인명의의 휴대폰으로<br> 인증해 주세요</p>
+                    </div>
+                    <div class="agree-wrap toggle">
+                        <div class="agree-all-check">
+                            <span class="inp-chk-ty2 round">
+                                <input type="checkbox" id="chkC01" name="chkC" class="all-check">
+                                <label for="chkC01">휴대폰인증 전체 동의</label>
+                            </span>
+							
+							<button type="button" class="btn-toggle"><span class="blind">세부 약관 보기</span></button>
+                        </div>
+                        <div class="checkbox-list-wrap">
+                            <span class="inp-chk-ty2 round">
+                                <input type="checkbox" id="chkC02" name="chkC">
+                                <label for="chkC02">[필수] 개인정보 이용 및 제공 동의</label>
+                                <button class="terms-open-btn"><span class="blind">내용보기</span></button>
+                            </span>
+                            <span class="inp-chk-ty2 round">
+                                <input type="checkbox" id="chkC03" name="chkC">
+                                <label for="chkC03">[필수] 고유식별정보 처리 동의</label>
+                                <button class="terms-open-btn"><span class="blind">내용보기</span></button>
+                            </span>
+                            <span class="inp-chk-ty2 round">
+                                <input type="checkbox" id="chkC04" name="chkC">
+                                <label for="chkC04">[필수] 통신사 이용약관 동의</label>
+                                <button class="terms-open-btn"><span class="blind">내용보기</span></button>
+                            </span>
+                            <span class="inp-chk-ty2 round">
+                                <input type="checkbox" id="chkC05" name="chkC">
+                                <label for="chkC05">[필수] 서비스이용약관 동의</label>
+                                <button class="terms-open-btn"><span class="blind">내용보기</span></button>
+                            </span>
+                            <span class="inp-chk-ty2 round">
+                                <input type="checkbox" id="chkC06" name="chkC">
+                                <label for="chkC06">[필수] 개인정보 제3자 제공동의</label>
+                                <button class="terms-open-btn"><span class="blind">내용보기</span></button>
+                            </span>
+                        </div>
+                    </div>
+                    <!--
+                        1. 입력 삭제 버튼이 있을경우 : .inp-box element의 class속성값에 be-del를 추가.
+                        2. 입력중(focus in) : .inp-box element의 class속성값에 focus를 추가. 
+                        3. 입력완료(focus out) : .inp-box element의 class속성값에 focus를 추가.
+                        4. 입력오류시 : .inp-box element의 class속성값에 error를 추가하고, .form-msg element를 노출.
+                        -->
+                    <div class="wrap-form">
+                        <dl class="form-box">
+                            <dt class="tit"><span>영문성명인증</span></dt>
+                            <dd class="con">
+                                <span class="inp-chk-ty2 round">
+                                    <input type="checkbox" id="chkC11" name="chkD">
+                                    <label for="chkC11">영문성명인증(외국인 전용)</label>
+                                </span>
+                            </dd>
+                        </dl>
+                        <dl class="form-box">
+                            <dt class="tit">
+                                <span>휴대폰번호</span>
+                                <button type="button" class="btn-tooltip" onclick="WIP.popup.open('AU03BS01')"><span class="blind">도움말 보기</span></button>
+                            </dt>
+                            <dd class="con">
+                                <div class="agency-field">
+                                    <div class="inp-btns">
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk01" checked>
+                                            <label for="ph-chk01">SKT</label>
+                                        </span>
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk02">
+                                            <label for="ph-chk02">KT</label>
+                                        </span>
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk03">
+                                            <label for="ph-chk03">LGU+</label>
+                                        </span>
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk04">
+                                            <label for="ph-chk04">SKT 알뜰폰</label>
+                                        </span>
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk05">
+                                            <label for="ph-chk05">KT 알뜰폰</label>
+                                        </span>
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk06">
+                                            <label for="ph-chk06">LGU+ 알뜰폰</label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dd class="con">
+                                <div class="con-field">
+                                    <div class="inp-phone-number">
+                                        <!-- combobox -->
+                                        <div class="el-combobox">
+                                            <div class="combobox">
+                                                <input type="text" role="combobox" readonly="true" class="combo" aria-autocomplete="list" aria-owns="cb-phone" aria-haspopup="true" aria-readonly="true" aria-expanded="false" aria-activedescendant="" placeholder="010" title="휴대폰 식별번호">
+                                                <button type="button" class="combo-btn"><span class="blind">선택 목록 열기</span></button>
+                                            </div>
+                                            <div class="combo-list">
+                                                <div class="in-wrap">
+                                                    <div class="opt-head">
+                                                        <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                                        <a href="javascript:void(0);" class="opt-close"><span class="blind">닫기</span></a>
+                                                        <div class="opt-title">
+                                                            <strong>휴대폰 식별번호 선택</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="opt-contents">
+                                                        <ul id="cb-phone" class="opt-list" role="listbox" aria-hidden="true" tabindex="-1">
+                                                            <li id="cb-phone-opt01" class="opt" role="option">010</li>
+                                                            <li id="cb-phone-opt02" class="opt" role="option">011</li>
+                                                            <li id="cb-phone-opt03" class="opt" role="option">016</li>
+                                                            <li id="cb-phone-opt04" class="opt" role="option">017</li>
+                                                            <li id="cb-phone-opt05" class="opt" role="option">018</li>
+                                                            <li id="cb-phone-opt06" class="opt" role="option">019</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //combobox -->
+                                    </div>
+                                    <div class="inp-box">
+                                        <span class="inp"><input type="tel" title="휴대폰번호 식별번호 제외한 나머지 뒷자리" maxlength="8" placeholder="'-'을 제외한 숫자만 입력"></span>
+                                    </div>
+                                </div>
+                                <div class="auth-number-btn-area">
+                                    <a href="javascript:void(0);" class="auth-number-btn" onclick="WIP.popup.open('AU02MD01');"><span>인증번호 요청</span></a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="form-box">
+                            <dt class="tit"><label for="inp01">인증번호</label></dt>
+                            <dd class="con">
+                                <div class="auth-confirm">
+                                    <div class="inp-box be-del focus">
+                                        <div class="inp">
+                                            <input type="tel" id="inp01" placeholder="6자리 숫자 입력">
+                                            <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                        </div>
+                                    </div>
+                                    <span class="time">05:00</span>
+                                    <a class="auth-confirm-btn" href="#"><span>인증확인</span></a>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>              
+                </div>
+                <!--
+                1. 입력 삭제 버튼이 있을경우 : .inp-box element의 class속성값에 be-del를 추가.
+                2. 입력중(focus in) : .inp-box element의 class속성값에 focus를 추가. 
+                3. 입력완료(focus out) : .inp-box element의 class속성값에 focus를 추가.
+                4. 입력오류시 : .inp-box element의 class속성값에 error를 추가하고, .form-msg element를 노출.
+                -->
+                <!-- button area -->
+                <div class="btn-area">
+                    <a href="javascript:void(0);" class="btn disabled"><span>다음</span></a>
+                </div>
+                <!-- //button area -->  
+            <!-- //layer popup contents -->
+            </div>
+        </div>
+    </div>
+    <!-- //layer popup -->
+    <!-- bottom sheet -->
+    <div class="bottom-sheet bottom-sheet-auth-password-notice" data-lyr-id="AU03BS01">
+            <div class="in-wrap">
+                <div class="sheet-head">
+                    <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                    <a href="javascript:void(0);" class="sheet-close"><span class="blind">닫기</span></a>
+                    <div class="sheet-title">
+                        <strong>휴대폰번호 안내</strong>
+                    </div>
+                </div>
+                <div class="sheet-contents">
+                    <div class="sec">
+                        <ul class="lst bu-ty1">
+                            <li>고객님께서 사용 중이신 휴대폰번호가 연세페이에 등록된 휴대폰번호와 다른 경우, 고객센터(1588-9955)로 연락하셔서 변경하신 후 본인인증이 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- //bottom sheet -->
+
+    <!-- modal : 인증번호 발송 -->
+    <div class="modal" data-lyr-id="AU03MD01">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p class="txt">
+                   고객님의 휴대폰으로 인증번호를<br>
+                    발송하였습니다.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+    
+    <!-- modal : 인증번호 재요청 횟수 초과 -->
+    <div class="modal" data-lyr-id="AU03MD02">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p class="txt">
+                   인증번호 재요청 횟수가 3회를<br>
+                   초과하였습니다. 확인 선택 시, 화면이<br>
+                   새로고침되어 입력한 내용은<br>
+                   사라집니다.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal : 인증시간 초과 -->
+    <div class="modal" data-lyr-id="AU03MD03">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p class="txt">
+                   인증시간이 초과하였습니다. 다시<br>
+                   인증해 주시기 바랍니다.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- toast -->
+    <div class="toast" data-lyr-id="AU03TS01">
+        <div class="in-wrap">
+            <p>인증이 완료되었습니다.</p>
+        </div>
+    </div>
+    <!-- //toast -->
+</body>
+</html>

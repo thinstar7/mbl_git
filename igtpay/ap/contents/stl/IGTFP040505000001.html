@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>결제완료 | 결제 | 우리페이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('ST00FP06'); //popup open
+    //WIP.popup.close('ST00FP06'); //popup close
+
+    //WIP.popup.open('MSG-LOAD'); //로딩 진행중 open
+    //WIP.popup.close('MSG-LOAD'); //로딩 진행중 close
+
+     WIP.popup.open('ST06MD01'); //popup open
+    // WIP.popup.close('ST06MD01'); //popup close
+    
+});
+</script>
+</head>
+<body>
+    <!-- full popup -->
+    <div class="popup popup-pay-request" data-lyr-id="ST00FP06">
+        <div class="popup-wrap">
+            <!-- <a href="javascript:void(0);" class="popup-close"><span class="blind">닫기</span></a> -->
+            <div class="popup-title">
+                <strong>결제완료</strong>
+            </div>
+            <div class="popup-contents">
+                <div class="pop-sec">
+                    <div class="box-msg ico-none">
+                        <div class="in-box">
+                            <p class="str-main">결제 요청이<br> 완료되었습니다.</p>
+                        </div>
+                    </div>
+                   
+                    <div class="infos-cont">
+                        <strong class="cont-title">결제정보</strong>
+                        <div class="wrap-info-list ty2">
+                            <div class="card-data">
+                                <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card02.png" alt="WON POINT AIR"></div>
+                                <div class="inf">
+                                    <div class="item">WON POINT AIR</div>
+                                    <div class="num">4214-****-****-1580</div>
+                                </div>
+                            </div>
+                            <dl class="info-list">
+                                <dt class="tit">가맹정</dt>
+                                <dd class="con">지마켓</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dt class="tit">상품명</dt>
+                                <dd class="con">[컬럼비아] 남성 3 IN 워터 프루프자켓</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dt class="tit">결제금액</dt>
+                                <dd class="con"><strong class="emp ls-ini">50,000</strong>원</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dt class="tit">결제일시</dt>
+                                <dd class="con"><span class="ls-ini">2022.01.17  13:07:16</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-area">
+                    <a href="javascript:void(0);" class="btn"><span>확인</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //full popup -->
+
+    <!-- modal --> <!-- [통합결제플랫폼] : modal추가 2022.03.07 -->
+    <div class="modal" data-lyr-id="ST06MD01">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p class="txt">
+                   결제요청이 완료되었습니다.<br> 진행중이던
+                   앱(웹)으로 돌아가 결제를 <br>완료해주시기 바랍니다.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn" onclick="WIP.popup.close('ST06MD01')"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+   
+   
+    <!-- modal -->
+    <div class="modal msg-loading" data-lyr-id="MSG-LOAD">
+        <div class="in-wrap">
+            <div class="message-contents">
+                <div class="box-str-main">
+                    <p>결제요청이<br>
+                    진행중입니다...</p>
+                </div>
+                <div class="box-str-desc">
+                    <p>진행중이던 앱(웹)으로 돌아가<br>
+                    결제를 완료해주시기 바랍니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+</body>
+</html>

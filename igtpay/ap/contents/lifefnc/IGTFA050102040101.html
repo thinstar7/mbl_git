@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>오픈뱅킹 등록 결과 | 오픈뱅킹 등록 | 송금 | 생활금융</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('LF12LP01'); //MY layer poup open
+        //WIP.popup.close('LF12LP01'); //MY layer popup close
+        WIP.swiper_remit_main();
+      });
+    </script>
+  </head>
+  <body>
+    <!-- layer popup -->
+    <div class="lyr-popup lyr-bank-reg-result" data-lyr-id="LF12LP01">
+      <div class="in-lyr">
+        <!-- layer popup header -->
+        <div class="lyr-header">
+          <div class="lyr-topper">
+            <a href="javascript:void(0);" class="lyr-cntr-ty1"
+              ><span class="blind"
+                >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및
+                화면 닫기)</span
+              ></a
+            >
+            <strong class="lyr-title">제휴사명</strong>
+          </div>
+          <div class="lyr-head">
+            <h1 class="lyr-sub-title">오픈뱅킹 등록 결과</h1>
+            <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+            <a href="javascript:void(0);" class="btn-close"
+              ><span class="blind">닫기</span></a
+            >
+          </div>
+        </div>
+        <!-- //layer popup header -->
+        <!-- layer popup contents -->
+        <div class="lyr-contents">
+          <!-- 계좌 등록 1개 이상 성공 시 -->
+          <div class="box-msg2 check">
+            <div class="in-box">
+              <p class="str-main">
+                <em class="emp">2</em>개의 계좌가<br />등록 완료되었습니다.
+              </p>
+
+              <p class="str-sub">
+                등록된 계좌의 은행/증권사로부터<br />오픈뱅킹 등록 안내 문자가
+                수신될 수 있어요!
+              </p>
+            </div>
+          </div>
+
+          <!-- 모든 계좌 등록 실패 시 -->
+          <!-- <div class="box-msg2">
+            <div class="in-box">
+              <p class="str-main">
+                <em class="emp">2</em>개의 계좌가<br /><em class="emp-nd">등록 실패</em>되었습니다.
+              </p>
+
+              <p class="str-sub">
+                실패 사유를 확인해 주세요.<br />[확인] 선택 시 다시 오픈뱅킹 등록을 진행합니다.
+              </p>
+            </div>
+          </div> -->
+
+          <div class="area-reg-list">
+            <div class="reg-list-header">
+              <p>
+                <span class="txt-complete">
+                  <span class="txt">완료</span>
+                  <span class="num">1</span>
+                </span>
+                /
+                <span class="txt-fail">
+                  <span class="txt">실패</span>
+                  <span class="num">2</span>
+                </span>
+              </p>
+            </div>
+            <ul class="wrap-reg-list">
+              <li class="reg-list">
+                <div class="img-fnc" data-fnc-code="020"></div>
+                <div class="txt-wrap">
+                  <p class="name">우리 SUPER 주거래 통장</p>
+                  <p class="account">우리은행 <span class="ls-ini">123455677</span></p>
+                </div>
+                <div class="result">완료</div>
+              </li>
+              <li class="reg-list">
+                <div class="img-fnc" data-fnc-code="020"></div>
+                <div class="txt-wrap">
+                  <p class="name">우리 SUPER 주거래 통장</p>
+                  <p class="account">우리은행 <span class="ls-ini">123455677</span></p>
+                </div>
+                <div class="result accordion">
+                  <div class="toggle-anchor">
+                    <a href="javascript:void(0);" title="내용 보기"><span class="emp-nd">실패</span></a>
+                  </div>
+                  <div class="toggle-contents">
+                    <p class="msg">통신상태가 원활하지 않아 처리하지 못했습니다.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="reg-list">
+                <div class="img-fnc" data-fnc-code="020"></div>
+                <div class="txt-wrap">
+                  <p class="name">우리 SUPER 주거래 통장</p>
+                  <p class="account">우리은행 <span class="ls-ini">123455677</span></p>
+                </div>
+                <div class="result accordion">
+                  <div class="toggle-anchor">
+                    <a href="javascript:void(0);" title="내용 보기"><span class="emp-nd">실패</span></a>
+                  </div>
+                  <div class="toggle-contents">
+                    <p class="msg">통신상태가 원활하지 않아 처리하지 못했습니다.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-area">
+            <a href="javascript:void(0);" class="btn"><span>확인</span></a>
+          </div>
+        </div>
+        <!-- //layer popup contents -->
+      </div>
+    </div>
+  </body>
+</html>

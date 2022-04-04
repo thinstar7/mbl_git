@@ -1,0 +1,720 @@
+@charset "utf-8";
+
+/* image background */
+.ico:before, .btn-prev:before, .btn-close:before, .btn-tooltip:after, .sheet-close:before, [class^="inp-chk"] label:before, .popup-close:before, .btn-initialize:before, .modal-close:before, .tooltip-close:before{content:'';display:inline-block;background:url(/igtpay/ap/res/images/common/set.png) no-repeat;background-size:30rem auto}
+
+/* title */
+.cont-title{display:block;padding-bottom:1rem;line-height: 2.3rem;font-family:'SpoqaHanSansNeo-Bold';color:#111;font-size:1.6rem;letter-spacing:-0.032rem}
+
+/* text */
+.text-type{display:inline-block;line-height:2.2rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.3rem;color:#999;letter-spacing:-0.026rem}
+
+/* bullet */
+.bu-ty1 > li, p.bu-ty1, span.bu-ty1{position:relative;padding-left:0.9rem}
+.bu-ty1 > li:before, p.bu-ty1:before, span.bu-ty1:before{content:'';display:inline-block;position:absolute;top:0.9rem;left:0;width:0.3rem;height:0.3rem;border-radius:50%;background:#555}
+.bu-ty1 > li.emp:before, p.bu-ty1.emp:before, span.bu-ty1.emp:before{background:#2b64ce}
+.bu-ty1 > li.emp-nd:before, p.bu-ty1.emp-nd:before, span.bu-ty1.emp-nd:before{background:#f74141}
+.bu-ty1 > li.emp-rd:before, p.bu-ty1.emp-rd:before, span.bu-ty1.emp-rd:before{background:#2c8dd9}
+
+.bu-ty2 > li, p.bu-ty2, span.bu-ty2{position:relative;padding-left:0.9rem}
+.bu-ty2 > li:before, p.bu-ty2:before, span.bu-ty2:before{content:'';display:inline-block;position:absolute;top:0.9rem;left:0;width:0.5rem;height:0.1rem;background:#555}
+.bu-ty2 > li.emp:before, p.bu-ty2.emp:before, span.bu-ty2.emp:before{background:#2b64ce}
+
+/* 라벨 */
+.lab{display:inline-block;min-width:4rem;height:2rem;padding:0 0.3rem;border-radius:0.3rem;border:0.1rem solid #2b64ce;line-height:1.8rem;font-size:1.2rem;color:#2b64ce;text-align:center;box-sizing:border-box} /* background:#fff; */
+.lab.ty2{border-color:#ff8000;color:#ff8000}
+.lab.ty3{border-width:0;background:#748fc2;line-height:2rem;color:#fff}
+.lab.ty4{border-width:0;background:#52a7f1;line-height:2rem;color:#fff}
+.lab.ty5{border-color:#64c524;color:#64c524}
+
+/* icon */
+.ico{display:inline-block}
+.ico.caution{width:4.8rem;height:4.8rem}
+.ico.caution:before{width:100%;height:100%;background-position:0 0}
+.ico.check{width:4.8rem;height:4.8rem}
+.ico.caution:before{width:100%;height:100%;background-position:0 0}
+
+/* ----- button ----- */
+[class^="btn"], [class^="p-btn"]{display:inline-block;font-family:'SpoqaHanSansNeo-Medium';text-align:center;box-sizing:border-box}
+[class^="btn"]:hover, [class^="p-btn"]:hover{text-decoration:none}
+[class^="btn"]{border-radius:0.8rem}
+
+.btn{display:inline-flex;justify-content:center;align-items:center;height:5.2rem;background:#2b64ce;line-height:2rem;font-size:1.8rem;color:#fff}
+.btn:active{background:#1748a5}
+.btn.disabled{background:#c6cddb}
+.btn-cancel{display:inline-flex;justify-content:center;align-items:center;height:5.2rem;background:#7f8796;line-height:2rem;font-size:1.8rem;color:#fff}
+.btn-cancel:active{background:#5b6577}
+.btn-cancel.disabled{background:#ccc}
+.btn .fz-small, .btn-cancel .fz-small{font-size:1.4rem;letter-spacing:-0.028em}
+
+.btn-set{width:4.4rem;height:2.4rem;border-radius:2.4rem;background:transparent}
+.btn-set .switch{display:inline-block;position:relative;top:0;width:4.4rem;height:2.4rem;border-radius:2.4rem;background:#ddd;transition:background .1s ease-in-out}
+.btn-set .switch:before{content:'';display:inline-block;position:absolute;top:0.2rem;left:0.2rem;width:2rem;height:2rem;border-radius:50%;background:#fff;box-shadow:0 0.1rem 0.4rem 0 rgba(0, 0, 0, .3);transition:left .1s ease-in-out}
+.btn-set.off .switch{background:#ddd}
+.btn-set.off .switch:before{left:0.2rem}
+.btn-set.on .switch{background:#52a7f1}
+.btn-set.on .switch:before{left:2.2rem}
+
+.btn-set2{display:inline-flex;justify-content:right;align-items:center;position:relative;width:6rem;height:2.8rem;padding:0 0.8rem;border-radius:1.4rem;background:#f5f5f5;transition:background .1s ease-in-out}
+.btn-set2 .txt{display:inline-block;line-height:1.4rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.3rem;color:#555;letter-spacing:-0.026em}
+.btn-set2 .switch{display:inline-block;position:absolute;top:50%;left:0.6rem;width:1.6rem;height:1.6rem;border-radius:50%;background:#aaa;box-shadow:0 0.1rem 0.4rem 0 rgba(0, 0, 0, .3);transition:left .1s ease-in-out, background .1s ease-in-out;transform:translateY(-50%)}
+.btn-set2.off{justify-content:right;background:#f5f5f5}
+.btn-set2.off .txt{color:#555}
+.btn-set2.off .switch{left:0.6rem;background:#aaa}
+.btn-set2.on{justify-content:left;background:#eff5fe}
+.btn-set2.on .txt{color:#2b64ce}
+.btn-set2.on .switch{left:3.8rem;background:#52a7f1}
+
+.btn-ty1{display:inline-flex;justify-content:center;align-items:center;height:3.2rem;padding:0 1.5rem;border-radius:1.6rem;border:0.1rem solid #ccc;background:#fff;font-family:'SpoqaHanSansNeo-Regular';font-size:1.4rem;color:#111;letter-spacing:-0.02rem}
+.btn-ty2{display:inline-flex;justify-content:center;align-items:center;height:4rem;border:0.1rem solid #ccc;border-radius:0.6rem;background-color:#fff;line-height:1.5;font-size:1.5rem; color:#111}
+.btn-ty3{display:inline-flex;justify-content:center;align-items:center;height:3.2rem;padding-right:0.4rem;padding-left:0.4rem;border-radius:0.6rem;background-color:#52a7f1;font-size:1.5rem;color:#fff}
+.btn-ty4{display:inline-flex;justify-content:center;align-items:center;height:4.4rem;padding-right:0.4rem;padding-left:0.4rem;border-radius:0.8rem;border:0.1rem solid #2b64ce;background-color:#fff;font-size:1.5rem;color:#2b64ce;letter-spacing:-0.03rem}
+.btn-ty4.large{height:4.8rem;line-height:2.2rem;font-size:1.7rem;letter-spacing:-0.034rem}
+.btn-ty5{display:inline-flex;justify-content:center;align-items:center;height:4.4rem;padding-right:0.4rem;padding-left:0.4rem;border-radius:0.8rem;background-color:#eff5fe;font-size:1.5rem;color:#2b64ce;letter-spacing:-0.03rem}
+
+.btn-ty1:active, .btn-ty2:active, .btn-ty4:active{background-color:rgba(0, 0, 0, .2)}
+.btn-ty3:active{background-color:#3c73db}
+
+.btn-txt{line-height:3rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.3rem;color:#999;letter-spacing:-0.03rem;text-decoration: underline !important}
+.btn-txt:hover{text-decoration:underline}
+
+.p-btn{height:4.8rem;border-radius:0 0 1.6rem 1.6rem;background:#2b64ce;line-height:4.8rem;font-size:1.8rem;color:#fff}
+.p-btn:active{background:#1748a5}
+.p-btn.disabled{background:#c6cddb}
+.p-btn-cancel{height:4.8rem;border-radius:0 0 1.6rem 1.6rem;background:#7f8796;line-height:4.8rem;font-size:1.8rem;color:#fff}
+.p-btn-cancel:active{background:#5b6577}
+.p-btn-cancel.disabled{background:#ccc}
+
+/* icon button */
+.btn-prev{width:3.2rem;height:3.2rem;border-radius:0}
+.btn-prev:before{position:relative;top:-0.2rem;left:-0.1rem;width:3rem;height:3rem;background-position:0 0}
+.btn-prev:active:before{background-color:rgba(0, 0, 0, .2)}
+.btn-close{width:3.2rem;height:3.2rem;border-radius:0}
+.btn-close:before{position:relative;top:-0.2rem;left:-0.3rem;width:3rem;height:3rem;background-position:-3rem 0}
+.btn-close:active:before{background-color:rgba(0, 0, 0, .2)}
+[class^="lyr-cntr"]{display:inline-block;width:4.8rem;height:2.8rem;background:transparent;text-align:center}
+[class^="lyr-cntr"]:before{content:'';display:inline-block;position:relative;top:0;left:-0.1rem;width:4rem;height:0.4rem;margin-top:1.2rem;border-radius:0.2rem}
+.lyr-cntr-ty1:before{background:rgba(255, 255, 255, .9)}
+.lyr-cntr-ty2:before{background:#ddd}
+.btn-tooltip{position:relative;height:2rem;padding-right:2rem;border-radius:0;background:transparent}
+.btn-tooltip:after{position:absolute;top:0;right:0;width:2rem;height:2rem;background-position:0 -3rem}
+.btn-tooltip.be-txt{padding-right:2.8rem}
+.btn-initialize{width:2rem;height:2rem;background:transparent}
+.btn-initialize:before{position:relative;top:0;left:0;width:100%;height:100%;background-position:-5.8rem -3.1rem}
+.btn-initialize:active{border-radius:0;background-color:rgba(0, 0, 0, .2)}
+.btn-filter{position:relative;width:7.8rem;height:3.2rem;border:0.1rem solid #ccc;border-radius:1.6rem;background:transparent;line-height:3.2rem;font-size:1.4rem;color:#111}
+.btn-filter .txt{padding-left:2rem}
+.btn-filter:before{content:'';display:block;position:absolute;top:50%;left:1.6rem;width:1.6rem;height:1.6rem;margin-right:0.6rem;background:url(/igtpay/ap/res/images/common/set.png) -9rem -18rem no-repeat;background-size:30rem auto;transform:translateY(-50%)}
+.btn-filter:active{background-color:rgba(0, 0, 0, .2)}
+.btn-elimination{width:2.4rem;height:2.4rem;border-radius:0;background:url(/igtpay/ap/res/images/common/set.png) -14.7rem -17.7rem no-repeat;background-size:30rem auto}
+.btn-elimination:active{background-color:rgba(0, 0, 0, .2)}
+
+.btn-my{position:absolute;top:0;right:0;z-index:36;width:7.2rem;height:5.2rem;border-radius:0;background: url(/igtpay/ap/res/images/common/set.png) -3.0rem -27.1rem no-repeat;background-size:30rem auto;line-height:4.0rem;font-family:'SpoqaHanSansNeo-Bold';font-size:1.6rem;text-align-last:left}
+.btn-my span{position:absolute;top:-1.1%;right:9.8%;width:3.8rem;height:3.8rem;border-radius:10rem;background:linear-gradient(#4d97d7, #1372c6);text-align-last: center;box-shadow:0 0.3rem 0.6rem rgba(0, 0, 0, .2)}
+.btn-my span.txt{color:#fff}
+.btn-my.on span{position:absolute;top:-1.1%;right:9.8%;width:3.8rem;height:3.8rem;border-radius:10rem;background:linear-gradient(#b3e1ff, #52bcfe); text-align-last: center;box-shadow:0 0.ffrrr 0.6rem rgba(0, 0, 0, .2)}
+.btn-my.on span.txt{color:#fff}
+.btn-my:active:after{content:'';display:inline-block;position:absolute;top:-1.1%;right:9.8%;width:3.8rem;height:3.8rem;border-radius:10rem;background:rgba(0, 0, 0, .2)}
+
+.btn-area, .p-btn-area{display:flex;height:auto;border-radius:0}
+.btn-area [class^="btn"], .p-btn-area [class^="p-btn"]{width:100%}
+.btn-area > a, .btn-area > button, .p-btn-area > a, .p-btn-area > button{flex:1}
+.btn-area > a + a, .btn-area > button + button, .btn-area > a + button, .btn-area > button + a{margin-left:1.2rem}
+
+.p-btn-area > [class^="p-btn"]:first-child{border-bottom-right-radius:0}
+.p-btn-area > [class^="p-btn"] + [class^="p-btn"]{border-radius:0}
+.p-btn-area > [class^="p-btn"]:last-child{border-bottom-right-radius:1.6rem}
+
+/* ----- form element ----- */
+.wrap-form .form-box + .form-box{margin-top:3rem}
+.form-box .tit{position:relative;padding-bottom:2rem;line-height:1.8rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.5rem;color:#111;text-align:left}
+.form-box .tit .btn-tooltip{position:absolute;top:0;margin-left:0.8rem}
+
+.wrap-form .form-box2 + .form-box2{margin-top:5rem}
+.bottom-sheet .wrap-form .form-box2 + .form-box2{margin-top:3rem}
+.form-box2{position:relative}
+.form-box2 .tit{position:relative;padding-bottom:1rem;line-height:1.8rem;font-family:'SpoqaHanSansNeo-Bold';font-size:1.6rem;color:#111;text-align:left}
+
+.wrap-form-secur .form-box .tit{padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.8rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.5rem;color:#111;text-align:left;letter-spacing:-0.03rem}
+.wrap-form-secur .form-box .con{padding-top:0.5rem;padding-bottom:0.5rem}
+
+.inp-box{position:relative}
+.inp-box .inp{display:inline-block;width:100%;padding-bottom:0.9rem;border-bottom:0.1rem solid #ccc;box-sizing:border-box}
+.inp-box.be-del .inp{padding-right:3rem}
+.inp-box.focus .inp{border-bottom-color:#111}
+.inp-box.error .inp{border-bottom-color:#f74141}
+.inp-box .inp input[type="text"], .inp-box .inp input[type="password"], .inp-box .inp input[type="tel"], .inp-box .inp input[type="number"]{width:100%;height:2.6rem;padding:0;border:0;background-color:#fff;line-height:2.6rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.8rem;color:#000;outline:0}
+.inp-box .btn-delete{display:none;position:absolute;top:0.4rem;right:0;width:2rem;height:2rem;background:transparent;line-height:2rem}
+.inp-box .btn-delete:before{content:'';display:inline-block;position:relative;top:-1.3rem;top:-0.1rem;width:100%;height:100%;background:url(/igtpay/ap/res/images/common/btn_dele.png) no-repeat 0 0;background-size:2rem auto;background-position:0 0}
+
+.inp-birth{height:3.6rem;padding:0 2rem 0.9rem;border-bottom:0.1rem solid #ccc;box-sizing:border-box}
+.inp-birth.focus{border-bottom-color:#111}
+.inp-birth:after{content:'';display:block;clear:both}
+.inp-birth > span{display:inline-block;float:left}
+.inp-birth .entry-box{width:2rem;height:2.6rem;padding-right:0.4rem;box-sizing:border-box}
+.inp-birth .entry-box input{width:100%;height:100%;padding:0;border:0;background:transparent;line-height:2.6rem;font-size:1.8rem;color:#111}
+.inp-birth .blank-box{position:relative;top:0.8rem;width:1rem;height:1rem;border-radius:50%;background:#111}
+.inp-birth .blank-box + .blank-box{margin-left:0.4rem}
+
+.inp-regist-num{display:block;width:100%;height:3.6rem;padding:0 2.2rem 0.9rem;border-bottom:0.1rem solid #ccc;background:transparent;box-sizing:border-box}
+.inp-regist-num.focus{border-bottom-color:#111}
+.inp-regist-num.error{border-bottom-color:#f74141}
+.inp-regist-num:after{content:'';display:block;clear:both}
+.inp-regist-num > span{display:inline-block;float:left;width:1rem;height:1rem;border-radius:50%;background:#bbb}
+.inp-regist-num > span.on{background:#111}
+.inp-regist-num > span + span{margin-left:0.4rem}
+
+.inp-pair{position:relative}
+.inp-pair:after{content:'';display:block;clear:both}
+.inp-pair .front{float:left;width:50%;padding-right:1rem;box-sizing:border-box}
+.inp-pair .coupler{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:2rem;height:2rem;line-height:2rem;font-size:1.8rem;color:#bbb;text-align:center}
+.inp-pair .rear{float:left;width:50%;padding-left:1rem;box-sizing:border-box}
+
+/* 날짜선택 */
+.inp-date{position:relative;padding-right:3rem;border-bottom:0.1rem solid #ccc}
+.inp-date .inp{width:100%;padding-right:0;padding-left:0;border:0;font-size:1.8rem}
+.inp-date .inp:focus{border:0}
+.inp-date .btn-calander{position:absolute;top:50%;right:0;width:2rem;height:2rem;border-radius:0;background-color:transparent;background:url(/igtpay/ap/res/images/common/set.png) -12rem -18rem no-repeat;background-size:30rem auto;transform: translateY(-50%)}
+
+.inp-date2{position:relative;padding-right:4.2rem;border-radius:0.4rem;border:0.1rem solid #ccc}
+.inp-date2 .inp{width:100%;padding-right:0;padding-left:1.5rem;border-radius:0.4rem;border:0;font-size:1.5rem}
+.inp-date2 .inp:focus{border:0}
+.inp-date2 .btn-calander{position:absolute;top:50%;right:0;width:4.2rem;height:3.6rem;border-radius:0;background-color:transparent;transform:translateY(-50%);text-align:center}
+.inp-date2 .btn-calander:before{content:'';display:inline-block;position:relative;top:-0.2rem;right:-0.2rem;width:2.4rem;height:2.4rem;background:url(/igtpay/ap/res/images/common/set.png) -11.8rem -17.8rem no-repeat;background-size:30rem auto}
+
+.auth-confirm{position:relative}
+.auth-confirm .inp-box{}
+.auth-confirm .inp-box .inp{display:inline-block;width:100%;padding-right:16.7rem;padding-bottom:0.9rem;border-bottom:0.1rem solid #ccc;box-sizing:border-box}
+.auth-confirm .inp-box .inp input[type="text"], .auth-confirm .inp-box .inp input[type="password"]{width:100%;height:2.6rem;padding:0;border:0;background-color:#fff;line-height:2.6rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.8rem;color:#000;outline:0}
+.auth-confirm .inp-box .btn-delete{display:none;position:absolute;top:-0.8rem;right:14.7rem;width:2rem;height:2rem;background:transparent}
+.auth-confirm .inp-box .btn-delete:before{content:'';display:inline-block;position:relative;top:-0.1rem;width:100%;height:100%;background:url(/igtpay/ap/res/images/common/btn_dele.png) no-repeat 0 0;background-size:2rem auto;background-position:0 0}
+.auth-confirm .inp-box.focus .btn-delete{display:inline-block}
+.auth-confirm .time{display:inline-block;position:absolute;top:0;right:8rem;width:4.7rem;height:3.2rem;padding-right:0.5rem;line-height:3.2rem;font-size:1.4rem;color:#f74141;box-sizing:border-box}
+.auth-confirm .auth-confirm-btn{display:block;position:absolute;bottom:0.5rem;right:0;width:8rem;border-radius:0.4rem;background-color:#52a7f1;line-height:3.2rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.4rem;color:#fff;text-align:center;text-decoration:none}
+.auth-confirm .auth-confirm-btn:active{background-color:#3c73db}
+
+.con-field{display:block;height:4.4rem;padding-top:0.7rem;box-sizing:border-box}
+.con-field:after{content:'';display:block;clear:both}
+.con-field .inp-phone-number{float:left;width:8rem;height:100%;margin-right:1rem;border-bottom:0.1rem solid #ccc;box-sizing:border-box}
+.con-field .inp-phone-number .inp-box{width:100%}
+.con-field .inp-phone-number .el-combobox{display:inline-block;text-align:left}
+.con-field .inp-box{float:left;position:relative;width:calc(100% - 9rem);height:100%;border-bottom:0.1rem solid #ccc;box-sizing:border-box}
+.con-field .inp-box .inp{display:inline-block;width:100%;padding-bottom:0.6rem;border-bottom:0;box-sizing:border-box}
+.con-field .inp-phone-number .el-combobox .combobox input[type="text"].combo{display:inline-block;width:8rem;height:2.2rem;padding:0;border:0;line-height:2.2rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111;text-align:left;outline:0}
+
+.account-selection .btn-fnc{display:inline-block;position:relative;height:2.4rem;padding-right:2.5rem;padding-left:3rem;border-radius:0;background-color:#fff;line-height:2.4rem;text-align:left}
+.account-selection .btn-fnc:after{content:'';display:inline-block;position:absolute;top:50%;right:0;width:2rem;height:2rem;margin-left:auto;background:url(/igtpay/ap/res/images/common/set.png) no-repeat;background-size:30rem auto;background-position:-3rem -18rem;transform:translateY(-50%)}
+.account-selection .btn-fnc .img-fnc{position:absolute;top:50%;left:0;width:2.4rem;height:2.4rem;line-height:0;transform:translateY(-50%)}
+.account-selection .btn-fnc .name-fnc{display:inline-block;overflow:hidden;font-family:'SpoqaHanSansNeo-Regular';font-size:1.8rem;color:#111;white-space:nowrap;text-overflow:ellipsis}
+.account-selection.on .btn-fnc:after{background-position-x:-6rem}
+.inp-account{display:flex;height:4.4rem}
+.inp-account .account-selection{width:calc(43.75% - 1rem);height:4.4rem;margin-right:1rem;border-bottom:0.1rem solid #ccc;box-sizing:border-box}
+.inp-account .account-selection .btn-fnc{width:100%;height:100%;line-height:4.3rem}
+.inp-account .account-selection .btn-fnc .name-fnc{width:100%}
+.inp-account .inp-box{width:56.25%;height:4.4rem}
+.inp-account .inp-box .inp{height:100%;padding-bottom:0}
+.inp-account .inp-box .inp input[type="text"], .inp-account .inp-box .inp input[type="password"], .inp-account .inp-box .inp input[type="tel"]{height:100%;line-height:4.3rem}
+.inp-account .inp-box .btn-delete{top:1.5rem}
+
+.popup-me-request .inp-phone-number{}
+.popup-me-request .inp-phone-number .el-combobox .combobox{width:8rem;padding-right:0}
+
+.inp-card-num{position:relative;border-bottom:0.1rem solid #ccc}
+.inp-card-num:after{content:'';display:block;clear:both}
+.inp-card-num > div{float:left;position:relative;width:6.0rem;padding-right:1rem;padding-left:1rem;box-sizing:border-box}
+.inp-card-num .first{padding-left:0}
+.inp-card-num .second, .inp-card-num .third{width:8.5rem;text-align:center}
+.inp-card-num .rear{padding-right:0}
+.inp-card-num .inp-box .inp{border-bottom:0}
+.inp-card-num .inp-box.be-del .inp{padding-right:0}
+.inp-card-num.focus{border-bottom-color:#111}
+.inp-card-num.error{border-bottom-color:#f74141}
+.inp-card-num .inp-box.focus .inp{border-bottom-color:transparent}
+.inp-card-num .inp-box.error .inp{border-bottom-color:transparent}
+.inp-card-num input[type="tel"], input[type="password"]{border:0}
+.inp-card-num input[type="tel"]{width:100%;height:2.6rem;padding:0;border:0;background-color:#fff;line-height:2.6rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.8rem;color:#000;outline:0}
+.inp-card-num .inp-box input[type="password"]{width:100%;height:2.6rem;padding-left:0.4rem;border:0;background-color:#fff;line-height:2.6rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.8rem;color:#000;outline:0}
+.inp-card-num [class^="entry-num"]{display:block;width:100%;height:2.6rem;padding-bottom:0.9rem;background:transparent;box-sizing:border-box}
+.inp-card-num [class^="entry-num"] > span{display:inline-block;position:relative;top:0.23rem;width:1rem;height:1rem;border-radius:50%;background:#bbb}
+.inp-card-num [class^="entry-num"] > span.on{background:#111}
+.inp-card-num [class^="entry-num"] > span + span{margin-left:0.2rem}
+.inp-card-num .coupler{display:inline-block;position:absolute;top:1.4rem;right:-1rem;z-index:1;width:2rem;height:2rem;line-height:2rem;font-size:1.8rem;color:#bbb;text-align:center;transform:translateY(-50%)}
+
+button[class^="card-inf"]{display:block;width:100%;height:3.6rem;padding-bottom:0.9rem;border-bottom:0.1rem solid #ccc;background:transparent;box-sizing:border-box}
+button[class^="card-inf"].focus{border-bottom-color:#111}
+button[class^="card-inf"].error{border-bottom-color:#f74141}
+button[class^="card-inf"]:after{content:'';display:block;clear:both}
+button[class^="card-inf"] > span{display:inline-block;float:left;position:relative;top:0.4rem;width:1rem;height:1rem;border-radius:50%;background:#bbb}
+button[class^="card-inf"] > span.on{background:#111}
+button[class^="card-inf"] > span + span{margin-left:0.4rem}
+
+/* input:radio/check */
+.inp-rdo, [class^="inp-chk"]{display:inline-block;position:relative;min-height:2rem}
+.inp-rdo input[type="radio"], [class^="inp-chk"] input[type="checkbox"]{position:absolute;top:0.3rem;left:0;z-index:1;width:2rem;height:2rem;opacity:0}
+.inp-rdo label, [class^="inp-chk"] label{display:inline-block;line-height:1.8rem;font-size:1.4rem;letter-spacing:-0.028em}
+.inp-rdo input:checked + label, [class^="inp-chk"] input:checked + label{color:#111}
+.inp-rdo label:before, [class^="inp-chk"] label:before{position:relative;top:0.4rem;width:2rem;height:2rem;margin-right:1rem}
+
+.inp-rdo label:before{content:'';display:inline-block;border:0.1rem solid #aaa;border-radius:50%;background:#fff;box-sizing:border-box}
+.inp-rdo input:checked + label:before{border-width:0.5rem;border-color:#2b64ce}
+.inp-rdo input:disabled + label:before{border-color:#aaa;background:#ddd}
+
+.inp-chk label:before{background-position:0 -6rem}
+.inp-chk input:checked + label:before{background-position:-3rem -6rem}
+.inp-chk input:disabled + label:before{background-position:-6rem -6rem}
+
+.inp-chk-ty2 label{font-size:1.3rem;letter-spacing:-0.026em}
+.inp-rdo input:checked + label, [class^="inp-chk"] input:checked + label{color:#111}
+.inp-chk-ty2 label:before{top:0.6rem;background-position:0.5rem -11.5rem}
+.inp-chk-ty2 input:checked + label:before{background-position:-2.5rem -11.5rem}
+.inp-chk-ty2.round label{position:relative;padding-left:3rem;font-size:1.5rem;letter-spacing:-0.028em}
+.inp-chk-ty2.round label:before{position:absolute;top:0.1rem;left:0;background-position:0 -9rem}
+.inp-chk-ty2.round input:checked + label:before{background-position:-3rem -9rem}
+
+[class^="inp-chk"].single{display:inline-block;width:100%;height:100%}
+[class^="inp-chk"].single .gesture{display:inline-block;width:2rem;height:2rem;background:url(/igtpay/ap/res/images/common/set.png) no-repeat;background-size:30rem auto}
+[class^="inp-chk"].round.single .gesture{background-position:0 -9rem}
+[class^="inp-chk"].round.single input:checked + .gesture{background-position:-3rem -9rem}
+
+.inp-btns{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;width:calc(100% + 0.4rem);margin-top:-0.4rem;margin-left:-0.4rem}
+.inp-btns.n2 [class^="inp-btn"]{flex-basis:50%}
+.inp-btns.n3 [class^="inp-btn"]{flex-basis:33.3%}
+.inp-btns.n4 [class^="inp-btn"]{flex-basis:25%}
+
+.inp-btn{display:inline-block;position:relative;height:4rem;margin-top:0.4rem;padding-left:0.4rem;box-sizing:border-box}
+.inp-btn input{position:absolute;top:0;left:0;width:0.5rem;height:0.5rem;opacity:0}
+.inp-btn label{display:inline-block;width:100%;height:100%;border-radius:0.6rem;border:0.1rem solid #d8d8d8;background:#fff;line-height:4rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#666;text-align:center;box-sizing:border-box}
+.inp-btn input[type="radio"]:checked + label{border-color:#2c8dd9;background-color:#eff5fe;color:#2c8dd9}
+
+.inp-btn2{display:inline-block;position:relative;height:4rem;padding-left:0.4rem;box-sizing:border-box}
+.inp-btn2 input{position:absolute;top:0;left:0;width:0.5rem;height:0.5rem;opacity:0}
+.inp-btn2 label{display:inline-block;width:100%;height:100%;border-radius:0.6rem;border:0.1rem solid #f5f5f5;background:#f5f5f5;line-height:4rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#555;text-align:center;box-sizing:border-box}
+.inp-btn2 input[type="radio"]:checked + label{border-color:#2b64ce;background-color:#fff;color:#1748a5}
+
+.inp-bookmark{display:inline-block;width:2.4rem;height:2.4rem}
+.inp-bookmark input{display:inline-block;width:100%;height:100%;background:url(/igtpay/ap/res/images/common/set.png) -6rem -9rem no-repeat;background-size:30rem auto;vertical-align:top}
+.inp-bookmark input:checked{background-position-x:-9rem}
+
+/* combobox */
+.el-combobox{display:inline-block;text-align:left}
+.combobox{display:inline-block;position:relative;height:2.2rem;padding-right:3rem}
+input[type="text"].combo{display:inline-block;width:auto;height:2.2rem;padding:0;border:0;line-height:2.2rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111;text-align:right;outline:0}
+.combo-btn{display:inline-block;position:absolute;top:0.1rem;right:0;width:2rem;height:2rem;background:transparent}
+.combo-btn:after{content:'';display:inline-block;position:absolute;right:-2%;width:2rem;height:2rem;margin-left:auto;background:url(/igtpay/ap/res/images/common/set.png) no-repeat;background-size:30rem auto;background-position:-3.3rem -17.7rem}
+
+.el-combobox.ty2 .combobox{height:4.4rem;padding-right:4.5rem;padding-left:1.5rem;border-radius:0.4rem;border:0.1rem solid #ddd;box-sizing:border-box}
+.el-combobox.ty2 input[type="text"].combo{display:inline-block;width:auto;height:4.1rem;padding:0;border:0;line-height:4.1rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111;text-align:left;outline:0}
+.el-combobox.ty2 .combo-btn{display:inline-block;position:absolute;top:50%;right:0;width:2rem;height:2rem;background:transparent;transform:translateY(-50%)}
+.el-combobox.ty2 .combo-btn:after{content:'';display:inline-block;position:absolute;top:0;right:1.5rem;width:2rem;height:2rem;margin-left:auto;background:url(/igtpay/ap/res/images/common/set.png) no-repeat;background-size:30rem auto;background-position:-3rem -18rem}
+
+.card-selection{border-style:solid;border-width:0.1rem 0;border-color:#555 transparent #eee}
+.el-combobox.card-combo{display:block}
+.card-combo .combobox{display:block;min-height:6.8rem;padding:1.3rem 3.5rem 1.3rem 0;box-sizing:border-box}
+.card-combo .combo-btn{top:50%;right:1rem;margin-top:-1rem}
+.card-combo .combo .img{position:absolute;top:50%;left:0;width:7.6rem;height:4.8rem;margin-top:-2.4rem;border-radius:0.4rem;box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .3)}
+.card-combo .combo .img img{width:100%}
+.card-combo .combo .img + .inf{padding-left:8.6rem}
+.card-combo .combo .item{line-height:1.9rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111;letter-spacing:-0.03rem}
+.card-combo .combo .num{line-height:1.7rem;font-size:1.3rem;color:#999;letter-spacing:0}
+.card-combo .combo .item + .num{margin-top:0.4rem}
+
+.combo-list{display:none;line-height:2.2rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.5rem;letter-spacing:-0.03em;color:#555}
+.combo-list .in-wrap{display:flex;flex-direction:column;position:fixed;left:0;z-index:51;width:100%;max-height:calc(100vh - 6.3rem);border-top-left-radius:2.8rem;background:#fff}
+.opt-head{position:relative;flex-basis:7.2rem;padding:2.8rem 4.5rem 0;box-sizing:border-box}
+.opt-head .lyr-cntr-ty2{position:absolute;top:0;left:50%;margin-left:-2.4rem}
+.opt-close{display:inline-block;position:absolute;top:3.8rem;right:1.2rem;width:3.2rem;height:3.2rem}
+.opt-close:before{content:'';display:inline-block;position:relative;top:-0.2rem;left:0;width:100%;height:100%;background:url(/igtpay/ap/res/images/common/set.png) no-repeat 0 0;background-size:30rem auto;background-position:-2.9rem 0.2rem}
+.opt-title{padding:1.3rem 0}
+.opt-title > strong{display:block;line-height:2.6rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.8rem;letter-spacing:-0.036em;color:#111;text-align:center}
+.opt-contents{overflow-x:hidden;overflow-y:auto;height:calc(100% - 7.2rem);padding:2rem 2rem 3rem;background:#fff;box-sizing:border-box}
+.opt-list{}
+.opt{display:block;position:relative;padding:1.3rem 3.5rem 1.3rem 0;border-top:0.1rem solid #eee}
+.opt:first-child{border-top:0}
+.opt.select{font-family:'SpoqaHanSansNeo-Medium';color:#2b64ce}
+.opt.select:after{content:'';display:inline-block;position:absolute;top:50%;right:0.8rem;width:2rem;height:2rem;margin-top:-1rem;background:url(/igtpay/ap/res/images/common/set.png) no-repeat -6rem -12rem;background-size:30rem auto}
+.combo-list .dimmed{z-index:50}
+
+.el-combobox.ty2.wid-full, .el-combobox.ty2.wid-full .combobox, .el-combobox.ty2.wid-full input[type="text"].combo{width:100%}
+
+/* 입력안내 */
+.form-notice{margin-top:1rem;font-size:1.3rem;color:#999}
+
+/* 폼입력 유효성 메시지 */
+.form-msg{margin-top:1rem;line-height:1.7rem;font-size:1.3rem;letter-spacing:-0.02em}
+.form-msg .error{color:#f74141}/* error message */
+
+/* 기간조회(용례 : MY > 이용 내역 관리 > 필터선택) */
+.period-condition .chk-unit{padding-top:1.6rem}
+.period-month .form-notice{margin-bottom:0.4rem}
+
+/* list */
+.lst > li + li{margin-top:0.84rem}
+.lst > li .title {margin-bottom:1rem;font-family:'SpoqaHanSansNeo-Bold';font-size:1.5rem}
+
+.lst.arrow > li{border-bottom:0.1rem solid #eee;line-height:2.2rem;color:#111;letter-spacing:-0.03rem}
+.lst.arrow > li + li{margin-top:0}
+.lst.arrow > li > a{display:block;position:relative;padding:1.4rem 2rem 1.5rem 0}
+.lst.arrow > li > a:after{content:'';display:inline-block;position:absolute;right:-1rem;width:2rem;height:2rem;margin-left:auto;background:url(/igtpay/ap/res/images/common/set.png) 0 -17.4rem no-repeat; background-size:30rem auto}
+.data-lst-top{margin-bottom:1rem;line-height:2.3rem;font-family:'SpoqaHanSansNeo-Bold';font-size:1.6rem;color:#111;letter-spacing:-0.032rem}
+.data-lst{border-top:0.1rem solid #555}
+.data-lst > li{position:relative;min-height:10.8rem;padding-top:2rem;padding-bottom:2rem;border-bottom:0.1rem solid #eee;box-sizing:border-box}
+.data-lst > li > a{display:block}
+.data-lst.be-more > li{min-height:auto;padding-top:0;padding-bottom:0}
+.data-lst.be-more > li > a{min-height:10.8rem;padding-top:2rem;padding-bottom:2rem;box-sizing:border-box}
+.data-lst.be-more > li > a:after{content:'';display:inline-block;position:absolute;bottom:2rem;right:0.8rem;width:1.6rem;height:1.6rem;margin-top:-0.9rem;background:url(/igtpay/ap/res/images/common/ico_list_more.png) 0 0 no-repeat;background-size:cover}
+.data-lst.be-more > li.not-more > a:after{display:none}
+.data-lst .img{position:absolute;top:50%;left:0;width:9.5rem;height:6rem;margin-top:-3rem;border-radius:0.4rem;box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, .3)}
+.data-lst .img img{width:100%}
+.data-lst .img + .inf{padding-left:11.5rem}
+.data-lst .inf .box-lab{margin-bottom:0.4rem}
+.data-lst .inf .box-lab:after{content:'';display:block;clear:both}
+.data-lst .inf .box-lab .lab{float:left}
+.data-lst .inf .box-lab .lab + .lab{margin-left:0.4rem}
+.data-lst .item{line-height:2.2rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111;letter-spacing:-0.03rem}
+.data-lst .num{line-height:1.8rem;font-size:1.3rem;color:#999;letter-spacing:0}
+.data-lst .item + .num{margin-top:0.4rem}
+.data-lst.be-chk > li{padding-right:3rem}
+.data-lst.be-chk .box-chk{position:absolute;top:50%;right:0;width:2rem;height:2rem;margin-top:-1rem}
+.data-lst.be-chk.be-more > li{padding-right:0}
+.data-lst.be-chk.be-more > li > a{padding-right:3rem}
+
+.data-lst2{border-top:0.1rem solid #555}
+.data-lst2 ul > li{padding:1.4rem 0;border-bottom:0.1rem solid #eee}
+.data-lst2 ul > li.is-cancel .inf-title, .data-lst2 ul > li.is-cancel .data-lst2 .price{color:#999}
+.data-lst2 .infs{display:inline-block}
+.data-lst2 .infs .inf-title{font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111}
+.data-lst2 .infs .inf-date .time{padding-left:1.6rem}
+.data-lst2 .infs .inf-date, .data-lst2 .infs .inf-type{display:flex;align-items:center;margin-top:0.2rem;font-size:1.3rem;color:#999}
+.data-lst2 .infs .inf-type .txt{display:block;position:relative}
+.data-lst2 .infs .inf-type .txt:not(:last-of-type){margin-right:0.5rem;padding-right:0.5rem}
+.data-lst2 .infs .inf-type .txt:not(:last-of-type):after{content:'';display:block;position:absolute;top:50%;right:0;width:0.1rem;height:1.2rem;background-color:#bbb;transform:translateY(-50%)}
+.data-lst2 .price{float:right;font-family:'SpoqaHanSansNeo-Bold';color:#111}
+.data-lst2 .price .num{font-size:1.8rem}
+.data-lst2 .price .txt{font-size:1.5rem}
+.data-lst2 .is-cancel .price{color:#999}
+.data-lst2 .list-empty{padding-top:2.8rem;padding-bottom:2.8rem;border-bottom:0.1rem solid #eee;line-height:2.4rem;font-size:1.6rem;text-align:center;letter-spacing: -0.032em}
+.box-button.more{margin-top:3rem}
+
+.data-lst3.section{padding:3rem 2rem}
+.data-lst3 .section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;padding-bottom:1rem;border-bottom:0.1rem solid #555}
+.data-lst3 .section-header .tit > .txt, .data-lst3 .section-header .tit > .emp{margin-right:1rem;font-family:'SpoqaHanSansNeo-Bold';font-size:1.6rem}
+.data-lst3 .wrap-select-list{padding-bottom:2rem;border-bottom:0.1rem solid #eee}
+.data-lst3 .select-list{display:flex;position:relative}
+.data-lst3 .select-list:not(:first-child){margin-top:2rem;padding-top:2rem;border-top:0.1rem solid #eee}
+.data-lst3 .select-list .box-chk{position:absolute;top:1rem;right:0}
+.data-lst3 .select-list [class^="img-fnc"]{margin-right:1rem}
+.data-lst3 .select-list .wrap-item{width:calc(100% - 5.4rem)}
+.data-lst3 .select-list .wrap-lab{margin-bottom:0.7rem}
+.data-lst3 .select-list .name{font-size:1.5rem}
+.data-lst3 .select-list .account-info{font-size:1.3rem;color:#999}
+.data-lst3 .select-list .name, .data-lst3 .select-list .balance{font-family:'SpoqaHanSansNeo-Medium'}
+.data-lst3 .select-list .balance{font-size:1.8rem;color:#555;text-align:right}
+.data-lst3 .select-list .check-box{position:absolute;right:-1rem}
+.data-lst3 .select-list-empty{padding:1rem;font-size:1.6rem;text-align:center}
+
+/* tab */
+.tab{width:100%;background:#fff;box-sizing:border-box}
+.tab:after{content:'';display:block;clear:both}
+.tab-menu{display:inline-block;font-size:1.6rem;color:#555;letter-spacing:-0.032rem}
+.tab-menu.crnt{position:relative;font-family:'SpoqaHanSansNeo-Bold';color:#111}
+.tab-menu.crnt:before{content:'';display:inline-block;position:absolute;bottom:0;left:0;width:100%;height:0.3rem;background:#111}
+.tab-menu:hover{text-decoration:none}
+.tab-menu + .tab-menu{margin-left:1rem}
+.tab-menu span{display:inline-block;min-width:6.4rem;padding:1.5rem  0 1.6rem;line-height:2rem;text-align:center}
+.tab-conts .tab-cont{display:none}
+.tab-conts .tab-cont.crnt{display:block}
+.tab-container.ty-flex{display:flex;position:relative;flex-direction:column;height:100%}
+.tab-container.ty-flex .tab{flex-basis:5.2rem;padding:0 2rem 0.3rem;border-bottom:0.1rem solid #eee}
+.tab-container.ty-flex .tab-menu{float:left;height:100%;line-height:4.8rem;font-size:1.6rem;color:#555;letter-spacing:-0.032rem}
+.tab-container.ty-flex .tab-menu.crnt{position:relative;font-family:'SpoqaHanSansNeo-Bold';color:#111}
+.tab-container.ty-flex .tab-menu.crnt:before{content:'';display:inline-block;position:absolute;bottom:-0.3rem;left:0;width:100%;height:0.3rem;background:#111}
+.tab-container.ty-flex .tab-conts{overflow-x:hidden;overflow-y:auto;padding:0 2rem 2rem;box-sizing:border-box}
+.tab-container.ty-flex .tab-cont{position:relative}
+
+.tab.ty-button{display:flex;justify-content:space-between;width:100%;background:transparent;box-sizing:border-box}
+.tab.ty-button:after{display:none}
+.ty-button .tab-menu{display:inline-flex;justify-content:center;align-items:center;width:100%;padding:0.9rem 0.4rem; border-radius:0.6rem;border:0.1rem solid #ccc;background:#fff;line-height:2rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.5rem;color:#111;letter-spacing:-0.03rem}
+.ty-button .tab-menu.crnt{border-color:#2c8dd9;background:#eff5fe;font-family:'SpoqaHanSansNeo-Medium';color:#2b64ce}
+.ty-button .tab-menu.crnt:before{display:none}
+.ty-button .tab-menu:not(:first-child){margin-top:0;margin-left:0.4rem}
+.ty-button .tab-menu span{padding:0;line-height:2rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.5rem;color:#111;letter-spacing:-0.03rem}
+.ty-button .tab-menu.crnt span{font-family:'SpoqaHanSansNeo-Medium';color:#2b64ce}
+.ty-button + .tab-conts{margin-top:2rem}
+
+/* tooltip */
+.tooltip-wrap{}
+.tooltip-wrap .btn-tooltip{position:relative;font-size:1.3rem;color:#999;text-align:left}
+.tooltip-txt{color:#999}
+.tooltip-msg{display:none;position:absolute;top:3rem;left:0;z-index:1;width:calc(100% - 4rem);max-width:32rem;padding:1.5rem;border-radius:0.8rem;border:0.1rem solid #ccc;background-color:#fff}
+.tooltip-wrap.abs-r .tooltip-msg{left:initial;right:0}
+.tooltip-msg.on{display:block}
+.tooltip-msg-header{position:relative;line-height:2rem;font-family:'SpoqaHanSansNeo-Bold';font-size:1.5rem;color:#111;letter-spacing:-0.03em}
+.tooltip-close{display:inline-block;position:absolute;top:-0.7rem;right:-0.7rem;width:2.8rem;height:2.8rem;background:transparent}
+.tooltip-close:before{width:100%;height:100%;background-position:-3.1rem -0.1rem}
+.tooltip-close:active:before{background-color:rgba(0, 0, 0, .2)}
+.tooltip-msg-header .title{padding-right:4rem;padding-bottom:1.5rem}
+.tooltip-msg-txt{line-height:1.7rem;font-size:1.3rem;color:#555;letter-spacing:-0.026em}
+.tooltip-msg-txt .txt:not(:first-child){margin-top:1.2rem}
+
+/* box */
+.box-desc{line-height:3rem;font-family:'SpoqaHanSansNeo-Medium';font-size:2.2rem;color:#111;letter-spacing:-0.066rem;text-align:center}
+.box-desc2{line-height:2.7rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.8rem;color:#111;letter-spacing:-0.036rem;text-align:center}
+
+.box-msg{padding-top:2.8rem}
+.box-msg .in-box{position:relative;padding-top:6.5rem}
+.box-msg .in-box:before{content:'';display:inline-block;position:absolute;top:0;left:0;width:4.7rem;height:4.7rem;border-radius:50%;background:url(/igtpay/ap/res/images/common/set.png) 0 -21rem no-repeat;background-size:30rem auto;box-shadow:0 0.3rem 0.6rem rgba(0, 0, 0, .2)}
+.box-msg.check .in-box:before{background-position:-6rem -21rem}
+.box-msg.drop .in-box:before{background-position:-12rem -21rem}
+.box-msg.ico-none .in-box{padding-top:0}
+.box-msg .in-box{position:relative;padding-top:6.5rem}
+.box-msg.ico-none .in-box:before{display:none}
+.box-msg .str-main{line-height:3.7rem;font-family:'SpoqaHanSansNeo-Medium';font-size:2.7rem;color:#111;letter-spacing:-0.08rem}
+.box-msg .str-sub{line-height:2.4rem;font-family:'SpoqaHanSansNeo-Light';font-size:1.6rem;color:#555;letter-spacing:-0.032rem}
+.box-msg .str-sub .emp{font-family:'SpoqaHanSansNeo-Memium';font-weight:500}
+.box-msg .str-main + .str-sub{margin-top:1.2rem}
+
+.box-msg2{padding-top:1.2rem}
+.box-msg2 .in-box{position:relative;padding-top:7.5rem}
+.box-msg2 .in-box:before{content:'';display:inline-block;position:absolute;top:0;left:50%;width:4.7rem;height:4.7rem;border-radius:50%;background:url(/igtpay/ap/res/images/common/set.png) 0 -21rem no-repeat;background-size:30rem auto;line-height:3rem;font-size:2.2rem;box-shadow:0 0.3rem 0.6rem rgba(0, 0, 0, .2);transform:translateX(-50%)}
+.box-msg2.check .in-box:before{background-position:-6rem -21rem}
+.box-msg2.ico-none .in-box{padding-top:0}
+.box-msg2 .in-box{position:relative;padding-top:7.5rem}
+.box-msg2.ico-none .in-box:before{display:none}
+.box-msg2 .str-main{line-height:3rem;font-family:'SpoqaHanSansNeo-Medium';font-size:2.2rem;color:#111;letter-spacing:-0.08rem;text-align:center}
+.box-msg2 .str-sub{line-height:2.4rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.5rem;color:#555;letter-spacing:-0.032rem;text-align:center}
+.box-msg2 .str-sub .emp{font-family:'SpoqaHanSansNeo-Memium';font-weight:500}
+.box-msg2 .str-main + .str-sub{margin-top:1rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.5rem;text-align:center}
+.box-msg2 .box-sub{margin-top:3rem;padding:1.8rem 2rem;border-radius:0.8rem;background:#f8f8f8;line-height:2.2rem;letter-spacing:-0.03em;text-align:center}
+
+.box-notice{display:flex;justify-content:center;align-items:center;width:100%;height:calc(100% - 8.2rem);padding-right:2rem;padding-left:2rem;box-sizing:border-box}
+.box-notice .in-box{position:relative;padding-top:8.6rem;text-align:center}
+.box-notice .in-box:before{content:'';display:inline-block;position:absolute;top:0;left:51%;width:4.7rem;height:4.7rem;margin-left:-3.6rem;background:url(/igtpay/ap/res/images/common/set.png) 0 -21rem no-repeat;background-size:30rem auto;border-radius:50%;box-shadow:0 0.3rem 0.6rem rgba(0, 0, 0, .2)}
+.box-notice .str-main{line-height:3rem;font-family:'SpoqaHanSansNeo-Medium';font-size:2.2rem;color:#111;letter-spacing:-0.066rem}
+.box-notice .str-sub{line-height:2.2rem;letter-spacing:-0.03rem}
+.box-notice .str-main + .str-sub{margin-top:2rem}
+.tab-container.ty-flex .tab-cont .box-notice{padding-right:0;padding-left:0}
+
+.info-card{position:relative;border-radius:1.2rem;background:#fff;box-shadow:0 0 0.8rem 0 rgba(0, 0, 0, .12)}
+.info-card:not(:first-child){margin-top:2rem}
+.info-card .box-inf{position:relative;padding:1.5rem 1.5rem 1.8rem}
+.info-card .icon{position:absolute;top:1.5rem;left:1.5rem;width:5.2rem;height:5.2rem;border-radius:1.2rem;background:#52a7f1;text-align:center}
+.info-card .icon .txt{display:inline-block;margin-top:1.2rem;line-height:1.5rem;font-family:'YonseiBold';font-size:1.2rem;color:#fff;letter-spacing:-0.096em}
+.info-card .cont{line-height:1.7rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.3rem;color:#999;letter-spacing:-0.026em}
+.info-card .cont .title{line-height:2.8rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.6rem;color:#111;letter-spacing:-0.032em}
+.info-card .cont .descr{margin-top:0.4rem}
+.info-card .box-btn{display:flex;width:100%;height:4.5rem;border-top:0.1rem solid #eee;box-sizing:border-box}
+.info-card .box-btn .btn{display:inline-flex;justify-content:center;align-items:center;width:100%;height:100%;border-radius:0 0 1.2rem 1.2rem;background:#fff;line-height:1.9rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.6rem;color:#2b64ce;letter-spacing:-0.032em;text-align:center}
+.info-card .box-btn .btn:not(:first-child){border-radius:0;border-left:0.1rem solid #eee}
+.info-card .box-btn .btn:first-child{border-radius:0 0 0 1.2rem}
+.info-card .box-btn .btn:last-child{border-radius: 0 0 1.2rem 0}
+.info-card .box-btn.only .btn{border-radius:0 0 1.2rem 1.2rem}
+.info-card .box-btn .btn:active{background-color:rgba(0, 0, 0, .2)}
+.info-card.ty2 .box-inf{padding:1.7rem 1rem}
+.info-card.ty2 .cont{line-height:2.2rem;font-family:'SpoqaHanSansNeo-Regular';font-size:1.5rem;color:#555;letter-spacing:-0.03em}
+.info-card.ty2 .cont .descr{margin-top:0;text-align:center}
+.info-card.ty2 .descr .emp{font-family:'SpoqaHanSansNeo-Medium'}
+.info-card.ty2 .box-btn{height:4.4rem}
+.info-card.ty2 .box-btn .btn{background:#52a7f1;color:#fff}
+.info-card.ty2 .box-btn .btn:active{background-color:#3c73db}
+
+.infom .tit{display:block;margin-bottom:1.2rem;line-height:1.6rem;font-family:'SpoqaHanSansNeo-Bold';font-size:1.6rem;color:#111;letter-spacing:-0.032rem}
+.infom + .infom{margin-top:2rem}
+.lyr-stu-checkcard .wrap-infom{margin-top:4.3rem}
+.lyr-stu-checkcard .btn-ty1{margin-top:1.5rem;font-family:'SpoqaHanSansNeo-Regular'}
+.lyr-stu-checkcard .bottom-sheet .sheet-contents{padding-bottom:6.6rem}
+
+.con-block + .con-block{margin-top:2rem}
+.con-block{line-height:2.2rem;font-size:1.5rem;color:#555;letter-spacing:-0.03em}
+.con-block .tit-type{display:block;padding-bottom:0.7rem;font-family:'SpoqaHanSansNeo-Medium';color:#111}
+.con-block .box-con ul > li:not(:first-child){margin-top:1rem}
+
+/* accordion */
+.toggle-anchor > a{display:block;position:relative;padding-right:3rem}
+.toggle-anchor > a:after{content:'';display:inline-block;position:absolute;top:50%;right:0;width:2rem;height:2rem;background:url(/igtpay/ap/res/images/common/set.png) -3rem -18rem no-repeat;background-size:30rem auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.accordion.crnt .toggle-anchor > a:after{background-position-x:-6rem}
+
+.toggle-contents{display:none}
+.accordion.crnt .toggle-contents{display:none}
+
+.footer-area .toggle-anchor > a:after{content:'';display:inline-block;position:absolute;top:30%;right:0;width:1rem;height:1rem;margin:0 0 0 12rem;border:solid #999;border-width:0 0.1rem 0.1rem 0;-webkit-transform:translateY(-50%) rotate(45deg);transform:translateY(-50%) rotate(45deg)}
+.footer-area .accordion.crnt .toggle-anchor > a:after{position:absolute;top:60%;right:0;-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
+
+/* data cell */
+.wrap-info-list{padding-top:1rem;padding-bottom:1rem;border-style:solid;border-width:0.1rem 0;border-color:#555 transparent #eee}
+.info-list{display:flex;justify-content:space-between;align-items:center;padding:0.8rem 0}
+.info-list .tit, .info-list .con{line-height:2.2rem;font-size:1.5rem;letter-spacing:-0.03em}
+.info-list .tit{} /* flex:1 */
+.info-list .con{font-family:'SpoqaHanSansNeo-Medium';color:#111;text-align:right} /* flex:1; */
+.info-list .con > strong{margin-right:0.4rem;font-family:'SpoqaHanSansNeo-Bold';font-size:1.8rem}
+.wrap-info-list .card-data{display:block;position:relative;min-height:7.8rem;padding:1.8rem 0;box-sizing:border-box}
+.wrap-info-list .card-data .img{position:absolute;top:50%;left:0;width:7.6rem;height:4.8rem;margin-top:-2.4rem;border-radius:0.4rem;box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .3)}
+.wrap-info-list .card-data .img img{width:100%}
+.wrap-info-list .card-data .img + .inf{padding-left:8.6rem;text-align:right}
+.wrap-info-list .card-data .item{line-height:1.9rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111;letter-spacing:-0.03rem}
+.wrap-info-list .card-data .num{line-height:1.7rem;font-size:1.3rem;color:#999;letter-spacing:0}
+.wrap-info-list .card-data .item + .num{margin-top:0.4rem}
+.wrap-info-list.ty2{padding-top:0;padding-bottom:0;border-bottom:0}
+.wrap-info-list.ty2 .info-list{min-height:4.8rem;padding:0.5rem 0;border-bottom:0.1rem solid #eee;box-sizing:border-box}
+.wrap-info-list.ty2 .info-list .tit, .wrap-info-list.ty2 .info-list .con{line-height:1.8rem}
+.wrap-info-list.ty2 .card-data + .info-list{border-top:0.1rem solid #eee}
+
+/* data cell, list 하단 notice */
+.footnote{margin-top:1rem}
+.footnote .bu-ty1 > li{line-height:1.7rem;font-size:1.3rem;color:#999;letter-spacing:-0.026em}
+.footnote .bu-ty1 > li + li{margin-top:0.8rem}
+.footnote .bu-ty1 > li:before{top:0.6rem;background:#999}
+
+/* ----- 금융로고 공통/기본 ----- */
+[class^="img-fnc"]{display:inline-block;width:3.6rem;height:3.6rem;border-radius:50%}
+[class^="img-fnc"]:before{content:'';display:inline-block;width:100%;height:100%;border-radius:50%;background-image:url(/igtpay/ap/res/images/contents/logo_bank.png);background-repeat:no-repeat;background-size:18rem auto}
+[class^="img-fnc large"]{width:4.4rem;height:4.4rem}
+[class^="img-fnc large"]:before{background-size:20.3rem auto}
+[class^="img-fnc small"]{width:2.4rem;height:2.4rem}
+[class^="img-fnc small"]:before{background-size:11rem auto}
+/* 은행 */
+.fnc020:before{background-position:-0.18rem -0.23rem}/* 우리은행 */
+.fnc002:before{background-position:-4.7rem -0.23rem}/* 산업은행 */
+.fnc003:before{background-position:-9.1rem -0.23rem}/* 기업은행 */
+.fnc004:before{background-position:-13.7rem -0.23rem}/* 국민은행 */
+.fnc011:before{background-position:-0.16rem -4.7rem}/* 농협은행 */
+.fnc023:before{background-position:-4.7rem -4.7rem}/* SC제일은행 */
+.fnc027:before{background-position:-9.2rem -4.9rem}/* 씨티은행 */
+.fnc031:before{background-position:-13.7rem -4.8rem}/* 대구은행 */
+.fnc032:before{background-position:-0.2rem -9.2rem}/* 부산은행 */
+.fnc034:before{background-position:-4.8rem -9.1rem}/* 광주은행 */
+.fnc035:before{background-position:-9.2rem -9.2rem}/* 제주은행 */
+.fnc037:before{background-position:-13.8rem -9.1rem}/* 전북은행 */
+.fnc039:before{background-position:-0.2rem -13.8rem}/* 경남은행 */
+.fnc081:before{background-position:-4.7rem -13.6rem}/* 하나은행 */
+.fnc088:before{background-position:-9rem -13.7rem}/* 신한은행 */
+.fnc089:before{background-position:-13.7rem -13.8rem}/* 케이뱅크 */
+.fnc090:before{background-position:-0.2rem -18.3rem}/* 카카오뱅크 */
+.fnc092:before{background-position:-4.7rem -18.3rem}/* 토스뱅크 */
+.fnc007:before{background-position:-9.2rem -18.3rem}/* 수협 */
+.fnc012:before{background-position:-13.7rem -18.2rem}/* 지역농축협 */
+.fnc045:before{background-position:-0.2rem -22.7rem}/* 새마을금고 */
+.fnc048:before{background-position:-4.7rem -22.8rem}/* 신협 */
+.fnc050:before{background-position:-9.2rem -22.7rem}/* 저축은행 */
+.fnc064:before{background-position:-13.8rem -22.8rem}/* 산림조합 */
+.fnc071:before{background-position:-0.11rem -27.3rem}/* 우체국 */
+
+.large.fnc020:before{background-position:0 -0.1rem}/* 우리은행 */
+.large.fnc002:before{background-position:-5.1rem -0.1rem}/* 산업은행 */
+.large.fnc003:before{background-position:-10.30rem 0}/* 기업은행 */
+.large.fnc004:before{background-position:-15.3rem -0.1rem}/* 국민은행 */
+.large.fnc011:before{background-position:-0.09rem -5.2rem}/* 농협은행 */
+.large.fnc023:before{background-position:-5.1rem -5.1rem}/* SC제일은행 */
+.large.fnc027:before{background-position:-10.2rem -5.1rem}/* 씨티은행 */
+.large.fnc031:before{background-position:-15.3rem -5.1rem}/* 대구은행 */
+.large.fnc032:before{background-position:-0.1rem -10.2rem}/* 부산은행 */
+.large.fnc034:before{background-position:-5.1rem -10.2rem}/* 광주은행 */
+.large.fnc035:before{background-position:-10.2rem -10.2rem}/* 제주은행 */
+.large.fnc037:before{background-position:-15.3rem -10.2rem}/* 전북은행 */
+.large.fnc039:before{background-position:-0.1rem -15.3rem}/* 경남은행 */
+.large.fnc081:before{background-position:-5.2rem -15.3rem}/* 하나은행 */
+.large.fnc088:before{background-position:-10.2rem -15.3rem}/* 신한은행 */
+.large.fnc089:before{background-position:-15.3rem -15.3rem}/* 케이뱅크 */
+.large.fnc090:before{background-position:-0.1rem -20.3rem}/* 카카오뱅크 */
+.large.fnc092:before{background-position:-5.1rem -20.4rem}/* 토스뱅크 */
+.large.fnc007:before{background-position:-10.2rem -20.4rem}/* 수협 */
+.large.fnc012:before{background-position:-15.3rem -20.3rem}/* 지역농축협 */
+.large.fnc045:before{background-position:-0.1rem -25.5rem}/* 새마을금고 */
+.large.fnc048:before{background-position:-5.1rem -25.4rem}/* 신협 */
+.large.fnc050:before{background-position:-10.2rem -25.4rem}/* 저축은행 */
+.large.fnc064:before{background-position:-15.3rem -25.5rem}/* 산림조합 */
+.large.fnc071:before{background-position:-0.1rem -30.5rem}/* 우체국 */
+
+.small.fnc020:before{background-position:0 0}/* 우리은행 */
+.small.fnc002:before{background-position:-2.7rem 0}/* 산업은행 */
+.small.fnc003:before{background-position:-5.4rem 0}/* 기업은행 */
+.small.fnc004:before{background-position:-8.1rem 0}/* 국민은행 */
+.small.fnc011:before{background-position:0 -2.7rem}/* 농협은행 */
+.small.fnc023:before{background-position:-2.7rem -2.7rem}/* SC제일은행 */
+.small.fnc027:before{background-position:-5.5rem -2.8rem}/* 씨티은행 */
+.small.fnc031:before{background-position:-8.2rem -2.7rem}/* 대구은행 */
+.small.fnc032:before{background-position:0 -5.4rem}/* 부산은행 */
+.small.fnc034:before{background-position:-2.8rem -5.4rem}/* 광주은행 */
+.small.fnc035:before{background-position:-5.5rem -5.5rem}/* 제주은행 */
+.small.fnc037:before{background-position:-8.2rem -5.4rem}/* 전북은행 */
+.small.fnc039:before{background-position:0 -8.2rem}/* 경남은행 */
+.small.fnc081:before{background-position:-2.7rem -8.1rem}/* 하나은행 */
+.small.fnc088:before{background-position:-5.5rem -8.2rem}/* 신한은행 */
+.small.fnc089:before{background-position:-8.2rem -8.2rem}/* 케이뱅크 */
+.small.fnc090:before{background-position:0 -10.9rem}/* 카카오뱅크 */
+.small.fnc092:before{background-position:-2.8rem -11rem}/* 토스뱅크 */
+.small.fnc007:before{background-position:-5.5rem -11rem}/* 수협 */
+.small.fnc012:before{background-position:-8.2rem -11rem}/* 지역농축협 */
+.small.fnc045:before{background-position:0 -13.8rem}/* 새마을금고 */
+.small.fnc048:before{background-position:-2.7rem -13.8rem}/* 신협 */
+.small.fnc050:before{background-position:-5.5rem -13.8rem}/* 저축은행 */
+.small.fnc064:before{background-position:-8.2rem -13.8rem}/* 산림조합 */
+.small.fnc071:before{background-position:0 -16.5rem}/* 우체국 */
+/* 증권사 */
+.fnc218:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-0.27rem -0.27rem}/* KB증권 */
+.fnc227:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-4.7rem -0.27rem}/* KTB투자증권 */
+.fnc238:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-9.2rem -0.27rem}/* 미래에셋증권 */
+.fnc240:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-13.8rem -0.27rem}/* 삼성증권 */
+.fnc243:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-0.22rem -5rem}/* 한국투자증권 */
+.fnc247:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-4.7rem -4.7rem}/* NH투자증권 */
+.fnc261:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-9.2rem -4.7rem}/* 교보증권 */
+.fnc262:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-13.7rem -4.7rem}/* 하이투자증권 */
+.fnc263:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-0.2rem -9.2rem}/* 현대차증권 */
+.fnc264:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-4.8rem -9.2rem}/* 키움증권 */
+.fnc265:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-8.9rem -9.2rem}/* 이베스트투자증권 */
+.fnc266:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-13.8rem -9.2rem}/* SK증권 */
+.fnc267:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-0.2rem -13.7rem}/* 대신증권 */
+.fnc269:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-4.7rem -13.7rem}/* 한화투자증권 */
+.fnc270:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-9.2rem -13.6rem}/* 하나금융투자 */
+.fnc278:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-13.7rem -13.8rem}/* 신한금융투자 */
+.fnc279:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-0.2rem -18.3rem}/* DB금융투자 */
+.fnc280:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-4.7rem -18.2rem}/* 유진투자증권 */
+.fnc287:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:18rem auto;background-position:-9.2rem -18.2rem}/* 메리츠증권 */
+
+.large.fnc218:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-0.1rem 0}/* KB증권 */
+.large.fnc227:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-5.1rem 0}/* KTB투자증권 */
+.large.fnc238:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-10.20rem 0}/* 미래에셋증권 */
+.large.fnc240:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-15.3rem 0}/* 삼성증권 */
+.large.fnc243:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-0.1rem -4.95rem}/* 한국투자증권 */
+.large.fnc247:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-5.1rem -5.13rem}/* NH투자증권 */
+.large.fnc261:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-10.2rem -5.2rem}/* 교보증권 */
+.large.fnc262:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-15.3rem -5.2rem}/* 하이투자증권 */
+.large.fnc263:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:0 -10.2rem}/* 현대차증권 */
+.large.fnc264:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-5.2rem -10.1rem}/* 키움증권 */
+.large.fnc265:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-10.2rem -10.2rem}/* 이베스트투자증권 */
+.large.fnc266:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-15.3rem -10.2rem}/* SK증권 */
+.large.fnc267:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-0.1rem -15.3rem}/* 대신증권 */
+.large.fnc269:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-5.2rem -15.1rem}/* 한화투자증권 */
+.large.fnc270:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-10.2rem -15.3rem}/* 하나금융투자 */
+.large.fnc278:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-15.3rem -15.1rem}/* 신한금융투자 */
+.large.fnc279:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-0.1rem -20.3rem}/* DB금융투자 */
+.large.fnc280:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-5.2rem -20.3rem}/* 유진투자증권 */
+.large.fnc287:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-10.2rem -20.2rem}/* 메리츠증권 */
+
+.small.fnc218:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:0 0}/* KB증권 */
+.small.fnc227:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-2.7rem 0}/* KTB투자증권 */
+.small.fnc238:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-5.5rem 0}/* 미래에셋증권 */
+.small.fnc240:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-8.2rem 0}/* 삼성증권 */
+.small.fnc243:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:0 -2.8rem}/* 한국투자증권 */
+.small.fnc247:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-2.8rem -2.8rem}/* NH투자증권 */
+.small.fnc261:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-5.5rem -2.7rem}/* 교보증권 */
+.small.fnc262:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-8.2rem -2.7rem}/* 하이투자증권 */
+.small.fnc263:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:0 -5.5rem}/* 현대차증권 */
+.small.fnc264:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-5.5rem -5.5rem}/* 키움증권 */
+.small.fnc265:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-8.2rem -5.5rem}/* 이베스트투자증권 */
+.small.fnc266:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:0 -5.5rem}/* SK증권 */
+.small.fnc267:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:0 -8.2rem}/* 대신증권 */
+.small.fnc269:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-2.7rem -8.2rem}/* 한화투자증권 */
+.small.fnc270:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-5.5rem -8.2rem}/* 하나금융투자 */
+.small.fnc278:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-8.2rem -8.2rem}/* 신한금융투자 */
+.small.fnc279:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:0 -10.9rem}/* DB금융투자 */
+.small.fnc280:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-2.7rem -10.9rem}/* 유진투자증권 */
+.small.fnc287:before{background-image:url(/igtpay/ap/res/images/contents/logo_brokerage.png);background-repeat:no-repeat;background-size:20.3rem auto;background-position:-5.5rem -10.9rem}/* 메리츠증권 */
+
+
+@media all and (min-width:481px) and (max-width:1024px){
+	
+}
+
+@media print{	
+	html, body{width:100%}
+}

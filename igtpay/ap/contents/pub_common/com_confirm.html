@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>회원가입안내 | </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('CMCONF'); //common confirm open
+    //WIP.popup.close('CMCONF'); //common confirm close
+});
+</script>
+</head>
+<body>
+    <!--  --------------- [공용 모달창 사용 가이드] ---------------
+        1. 가로 사이즈
+        .modal의 element의 class에 w-max를 추가 : width가 70%로 설정.
+        .modal의 element의 class에 w-max를 제거 : width가 32rem으로 설정.
+        2. 세로 사이즈 : 유동.
+        3. 버튼 : 
+         - <a>요소를 <button>으로의 교체는 class가 동일하면 사용 가능. 단, 내부의 '<span>확인</span>'와 같이 버튼명 텍스트는 <span> element에 그대로 감싸있어야 함.
+         - 버튼의 갯수는 .p-btn-area의 <div>내부에 <a>(<button>) element를 추가 또는 삭제하여 사용.
+         --------------------------------------------------------- -->
+    <!-- modal -->
+    <div class="modal cm-confirm w-max" data-lyr-id="CMCONF">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <div>
+                    텍스트 텍스트텍스트<br>
+                    텍스트 텍스트텍스트<br>텍스트 텍스트텍스트<br>텍스트 텍스트텍스트<br>텍스트 텍스트텍스트<br>텍스트 텍스트텍스트<br>텍스트텍스트 텍스트<br>
+                    텍스트.
+                </div>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn-cancel"><span>취소</span></a>
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+</body>
+</html>

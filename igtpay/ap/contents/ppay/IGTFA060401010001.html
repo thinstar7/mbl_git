@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>제휴사 목록 | 가져오기 | 전환 | 선불</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('PP20LP01'); //제휴사 목록 layer poup open
+        //WIP.popup.close('PP20LP01'); //제휴사 목록 layer poup open
+      });
+    </script>
+  </head>
+  <body>
+    <!-- layer popup -->
+    <div class="lyr-popup lyr-ppay-transform process-ppay" data-lyr-id="PP20LP01">
+      <div class="in-lyr">
+        <!-- layer popup header -->
+        <div class="lyr-header">
+          <div class="lyr-topper">
+            <a href="javascript:void(0);" class="lyr-cntr-ty1"
+              ><span class="blind"
+                >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및
+                화면 닫기)</span
+              ></a
+            >
+            <strong class="lyr-title">연세 Pay</strong>
+          </div>
+          <div class="lyr-head">
+            <h1 class="lyr-sub-title">전환</h1>
+            <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+            <a href="javascript:void(0);" class="btn-close"
+              ><span class="blind">닫기</span></a
+            >
+          </div>
+        </div>
+        <!-- //layer popup header -->
+        <!-- layer popup contents -->
+        <div class="lyr-contents">
+          <div class="my-money">
+            <div class="my-money-info">
+              <ul class="my-money-info-list-wrap">
+                <li class="my-money-info-list list-main">
+                  <p class="txt">연세머니</p>
+                  <p class="value">
+                    <span class="balance">잔액</span>
+                    <span class="num ls-ini">500,000</span
+                    ><span class="unit">머니</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-container">
+            <div class="tab sec">
+              <!-- fixed -->
+              <a href="javascript:void(0);" class="tab-menu crnt"
+                ><span>가져오기</span></a
+              >
+              <a href="javascript:void(0);" class="tab-menu"
+                ><span>내보내기</span></a
+              >
+            </div>
+            <div class="tab-conts sec">
+              <!-- 가져오기 -->
+              <div class="tab-cont crnt">
+                <div class="tip txt-small"><p class="bu-ty1 txt txt-small">연세머니로 가져올 제휴사를 선택하세요.</p></div>
+
+                <ul class="data-icon-list-wrap">
+                  <li class="data-icon-list">
+                    <a href="#" class="anchor">
+                      <div class="img-fnc" data-fnc-code="020"></div>
+                      <p class="txt">연세대 포인트</p>
+                    </a>
+                  </li>
+                  <li class="data-icon-list">
+                    <a href="#" class="anchor">
+                      <div class="img-fnc" data-fnc-code="020"></div>
+                      <p class="txt">연세대 포인트</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- //가져오기 -->
+
+              <!-- 내보내기 -->
+              <div class="tab-cont">
+                <div class="tip txt-small"><p class="bu-ty1 txt txt-small">연세머니로 가져올 제휴사를 선택하세요.</p></div>
+
+                <ul class="data-icon-list-wrap">
+                  <li class="data-icon-list">
+                    <a href="#" class="anchor">
+                      <div class="img-fnc" data-fnc-code="020"></div>
+                      <p class="txt">연세대 포인트</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- //내보내기 -->
+            </div>
+          </div>
+        </div>
+        <!-- //layer popup contents -->
+      </div>
+    </div>
+    <!-- //layer popup -->
+  </body>
+</html>

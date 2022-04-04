@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>주소찾기 | 선불</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('AU00FP04'); //popup open
+        //WIP.popup.close('AU00FP04'); //popup close
+      });
+    </script>
+  </head>
+  <body>
+    <!-- full popup -->
+    <div class="popup popup-address-finder" data-lyr-id="AU00FP04">
+      <!-- //[통합결제플랫폼] : 2022.01.28 -->
+      <div class="popup-wrap">
+        <a href="javascript:void(0);" class="popup-close"
+          ><span class="blind">닫기</span></a
+        >
+        <div class="popup-title">
+          <strong>주소 찾기</strong>
+        </div>
+        <div class="popup-contents">
+          <div class="address-finder-header">
+            <div class="tip txt-small">
+              <p class="bu-ty1 txt">
+                찾으실 주소의 도로명 또는 지번으로 검색해 주세요.
+              </p>
+            </div>
+            <ul class="address-sample-list-wrap">
+              <li class="address-sample-list">
+                <div class="name">도로명</div>
+                <div class="value emp">영동대로 101</div>
+              </li>
+              <li class="address-sample-list">
+                <div class="name">지번</div>
+                <div class="value emp">상암동</div>
+              </li>
+            </ul>
+          </div>
+          <div class="address-finder-contents">
+            <div class="section">
+              <div class="form-box2 input-wrap">
+                <div class="txt-wrap">
+                  <p class="tit">주소 찾기</p>
+                </div>
+                <div class="con">
+                  <div class="el-combobox el-combobox2">
+                    <div class="combobox">
+                      <input
+                        type="text"
+                        role="combobox"
+                        readonly="true"
+                        class="combo"
+                        aria-autocomplete="list"
+                        aria-owns="address-find"
+                        aria-haspopup="true"
+                        aria-readonly="true"
+                        aria-expanded="false"
+                        aria-activedescendant=""
+                        placeholder="도로명"
+                        title="주소찾기"
+                      />
+                      <button type="button" class="combo-btn">
+                        <span class="blind">선택 목록 열기</span>
+                      </button>
+                    </div>
+                    <div class="combo-list">
+                      <div class="in-wrap">
+                        <div class="opt-head">
+                          <a href="javascript:void(0);" class="lyr-cntr-ty2"
+                            ><span class="blind"
+                              >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는
+                              높이 축소 및 화면 닫기)</span
+                            ></a
+                          >
+                          <a href="javascript:void(0);" class="opt-close"
+                            ><span class="blind">닫기</span></a
+                          >
+                          <div class="opt-title">
+                            <strong>주소찾기 유형 선택</strong>
+                          </div>
+                        </div>
+                        <div class="opt-contents">
+                          <ul
+                            id="address-find"
+                            class="opt-list"
+                            role="listbox"
+                            aria-hidden="true"
+                            tabindex="-1"
+                          >
+                            <li id="address-find-opt01" class="opt" role="option">
+                              도로명
+                            </li>
+                            <li id="address-find-opt02" class="opt" role="option">
+                              지번
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="inp-box be-de address-finder-input">
+                <span class="inp"
+                  ><input type="text" title="성명" placeholder="도로명 또는 지번으로 검색"
+                /></span>
+                <button type="button" class="btn-delete" style="display: none">
+                  <span class="blind">삭제</span>
+                </button>
+              </div>
+              <div class="btn-wrap">
+                <button type="button" class="btn search-btn"><span>검색</span></button>
+                <button type="button" class="btn-ty2 search-btn"><span>다시선택</span></button>
+              </div>
+            </div>
+
+            <!-- 검색 결과가 없는 경우 -->
+            <!-- <p class="result-empty">
+              '!@#123'에 대한<br>검색결과가 없습니다.
+            </p> -->
+
+            <!-- 검색 결과가 있는 경우 -->
+            <!-- <div class="section separation">
+              <ul class="address-result-list-wrap">
+                <li class="address-result-list">
+                  <a href="" class="anchor">
+                    <p class="zip-code emp">023921</p>
+                    <p class="address-road-name">서울 마포구 월드컵북로 60길 17</p>
+                    <p class="address-lot-number">상암동 우리금융 상암센터</p>
+                  </a>
+                </li>
+                <li class="address-result-list">
+                  <a href="" class="anchor">
+                    <p class="zip-code emp">023921</p>
+                    <p class="address-road-name">서울 마포구 월드컵북로 60길 17</p>
+                    <p class="address-lot-number">상암동 우리금융 상암센터</p>
+                  </a>
+                </li>
+                <li class="address-result-list">
+                  <a href="" class="anchor">
+                    <p class="zip-code emp">023921</p>
+                    <p class="address-road-name">서울 마포구 월드컵북로 60길 17</p>
+                    <p class="address-lot-number">상암동 우리금융 상암센터</p>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="inp-box be-del address-detail-input">
+                <span class="inp"><input type="text" title="상세 주소 입력" placeholder="상세 주소 입력"></span>
+                <button type="button" class="btn-delete" style="display: block;"><span class="blind">삭제</span></button>
+              </div>
+            </div> -->
+
+            <!-- 주소 선택 후 : 입력주소 and 표준주소 중 선택 -->
+            <div class="section separation">
+              <ul class="address-result-list-wrap">
+                <li class="address-result-list">
+                  <div class="form-box2 input-wrap">
+                    <div class="txt-wrap">
+                      <p class="tit">입력주소</p>
+                    </div>
+                    <div class="con">
+                      <p class="zip-code emp">023921</p>
+                      <p class="address-road-name">서울 마포구 월드컵북로 60길 17</p>
+                      <p class="address-lot-number">상암동 우리금융 상암센터</p>
+                    </div>
+                    <button type="button" class="btn-ty1 address-result-select-btn">선택</button>
+                  </div>
+                </li>
+                <li class="address-result-list">
+                  <div class="form-box2 input-wrap">
+                    <div class="txt-wrap">
+                      <p class="tit">표준주소</p>
+                    </div>
+                    <div class="con">
+                      <p class="zip-code emp">023921</p>
+                      <p class="address-road-name">서울 마포구 월드컵북로 60길 17</p>
+                      <p class="address-lot-number">상암동 우리금융 상암센터</p>
+                    </div>
+                    <button type="button" class="btn-ty1 address-result-select-btn">선택</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="btn-area">
+              <a href="javascript:void(0);" class="btn-cancel"><span>취소</span></a>
+              <a href="javascript:void(0);" class="btn"><span>확인</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //full popup -->
+  </body>
+</html>

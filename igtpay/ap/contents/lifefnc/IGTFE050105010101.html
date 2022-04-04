@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>검색 필터 | 송금 | 생활/금융 | 우리페이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('LF51BS01'); //검색 필터 popup open
+    //WIP.popup.close('LF51BS01'); //검색 필터 popup close
+});
+</script>
+</head>
+<body>
+    <!-- bottom sheet -->
+    <div class="bottom-sheet" data-lyr-id="LF51BS01">
+        <div class="in-wrap">
+            <div class="sheet-head">
+                <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                <a href="javascript:void(0);" class="sheet-close"><span class="blind">닫기</span></a>
+                <div class="sheet-title">
+                    <strong>검색 필터</strong>
+                </div>
+            </div>
+            <div class="sheet-contents pad-bott-taller"><!-- 하단버튼이 없는 .bottom-sheet의 경우 class에 pad-bott-taller 추가 -->
+                <div class="sec">
+                    <div class="wrap-form">
+                        <dl class="form-box2">
+                            <dt class="tit"><span>기간</span></dt>
+                            <dd class="con">
+                                <div class="period-condition">
+                                    <div class="inp-pair">
+                                        <div class="front">
+                                            <div class="inp-date2">
+                                                <input type="text" class="inp" title="기간 시작" value="2022.01.13">
+                                                <button type="button" class="btn-calander">
+                                                    <span class="blind">달력보기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <span class="coupler">-</span>
+                                        <div class="rear">
+                                            <div class="inp-date2">
+                                                <input type="text" class="inp" title="기간 종료" value="2022.01.19">
+                                                <button type="button" class="btn-calander">
+                                                    <span class="blind">달력보기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="inp-btns n4 chk-unit">
+                                        <span class="inp-btn2">
+                                            <input type="radio" name="type-chk1" id="type-chk11" checked>
+                                            <label for="type-chk11">1개월</label>
+                                        </span>
+                                        <span class="inp-btn2">
+                                            <input type="radio" name="type-chk1" id="type-chk21">
+                                            <label for="type-chk21">3개월</label>
+                                        </span>
+                                        <span class="inp-btn2">
+                                            <input type="radio" name="type-chk1" id="type-chk31">
+                                            <label for="type-chk31">6개월</label>
+                                        </span>
+                                        <span class="inp-btn2">
+                                            <input type="radio" name="type-chk1" id="type-chk41">
+                                            <label for="type-chk41">12개월</label>
+                                        </span>
+                                    </div>
+
+                                    <p class="form-notice">* 최근 1년 이내만 조회 가능합니다.</p>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="form-box2">
+                            <dt class="tit"><span>조회내용</span></dt>
+                            <dd class="con">
+                                <div class="inp-btns n3">
+                                    <span class="inp-btn2">
+                                        <input type="radio" name="type-chk2" id="type-chk21" checked>
+                                        <label for="type-chk21">전체</label>
+                                    </span>
+                                    <span class="inp-btn2">
+                                        <input type="radio" name="type-chk2" id="type-chk22">
+                                        <label for="type-chk22">입금만</label>
+                                    </span>
+                                    <span class="inp-btn2">
+                                        <input type="radio" name="type-chk2" id="type-chk23">
+                                        <label for="type-chk23">출금만</label>
+                                    </span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="form-box2">
+                            <dt class="tit"><span>정렬</span></dt>
+                            <dd class="con">
+                                <div class="inp-btns n2">
+                                    <span class="inp-btn2">
+                                        <input type="radio" name="type-chk3" id="type-chk31" checked>
+                                        <label for="type-chk31">최근순</label>
+                                    </span>
+                                    <span class="inp-btn2">
+                                        <input type="radio" name="type-chk3" id="type-chk32">
+                                        <label for="type-chk32">과거순</label>
+                                    </span>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //bottom sheet -->
+</body>
+</html>

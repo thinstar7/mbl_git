@@ -1,0 +1,2838 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>스타일 가이드</title>
+<meta name="title" content="" />
+<meta name="language" content="ko">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="robots" content="ALL">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="../css/swiper.css">
+<link rel="stylesheet" href="../css/guide.css">
+<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="../js/swiper.js"></script>
+<script type="text/javascript" src="../js/guide.js"></script>
+<!-- 연세Pay -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+</head>
+<body>
+	<div class="g-wrap">
+        <!-- header -->
+        <div id="g-header">
+            <h1>스타일 가이드</h1>
+            <div>
+                <a href="convention.html">코딩 컨벤션</a><a href="list.html">퍼블리싱 리스트</a>
+            </div>    
+        </div>
+        <!-- //header -->
+
+        <!-- contents -->
+        <div id="g-contents">
+            <div class="style-guide">
+                <!-- tab menu -->
+                <div class="g-tab swiper-container">
+                    <!-- control -->
+                    <button type="button" class="swiper-button-prev"><span class="blind">이전</span></button>
+                    <button type="button" class="swiper-button-next"><span class="blind">다음</span></button>
+                    <!-- //control -->
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#title-style-guide">Title</a></li>
+                        <li class="swiper-slide"><a href="#text-style-guide">Text</a></li>
+                        <li class="swiper-slide"><a href="#list-style-guide">List</a></li>
+                        <li class="swiper-slide"><a href="#button-style-guide">Button</a></li>
+                        <li class="swiper-slide"><a href="#form-style-guide">Form</a></li>
+                        <li class="swiper-slide"><a href="#data-cell-style-guide">Data Cell</a></li>
+                        <li class="swiper-slide"><a href="#box-style-guide">Box</a></li>
+                        <li class="swiper-slide"><a href="#menu-style-guide">Menu</a></li>
+                        <li class="swiper-slide"><a href="#etc-style-guide">Etc.</a></li>
+                    </ul>
+                </div>
+                <!-- //tab menu -->
+
+                <div class="g-tab-conts">
+                    <!-- title -->
+                    <div id="title-style-guide" class="g-tab-cont crnt">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">Title</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit-nd">1) 서브 타이틀</strong>
+                                    <strong class="g-tit-rd">1. bottom sheet type</strong>
+                                    
+                                    <h1 class="lyr-sub-title">화면타이틀</h1>
+
+                                    <br>
+                                    <p>- 툴팁 등의 용도로 컨텐츠 내에서 띄우는 bottom sheet타입의 layer popup</p>
+                                    <div class="sheet-title">
+                                        <strong>자동 로그인 설정안내</strong>
+                                    </div>
+
+                                    <br>
+                                    <strong class="g-tit-rd">2. full popup</strong>
+                                    <div class="popup-title">
+                                        <strong>서비스 이용약관</strong>
+                                    </div>
+
+                                    <br><br>
+
+                                    <strong class="g-tit-nd">2) 본문 타이틀</strong>
+                                    <strong class="cont-title">결제정보</strong>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //title -->
+
+                    <!-- text -->
+                    <div id="text-style-guide" class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">Text</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <ul class="g-list-ty">
+                                    <li>기본 폰트 : 스포카 한 산스 네오. 사용성에 따라 웹폰트 군에서 font-family 선택, letter-spacing, font-size, line-height 등 속성을 설정.</li>
+                                    <li>영문, 숫자 : letter-spacing를 0으로 설정.</li>
+                                </ul>
+
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <p><span class="ls-ini">60</span>일간 미사용시 자동 로그인 설정이 초기화됩니다.</p>
+                                    <div class="ellipsis" style="width:100px">60일간 미사용시 자동 로그인 설정이 초기화됩니다.</div>
+                                    <p class="text-line">60일간 미사용시 자동 로그인 설정이 초기화됩니다.</p>
+                                    <p class="txt-bold">60일간 미사용시 자동 로그인 설정이 초기화됩니다.</p>
+                                    <p class="txt-medium">60일간 미사용시 자동 로그인 설정이 초기화됩니다.</p>
+                                    <p class="emp">60일간 미사용시 자동 로그인 설정이 초기화됩니다.</p>
+                                    <p class="emp-nd">60일간 미사용시 자동 로그인 설정이 초기화됩니다.</p>
+                                    <p class="emp-rd">60일간 미사용시 자동 로그인 설정이 초기화됩니다.</p>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //text -->
+
+                    <!-- list -->
+                    <div id="list-style-guide" class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">List</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <ul class="lst">
+                                        <li class="emp-nd">60일간 미사용시 자동 로그인 설정이 초기화됩니다.</li>
+                                        <li>등록한 기기 1대로만 이용하실 수 있습니다.</li>
+                                        <li>기기를 변경하거나 앱을 재설치하는 경우 자동로그인이 해제됩니다.</li>
+                                        <li>보안을 위해 휴대폰에 잠금 설정이 되어있는 경우에만 이용하실 수 있습니다.</li>
+                                        <li>My 메뉴에서 자동로그인 설정을 변경하실 수 있습니다.</li>
+                                    </ul>
+
+                                    <br><br>
+
+                                    <ul class="lst bu-ty1">
+                                        <li class="emp-nd">60일간 미사용시 자동 로그인 설정이 초기화됩니다.</li>
+                                        <li>등록한 기기 1대로만 이용하실 수 있습니다.</li>
+                                        <li>기기를 변경하거나 앱을 재설치하는 경우 자동로그인이 해제됩니다.</li>
+                                        <li>보안을 위해 휴대폰에 잠금 설정이 되어있는 경우에만 이용하실 수 있습니다.</li>
+                                        <li>My 메뉴에서 자동로그인 설정을 변경하실 수 있습니다.</li>
+                                    </ul>
+
+                                    <br><br>
+
+                                    <ul class="lst arrow">
+                                        <li><a href="#none"><span>결제수단 관리</span></a></li>
+                                        <li><a href="#none"><span>서명 관리</span></a></li>
+                                    </ul>
+
+                                    <br><br>
+
+                                    <div class="wrap-data-lst">
+                                        <div class="data-lst-top">
+                                            <div>내 카드<em class="emp">3</em></div>
+                                        </div>
+                                        <ul class="data-lst">
+                                            <li>
+                                                <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card01.png" alt="카드의 정석 UniMile"></div>
+                                                <div class="inf">
+                                                    <div class="box-lab">
+                                                        <span class="lab">대표</span><span class="lab ty2">NEW</span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <p>카드의 정석 UniMile</p>
+                                                    </div>
+                                                    <div class="num">
+                                                        <p>4214-****-****-1580</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card02.png" alt="WON POINT AIR"></div>
+                                                <div class="inf">
+                                                    <div class="box-lab">
+                                                        <span class="lab">대표</span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <p>WON POINT AIR</p>
+                                                    </div>
+                                                    <div class="num">
+                                                        <p>4214-****-****-1580</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card04.png" alt="WON POINT AIR"></div>
+                                                <div class="inf">
+                                                    <div class="box-lab">
+                                                    </div>
+                                                    <div class="item">
+                                                        <p>WON POINT AIR</p>
+                                                    </div>
+                                                    <div class="num">
+                                                        <p>4214-****-****-1580</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="wrap-data-lst">
+                                        <div class="data-lst-top">
+                                            <div>내 카드<em class="emp">3</em></div>
+                                        </div>
+                                        <ul class="data-lst be-more">
+                                            <li>
+                                                <a href="#" title="카드관리" onclick="WIP.popup.open('MY02BS01')">
+                                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card01.png" alt="카드의 정석 UniMile"></div>
+                                                    <div class="inf">
+                                                        <div class="box-lab">
+                                                            <span class="lab">대표</span><span class="lab ty2">NEW</span>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>카드의 정석 UniMile</p>
+                                                        </div>
+                                                        <div class="num">
+                                                            <p>4214-****-****-1580</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="카드관리" onclick="WIP.popup.open('MY02BS01')">
+                                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card02.png" alt="WON POINT AIR"></div>
+                                                    <div class="inf">
+                                                        <div class="box-lab">
+                                                            <span class="lab">대표</span>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>WON POINT AIR</p>
+                                                        </div>
+                                                        <div class="num">
+                                                            <p>4214-****-****-1580</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="not-more">
+                                                <a href="#" title="카드관리" onclick="WIP.popup.open('MY02BS01')">
+                                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card04.png" alt="WON POINT AIR"></div>
+                                                    <div class="inf">
+                                                        <div class="box-lab">
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>WON POINT AIR</p>
+                                                        </div>
+                                                        <div class="num">
+                                                            <p>4214-****-****-1580</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="wrap-data-lst">
+                                        <ul class="data-lst be-chk">
+                                            <li>
+                                                <a href="#" title="카드의 정석 UniMile 선택">
+                                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card01.png" alt="카드의 정석 UniMile"></div>
+                                                    <div class="inf">
+                                                        <div class="box-lab">
+                                                            <span class="lab">대표</span><span class="lab ty3">등록</span>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>카드의 정석 UniMile</p>
+                                                        </div>
+                                                        <div class="num">
+                                                            <p>4214-****-****-1580</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="box-chk">
+                                                    <span class="inp-chk-ty2 round single">
+                                                        <input type="checkbox" title="카드의 정석 UniMile 선택" name="chk701S03">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="WON POINT AIR 선택">
+                                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card02.png" alt="WON POINT AIR"></div>
+                                                    <div class="inf">
+                                                        <div class="box-lab">
+                                                            <span class="lab ty4">미등록</span>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>WON POINT AIR WON POINT AIRWON POINT</p>
+                                                        </div>
+                                                        <div class="num">
+                                                            <p>4214-****-****-1580</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="box-chk">
+                                                    <span class="inp-chk-ty2 round single">
+                                                        <input type="checkbox" title="WON POINT AIR 선택" name="chk701S03">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="WON POINT AIR2 선택">
+                                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card04.png" alt="WON POINT AIR2"></div>
+                                                    <div class="inf">
+                                                        <div class="box-lab">
+                                                            <span class="lab ty3">등록</span>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>WON POINT AIR2</p>
+                                                        </div>
+                                                        <div class="num">
+                                                            <p>4214-****-****-1580</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="box-chk">
+                                                    <span class="inp-chk-ty2 round single">
+                                                        <input type="checkbox" title="WON POINT AIR2 선택" name="chk701S03">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="wrap-data-lst">
+                                        <ul class="data-lst be-chk be-more">
+                                            <li>
+                                                <a href="#" title="카드의 정석 UniMile 선택">
+                                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card01.png" alt="카드의 정석 UniMile"></div>
+                                                    <div class="inf">
+                                                        <div class="box-lab">
+                                                            <span class="lab">대표</span><span class="lab ty3">등록</span>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>카드의 정석 UniMile</p>
+                                                        </div>
+                                                        <div class="num">
+                                                            <p>4214-****-****-1580</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="box-chk">
+                                                    <span class="inp-chk-ty2 round single">
+                                                        <input type="checkbox" title="카드의 정석 UniMile 선택" name="chk701S03">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="not-more">
+                                                <a href="#" title="WON POINT AIR 선택">
+                                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card02.png" alt="WON POINT AIR"></div>
+                                                    <div class="inf">
+                                                        <div class="box-lab">
+                                                            <span class="lab ty4">미등록</span>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>WON POINT AIR WON POINT AIRWON POINT</p>
+                                                        </div>
+                                                        <div class="num">
+                                                            <p>4214-****-****-1580</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="box-chk">
+                                                    <span class="inp-chk-ty2 round single">
+                                                        <input type="checkbox" title="WON POINT AIR 선택" name="chk701S03">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="WON POINT AIR2 선택">
+                                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card04.png" alt="WON POINT AIR2"></div>
+                                                    <div class="inf">
+                                                        <div class="box-lab">
+                                                            <span class="lab ty3">등록</span>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p>WON POINT AIR2</p>
+                                                        </div>
+                                                        <div class="num">
+                                                            <p>4214-****-****-1580</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="box-chk">
+                                                    <span class="inp-chk-ty2 round single">
+                                                        <input type="checkbox" title="WON POINT AIR2 선택" name="chk701S03">
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <br><br>
+
+                                    <!-- 등록 가능한 계좌가 없을 경우 -->
+                                    <div class="data-lst3 section">
+                                        <div class="section-header">
+                                        <div class="tit">
+                                            <span class="txt">등록가능</span><em class="emp">0</em>
+                                        </div>
+                                        </div>
+
+                                        <ul class="wrap-select-list">
+                                        <li class="select-list-empty">
+                                            <p>등록 가능한 계좌가 없습니다.</p>
+                                        </li>
+                                        </ul>
+                                    </div>
+
+                                    <br>
+
+                                    <!-- 등록가능 -->
+                                    <div class="data-lst3 section">
+                                        <div class="section-header">
+                                        <div class="tit">
+                                            <span class="txt">등록가능</span><em class="emp">1</em>
+                                        </div>
+                                        <span class="inp-chk-ty2 round">
+                                            <input
+                                            type="checkbox"
+                                            id="chkC01"
+                                            name="chkC"
+                                            class="all-check"
+                                            />
+                                            <label for="chkC01">한 번에 등록</label>
+                                        </span>
+                                        </div>
+
+                                        <ul class="wrap-select-list">
+                                        <li class="select-list">
+                                            <div class="img-fnc" data-fnc-code="020"></div>
+                                            <div class="wrap-item">
+                                            <div class="wrap-lab">
+                                                <span class="lab">입출금</span>
+                                                <span class="lab ty5">활동성</span>
+                                            </div>
+                                            <div class="txt-wrap">
+                                                <p class="name">우리은행 SUPER 주거래통장</p>
+                                                <p class="account-info">우리은행 <span class="ls-ini">12345678987</span></p>
+                                                <p class="balance">
+                                                <span>잔액</span>
+                                                <span class="num">11,000,000</span>
+                                                <span class="unit">원</span>
+                                                </p>
+                                            </div>
+                                            </div>
+                                            <span class="inp-chk-ty2 round check-box">
+                                            <input type="checkbox" id="chkC02" name="chkC" />
+                                            <label for="chkC02"></label>
+                                            </span>
+                                        </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="wrap-data-lst">
+                                        <div class="data-lst3 section">
+                                            <div class="section-header">
+                                              <div class="tit">
+                                                <span class="txt">등록가능</span><em class="emp">1</em>
+                                              </div>
+                                              <span class="inp-chk-ty2 round">
+                                                <input
+                                                  type="checkbox"
+                                                  id="chkC01"
+                                                  name="chkC"
+                                                  class="all-check"
+                                                />
+                                                <label for="chkC01">한 번에 등록</label>
+                                              </span>
+                                            </div>
+                                
+                                            <ul class="wrap-select-list">
+                                              <li class="select-list">
+                                                <div class="icon-bank-logo"></div>
+                                                <div class="wrap-item">
+                                                  <div class="wrap-lab">
+                                                    <span class="lab">입출금</span>
+                                                    <span class="lab ty5">활동성</span>
+                                                  </div>
+                                                  <div class="txt-wrap">
+                                                    <p class="name">우리은행 SUPER 주거래통장</p>
+                                                    <p class="account-info">우리은행 12345678987</p>
+                                                    <p class="balance">
+                                                      <span>잔액</span>
+                                                      <span class="num">11,000,000</span>
+                                                      <span class="unit">원</span>
+                                                    </p>
+                                                  </div>
+                                                </div>
+                                                <span class="inp-chk-ty2 round check-box">
+                                                  <input type="checkbox" id="chkC02" name="chkC" />
+                                                  <label for="chkC02"></label>
+                                                </span>
+                                              </li>
+                                              <li class="select-list">
+                                                <div class="icon-bank-logo"></div>
+                                                <div class="wrap-item">
+                                                  <div class="wrap-lab">
+                                                    <span class="lab">입출금</span>
+                                                    <span class="lab ty5">활동성</span>
+                                                  </div>
+                                                  <div class="txt-wrap">
+                                                    <p class="name">우리은행 SUPER 주거래통장</p>
+                                                    <p class="account-info">우리은행 12345678987</p>
+                                                    <p class="balance">
+                                                      <span>잔액</span>
+                                                      <span class="num">11,000,000</span>
+                                                      <span class="unit">원</span>
+                                                    </p>
+                                                  </div>
+                                                </div>
+                                                <span class="inp-chk-ty2 round check-box">
+                                                  <input type="checkbox" id="chkC02" name="chkC" />
+                                                  <label for="chkC02"></label>
+                                                </span>
+                                              </li>
+                                              <li class="select-list">
+                                                <div class="icon-bank-logo"></div>
+                                                <div class="wrap-item">
+                                                  <div class="wrap-lab">
+                                                    <span class="lab">입출금</span>
+                                                    <span class="lab ty5">활동성</span>
+                                                  </div>
+                                                  <div class="txt-wrap">
+                                                    <p class="name">우리은행 SUPER 주거래통장</p>
+                                                    <p class="account-info">우리은행 12345678987</p>
+                                                    <p class="balance">
+                                                      <span>잔액</span>
+                                                      <span class="num">11,000,000</span>
+                                                      <span class="unit">원</span>
+                                                    </p>
+                                                  </div>
+                                                </div>
+                                                <span class="inp-chk-ty2 round check-box">
+                                                  <input type="checkbox" id="chkC02" name="chkC" />
+                                                  <label for="chkC02"></label>
+                                                </span>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                    </div>
+
+                                    <br>
+
+                                    <!-- 등록불가 -->
+                                    <div class="data-lst3 section">
+                                        <div class="section-header">
+                                        <div class="tit">
+                                            <span class="txt">등록불가</span><em class="emp">2</em>
+                                        </div>
+                                        </div>
+
+                                        <ul class="wrap-select-list">
+                                        <li class="select-list">
+                                            <div class="img-fnc" data-fnc-code="020"></div>
+                                            <div class="wrap-item">
+                                            <div class="wrap-lab">
+                                                <span class="lab">입출금</span>
+                                                <span class="lab ty2">비활동성</span>
+                                            </div>
+                                            <div class="txt-wrap">
+                                                <p class="name">우리은행 SUPER 주거래통장</p>
+                                                <p class="account-info">우리은행 <span class="ls-ini">12345678987</span></p>
+                                                <p class="balance">
+                                                <span>잔액</span>
+                                                <span class="num">11,000,000</span>
+                                                <span class="unit">원</span>
+                                                </p>
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li class="select-list">
+                                            <div class="img-fnc" data-fnc-code="020"></div>
+                                            <div class="wrap-item">
+                                            <div class="wrap-lab">
+                                                <span class="lab">입출금</span>
+                                                <span class="lab ty2">비활동성</span>
+                                            </div>
+                                            <div class="txt-wrap">
+                                                <p class="name">우리은행 SUPER 주거래통장</p>
+                                                <p class="account-info">우리은행 <span class="ls-ini">12345678987</span></p>
+                                                <p class="balance">
+                                                <span>잔액</span>
+                                                <span class="num">11,000,000</span>
+                                                <span class="unit">원</span>
+                                                </p>
+                                            </div>
+                                            </div>
+                                        </li>
+                                        </ul>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="finance-account">
+                                        <ul class="account-list be-side">
+                                          <!-- 데이터가 없는 경우 -->
+                                          <!-- <li class="account-info">
+                                            <p class="account-info-empty">최근 송금한 계좌가 없습니다.</p>
+                                          </li> -->
+                      
+                                          <li class="account-info">
+                                            <a href="#">
+                                              <div class="img-fnc" data-fnc-code="287"></div>
+                                              <div class="finance-info">
+                                                <div class="bank-inf text-ty1">
+                                                  <span>우리은행</span>
+                                                  <span class="ls-ini">1234567890</span>
+                                                </div>
+                                                <div class="bank-inf text-ty2">
+                                                  <span>홍길동</span>
+                                                  <span class="ls-ini">2022.01.18</span>
+                                                </div>
+                                                <div class="item emp">
+                                                  <span class="ls-ini">1,000,000</span>
+                                                  <span class="unit">원</span>
+                                                </div>
+                                              </div>
+                                              <div class="util-btn-wrap">
+                                                <button type="button" class="btn-elimination"><span class="blind">자주 쓰는(즐겨찾기) 계좌 삭제</span></button>
+                                                <span class="inp-bookmark">
+                                                  <input type="checkbox" name="" title="자주 쓰는(즐겨찾기) 계좌">
+                                                </span>
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li class="account-info">
+                                            <a href="#">
+                                              <div class="img-fnc" data-fnc-code="287"></div>
+                                              <div class="finance-info">
+                                                <div class="bank-inf text-ty1">
+                                                  <span>우리은행</span>
+                                                  <span class="ls-ini">1234567890</span>
+                                                </div>
+                                                <div class="bank-inf text-ty2">
+                                                  <span>홍길동</span>
+                                                  <span class="ls-ini">2022.01.18</span>
+                                                </div>
+                                                <div class="item emp">
+                                                  <span class="ls-ini">1,000,000</span>
+                                                  <span class="unit">원</span>
+                                                </div>
+                                              </div>
+                                              <div class="util-btn-wrap">
+                                                <button type="button" class="btn-elimination"><span class="blind">자주 쓰는(즐겨찾기) 계좌 삭제</span></button>
+                                                <span class="inp-bookmark">
+                                                  <input type="checkbox" name="" title="자주 쓰는(즐겨찾기) 계좌">
+                                                </span>
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li class="account-info">
+                                            <a href="#">
+                                              <div class="img-fnc" data-fnc-code="287"></div>
+                                              <div class="finance-info">
+                                                <div class="bank-inf text-ty1">
+                                                  <span>우리은행</span>
+                                                  <span class="ls-ini">1234567890</span>
+                                                </div>
+                                                <div class="bank-inf text-ty2">
+                                                  <span>홍길동</span>
+                                                  <span class="ls-ini">2022.01.18</span>
+                                                </div>
+                                                <div class="item emp">
+                                                  <span class="ls-ini">1,000,000</span>
+                                                  <span class="unit">원</span>
+                                                </div>
+                                              </div>
+                                              <div class="util-btn-wrap">
+                                                <button type="button" class="btn-elimination"><span class="blind">자주 쓰는(즐겨찾기) 계좌 삭제</span></button>
+                                                <span class="inp-bookmark">
+                                                  <input type="checkbox" name="" title="자주 쓰는(즐겨찾기) 계좌">
+                                                </span>
+                                              </div>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //list -->
+
+                    <!-- button -->
+                    <div id="button-style-guide" class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">타입</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit mgt0">[1] 본문</strong>
+                                    <strong class="g-tit-nd">1) 의사결정(긍정/부정)</strong>
+                                    <a href="javascript:void(0);" class="btn"><span>확인</span></a>
+                                    <a href="javascript:void(0);" class="btn-cancel"><span>취소</span></a>
+                                    <a href="javascript:void(0);" class="btn disabled"><span>확인</span></a>
+                                    <a href="javascript:void(0);" class="btn-cancel disabled"><span>취소</span></a>
+                                    <button type="button" class="btn"><span>확인</span></button>
+                                    <button type="button" class="btn-cancel"><span>취소</span></button>
+                                    <button type="button" class="btn disabled"><span>확인</span></button>
+                                    <button type="button" class="btn-cancel disabled"><span>취소</span></button>
+                                    
+                                    <strong class="g-tit">[2] Popup(modal layer)</strong>
+                                    <strong class="g-tit-nd">1) 의사결정(긍정/부정)</strong>
+                                    <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+                                    <a href="javascript:void(0);" class="p-btn-cancel"><span>취소</span></a>
+                                    <a href="javascript:void(0);" class="p-btn disabled"><span>확인</span></a>
+                                    <a href="javascript:void(0);" class="p-btn-cancel disabled"><span>취소</span></a>
+                                    <button type="button" class="p-btn"><span>확인</span></button>
+                                    <button type="button" class="p-btn-cancel"><span>취소</span></button>
+                                    <button type="button" class="p-btn disabled"><span>확인</span></button>
+                                    <button type="button" class="p-btn-cancel disabled"><span>취소</span></button>
+
+                                    <strong class="g-tit">[3] icon button</strong>
+                                    <strong class="g-tit-nd">1) Header</strong>
+                                    <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a>
+                                    <a href="javascript:void(0);" class="btn-close"><span class="blind">닫기</span></a>
+                                    
+                                    <div style="position:relative;height:50px">
+                                        <a href="javascript:void(0);" class="btn-my"><span class="txt">MY</span></a>
+                                    </div>
+                                    
+                                    <strong class="g-tit-nd">2) bottom sheet</strong>
+                                    <div style="padding:5px;background:#f5f5f5;">
+
+                                    <a href="javascript:void(0);" class="lyr-cntr-ty1"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                    <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+
+                                    </div>
+
+                                    <strong class="g-tit-nd">3) info</strong>
+                                    <button type="button" class="btn-tooltip"><span class="blind">도움말 보기</span></button>
+                                    
+                                    <strong class="g-tit-nd">4) 설정, 초기화, 필터, 삭제</strong>
+                                    <button type="button" class="btn-set"><span class="blind">세팅 설정</span><i class="switch"></i></button>
+                                    <button type="button" class="btn-set2"><span class="txt">숨김</span><i class="switch"></i></button>
+                                    <button type="button" class="btn-initialize"><span class="blind">초기화</span></button>
+                                    <button type="button" class="btn-filter"><span class="txt">필터</span></button>
+                                    <button type="button" class="btn-elimination"><span class="blind">자주 쓰는(즐겨찾기) 계좌 삭제</span></button>
+
+                          
+
+                                    <strong class="g-tit">[4] </strong>
+                                    <a href="javascript:void(0);" class="btn-ty1"><span>로그아웃</span></a>
+                                    <button type="button" class="btn-ty2"><span>더보기</span></button>
+                                    <button type="button" class="btn-ty3"><span>송금</span></button>
+                                    <button type="button" class="btn-ty4"><span>받는 분 계좌 직접입력</span></button>
+                                    <button type="button" class="btn-ty5"><span>받는 분 계좌 직접입력</span></button>
+
+                                    <strong class="g-tit">[5] 텍스트(링크)</strong>
+                                    <a href="javascript:void(0);" class="btn-txt" onclick="WIP.popup.open('MB04BS01')"><span>인증비밀번호 안내</span></a>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">배치</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit mgt0">[1] 바탕, full popup</strong>
+                                    <div class="btn-area">
+                                        <a href="javascript:void(0);" class="btn"><span>확인</span></a>
+                                    </div>
+
+                                    <br>
+                                    
+                                    <div class="btn-area">
+                                        <a href="javascript:void(0);" class="btn"><span>확인</span></a>
+                                        <a href="javascript:void(0);" class="btn-cancel"><span>취소</span></a>
+                                    </div>
+
+                                    <strong class="g-tit">[2] Popup(modal layer)</strong>
+                                    <div class="p-btn-area">
+                                        <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="p-btn-area">
+                                        <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+                                        <a href="javascript:void(0);" class="p-btn-cancel"><span>취소</span></a>
+                                        <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //button -->
+
+                    <!-- form -->
+                    <div id="form-style-guide" class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">input[type=text/password/date/time/tel/number]</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <ul class="g-list-ty">
+                                    <li>입력 오류 : class속성에 '<span class="g-emp-nd">error</span>' 추가는 개발처리시 추가.</li>
+                                    <li>focus in : class속성에 '<span class="g-emp-nd">focus</span>' 추가는 ui.js에 기능 정의.</li>
+                                </ul>
+                                
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit">[1]</strong>
+                                    <strong class="g-tit-nd">1)</strong>
+
+                                    <strong class="g-tit-rd">1. 기본형</strong>
+                                    <div class="inp-box">
+                                        <span class="inp"><input type="text" title="성명" placeholder="성명 입력"></span>
+                                    </div>
+
+                                    <br>
+
+                                    <strong class="g-tit-rd">2. 입력 삭제</strong>
+                                    <div class="inp-box be-del">
+                                        <span class="inp"><input type="text" title="성명" placeholder="성명 입력"></span>
+                                        <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                    </div>
+
+                                    <br>
+
+                                    <strong class="g-tit-rd">3. focus in</strong>
+                                    <div class="inp-box be-del focus">
+                                        <span class="inp"><input type="text" title="성명" placeholder="성명 입력"></span>
+                                        <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                    </div>
+
+                                    <br>
+
+                                    <strong class="g-tit-rd">4. 입력 오류</strong>
+                                    <div class="inp-box be-del error">
+                                        <span class="inp"><input type="text" title="성명" placeholder="성명 입력"></span>
+                                        <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                    </div>
+                                    <div class="form-msg">
+                                        <p class="error">CVC번호를 정확히 입력해 주세요.</p>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">input[type=radio/checkbox]</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <ul class="g-list-ty">
+                                    <li>버튼형 input의 배치 : .inp-btns 에 <span class="g-emp-nd">n2, n3, n4...</span>의 갯수 설정 class를 추가한다.</li>
+                                </ul>
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit">[1] 기본형</strong>
+                                    
+                                    <span class="inp-rdo">
+                                        <input type="radio" id="chkA01" name="chkA">
+                                        <label for="chkA01">라디오 기본</label>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="inp-rdo">
+                                        <input type="radio" id="chkA02" name="chkA" checked>
+                                        <label for="chkA02">라디오 선택</label>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="inp-rdo">
+                                        <input type="radio" id="chkA03" name="chkA" disabled>
+                                        <label for="chkA03">라디오 비활성</label>
+                                    </span>
+
+                                    <br><br>
+
+                                    <span class="inp-chk">
+                                        <input type="checkbox" id="chkB01" name="chkB">
+                                        <label for="chkB02">체크박스 기본</label>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="inp-chk">
+                                        <input type="checkbox" id="chkB02" name="chkB" checked>
+                                        <label for="chkB02">체크박스 선택</label>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="inp-chk">
+                                        <input type="checkbox" id="chkB03" name="chkB" disabled>
+                                        <label for="chkB03">체크박스 비활성</label>
+                                    </span>
+                                    
+                                    <br><br>
+                                    
+                                    <span class="inp-chk-ty2">
+                                        <input type="checkbox" id="chkC01" name="chkC">
+                                        <label for="chkC01">체크박스2 기본</label>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="inp-chk-ty2">
+                                        <input type="checkbox" id="chkC02" name="chkC" checked>
+                                        <label for="chkC02">체크박스2 선택</label>
+                                    </span>
+
+                                    <br><br>
+
+                                    <span class="inp-chk-ty2 round">
+                                        <input type="checkbox" id="chkC01" name="chkC">
+                                        <label for="chkC01">체크박스2 기본</label>
+                                    </span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="inp-chk-ty2 round">
+                                        <input type="checkbox" id="chkC02" name="chkC" checked>
+                                        <label for="chkC02">체크박스2 선택</label>
+                                    </span>
+
+                                    <strong class="g-tit">[2] 버튼형</strong>
+                                    <div class="inp-btns n3">
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk01" checked>
+                                            <label for="ph-chk01">SKT</label>
+                                        </span>
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk02">
+                                            <label for="ph-chk02">KT</label>
+                                        </span>
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk03">
+                                            <label for="ph-chk03">LGU+</label>
+                                        </span>
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk04">
+                                            <label for="ph-chk04">SKT 알뜰폰</label>
+                                        </span>
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk05">
+                                            <label for="ph-chk05">KT 알뜰폰</label>
+                                        </span>
+                                        <span class="inp-btn">
+                                            <input type="radio" name="ph-chk" id="ph-chk06">
+                                            <label for="ph-chk06">LGU+ 알뜰폰</label>
+                                        </span>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="inp-btns n4">
+                                        <span class="inp-btn2">
+                                            <input type="radio" name="ph-chk" id="chk11" checked>
+                                            <label for="chk11">1주일</label>
+                                        </span>
+                                        <span class="inp-btn2">
+                                            <input type="radio" name="ph-chk" id="chk12">
+                                            <label for="chk12">1개월</label>
+                                        </span>
+                                        <span class="inp-btn2">
+                                            <input type="radio" name="ph-chk" id="chk13">
+                                            <label for="chk13">3개월</label>
+                                        </span>
+                                        <span class="inp-btn2">
+                                            <input type="radio" name="ph-chk" id="chk14">
+                                            <label for="chk14">월단위</label>
+                                        </span>
+                                    </div>
+
+                                    <strong class="g-tit">[3] 기타</strong>
+                                    <span class="inp-bookmark">
+                                        <input type="checkbox" name="" title="자주 쓰는(즐겨찾기) 계좌">
+                                    </span>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">combobox</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <ul>  
+                                    <li>콤보박스 요소 사용시 값을 변경 및 설정해 주어야 하는 속성
+                                        <ul class="g-list-ty">
+                                            <li>.opt-list element의 <span class="g-emp-nd">id</span>와 .combo element <span class="g-emp-nd">aria-owns</span> : 동일한 값으로 설정하여 변경한다.</li>
+                                            <li>.opt element의 <span class="g-emp-nd">id</span></li>
+                                            <li>.combo element의 <span class="g-emp-nd">title</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <!-- combobox -->
+                                    <div class="el-combobox">
+                                        <div class="combobox"> 
+                                            <input type="text" role="combobox" readonly="true" class="combo" aria-autocomplete="list" aria-owns="cb-phone" aria-haspopup="true" aria-readonly="true" aria-expanded="false" aria-activedescendant="" placeholder="010" title="휴대폰 식별번호">
+                                            <button type="button" class="combo-btn"><span class="blind">선택 목록 열기</span></button>
+                                        </div>
+                                        <div class="combo-list">
+                                            <div class="in-wrap">
+                                                <div class="opt-head">
+                                                    <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                                    <a href="javascript:void(0);" class="opt-close"><span class="blind">닫기</span></a>
+                                                    <div class="opt-title">
+                                                        <strong>휴대폰 식별번호 선택</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="opt-contents">
+                                                    <ul id="cb-phone" class="opt-list" role="listbox" aria-hidden="true" tabindex="-1">
+                                                        <li id="cb-phone-opt01" class="opt" role="option">010</li>
+                                                        <li id="cb-phone-opt02" class="opt" role="option">011</li>
+                                                        <li id="cb-phone-opt03" class="opt" role="option">016</li>
+                                                        <li id="cb-phone-opt04" class="opt" role="option">017</li>
+                                                        <li id="cb-phone-opt05" class="opt" role="option">018</li>
+                                                        <li id="cb-phone-opt06" class="opt" role="option">019</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //combobox -->
+
+                                    <br><br>
+
+                                    <!-- combobox -->
+                                    <div class="el-combobox ty2">
+                                        <div class="combobox"> 
+                                            <input type="text" role="combobox" readonly="true" class="combo" aria-autocomplete="list" aria-owns="cb-phone" aria-haspopup="true" aria-readonly="true" aria-expanded="false" aria-activedescendant="" placeholder="010" title="휴대폰 식별번호">
+                                            <button type="button" class="combo-btn"><span class="blind">선택 목록 열기</span></button>
+                                        </div>
+                                        <div class="combo-list">
+                                            <div class="in-wrap">
+                                                <div class="opt-head">
+                                                    <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                                    <a href="javascript:void(0);" class="opt-close"><span class="blind">닫기</span></a>
+                                                    <div class="opt-title">
+                                                        <strong>휴대폰 식별번호 선택</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="opt-contents">
+                                                    <ul id="cb-phone" class="opt-list" role="listbox" aria-hidden="true" tabindex="-1">
+                                                        <li id="cb-phone-opt01" class="opt" role="option">010</li>
+                                                        <li id="cb-phone-opt02" class="opt" role="option">011</li>
+                                                        <li id="cb-phone-opt03" class="opt" role="option">016</li>
+                                                        <li id="cb-phone-opt04" class="opt" role="option">017</li>
+                                                        <li id="cb-phone-opt05" class="opt" role="option">018</li>
+                                                        <li id="cb-phone-opt06" class="opt" role="option">019</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //combobox -->
+
+                                    <br><br>
+
+                                    <div class="card-selection">
+                                        <!-- combobox -->
+                                        <div class="el-combobox card-combo">
+                                            <div class="combobox">
+                                                <div role="combobox" class="combo" aria-autocomplete="list" aria-owns="card-selection" aria-haspopup="true"  aria-expanded="false" aria-activedescendant="">
+                                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card02.png" alt="WON POINT AIR"></div>
+                                                    <div class="inf">
+                                                        <div class="item">WON POINT AIR</div>
+                                                        <div class="num">4214-****-****-1580</div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="combo-btn"><span class="blind">선택 목록 열기</span></button>
+                                            </div>
+            
+                                            <div class="combo-list">
+                                                <div class="in-wrap">
+                                                    <div class="opt-head">
+                                                        <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                                        <a href="javascript:void(0);" class="opt-close"><span class="blind">닫기</span></a>
+                                                        <div class="opt-title">
+                                                            <strong>카드 선택</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="opt-contents">
+                                                        <ul id="card-selection" class="opt-list" role="listbox" aria-hidden="true" tabindex="-1">
+                                                            <li id="card-sel-opt01" class="opt select" role="option">WON POINT AIR</li>
+                                                            <li id="card-sel-opt02" class="opt" role="option">카드의 정석 INTACT AIR</li>
+                                                            <li id="card-sel-opt03" class="opt" role="option">우리WON멤버스카드</li>
+                                                            <li id="card-sel-opt04" class="opt" role="option">카드의 정석 SHOPPING</li>
+                                                            <li id="card-sel-opt05" class="opt" role="option">ALL 다모아 카드</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //combobox -->
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">복합요소</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit-nd">1) 날짜</strong>
+                                    <strong class="g-tit-rd">1. 지정 년/월/일</strong>
+                                    <div class="inp-date">
+                                        <input type="text" class="inp" title="조회 기간 시작" value="2022.01.13">
+                                        <button type="button" class="btn-calander">
+                                            <span class="blind">달력보기</span>
+                                        </button>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="inp-date2">
+                                        <input type="text" class="inp" title="기간 시작" value="2022.01.13">
+                                        <button type="button" class="btn-calander">
+                                            <span class="blind">달력보기</span>
+                                        </button>
+                                    </div>
+
+                                    <br>
+
+                                    <strong class="g-tit-rd">2. 기간</strong>
+                                    <div class="inp-pair">
+                                        <div class="front">
+                                            <div class="inp-date">
+                                                <input type="text" class="inp" title="조회 기간 시작" value="2022.01.13">
+                                                <button type="button" class="btn-calander">
+                                                    <span class="blind">달력보기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <span class="coupler">-</span>
+                                        <div class="rear">
+                                            <div class="inp-date">
+                                                <input type="text" class="inp" title="조회 기간 종료" value="2022.01.19">
+                                                <button type="button" class="btn-calander">
+                                                    <span class="blind">달력보기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="inp-pair">
+                                        <div class="front">
+                                            <div class="inp-date2">
+                                                <input type="text" class="inp" title="기간 시작" value="2022.01.13">
+                                                <button type="button" class="btn-calander">
+                                                    <span class="blind">달력보기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <span class="coupler">-</span>
+                                        <div class="rear">
+                                            <div class="inp-date2">
+                                                <input type="text" class="inp" title="기간 종료" value="2022.01.19">
+                                                <button type="button" class="btn-calander">
+                                                    <span class="blind">달력보기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    
+                                    <strong class="g-tit-nd">2) 생년월일/성별</strong>
+                                    <div class="inp-pair">
+                                        <div class="front">
+                                            <div class="inp-box be-del">
+                                                <span class="inp"><input type="text" maxlength="6" placeholder="6자리 입력" title="생년월일 앞 6자리"></span>
+                                                <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                            </div>
+                                        </div>
+                                        <span class="coupler">-</span>
+                                        <div class="rear">
+                                            <div class="inp-birth">
+                                                <span class="entry-box"><input type="tel" title="생년월일 뒷자리 중 첫번째" value=""></span>
+                                                <span class="blank-box"></span>
+                                                <span class="blank-box"></span>
+                                                <span class="blank-box"></span>
+                                                <span class="blank-box"></span>
+                                                <span class="blank-box"></span>
+                                                <span class="blank-box"></span>
+                                            </div>
+                                            <!-- focus in : .inp-birth element의 class속성값에 focus를 추가. -->
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    
+                                    <strong class="g-tit-nd">3) 주민등록번호</strong>
+                                    <div class="inp-pair">
+                                        <div class="front">
+                                            <div class="inp-box be-del">
+                                                <span class="inp"><input type="text" title="주민등록번호 앞 6자리" maxlength="6" placeholder="앞 6자리 입력"></span>
+                                                <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                            </div>
+                                        </div>
+                                        <span class="coupler">-</span>
+                                        <div class="rear">
+                                            <!-- [통합결제플랫폼] : 2022.02.05 -->
+                                            <button type="button" class="inp-regist-num" aria-label="보안키패드 주민등록번호 뒷자리 입력">
+                                                <span class="on"></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </button>
+                                            <!-- 
+                                                1. focus in : .inp-card-pw 구조의 class에 focus 추가 설정.
+                                                2. 입력오류 : .inp-card-pw 구조의 class에 error 추가 설정.
+                                            -->
+                                            <!-- //[통합결제플랫폼] : 2022.02.05 -->
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    
+                                    <strong class="g-tit-nd">4) 휴대폰번호</strong>
+                                    <div class="con-field">
+                                        <div class="inp-phone-number">
+                                            <!-- combobox -->
+                                            <div class="el-combobox">
+                                                <div class="combobox">
+                                                    <input type="text" role="combobox" readonly="true" class="combo" aria-autocomplete="list" aria-owns="cb-phone" aria-haspopup="true" aria-readonly="true" aria-expanded="false" aria-activedescendant="" placeholder="010" title="휴대폰 식별번호">
+                                                    <button type="button" class="combo-btn"><span class="blind">선택 목록 열기</span></button>
+                                                </div>
+                                                <div class="combo-list">
+                                                    <div class="in-wrap">
+                                                        <div class="opt-head">
+                                                            <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                                            <a href="javascript:void(0);" class="opt-close"><span class="blind">닫기</span></a>
+                                                            <div class="opt-title">
+                                                                <strong>휴대폰 식별번호 선택</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="opt-contents">
+                                                            <ul id="cb-phone" class="opt-list" role="listbox" aria-hidden="true" tabindex="-1">
+                                                                <li id="cb-phone-opt01" class="opt" role="option">010</li>
+                                                                <li id="cb-phone-opt02" class="opt" role="option">011</li>
+                                                                <li id="cb-phone-opt03" class="opt" role="option">016</li>
+                                                                <li id="cb-phone-opt04" class="opt" role="option">017</li>
+                                                                <li id="cb-phone-opt05" class="opt" role="option">018</li>
+                                                                <li id="cb-phone-opt06" class="opt" role="option">019</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //combobox -->
+                                        </div>
+                                        <div class="inp-box">
+                                            <span class="inp"><input type="tel" title="휴대폰번호 식별번호 제외한 나머지 뒷자리" maxlength="8" placeholder="'-'을 제외한 숫자만 입력"></span>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    
+                                    <strong class="g-tit-nd">5) 인증번호</strong>
+                                    <div class="auth-confirm">
+                                        <div class="inp-box be-del focus">
+                                            <div class="inp">
+                                                <input type="tel" id="inp01" placeholder="6자리 숫자 입력">
+                                                <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                            </div>
+                                        </div>
+                                        <span class="time">05:00</span>
+                                        <a class="auth-confirm-btn" href="#"><span>인증확인</span></a>
+                                    </div>
+
+                                    <br>
+                                    
+                                    <strong class="g-tit-nd">6) 카드인증</strong>
+                                    <strong class="g-tit-rd">1. 카드번호</strong>
+                                    <div class="inp-card-num">
+                                        <!-- .inp-card-num element에 focus,error를 class속성값에 추가 -->
+                                        <div class="first">
+                                            <div class="inp-box"><!--be-del-->
+                                                <span class="inp"><input type="tel" placeholder="" title="카드일련번호 첫번째 4자리"></span>
+                                                <!--button type="button" class="btn-delete"><span class="blind">삭제</span></button-->
+                                            </div>
+                                            <span class="coupler">-</span>
+                                        </div>
+                                        <div class="second">
+                                            <button type="button" class="entry-num-nd" aria-label="보안키패드 카드 비밀번호 입력">
+                                                <span class="on"></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </button>
+                                            <span class="coupler">-</span>
+                                        </div>
+                                        <div class="third">
+                                            <button type="button" class="entry-num-rd" aria-label="보안키패드 카드 비밀번호 입력">
+                                                <span class="on"></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </button>
+                                            <span class="coupler">-</span>
+                                        </div>
+                                        <div class="rear">
+                                            <div class="inp-box"><!--be-del-->
+                                                <span class="inp"><input type="tel" placeholder="" title="카드일련번호 네번째 4자리"></span>
+                                                <!--button type="button" class="btn-delete"><span class="blind">삭제</span></button-->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <strong class="g-tit-rd">2. 카드 비밀번호</strong>
+                                    <button type="button" class="card-inf-pw" aria-label="보안키패드 카드 비밀번호 입력">
+                                        <span class="on"></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+
+                                    <strong class="g-tit-nd">7) 이용기간</strong>
+                                    <div class="period-condition">
+                                        <div class="inp-pair">
+                                            <div class="front">
+                                                <div class="inp-date2">
+                                                    <input type="text" class="inp" title="기간 시작" value="2022.01.13">
+                                                    <button type="button" class="btn-calander">
+                                                        <span class="blind">달력보기</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <span class="coupler">-</span>
+                                            <div class="rear">
+                                                <div class="inp-date2">
+                                                    <input type="text" class="inp" title="기간 종료" value="2022.01.19">
+                                                    <button type="button" class="btn-calander">
+                                                        <span class="blind">달력보기</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="period-month">
+                                            <div class="el-combobox ty2 wid-full">
+                                                <div class="combobox">
+                                                    <input type="text" role="combobox" readonly="true" class="combo" aria-autocomplete="list" aria-owns="select-month" aria-haspopup="true" aria-readonly="true" aria-expanded="false" aria-activedescendant="" placeholder="" title="월별 선택" value="2022년 3월">
+                                                    <button type="button" class="combo-btn"><span class="blind">선택 목록 열기</span></button>
+                                                </div>
+                                                
+                                                <div class="combo-list">
+                                                    <div class="in-wrap">
+                                                        <div class="opt-head">
+                                                            <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                                            <a href="javascript:void(0);" class="opt-close"><span class="blind">닫기</span></a>
+                                                            <div class="opt-title">
+                                                                <strong>월별 선택</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="opt-contents">
+                                                            <div class="box-select-month">
+                                                                <ul id="select-month" class="opt-list" role="listbox" aria-hidden="true" tabindex="-1">
+                                                                    <li id="select-month-opt01" class="opt" role="option"><span>2023년</span> <span>1월</span></li>
+                                                                    <li id="select-month-opt02" class="opt" role="option"><span>2022년</span> <span>12월</span></li>
+                                                                    <li id="select-month-opt03" class="opt" role="option"><span>2022년</span> <span>11월</span></li>
+                                                                    <li id="select-month-opt04" class="opt" role="option"><span>2022년</span> <span>10월</span></li>
+                                                                    <li id="select-month-opt05" class="opt" role="option"><span>2022년</span> <span>9월</span></li>
+                                                                    <li id="select-month-opt06" class="opt" role="option"><span>2022년</span> <span>8월</span></li>
+                                                                    <li id="select-month-opt07" class="opt" role="option"><span>2022년</span> <span>7월</span></li>
+                                                                    <li id="select-month-opt08" class="opt" role="option"><span>2022년</span> <span>6월</span></li>
+                                                                    <li id="select-month-opt09" class="opt" role="option"><span>2022년</span> <span>5월</span></li>
+                                                                    <li id="select-month-opt10" class="opt" role="option"><span>2022년</span> <span>4월</span></li>
+                                                                    <li id="select-month-opt11" class="opt select" role="option"><span>2022년</span> <span>3월</span></li>
+                                                                    <li id="select-month-opt12" class="opt" role="option"><span>2022년</span> <span>2월</span></li>
+                                                                    <li id="select-month-opt13" class="opt" role="option"><span>2022년</span> <span>1월</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <p class="form-notice">현재일자 기준으로 월단위 조회가 가능합니다.</p>
+                                        </div>
+    
+                                        <div class="inp-btns n4 chk-unit">
+                                            <span class="inp-btn2">
+                                                <input type="radio" name="ph-chk" id="ph-chk01" checked>
+                                                <label for="ph-chk01">1주일</label>
+                                            </span>
+                                            <span class="inp-btn2">
+                                                <input type="radio" name="ph-chk" id="ph-chk02">
+                                                <label for="ph-chk02">1개월</label>
+                                            </span>
+                                            <span class="inp-btn2">
+                                                <input type="radio" name="ph-chk" id="ph-chk03">
+                                                <label for="ph-chk03">3개월</label>
+                                            </span>
+                                            <span class="inp-btn2">
+                                                <input type="radio" name="ph-chk" id="ph-chk04">
+                                                <label for="ph-chk04">월단위</label>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <strong class="g-tit-nd">8) 계좌번호 입력</strong>
+                                    <div class="inp-account">
+                                        <div class="account-selection">
+                                            <button type="button" class="btn-fnc">
+                                                <span class="img-fnc small" data-fnc-code="020"></span>
+                                                <span class="name-fnc">우리은행</span>
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="inp-box be-del">
+                                            <span class="inp"><input type="tel" title="계좌번호" placeholder="계좌번호 입력"></span>
+                                            <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                        </div>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">배치와 요소 그룹</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit">[1] 병렬배치</strong>
+                                    <div class="inp-pair">
+                                        <div class="front">
+                                            <div class="inp-box be-del">
+                                                <span class="inp"><input type="text" placeholder="" title=""></span>
+                                                <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                            </div>
+                                        </div>
+                                        <span class="coupler">-</span>
+                                        <div class="rear">
+                                            <div class="inp-box be-del">
+                                                <span class="inp"><input type="text" placeholder="" title=""></span>
+                                                <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <strong class="g-tit">[2] 입력요소 그룹</strong>
+                                    <strong class="g-tit-nd">1) type1</strong>
+                                    <div class="wrap-form">
+                                        <dl class="form-box">
+                                            <dt class="tit"><span>성명</span></dt>
+                                            <dd class="con">
+                                                <div class="inp-box be-del">
+                                                    <span class="inp"><input type="text" title="성명" placeholder="성명 입력"></span>
+                                                    <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="form-box">
+                                            <dt class="tit"><span>성명</span></dt>
+                                            <dd class="con">
+                                                <div class="inp-box be-del">
+                                                    <span class="inp"><input type="text" title="성명" placeholder="성명 입력"></span>
+                                                    <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <strong class="g-tit-nd">2) type2</strong>
+                                    <div class="wrap-form pad-bott">
+                                        <dl class="form-box2">
+                                            <dt class="tit"><span>결제수단 선택</span></dt>
+                                            <dd class="con">
+                                                <!-- combobox -->
+                                                <div class="el-combobox ty2 wid-full">
+                                                    <div class="combobox">
+                                                        <input type="text" role="combobox" readonly="true" class="combo" aria-autocomplete="list" aria-owns="pay-methods" aria-haspopup="true" aria-readonly="true" aria-expanded="false" aria-activedescendant="" placeholder="" title="결제수단 선택" value="전체">
+                                                        <button type="button" class="combo-btn"><span class="blind">선택 목록 열기</span></button>
+                                                    </div>
+                                                    
+                                                    <div class="combo-list">
+                                                        <div class="in-wrap">
+                                                            <div class="opt-head">
+                                                                <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                                                <a href="javascript:void(0);" class="opt-close"><span class="blind">닫기</span></a>
+                                                                <div class="opt-title">
+                                                                    <strong>결제수단 선택</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="opt-contents"><!-- data-pay-method-code 속성값은 결제수단 코드 데이타(개발 처리사항)  -->
+                                                                <div class="box-pay-methods">
+                                                                    <ul id="pay-methods" class="opt-list" role="listbox" aria-hidden="true" tabindex="-1">
+                                                                        <li id="pay-method-opt01" class="opt" role="option" data-pay-method-code="all">
+                                                                            <div class="img"></div>
+                                                                            <div class="inf">전체</div>
+                                                                        </li>
+                                                                        <li id="pay-method-opt02" class="opt" role="option" data-pay-method-code="a001">
+                                                                            <div class="img"></div>
+                                                                            <div class="inf">카드의정석 UNTACT AIR<span>(7890)</span></div>
+                                                                        </li>
+                                                                        <li id="pay-method-opt03" class="opt" role="option" data-pay-method-code="b002">
+                                                                            <div class="img"></div>
+                                                                            <div class="inf">우리WON멤버스카드<span>(3456)</span></div>
+                                                                        </li>
+                                                                        <li id="pay-method-opt04" class="opt" role="option" data-pay-method-code="c003">
+                                                                            <div class="img"></div>
+                                                                            <div class="inf">WON POINT AIR<span>(1580)</span></div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- //combobox -->
+                                            </dd>
+                                        </dl>
+                                        <dl class="form-box2">
+                                            <dt class="tit"><span>이용기간</span></dt>
+                                            <dd class="con">
+                                                <div class="period-condition">
+                                                    <div class="inp-pair">
+                                                        <div class="front">
+                                                            <div class="inp-date2">
+                                                                <input type="text" class="inp" title="기간 시작" value="2022.01.13">
+                                                                <button type="button" class="btn-calander">
+                                                                    <span class="blind">달력보기</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span class="coupler">-</span>
+                                                        <div class="rear">
+                                                            <div class="inp-date2">
+                                                                <input type="text" class="inp" title="기간 종료" value="2022.01.19">
+                                                                <button type="button" class="btn-calander">
+                                                                    <span class="blind">달력보기</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="period-month">
+                                                        <div class="el-combobox ty2 wid-full">
+                                                            <div class="combobox">
+                                                                <input type="text" role="combobox" readonly="true" class="combo" aria-autocomplete="list" aria-owns="select-month" aria-haspopup="true" aria-readonly="true" aria-expanded="false" aria-activedescendant="" placeholder="" title="월별 선택" value="2022년 3월">
+                                                                <button type="button" class="combo-btn"><span class="blind">선택 목록 열기</span></button>
+                                                            </div>
+                                                            
+                                                            <div class="combo-list">
+                                                                <div class="in-wrap">
+                                                                    <div class="opt-head">
+                                                                        <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                                                        <a href="javascript:void(0);" class="opt-close"><span class="blind">닫기</span></a>
+                                                                        <div class="opt-title">
+                                                                            <strong>월별 선택</strong>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="opt-contents">
+                                                                        <div class="box-select-month">
+                                                                            <ul id="select-month" class="opt-list" role="listbox" aria-hidden="true" tabindex="-1">
+                                                                                <li id="select-month-opt01" class="opt" role="option"><span>2023년</span> <span>1월</span></li>
+                                                                                <li id="select-month-opt02" class="opt" role="option"><span>2022년</span> <span>12월</span></li>
+                                                                                <li id="select-month-opt03" class="opt" role="option"><span>2022년</span> <span>11월</span></li>
+                                                                                <li id="select-month-opt04" class="opt" role="option"><span>2022년</span> <span>10월</span></li>
+                                                                                <li id="select-month-opt05" class="opt" role="option"><span>2022년</span> <span>9월</span></li>
+                                                                                <li id="select-month-opt06" class="opt" role="option"><span>2022년</span> <span>8월</span></li>
+                                                                                <li id="select-month-opt07" class="opt" role="option"><span>2022년</span> <span>7월</span></li>
+                                                                                <li id="select-month-opt08" class="opt" role="option"><span>2022년</span> <span>6월</span></li>
+                                                                                <li id="select-month-opt09" class="opt" role="option"><span>2022년</span> <span>5월</span></li>
+                                                                                <li id="select-month-opt10" class="opt" role="option"><span>2022년</span> <span>4월</span></li>
+                                                                                <li id="select-month-opt11" class="opt select" role="option"><span>2022년</span> <span>3월</span></li>
+                                                                                <li id="select-month-opt12" class="opt" role="option"><span>2022년</span> <span>2월</span></li>
+                                                                                <li id="select-month-opt13" class="opt" role="option"><span>2022년</span> <span>1월</span></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <p class="form-notice">현재일자 기준으로 월단위 조회가 가능합니다.</p>
+                                                    </div>
+                
+                                                    <div class="inp-btns n4 chk-unit">
+                                                        <span class="inp-btn2">
+                                                            <input type="radio" name="ph-chk" id="ph-chk01" checked>
+                                                            <label for="ph-chk01">1주일</label>
+                                                        </span>
+                                                        <span class="inp-btn2">
+                                                            <input type="radio" name="ph-chk" id="ph-chk02">
+                                                            <label for="ph-chk02">1개월</label>
+                                                        </span>
+                                                        <span class="inp-btn2">
+                                                            <input type="radio" name="ph-chk" id="ph-chk03">
+                                                            <label for="ph-chk03">3개월</label>
+                                                        </span>
+                                                        <span class="inp-btn2">
+                                                            <input type="radio" name="ph-chk" id="ph-chk04">
+                                                            <label for="ph-chk04">월단위</label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="form-box2">
+                                            <dt class="tit"><span>이용구분</span></dt>
+                                            <dd class="con">
+                                                <div class="class-usage">
+                                                    <span class="inp-chk">
+                                                        <input type="checkbox" name="ty-chk" id="ty-chk01" checked>
+                                                        <label for="ty-chk01">전체</label>
+                                                    </span>
+                                                    <span class="inp-chk">
+                                                        <input type="checkbox" name="ty-chk" id="ty-chk02">
+                                                        <label for="ty-chk02">일시불</label>
+                                                    </span>
+                                                    <span class="inp-chk">
+                                                        <input type="checkbox" name="ty-chk" id="ty-chk03">
+                                                        <label for="ty-chk03">할부</label>
+                                                    </span>
+                                                    <span class="inp-chk">
+                                                        <input type="checkbox" name="ty-chk" id="ty-chk04">
+                                                        <label for="ty-chk04">결제</label>
+                                                    </span>
+                                                    <span class="inp-chk">
+                                                        <input type="checkbox" name="ty-chk" id="ty-chk05">
+                                                        <label for="ty-chk05">최소</label>
+                                                    </span>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="form-box2">
+                                            <dt class="tit"><span>정렬</span></dt>
+                                            <dd class="con">
+                                                <div class="inp-btns n2">
+                                                    <span class="inp-btn2">
+                                                        <input type="radio" name="type-chk" id="type-chk01" checked>
+                                                        <label for="type-chk01">최근순</label>
+                                                    </span>
+                                                    <span class="inp-btn2">
+                                                        <input type="radio" name="type-chk" id="type-chk02">
+                                                        <label for="type-chk02">과거순</label>
+                                                    </span>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">인증비밀번호 입력</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit-rd">1. 인증비밀번호 설정</strong>
+                                    <button type="button" class="certify-entry" aria-label="보안키패드 인증비밀번호 입력">
+                                        <span class="on"></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+
+                                    <br>
+
+                                    <strong class="g-tit-rd">2. 인증비밀번호 재설정</strong>
+                                    <button type="button" class="certify-entry re" aria-label="보안키패드 인증비밀번호 입력">
+                                        <span class="on"></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    
+                                    <!-- <div class="certify-entry">
+                                        <span class="entry"><input type="password" name="" title="첫번째자리" value="2"></span>
+                                        <span><input type="password" name="" title="두번째자리" value="2"></span>
+                                        <span><input type="password" name="" title="세번째자리" value="2"></span>
+                                        <span><input type="password" name="" title="네번째자리" value="2"></span>
+                                        <span><input type="password" name="" title="다섯번째자리" value="2"></span>
+                                        <span><input type="password" name="" title="여섯번째자리" value="2"></span>
+                                    </div>
+
+                                    <div class="certify-entry re">
+                                        <span class="entry"><input type="password" name="" title="첫번째자리" value="2"></span>
+                                        <span><input type="password" name="" title="두번째자리" value="2"></span>
+                                        <span><input type="password" name="" title="세번째자리" value="2"></span>
+                                        <span><input type="password" name="" title="네번째자리" value="2"></span>
+                                        <span><input type="password" name="" title="다섯번째자리" value="2"></span>
+                                        <span><input type="password" name="" title="여섯번째자리" value="2"></span>
+                                    </div> -->
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //form -->
+
+                    <!-- data cell -->
+                    <div id="data-cell-style-guide" class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">dl</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <div class="infos-cont">
+                                        <strong class="cont-title">결제정보</strong>
+                                        <div class="wrap-info-list ty2">
+                                            <dl class="info-list">
+                                                <dt class="tit">가맹정</dt>
+                                                <dd class="con">지마켓</dd>
+                                            </dl>
+                                            <dl class="info-list">
+                                                <dt class="tit">상품명</dt>
+                                                <dd class="con">[컬럼비아] 남성 3 IN 워터 프루프자켓</dd>
+                                            </dl>
+                                            <dl class="info-list">
+                                                <dt class="tit">결제금액</dt>
+                                                <dd class="con"><strong class="emp ls-ini">50,000</strong>원</dd>
+                                            </dl>
+                                            <dl class="info-list">
+                                                <dt class="tit">결제일시</dt>
+                                                <dd class="con"><span class="ls-ini">2022.01.17  13:07:16</span></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="infos-cont">
+                                        <div class="wrap-info-list ty2">
+                                            <dl class="info-list">
+                                                <dt class="tit">가맹정</dt>
+                                                <dd class="con">지마켓</dd>
+                                            </dl>
+                                            <dl class="info-list">
+                                                <dt class="tit">상품명</dt>
+                                                <dd class="con">[컬럼비아] 남성 3 IN 워터 프루프자켓</dd>
+                                            </dl>
+                                            <dl class="info-list">
+                                                <dt class="tit">결제금액</dt>
+                                                <dd class="con"><strong class="emp ls-ini">50,000</strong>원</dd>
+                                            </dl>
+                                            <dl class="info-list">
+                                                <dt class="tit">결제일시</dt>
+                                                <dd class="con"><span class="ls-ini">2022.01.17  13:07:16</span></dd>
+                                            </dl>
+                                        </div>
+                                        <div class="footnote">
+                                            <ul class="bu-ty1">
+                                                <li>오픈뱅킹 송금서비스가 정상적으로 처리되었습니다.</li>
+                                                <li>위 정보는 고객편의를 위해 제공합니다.</li>
+                                                <li>필요 시 스크린 캡처를 통해 활용하시기 바랍니다.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="infos-cont">
+                                        <strong class="cont-title">결제정보</strong>
+                                        <div class="wrap-info-list ty2">
+                                            <div class="card-data">
+                                                <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card02.png" alt="WON POINT AIR"></div>
+                                                <div class="inf">
+                                                    <div class="item">WON POINT AIR</div>
+                                                    <div class="num">4214-****-****-1580</div>
+                                                </div>
+                                            </div>
+                                            <dl class="info-list">
+                                                <dt class="tit">가맹정</dt>
+                                                <dd class="con">지마켓</dd>
+                                            </dl>
+                                            <dl class="info-list">
+                                                <dt class="tit">상품명</dt>
+                                                <dd class="con">[컬럼비아] 남성 3 IN 워터 프루프자켓</dd>
+                                            </dl>
+                                            <dl class="info-list">
+                                                <dt class="tit">결제금액</dt>
+                                                <dd class="con"><strong class="emp ls-ini">50,000</strong>원</dd>
+                                            </dl>
+                                            <dl class="info-list">
+                                                <dt class="tit">결제일시</dt>
+                                                <dd class="con"><span class="ls-ini">2022.01.17  13:07:16</span></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="infos-cont gap-ver">
+                                        <div class="wrap-info-list ty2">
+                                            <dl class="info-list">
+                                                <dt class="tit">출금계좌</dt>
+                                                <dd class="con">우리은행 <span class="ls-ini">98765432123422</span></dd>
+                                            </dl>
+                                            <dl class="info-list">
+                                                <dt class="tit">출금 후 잔액</dt>
+                                                <dd class="con"><span class="txt-bold emp ls-ini">4,500,000</span> <span class="emp">원</span></dd>
+                                            </dl>
+                                            <div class="accordion">
+                                                <div class="toggle-contents">
+                                                    <dl class="info-list">
+                                                        <dt class="tit">수수료</dt>
+                                                        <dd class="con"><span class="ls-ini">0</span> 원</dd>
+                                                    </dl>
+                                                    <dl class="info-list">
+                                                        <dt class="tit">받는 분 통장 표시</dt>
+                                                        <dd class="con">홍길동</dd>
+                                                    </dl>
+                                                    <dl class="info-list">
+                                                        <dt class="tit">내 통장 표시</dt>
+                                                        <dd class="con">우카오픈홍길동</dd>
+                                                    </dl>
+                                                    <dl class="info-list">
+                                                        <dt class="tit">집금(CMS)번호</dt>
+                                                        <dd class="con"><span class="ls-ini">123455</span></dd>
+                                                    </dl>
+                                                    <dl class="info-list">
+                                                        <dt class="tit">예약송금</dt>
+                                                        <dd class="con"><span class="ls-ini">2022.02.03</span> 오전 8시~9시</dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="toggle-anchor">
+                                                    <a href="javascript:void(0);" class="btn-infos"><span>송금 상세정보</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br><br>
+
+                                    <!-- <div class="tbl-wrap">
+                                        <div class="tbl-top">
+                                            ..
+                                        </div>			
+                                        <div class="info-list">
+                                            <table>
+                                                <caption>
+                                                    <strong></strong>
+                                                    <p></p>
+                                                </caption>
+                                                <colgroup>
+                                                    <col style="width:%">
+                                                    <col style="width:%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tbl-footnote">
+                                            ..
+                                        </div>
+                                    </div> -->
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //data cell -->
+
+                    <!-- box -->
+                    <div id="box-style-guide" class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">메시지</strong>
+                            <div class="g-cont">
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit">[1] 처리 결과 메시지</strong>
+                                    <div class="box-msg">
+                                        <div class="in-box">
+                                            <p class="str-main">고객님은<br> 이미 가입된 회원입니다.</p>
+                                            <p class="str-sub">
+                                                로그인 후 <em class="emp">연세 Pay</em>를 이용해 주세요.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    
+                                    <div class="box-msg check">
+                                        <div class="in-box">
+                                            <p class="str-main">
+                                                김연세님 <em class="emp">환영합니다!</em><br> 회원가입이 완료되었습니다.
+                                            </p>
+                                            <p class="str-sub">
+                                                이제 <em class="emp">연세 Pay</em>를 사용할 준비가 되었어요 
+                                                로그인 후 다양한 서비스를 이용해보세요.</em>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="box-msg drop">
+                                        <div class="in-box">
+                                            <p class="str-main">그동안 <em class="emp">연세 Pay</em>를<br> 이용해 주셔서 감사합니다.</p>
+                                            <p class="str-sub">
+                                                서비스해지 시 모든 정보는 삭제되며,<br>
+                                                재가입을 하셔야 서비스 이용이 가능합니다.<br>
+                                                <em class="emp">해지 신청 시, 인증비밀번호 입력 후 해지가<br>
+                                                됩니다.</em>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="box-msg ico-none">
+                                        <div class="in-box">
+                                            <p class="str-main">결제 요청이<br> 완료되었습니다.</p>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="box-msg2 check">
+                                        <div class="in-box">
+                                          <p class="str-main">
+                                            <em class="emp">2</em>개의 계좌가<br />등록 완료되었습니다.
+                                          </p>
+                            
+                                          <p class="str-sub">
+                                            등록된 계좌의 은행/증권사로부터<br />오픈뱅킹 등록 안내 문자가
+                                            수신될 수 있어요!
+                                          </p>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="box-msg2">
+                                        <div class="in-box">
+                                          <p class="str-main">
+                                            <em class="emp">2</em>개의 계좌가<br /><em class="emp-nd">등록 실패</em>되었습니다.
+                                          </p>
+                            
+                                          <p class="str-sub">
+                                            실패 사유를 확인해 주세요.<br />[확인] 선택 시 다시 오픈뱅킹 등록을 진행합니다.
+                                          </p>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="box-msg2">
+                                        <div class="in-box">
+                                          <p class="str-main">
+                                            송금 실패하였습니다.
+                                          </p>
+                                          
+                                          <div class="box-sub">
+                                            <p>
+                                              일일 송금한도를 초과했습니다.<br>
+                                              잔여송금한도를 확인하시고<br>
+                                              다시 송금해 주시기 바랍니다.
+                                            </p>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="box-msg2 check">
+                                        <div class="in-box">
+                                          <div class="str-main">
+                                            <p class="txt-thin">
+                                              <em>김연세님</em>에게 <span class="inp-bookmark">
+                                                <input type="checkbox" name="" title="자주 쓰는(즐겨찾기) 계좌">
+                                              </span><br>
+                                              <em><span class="txt-bold emp ls-ini">100,000,000</span>원</em><br>
+                                              송금 완료되었습니다.
+                                            </p>
+                                          </div>
+                                         
+                                          <div class="box-account">
+                                            <div class="img-fnc small" data-fnc-code="020"></div>
+                                            <p class="inf">
+                                              우리은행 <span class="ls-ini">12345678901234</span> 
+                                            </p>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="box-msg2 ico-none pdt0">
+                                        <div class="in-box">
+                                          <div class="str-main">
+                                            <p class="txt-thin">
+                                              <em>김연세님</em>에게<br>
+                                              <em><span class="txt-bold emp ls-ini">100,000,000</span>원</em>을<br>
+                                              보내시겠습니까?
+                                            </p>
+                                          </div>
+                                        
+                                          <div class="box-account">
+                                            <div class="img-fnc small" data-fnc-code="020"></div>
+                                            <p class="inf">
+                                              우리은행 <span class="ls-ini">12345678901234</span> 
+                                            </p>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <strong class="g-tit">[2] 조회 결과 메시지</strong>
+                                    <div class="box-notice">
+                                        <div class="in-box">
+                                            <p class="str-main">현재 등록한 결제수단이<br> 없습니다.</p>
+                                            <p class="str-sub">
+                                                결제수단을 등록해 주세요
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="box-notice">
+                                        <div class="in-box">
+                                            <p class="str-main">등록가능한 결제수단이<br> 없습니다.</p>
+                                        </div>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">안내문구</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <div class="box-desc">
+                                        <p>수신 체크 시 혜택 및 이벤트<br> 안내를 받을 수 있어요</p>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="box-desc align-l">
+                                        <p>등록할 내 계좌를 선택하거나<br> 직접 입력해 주세요</p>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="box-desc2">
+                                        <p>변경할 인증비밀번호를<br> 다시 한번 입력해 주세요.</p>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //box -->
+
+                    <!-- menu -->
+                    <div id="menu-style-guide" class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">Tab</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <div class="tab-container">
+                                        <div class="tab">
+                                            <a href="javascript:void(0);" class="tab-menu crnt"><span>가입/등록</span></a>
+                                            <a href="javascript:void(0);" class="tab-menu"><span>이용</span></a>
+                                            <a href="javascript:void(0);" class="tab-menu"><span>에러/분실</span></a>
+                                            <a href="javascript:void(0);" class="tab-menu"><span>기타</span></a>
+                                        </div>
+                                        <div class="tab-conts">
+                                            <div class="tab-cont crnt">
+                                                //가입/등록
+                                            </div>
+                                            <div class="tab-cont">
+                                                //이용
+                                            </div>
+                                            <div class="tab-cont">
+                                                //에러/분실
+                                            </div>
+                                            <div class="tab-cont">
+                                                //기타
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="tab-container">
+                                        <div class="tab ty-button">
+                                            <button type="button" class="tab-menu crnt"><span>2022.03</span></button>
+                                            <button type="button" class="tab-menu"><span>2022.02</span></button>
+                                            <button type="button" class="tab-menu"><span>2022.01</span></button>
+                                        </div>
+                                        <div class="tab-conts">
+                                            <div class="tab-cont crnt">
+                                                //2022.03
+                                            </div>
+                                            <div class="tab-cont">
+                                                //2022.02
+                                            </div>
+                                            <div class="tab-cont">
+                                                //2022.01
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //menu -->
+
+                    <!-- etc -->
+                    <div id="etc-style-guide" class="g-tab-cont">
+                        <div class="g-con-wrap">
+                            <strong class="g-title">tooltip</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <ul class="g-list-ty">
+                                    <li>.btn-tooltip.be-txt(텍스트가 있는 경우) : width속성 설정</li>
+                                    <li>직계 부모 element에 position:relative; 설정</li>
+                                    <li>.tooltip-wrap.abs-r(툴팁이 우측에 위치하는 경우) : 우측 배치</li>
+                                </ul>
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <style>
+                                    .g-sample-box > div:nth-of-type(1) > .tooltip-wrap:nth-of-type(1) .btn-tooltip{width:2rem;align-items:flex-start;}
+                                    .g-sample-box > div:nth-of-type(1) > .tooltip-wrap:nth-of-type(2) .btn-tooltip{width:2rem;align-items:flex-end;}
+                                    .g-sample-box > div:nth-of-type(2) > .tooltip-wrap:nth-of-type(1) .btn-tooltip{width:2rem;align-items:flex-start;}
+                                    .g-sample-box > div:nth-of-type(2) > .tooltip-wrap:nth-of-type(2) .btn-tooltip{width:8rem;align-items:flex-end;}
+                                    .g-sample-box > div:nth-of-type(3) > .tooltip-wrap:nth-of-type(1) .btn-tooltip{width:8rem;align-items:flex-start;}
+                                    .g-sample-box > div:nth-of-type(3) > .tooltip-wrap:nth-of-type(2) .btn-tooltip{width:8rem;align-items:flex-end;}
+                                    </style>
+                                    <script>
+                                    $(function () { WIP.tooltip(); });
+                                    </script>
+                                <div style="display:flex;justify-content:space-between;position:relative;">
+                                    <!-- tooltip -->
+                                    <div class="tooltip-wrap">
+                                        <button type="button" class="btn-tooltip"><span class="blind">도움말 보기</span></button>
+                                        
+                                        <div class="tooltip-msg">
+                                            <div class="tooltip-msg-header">
+                                                <button type="button" class="tooltip-close"><span class="blind">닫기</span></button>
+                                                <p class="title">송금한도 안내</p>
+                                            </div>
+                                            <div class="tooltip-msg-txt">
+                                                <p class="txt">1회 : 10,000,000원 / 1일 : 10,000,000원<br>오늘 송금 전액 : 1,200,000원</p>
+                                                <p class="txt">오픈뱅킹 전 금융기관 합산 1일 1천만원 한도를<br>가지므로 실제 한도는 더 적을 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //tooltip -->    
+
+                                    <!-- tooltip -->
+                                    <div class="tooltip-wrap abs-r">
+                                        <button type="button" class="btn-tooltip"><span class="blind">도움말 보기</span></button>
+                                        
+                                        <div class="tooltip-msg">
+                                            <div class="tooltip-msg-header">
+                                                <button type="button" class="tooltip-close"><span class="blind">닫기</span></button>
+                                                <p class="title">송금한도 안내</p>
+                                            </div>
+                                            <div class="tooltip-msg-txt">
+                                                <p class="txt">1회 : 10,000,000원 / 1일 : 10,000,000원<br>오늘 송금 전액 : 1,200,000원</p>
+                                                <p class="txt">오픈뱅킹 전 금융기관 합산 1일 1천만원 한도를<br>가지므로 실제 한도는 더 적을 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //tooltip -->
+                                </div>
+
+                                <div style="display:flex;justify-content:space-between;position:relative;">
+                                    <!-- tooltip -->
+                                    <div class="tooltip-wrap">
+                                        <button type="button" class="btn-tooltip"><span class="blind">도움말 보기</span></button>
+                                        
+                                        <div class="tooltip-msg">
+                                            <div class="tooltip-msg-header">
+                                                <button type="button" class="tooltip-close"><span class="blind">닫기</span></button>
+                                            </div>
+                                            <div class="tooltip-msg-txt">
+                                                <p class="txt">1회 : 10,000,000원 / 1일 : 10,000,000원<br>오늘 송금 전액 : 1,200,000원</p>
+                                                <p class="txt">오픈뱅킹 전 금융기관 합산 1일 1천만원 한도를<br>가지므로 실제 한도는 더 적을 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //tooltip -->    
+
+                                    <!-- tooltip -->
+                                    <div class="tooltip-wrap abs-r">
+                                        <button type="button" class="btn-tooltip be-txt"><span>텍스트</span><span class="blind">도움말 보기</span></button>
+                                        
+                                        <div class="tooltip-msg">
+                                            <div class="tooltip-msg-header">
+                                                <button type="button" class="tooltip-close"><span class="blind">닫기</span></button>
+                                            </div>
+                                            <div class="tooltip-msg-txt">
+                                                <p class="txt">1회 : 10,000,000원 / 1일 : 10,000,000원<br>오늘 송금 전액 : 1,200,000원</p>
+                                                <p class="txt">오픈뱅킹 전 금융기관 합산 1일 1천만원 한도를<br>가지므로 실제 한도는 더 적을 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //tooltip -->
+                                </div>
+
+                                <div style="display:flex;justify-content:space-between;position:relative;margin-top:50px">      
+                                    <!-- tooltip -->
+                                    <div class="tooltip-wrap">
+                                        <button type="button" class="btn-tooltip be-txt"><span>송금한도</span><span class="blind">도움말 보기</span></button>
+                                        
+                                        <div class="tooltip-msg">
+                                            <div class="tooltip-msg-header">
+                                                <button type="button" class="tooltip-close"><span class="blind">닫기</span></button>
+                                                <p class="title">송금한도 안내</p>
+                                            </div>
+                                            <div class="tooltip-msg-txt">
+                                                <p class="txt">1회 : 10,000,000원 / 1일 : 10,000,000원<br>오늘 송금 전액 : 1,200,000원</p>
+                                                <p class="txt">오픈뱅킹 전 금융기관 합산 1일 1천만원 한도를<br>가지므로 실제 한도는 더 적을 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //tooltip -->    
+
+                                    <!-- tooltip -->
+                                    <div class="tooltip-wrap abs-r">
+                                        <button type="button" class="btn-tooltip be-txt"><span>송금한도</span><span class="blind">도움말 보기</span></button>
+                                        
+                                        <div class="tooltip-msg">
+                                            <div class="tooltip-msg-header">
+                                                <button type="button" class="tooltip-close"><span class="blind">닫기</span></button>
+                                                <p class="title">송금한도 안내</p>
+                                            </div>
+                                            <div class="tooltip-msg-txt">
+                                                <p class="txt">1회 : 10,000,000원 / 1일 : 10,000,000원<br>오늘 송금 전액 : 1,200,000원</p>
+                                                <p class="txt">오픈뱅킹 전 금융기관 합산 1일 1천만원 한도를<br>가지므로 실제 한도는 더 적을 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //tooltip -->
+                                </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+                        
+                        <div class="g-con-wrap">
+                            <strong class="g-title">Labels</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit-rd">1. </strong>
+                                    <span class="lab">텍스트</span>
+                                    <span class="lab ty2">텍스트</span>
+                                    <span class="lab ty3">텍스트</span>
+                                    <span class="lab ty4">텍스트</span>
+                                    <span class="lab ty5">텍스트</span>
+
+                                    <br><br>
+
+                                    <strong class="g-tit-rd">2. 그룹</strong>
+                                    <div class="box-lab">
+                                        <span class="lab">대표</span>
+                                        <span class="lab ty2">NEW</span>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">서명</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <div class="sign">
+                                        <div class="box-draw">
+                                            <img src="/igtpay/ap/res/images/temp/temp_my01.png" alt="서명">
+                                        </div>
+                                        <button type="button" class="btn-initialize"><span class="blind">초기화</span></button>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">정보 + 기능</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <div class="info-card">
+                                        <div class="box-inf">
+                                            ..
+                                        </div>
+                                        <div class="box-btn">
+                                            <a href="javascript:void(0);" class="btn"><span>송금내역 조회</span></a>
+                                            <a href="javascript:void(0);" class="btn"><span>송금</span></a>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="info-card">
+                                        <div class="box-inf">
+                                            ..
+                                        </div>
+                                        <div class="box-btn only">
+                                            <a href="javascript:void(0);" class="btn"><span>거래내역 조회</span></a>
+                                        </div>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="wrap-info-card">
+                                        <div class="info-card ty2">
+                                            <div class="box-inf">
+                                                <div class="cont">
+                                                    <p class="descr">연세대학교 학생증 앱 내 연세페이가 설치되었다면<br>
+                                                    <span class="emp">[결제요청]</span>을 눌러주세요.</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-btn only">
+                                                <a href="javascript:void(0);" class="btn"><span>결제요청</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">accordion</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit">[1] 기본 구조</strong>
+                                    <div class="accordion">
+                                        <div class="toggle-anchor">
+                                            <a href="javascript:void(0);" title="내용 보기">toggle anchor</a>
+                                        </div>
+                                        <div class="toggle-contents">
+                                            //toggle-contents
+                                        </div>
+                                    </div>
+
+                                    <strong class="g-tit">[2] FAQ</strong>
+                                    <div class="wrap-faq tab-container">
+                                        <div class="tab"><!-- fixed -->
+                                            <a href="javascript:void(0);" class="tab-menu crnt"><span>가입/등록</span></a>
+                                            <a href="javascript:void(0);" class="tab-menu"><span>이용</span></a>
+                                            <a href="javascript:void(0);" class="tab-menu"><span>에러/분실</span></a>
+                                            <a href="javascript:void(0);" class="tab-menu"><span>기타</span></a>
+                                        </div>
+                                        <div class="tab-conts">
+                                            <!-- 가입/등록 내용 -->
+                                            <div class="tab-cont crnt">
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세페이는 어떤 서비스 인가요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        연세페이는 우리카드의 간편결제 서비스를 활용하여 연세대학교 연세 Y-MID(모바일 학생증/신분증) 앱에서 간편결제 및 금융 서비스를 편리하게 이용하도록 제공하는 서비스입니다.<br>
+                                                        연세페이에 우리카드(신용카드, 체크카드, 계좌결제 서비스)를 결제수단으로 등록하여 연세대학교 온/오프라인 가맹점에서 간편결제 서비스를 이용하실 수 있습니다.
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세페이 회원가입은 어떻게 하나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        <!-- [통합결제플랫폼] : 수정 2022.02.16 -->
+                                                        연세페이 실행 &gt; 휴대폰 본인인증 &gt; 약관 동의 &gt; 인증비밀번호 설정 &gt; 회원가입 완료
+                                                        <!-- //[통합결제플랫폼] : 수정 2022.02.16 -->
+                                                        <p class="an-commt">* 연세페이는 본인 명의의 휴대폰 및 우리카드를 보유한 고객만 이용 가능합니다.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>알뜰폰(MVNO)도 연세페이 가입 가능한가요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        가능합니다. 알뜰폰을 사용하시는 고객님께서는 통신사 구분을 해당 알뜰폰 사업자로 선택하시어 휴대폰 본인인증을 진행하실 수 있습니다.
+                                                        <p class="an-commt">* 일부 알뜰폰 사업자의 경우, 알뜰폰 사업자 사정상 본인인증절차 지원이 불가하여 연세페이 사용이 불가할 수 있습니다.</p>
+                                                        <p class="an-commt">* 이동통신사 정책에 따라 알뜰폰의 경우 연세 Y-MID(모바일 학생증/신분증) 앱의 신분증 기능은 사용이 불가 할 수 있습니다.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>외국인도 연세페이 가입 가능한가요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        <!-- [통합결제플랫폼] : 수정 2022.02.16 -->
+                                                        가능합니다. 휴대폰 본인인증 시 통신사에 등록된 성명을 직접 입력하여 가입을 진행할 수 있습니다.
+                                                        <br>단, 통신사에 등록된 휴대폰 명의는 본인 명의여야 하며, 통신사에 등록된 성명과 동일하게 입력하셔야 가입 가능합니다.
+                                                        <!-- //[통합결제플랫폼] : 수정 2022.02.16 -->
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>여러 개의 스마트폰에 연세페이를 등록할 수 있나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        불가합니다. 연세페이는 1인당 한 개의 본인명의 스마트폰에서만 등록/사용이 가능합니다.
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>휴대폰을 바꾸면 연세페이를 다시 등록해야 하나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        네 맞습니다. 휴대전화가 바뀌면 연세페이에 다시 등록해야 하며, 등록을 완료하시면 이전 휴대전화에 등록되어 있던 연세페이는 자동으로 해지됩니다.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //가입/등록 내용 -->
+                    
+                                            <!-- 이용 -->
+                                            <div class="tab-cont">
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세 Y-MID(모바일 학생증/신분증) 이용 방법은 어디서 알 수 있나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        연세대학교 홈페이지 > 대학생활 > 스마트캠퍼스에서 확인 가능합니다.
+                                                        <p class="an-commt">* 우리카드 고객센터에서는 연세페이 관련 상담만 가능한 점 양해 부탁드립니다.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세페이에 결제수단(카드, 계좌 결제) 등록은 어떻게 하나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        <p>연세페이는 본인명의의 우리카드 및 휴대폰을 보유한 회원만 이용할 수 있습니다.</p>
+                                                        <p class="an-tit"><strong>연세페이에 카드/계좌를 최초 등록하시는 경우</strong></p>
+                                                        <ul class="an-list">
+                                                            <li><span class="pre">1)</span>연세페이에 로그인을 합니다 (연세페이 회원이 아닌 경우, 회원가입을 먼저 진행해 주세요)</li>
+                                                            <li><span class="pre">2)</span>메인 화면의 결제 수단 등록 버튼을 누릅니다</li>
+                                                            <li><span class="pre">3)</span>보유하고 있는 카드/계좌 목록 중 연세페이에 등록할 카드/계좌를 선택한 뒤 등록버튼을 누릅니다.</li>
+                                                        </ul>
+                                                        <p class="an-tit">연세페이에 카드/계좌를 추가 등록하시는 경우</p>
+                                                        <ul class="an-list">
+                                                            <li><span class="pre">1)</span>연세페이에 로그인을 합니다.</li>
+                                                            <li><span class="pre">2)</span>연세페이 MY 메뉴를 클릭합니다.</li>
+                                                            <li><span class="pre">3)</span>결제수단관리를 클릭합니다.</li>
+                                                            <li><span class="pre">4)</span>결제수단 목록에서 추가할 카드/계좌를 선택한 뒤 등록 버튼을 누릅니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세페이는 어디서 이용할 수 있나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        온라인 결제는 연세대 생활협동조합 몰, 연세대 LearnUs에서 이용할 수 있습니다.<br>
+                                                        오프라인 결제는 연세대학교 생협 매장 및 BC QR결제 가맹점(주요 편의점 등)에서 이용 가능합니다.
+                                                        <p class="an-commt">* 결제 가능 가맹점은 지속 확대 중입니다.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>모바일(앱, 모바일웹)에서 연세페이로 결제하려면 어떻게 해야하나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        <ul class="an-list">
+                                                            <li><span class="pre">1)</span>연세페이에 결제 수단을 등록합니다.(이미 등록한 경우 skip)</li>
+                                                            <li><span class="pre">2)</span>연세대학교 생협몰/LearnUs에서 &lsquo;신용카드 결제-우리카드&rsquo;를 선택합니다.</li>
+                                                            <li><span class="pre">3)</span>결제창(메인 또는 기타결제)에서 &lsquo;연세페이&rsquo; 결제를 선택합니다.</li>
+                                                            <li><span class="pre">4)</span>연세페이에서 결제비밀번호 인증 후 온라인 몰 화면으로 돌아가면 결제가 완료됩니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>PC에서 연세페이로 결제하려면 어떻게 해야하나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        <ul class="an-list">
+                                                            <li><span class="pre">1)</span>연세페이에 결제수단을 등록합니다.(이미 등록한 경우 skip)</li>
+                                                            <li><span class="pre">2)</span>PC 인터넷 연세대 생활협동조합 몰, 연세대 Learn US에서 &lsquo;카드 > 우리카드&rsquo; 결제를 선택합니다.</li>
+                                                            <li><span class="pre">3)</span>PC 결제창(메인 또는 기타결제)에서 &lsquo;연세페이&rsquo; 결제를 선택합니다.</li>
+                                                            <li><span class="pre">4)</span>모바일 연세페이에서 PC결제를 누르신 후, PC화면의 결제코드 6자리를 입력합니다.</li>
+                                                            <li><span class="pre">5)</span>모바일 연세페이에서 결제비밀번호 인증 합니다.</li>
+                                                            <li><span class="pre">6)</span>인증 완료 후 PC 화면으로 돌아가면 결제가 완료됩니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>오프라인(연세대 생협 매장, 편의점 등)에서 연세페이(QR)로 결제하려면 어떻게 해야하나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        <ul class="an-list">
+                                                            <!-- [통합결제플랫폼] : 수정 2022.02.16 -->
+                                                            <li><span class="pre">1)</span>BC QR 결제 가능 가맹점인지 확인 합니다.
+                                                            <p class="an-commt pdt0">* 단, 스타벅스 등 일부 가맹점은 가맹점 정책으로 결제 불가합니다.</p></li>
+                                                            <!-- //[통합결제플랫폼] : 수정 2022.02.16 -->
+                                                            <li><span class="pre">2)</span>모바일 연세페이에서 결제수단을 선택합니다.(사용하실 결제수단 사전 등록 필요)</li>
+                                                            <li><span class="pre">3)</span>인증비밀번호 6자리를 입력합니다.</li>
+                                                            <li><span class="pre">4)</span>모바일 화면의 QR 코드로 결제 합니다.(점원에게 BC QR결제라고 말씀해 주세요)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세페이 결제 후 결제취소는 어떻게 하면 되나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        <p><strong>[온라인 결제]</strong></p>
+                                                        <ul class="an-list">
+                                                            <li><span class="pre">1)</span>결제한 인터넷 쇼핑몰에서 결제 취소를 해주시면 됩니다.</li>
+                                                        </ul>
+                                                        <p class="an-tit"><strong>[오프라인 결제]</strong></p>
+                                                        <ul class="an-list">
+                                                            <li><span class="pre">1)</span>QR결제했던 가맹점을 방문합니다.</li>
+                                                            <li><span class="pre">2)</span>연세페이를 실행합니다.</li>
+                                                            <li><span class="pre">3)</span>결제했던 카드로 QR결제 버튼을 눌러줍니다.</li>
+                                                            <li><span class="pre">4)</span>화면에 출력된 QR코드를 점원에서 보여준 뒤 결제취소 합니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세페이 결제수단(카드/계좌결제) 등록 개수 제한이 있나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        카드 등록 수는 제한이 없습니다.
+                                                        계좌결제서비스는 우리WON카드 앱에서 발급하신 뒤, 연세페이에 등록하실 수 있으며 최대 2개까지 발급 가능합니다.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //이용 -->
+                    
+                                            <!-- 에러/분실 -->
+                                            <div class="tab-cont">
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세페이 결제 비밀번호를 잊어버렸습니다.</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        연세페이 메뉴 [MY] - 인증비밀번호 초기화 및 재설정을 선택한 뒤, 변경할 인증비밀번호를 입력합니다.
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세페이 결제수단(신용카드, 체크카드, 우리계좌결제) 등록 시 에러가 납니다.</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        등록하려는 결제 수단이 정상적으로 이용 가능한지 확인 부탁드립니다.
+                                                        분실, 정지 등이 아닌 정상상태임에도 결제수단 등록이 안될 경우, 시스템 오류이거나 시스템 점검으로 인한 일시중단일 수 있습니다.<br>
+                                                        자세한 사항은 우리카드 고객센터(<a href="tel:1588-9955" class="text-line">1588-9955</a>, <a href="tel:1599-9955" class="text-line">1599-9955</a>)로 문의 바랍니다.
+                                                    </div>
+                                                </div>
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세페이에 등록한 실물카드를 분실한 경우 어떻게 해야 하나요?</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        실물카드를 분실하셨을 경우 우리카드 고객센터(<a href="tel:1588-5300" class="text-line">1588-5300</a>, 분실신고)로 해당 카드를 분실 신고하시면 자동으로 연세페이에서 해당 카드 이용이 중지되어 부정사용을 차단할 수 있습니다.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //에러/분실 -->
+                    
+                                            <!-- 기타 -->
+                                            <div class="tab-cont">
+                                                <div class="conts-list">
+                                                    <div class="conts-tit btn-toggle">
+                                                        <a href="javascript:void(0);">
+                                                            Q.<span>연세페이 고객센터 전화번호를 알려주세요</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="conts-answer">
+                                                        연세페이를 이용하면서 불편사항 발생 시, 우리카드 고객센터 <a href="tel:1588-9955" class="text-line">1588-9955</a>, <a href="tel:1599-9955" class="text-line">1599-9955</a>로 연락 바랍니다.<br>
+                                                        <p class="an-commt">* 연세페이 외 연세대학교 관련 연세 Y-MID 앱, 모바일 학생증/신분증 등 상담은 불가합니다.
+                                                        (연세대학교 홈페이지 &gt; 대학생활 스마트캠퍼스 안내를 참고 부탁드립니다.)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //기타 -->
+                                        </div>
+                                    </div> 
+                                    <div class="lyr-popup-phon-terms-accept">
+                                    <strong class="g-tit">[3] 약관보기</strong>
+                                        <!-- 약관보기 컨텐츠 s -->
+                                        <div class="agree-wrap toggle">
+                                            <div class="agree-all-check">
+                                                <span class="inp-chk-ty2 round">
+                                                    <input type="checkbox" id="chkC01" name="chkC" class="all-check">
+                                                    <label for="chkC01">휴대폰인증 전체 동의</label>
+                                                </span>
+                                                <button type="button" class="btn-toggle"><span class="blind">세부 약관 보기</span></button>
+                                            </div>
+                                            <div class="checkbox-list-wrap">
+                                                <span class="inp-chk-ty2 round">
+                                                    <input type="checkbox" id="chkC02" name="chkC">
+                                                    <label for="chkC02">[필수] 개인정보 이용 및 활용 동의</label>
+                                                    <button class="terms-open-btn"><span class="blind">내용보기</span></button>
+                                                </span>
+                                                <span class="inp-chk-ty2 round">
+                                                    <input type="checkbox" id="chkC03" name="chkC">
+                                                    <label for="chkC03">[필수] 고유식별정보 처리 동의</label>
+                                                    <button class="terms-open-btn"><span class="blind">내용보기</span></button>
+                                                </span>
+                                                <span class="inp-chk-ty2 round">
+                                                    <input type="checkbox" id="chkC04" name="chkC">
+                                                    <label for="chkC04">[필수] 휴대폰 본인확인 이용약관 동의</label>
+                                                    <button class="terms-open-btn"><span class="blind">내용보기</span></button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-- //약관보기 컨텐츠 e -->
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">금융 이미지(로고) 모듈</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <strong class="g-tit-rd">1. 적용예</strong>
+                                    <div class="img-fnc" data-fnc-code="020"></div>
+
+                                    <br>
+                                    <strong class="g-tit-rd">2. html 소스</strong>
+                                    <div class="g-box-detail">
+                                        &lt;div class=&quot;img-fnc&quot; <span class="g-emp">data-fnc-code=&quot;&quot;</span>&gt;&lt;/div&gt;
+                                    </div>
+
+                                    <br>
+                                    <strong class="g-tit-rd">3. 금융별 class 생성과 css 스타일 추가</strong>
+                                    <ul class="g-txt-indent">
+                                        <li>① ui.js에 정의된 WIP.fncImg.creatClass() 함수가 실행되면, data-fnc-code속성값으로 입력된 각 금융코드가 'fnc' 문자열과 조합되어 class로 생성됨.</li>
+                                        <li>② 생성되어 추가된 class를 사용하여 module.css에 각 background 처리 스타일 추가.</li>
+                                    </ul>
+
+                                    <br>
+                                    <strong class="g-tit-rd">4. 동적 컨텐츠에서의 data-fnc-code속성값 처리</strong>
+                                    <ul class="g-txt-indent">
+                                        <li>① 은행/증권사 선택에서와 같이 수동처리를 하여야 하는 경우를 제외.</li>
+                                        <li>② 데이타 처리 사항.</li>
+                                    </ul>
+
+                                    <br>
+                                    <strong class="g-tit-rd">5. 금융코드</strong>
+                                    <ul>
+                                        <li>산업은행 002</li>
+                                        <li>기업은행 003</li>
+                                        <li>국민은행 004</li>
+                                        <li>수협 007</li>
+                                        <li>농협은행 011</li>
+                                        <li>지역농축협 012</li>
+                                        <li>우리은행 020</li>
+                                        <li>SC 제일은행 023</li>
+                                        <li>씨티은행 027</li>
+                                        <li>대구은행 031</li>
+                                        <li>부산은행 032</li>
+                                        <li>광주은행 034</li>
+                                        <li>제주은행 035</li>
+                                        <li>전북은행 037</li>
+                                        <li>경남은행 039</li>
+                                        <li>새마을금고 045</li>
+                                        <li>신협 048</li>
+                                        <li>저축은행 050</li>
+                                        <li>산림조합 064</li>
+                                        <li>우체국 071</li>
+                                        <li>하나은행 081</li>
+                                        <li>신한은행 088</li>
+                                        <li>케이뱅크 089</li>
+                                        <li>카카오뱅크 090</li>
+                                        <li>KB 증권 218</li>
+                                        <li>KTB 투자증권 227</li>
+                                        <li>미래에셋증권 238</li>
+                                        <li>삼성증권 240</li>
+                                        <li>한국투자증권 243</li>
+                                        <li>NH 투자증권 247</li>
+                                        <li>교보증권 261</li>
+                                        <li>하이투자증권 262</li>
+                                        <li>현대차증권 263</li>
+                                        <li>키움증권 264</li>
+                                        <li>이베스트투자증권 265</li>
+                                        <li>SK 증권 266</li>
+                                        <li>대신증권 267</li>
+                                        <li>한화투자증권 269</li>
+                                        <li>신한금융투자 278</li>
+                                        <li>DB 금융투자 279</li>
+                                        <li>유진투자증권 280</li>
+                                        <li>메리츠증권 287</li>
+                                        <li>하나금융투자 270</li>
+                                        <li>토스뱅크 092</li>
+                                    </ul>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+
+                        <div class="g-con-wrap">
+                            <strong class="g-title">단락</strong>
+                            <div class="g-cont">
+                                <!-- style guide -->
+                                <div class="g-sample-box scroll-x-auto">
+                                    <!-- sample code -->
+                                    <div class="con-block">
+                                        <strong class="tit-type">예약송금일 설정</strong>
+                                        <div class="box-con">
+                                            <p class="bu-ty2">
+                                            일요일, 공휴일을 포함해 최장 6개월까지 설정할 수 있습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                          
+                                    <div class="con-block">
+                                        <strong class="tit-type">취소 및 결과 확인</strong>
+                                        <div class="box-con">
+                                          <ul class="bu-ty2">
+                                            <li>예약송금은 송금지정시간 30분전까지 취소할 수 있습니다.</li>
+                                            <li class="emp">[내 계좌 관리 > 계좌 상세 조회 > 예약송금]에서 취소및
+                                              처리결과 확인이 가능합니다.</li>
+                                          </ul>
+                                        </div>
+                                    </div>
+                                    <!-- //sample code -->
+                                </div>
+                                <!-- //style guide -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //etc -->
+                </div>
+            </div>
+        </div>
+        <!-- //contents -->
+    </div>
+
+    <a href="#g-contents" class="g-btn-top">TOP</a>
+</body>
+</html>

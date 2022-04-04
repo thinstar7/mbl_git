@@ -1,0 +1,487 @@
+@charset "utf-8";
+
+/* ---------- common ---------- */
+.txt-small {font-size:1.3rem;color:#999}
+.fw-n {font-family:'SpoqaHanSansNeo-Regular'}
+.form-msg .error + .error{margin-top:1rem}
+
+/* 콤보박스 */
+.el-combobox2{width:100%;height:4.4rem;border:0.1rem solid #ccc;border-radius:0.6rem;box-sizing:border-box}
+.el-combobox2 .combobox{width:calc(100% - 3rem);height:100%;display:inline-flex;align-items:center}
+.el-combobox2 .combobox input[type="text"].combo{padding:0 1.5rem;text-align:left}
+.el-combobox2 .combobox input[type="text"].combo::placeholder{color:#111}
+.el-combobox2 .combobox .combo-btn{top:50%;right:1.5rem;transform:translateY(-50%)}
+.el-combobox2 .combobox .combo-btn:after{background-size:36rem auto;background-position:-3.8rem -21.8rem}
+.el-combobox2 .combo-list .opt {color:#111}
+
+/* 주소 찾기 폼 */
+.address-finder{position:relative;margin:4rem 0}
+.address-finder .address-finder-btn{display:block;position:absolute;bottom:0.5rem;top:0;right:0;width:8rem;height:3.2rem;border-radius:0.4rem;background-color:#52a7f1;line-height:3.2rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.4rem;color:#fff;text-align:center;text-decoration:none}
+.address-finder .address-finder-btn:active,
+.address-finder .address-finder-btn:focus{background-color:#3c73db}
+.address-finder .zip-code{margin-bottom:1rem;font-size:1.8rem;font-family:'SpoqaHanSansNeo-Medium'}
+.address-finder .inp-box + .inp-box{margin-top:2rem}
+
+.finance-input-box{display:flex;align-items:center;position:relative;width:100%;min-height:4.4rem;border:0.1rem solid #ccc;border-radius:0.6rem}
+.finance-input-box:after{content:'';display:block;position:absolute;top:1.3rem;right:1.5rem;width:2rem;height:2rem;background:url(/igtpay/ap/res/images/common/set.png) -3.4rem -19.8rem no-repeat;background-size:33rem auto}
+.finance-input-box .value{position:relative;width:100%;color:#ccc}
+.finance-input-box .value .img-fnc:before{background-size:16rem auto;background-position:-8.2rem -16.2rem}
+.finance-input-box .img-fnc{position:absolute;top:2rem;left:1.5rem;width:3.2rem;height:3.2rem}
+.finance-input-box .finance-info{padding:2rem 4.5rem 2rem 5.7rem}
+.finance-input-box .banknum{font-size:1.5rem;font-family:'SpoqaHanSansNeo-Medium';color:#111}
+.finance-input-box .balance{margin-top:1rem;text-align:right;font-size:1.5rem;font-family:'SpoqaHanSansNeo-Medium';color:#111}
+
+/* 송금 키패드 */
+.remit-key-pad{z-index:31;bottom:-100%;background-color:#fff}
+.remit-key-pad.on{bottom:0}
+.remit-key-pad input[type="number"]::-webkit-outer-spin-button,
+.remit-key-pad input[type="number"]::-webkit-inner-spin-button{bottom:0}
+.remit-key-pad .keypad-btn-wrap{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;width:36rem;margin:0 auto}
+.remit-key-pad .keypad-btn{height:5rem;min-width:calc(100% / 3);background-color:#fff;font-size:2.2rem;color:#111;border-bottom:0.1rem solid #eee;border-left:0.1rem solid #eee}
+.remit-key-pad .keypad-btn:active,
+.remit-key-pad .keypad-btn:focus{background-color:#eee}
+.remit-key-pad .keypad-btn:nth-of-type(3n) {border-right:0.1rem solid #eee}
+.remit-key-pad .keypad-btn.keypad-btn-delete{background-color:#b5c4d1}
+.remit-key-pad .keypad-btn.keypad-btn-delete:after{content:'';display:inline-block;position:relative;bottom:-0.5rem;width:4.4rem;height:2.8rem;background-image:url(/igtpay/ap/res/images/contents/ico_remit_keypad_del.png);background-size:cover}
+.remit-key-pad .keypad-btn.keypad-btn-confirm{font-size:1.8rem;background-color:#ccc;color:#fff}
+.remit-key-pad .keypad-btn.keypad-btn-confirm.on{background-color:#52a7f1;color:#fff}
+.remit-key-pad .remit-unit-wrap{display:flex;justify-content:center;align-items:center;padding:1rem 0;border-top:0.1rem solid #eee;border-bottom:0.1rem solid #eee}
+.remit-key-pad .remit-unit-wrap > button{width:6rem;background-color:#f5f6f7;border-color:#f5f6f7;color:#555}
+.remit-key-pad .remit-unit-wrap > button:not(:first-of-type){margin-left:0.5rem}
+.remit-key-pad .remit-unit-wrap > button:active,
+.remit-key-pad .remit-unit-wrap > button:focus{background-color:#fff;border:0.1rem solid #2c8dd9;color:#2c8dd9}
+
+/* IGTFA060401010001 아이콘이 있는 데이터 리스트 */
+.data-icon-list-wrap .data-icon-list .anchor{display:flex;justify-content:flex-start;align-items:center;height:100%}
+.data-icon-list-wrap .data-icon-list .img-fnc{padding-right:1.6rem}
+.data-icon-list-wrap .data-icon-list .txt{display:inline-flex;align-items:center;width:calc(100% - 5.2rem);height:6rem;border-bottom:0.1rem solid #ddd;box-sizing:border-box}
+
+/* ---------- module ---------- */
+.search-input-wrap{position:relative}
+.search-input-wrap .search-input{display:block;width:100%;height:4.4rem;border:0.1rem solid #f9f9f9;border-radius:0.6rem;background-color:#f9f9f9;font-size:1.6rem;color:#000}
+.search-input-wrap .search-input::placeholder{color:#bbb}
+.search-input-wrap .search-input-icon{position:absolute;top:50%;right:1rem;width:2rem;height:2rem;margin-left:auto;background:url(/igtpay/ap/res/images/common/set.png) -21.2rem -18.2rem no-repeat;background-size:30rem auto;transform:translateY(-50%)}
+.search-input-wrap .search-input.on + .search-input-icon{background-position:-9rem -3rem}
+/* .search-input-wrap .search-input:focus + .search-input-icon{background-position:-9rem -3rem} */
+
+/* 생활금융 > 내 계좌 선택 */
+/* .finance-account{display:block;position:relative;margin:2rem 0;box-sizing:border-box}
+.finance-account [class^="img-fnc"]{position:absolute}
+.account-list{display:block;position:relative;box-sizing:border-box}
+.account-list .account-info > a{display:block;position:relative}
+.account-list .account-info:not(:first-child){margin-top:2rem;padding-top:2rem;border-top:0.1rem solid #eee}
+.account-list .account-info-empty{padding:3rem 0;text-align:center;font-size:1.6rem;color:#555}
+.account-list .finance-info{display:flex;align-items:flex-start;flex-direction:column;padding-left:4.6rem}
+.account-list .finance-info > *:not(:first-child){margin-top:0.4rem}
+.account-list .finance-info .name{font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111;letter-spacing:-0.03rem}
+.account-list .finance-info .banknum{font-family:'SpoqaHanSansNeo-Regular';font-size:1.3rem;color:#999;letter-spacing:-0.026rem}
+.account-list .item{display:flex;width:100%;font-size:1.3rem;color:#555}
+.account-list .item-skeleton{overflow:hidden;position:relative;width:12rem;height:1rem;margin-left:auto;border-radius:0.5rem;background-color:#f5f5f5}
+.account-list .item-skeleton:after{content:'';display:block;position:absolute;width:3rem;height:100%;background:#fbfbfb;box-shadow:0rem 0rem 1rem 1rem #fbfbfb;animation-duration:1s;animation-iteration-count:infinite;animation-direction:alternate;animation-name:skeleton1}
+@keyframes skeleton1{
+	from{margin-left:0%}
+	to{margin-left:100%}
+}
+.account-list .item .txt{margin-right:auto}
+.account-list .item .unit{padding-left:0.2rem}
+.finance-account .add-button-area{padding-top:2rem;text-align:center}
+.finance-account .add-button{display:inline-block;position:relative;height:3.2rem;padding-right:4.2rem;background-color:#fff;line-height:3.2rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111;letter-spacing:-0.03rem;box-sizing:border-box}
+.finance-account .add-button:after{content:'';display:inline-block;position:absolute;top:50%;right:0;width:3.2rem;height:3.2rem;background:url(/igtpay/ap/res/images/common/set.png) 0.1rem -25.2rem no-repeat;background-size:23rem auto;transform:translateY(-50%)} */
+
+/* 생활금융 > 받는분 계좌 선택 */
+/* .account-list .util-btn-wrap {position:absolute;top:1rem;right:0}
+.account-list .util-btn-wrap > button{width:2.4rem;height:2.4rem;background-color:#fff}
+.account-list .util-btn-wrap .account-delete-btn{content:'';display:inline-block;position:relative;top:50%;right:0;width:2.4rem;height:2.4rem;padding-right:3rem;background:url(/igtpay/ap/res/images/common/set.png) -14.75rem -17.7rem no-repeat;background-size:30rem auto}
+.account-list .util-btn-wrap .account-bookmark-btn{content:'';display:inline-block;position:relative;top:50%;right:0;width:2.4rem;height:2.4rem;background:url(/igtpay/ap/res/images/common/set.png) -6rem -9rem no-repeat;background-size:30rem auto}
+.account-list .util-btn-wrap .account-bookmark-btn.on{background-position:-9rem -9rem}
+.my-finance-account .item {justify-content:flex-end}
+.my-finance-account .item .txt{margin-right:0.8rem} */
+
+/* 게시판 */
+.board .date{margin-top:0.3rem;font-size:1.3rem;color:#999}
+
+/* 게시판 리스트 페이지 */
+.board-lst {position:relative}
+.board-lst .btn-area {padding:2rem 0 0}
+.board-lst-header{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;padding-bottom:1rem}
+.board-lst-header .title{font-size:1.5rem;color:#111}
+.board-lst-header .board-search{position:relative;width:100%;margin-bottom:2rem}
+.board-search-count{padding-bottom:0.5rem;text-align:right}
+.board-lst-post-area > .btn-area{z-index:0;position:relative}
+.board-lst-post .board-search-keyword
+{font-family:'SpoqaHanSansNeo-Bold'}
+.board-lst-post .anchor{display:block}
+.board-lst-post .anchor .title {overflow:hidden;display:-webkit-box;padding-right:2rem;color:#111;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.board-lst-post-result{position:absolute;left:0;width:100%;height:100%;background-color:#fff}
+.board-lst-post-result .btn-area{position:relative;padding-bottom:2rem !important}
+.board-search-result-empty {display:none;z-index:0;position:absolute;top:6rem;left:0;height:calc(100vh - 20rem);width:100%;background:#fff}
+.board-search-result-empty.on {display:block;z-index:33}
+.board-search-result-empty .box-notice {display:block;z-index:33}
+.board-search-result-empty .box-notice .in-box{top:50%;transform: translateY(-50%);}
+
+/* 게시판 리스트 타입 */
+[data-board-type="list"] .board-lst-post{position:relative;padding:1.25rem 0;border-bottom:0.1rem solid #eee}
+[data-board-type="list"] .board-lst-post .anchor:after{content:'';display:block;position:absolute;top:50%;right:0;width:2rem;height:2rem;margin-left:auto;background:url(/igtpay/ap/res/images/common/set.png) -3rem -18rem no-repeat;background-size:30rem auto;transform:translateY(-50%)}
+
+/* 게시판 카드 타입 */
+[data-board-type="card"] {padding:2rem}
+[data-board-type="card"] .board-lst-header{border-bottom:0}
+[data-board-type="card"] .board-lst-post-wrap{display:flex;flex-wrap:wrap}
+[data-board-type="card"] .img{display:block;overflow:hidden;position:relative;margin-bottom:1rem;width:100%;border-radius:0.8rem;background-size:cover}
+[data-board-type="card"] .img:before{content:'';display:block;padding-top:65%}
+[data-board-type="card"] .badge-wrap{margin-bottom:0.5rem}
+[data-board-type="card"] .board-lst-post{width:calc(50% - 0.5rem);margin-bottom:1.5rem}
+[data-board-type="card"] .board-lst-post .title{font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111}
+[data-board-type="card"] .board-lst-post:nth-of-type(odd){padding-right:0.5rem}
+[data-board-type="card"] .board-lst-post:nth-of-type(even){padding-left:0.5rem}
+[data-board-type="card"] .board-lst-post:nth-last-of-type(1),
+[data-board-type="card"] .board-lst-post:nth-last-of-type(2){margin-bottom:0}
+[data-board-type="card"] .type-wrap {}
+[data-board-type="card"] .type-wrap .type {font-size:1.2rem;color:#2c8dd9}
+[data-board-type="card"] .type-wrap .type:not(:last-first) {margin-left:0.5rem}
+[data-board-type="card"] .btn-area {padding:3rem 0 0}
+
+/* 게시판 뷰 페이지 */
+.board-vw-header{padding-bottom:3rem;border-bottom:0.1rem solid #eee}
+.board-vw-header .title{font-size:1.8rem;font-family:'SpoqaHanSansNeo-Medium';letter-spacing:-0.036rem;line-height:2.6rem;color:#111}
+.board-vw-content{padding:3rem 0 4.8rem;font-size:1.5rem;color:#555;letter-spacing:-0.03rem;line-height:2.2rem;border-bottom:0.1rem solid #555;word-break:keep-all}
+.board-vw-post{font-size:1.3rem;border-bottom:0.1rem solid #eee}
+.board-vw-post.disabled .anchor{color:#999}
+.board-vw-post .anchor{display:flex;padding:1.2rem 0}
+.board-vw-post .anchor .order{margin-right:2rem}
+
+/* ---------- contents ---------- */
+/* 공지사항 : 리스트 */
+.lyr-notice-list .lyr-contents{padding:2rem}
+.lyr-notice-list .board-search-lst-empty{height:100%}
+.lyr-notice-list .board-search-lst-empty .box-notice{height:calc(100% - 0rem)}
+.lyr-notice-list .box-notice .in-box:before{left:50%;margin:0;transform: translateX(-50%);}
+.lyr-notice-list .board-lst-post-result{top:7.5rem}
+
+/* 공지사항 : 뷰 */
+.lyr-notice-view .lyr-contents{padding-top:2rem;padding-left: 2rem;padding-right: 2rem;}
+
+/* 이벤트 : 리스트 */
+.lyr-event-list .lyr-contents{padding:0}
+.lyr-event-list .tab{height:5.2rem;padding:0 2rem;border-bottom:0.1rem solid #eee}
+.lyr-event-list .tab-menu{text-align:center}
+.lyr-event-list .tab-menu + .tab-menu{margin:0}
+.lyr-event-list .category-wrap{padding:2rem 2rem 0 2rem}
+.lyr-event-list .category-checkbox-wrap{overflow:hidden;display:flex;flex-direction:column;position:relative}
+.lyr-event-list .category-checkbox-wrap .checkbox-wrap{overflow:hidden;position:relative;left:-0.4rem;height:3.6rem;transition:0.3s ease}
+.lyr-event-list .category-checkbox-wrap .inp-btn-wrap{padding-right:2rem}
+.lyr-event-list .category-wrap .inp-btn{height:3rem;top:-0.6rem;margin-top:0.6rem}
+.lyr-event-list .category-expand-btn{position:absolute;top:0;right:0;width:2rem;height:2rem;margin-top:0.8rem;margin-left:1rem;background:url(/igtpay/ap/res/images/common/set.png) -3rem -17.9rem no-repeat;background-size:30rem auto}
+.lyr-event-list .category-expand-btn.on{background-position:-6rem -17.9rem}
+.lyr-event-list .category-wrap .inp-btn label{display: inline-flex;justify-content: center;align-items: center; min-width:5rem;padding:0 1.1rem;height:3rem;border-radius:2rem;font-size:1.4rem;line-height:0}
+.lyr-event-list .category-wrap input[type="checkbox"]{display:inline-flex;width:100%;height:100%}
+.lyr-event-list .category-wrap input[type="checkbox"]:checked + label{border-color:#b5c4d1;color:#fff;background-color:#b5c4d1}
+.lyr-event-list .category-checkbox-wrap.on .category-search-btn-wrap{height:4rem}
+.lyr-event-list .category-search-btn-wrap {overflow:hidden;display:flex;justify-content:center;align-items:center;position:relative;left:0.4rem;bottom:0;width:calc(100% - 0.4rem);height:0rem;margin-top:1.3rem;transition: 0.1s;}
+.lyr-event-list .category-search-btn-wrap > *{display:inline-flex;justify-content:center;align-items:center;width:100%;height:4rem;font-size:1.5rem;color:#111;font-family:'SpoqaHanSansNeo-Medium';background-color:white}
+.lyr-event-list .category-search-btn-wrap > *:nth-child(1){border-right:0;border-radius:0.6rem 0 0 0.6rem;color:#fff;background-color:#7f8796;}
+.lyr-event-list .category-search-btn-wrap > *:nth-child(1):active{background-color:rgba(0, 0, 0, .2)}
+.lyr-event-list .category-search-btn-wrap > *:nth-child(2){border-left:0;border-radius:0 0.6rem 0.6rem 0;background-color:#2b64ce;color:#fff}
+.lyr-event-list .category-search-btn-wrap > *:nth-child(2):active{background-color:#1748a5}
+.lyr-event-list .board-lst-header{padding-bottom:0}
+.lyr-event-list .board-lst-post-result{top:6.4rem}
+
+/* 이벤트 : 리스트 > 나의 응모내역 탭*/
+.lyr-event-list .my-event .notice{padding: 2rem}
+.lyr-event-list .my-event .my-event-empty{height:calc(100vh - 24rem)}
+
+/* 이벤트 : 뷰 */
+.lyr-event-view .lyr-contents{padding-top:0;padding-bottom: 0}
+.lyr-event-view .img{display:block;overflow:hidden;position:relative;margin-bottom:3rem;width:100%;background-size:cover}
+.lyr-event-view .img:before{content:'';display:block;padding-top:84%}
+.lyr-event-view .event-view-contents{padding:0 2rem}
+.lyr-event-view .util-wrap{margin-top:3rem;padding:0 2rem}
+.lyr-event-view .util-title{margin-bottom:2rem;font-size:1.5rem;font-family:'SpoqaHanSansNeo-Bold';color:#111}
+.lyr-event-view .util-sns{display:flex;justify-content:center}
+.lyr-event-view .util-sns-icon{width:5rem;height:5rem;border-radius:100%}
+.lyr-event-view .util-sns-icon-facebook{background:url(/igtpay/ap/res/images/common/set.png) -0rem -39rem no-repeat;background-size:30rem auto}
+.lyr-event-view .util-sns-icon-kakaotalk{background:url(/igtpay/ap/res/images/common/set.png) -6rem -39rem no-repeat;background-size:30rem auto}
+.lyr-event-view .util-sns-icon-url{background:url(/igtpay/ap/res/images/common/set.png) -12rem -39rem no-repeat;background-size:30rem auto}
+.lyr-event-view .util-sns-icon:not(:first-child){margin-left:3rem}
+.lyr-event-view .btn-area{display:flex;flex-direction:column}
+.lyr-event-view .btn-area > [class^="btn"]{height:5.2rem;line-height:5.2rem;font-size:1.8rem}
+.lyr-event-view .btn-area > [class^="btn"]:not(:first-child){margin-top:1rem}
+.lyr-event-view .btn-area{position:relative}
+.lyr-event-view .btn-area > a + a, .btn-area > button + button,
+.lyr-event-view .btn-area > a + button, .btn-area > button + a {margin:0}
+.bottom-sheet-event-view .box-notice{height:auto}
+.bottom-sheet-event-view .box-notice .in-box{margin-top:1rem;padding-top:7.6rem}
+.bottom-sheet-event-view .box-notice .in-box:before{left:50%;margin:0;background-position:-6rem -21rem;transform:translateX(-50%)}
+.bottom-sheet-event-view .box-notice .str-main {font-size:1.8rem}
+.bottom-sheet-event-view .box-notice .str-main + .str-sub{margin-top:0}
+
+/* 송금 정보 입력 */
+/* .lyr-simple-remit .tooltip-btn {position:relative;width:2rem;height:2rem;background:#fff}
+.lyr-simple-remit .tooltip-btn:after {content:'';display:block;position:absolute;width:2rem;height:2rem;top:-0.6rem;right:-0.6rem;background:url(/igtpay/ap/res/images/common/set.png) 0 -3rem no-repeat;background-size:30rem auto}
+.lyr-simple-remit .my-account{padding:2.6rem 2rem;background-color:#f6faff}
+.lyr-simple-remit .my-account .wrap-btn{border-top:0.1rem solid #eee}
+.lyr-simple-remit .my-account .wrap-account-info{display:flex;align-items:center;margin-bottom:0.5rem}
+.lyr-simple-remit .my-account .wrap-account-info .img-wrap{margin-right:1rem}
+.lyr-simple-remit .my-account .wrap-account-info .name{width:25rem;font-family:'SpoqaHanSansNeo-Medium';font-size:1.5rem;color:#111}
+.lyr-simple-remit .my-account .wrap-account-info .txt{font-size:1.3rem;color:#999}
+.lyr-simple-remit .my-account .wrap-account-info .arrow-btn{width:2rem;height:2rem;margin-left:auto;background:url(/igtpay/ap/res/images/common/set.png) -3rem -18rem no-repeat;background-size:30rem auto}
+.lyr-simple-remit .my-account .wrap-balance{display:flex;justify-content:space-between;align-items:center;min-height:1.5rem;color:#2b64ce}
+.lyr-simple-remit .my-account .wrap-balance .txt{margin-top:0.5rem;margin-left:4.5rem;font-size:1.3rem}
+.lyr-simple-remit .my-account .wrap-balance .num-wrap{display:inline-flex;position:relative;padding-right:0.2rem;font-size:1.8rem}
+.lyr-simple-remit .my-account .wrap-balance .num{padding-right:0.4rem;font-family:'SpoqaHanSansNeo-Bold'}
+
+.lyr-simple-remit .receiver{padding:3rem 2rem}
+.lyr-simple-remit .receiver .form-box2 {color:#111}
+.lyr-simple-remit .receiver .form-box2 .tit{padding:0}
+.lyr-simple-remit .receiver .form-box2 .txt-wrap{display:flex;justify-content:space-between;align-items:center;margin-bottom:2.2rem}
+.lyr-simple-remit .receiver .form-box2 .util{font-size:1.4rem;text-decoration:underline}
+.lyr-simple-remit .receiver .inp-amount .inp-box{width:100%;margin-top:2.5rem}
+.lyr-simple-remit .receiver .inp-bottom-util{display:flex;justify-content:space-between;align-items:center;position:relative;margin-top:1rem;font-size:1.3rem}
+.lyr-simple-remit .receiver .tooltip-wrap {display:flex;align-items:center}
+.lyr-simple-remit .receiver .tooltip-wrap .tooltip-btn {display:block;position:relative;width:8rem;padding-right:2rem;font-size:1.3rem;background-color:#fff;color:#999}
+.lyr-simple-remit .receiver .tooltip-wrap .tooltip-btn:after {content:'';display:block;position:absolute;width:2rem;height:2rem;top:50%;right:0;background:url(/igtpay/ap/res/images/common/set.png) 0 -3rem no-repeat;background-size:30rem auto;transform:translateY(-50%)}
+.lyr-simple-remit .receiver .tooltip-txt {color:#999}
+.lyr-simple-remit .receiver .tooltip-msg {z-index:1;display:none;position:absolute;top:3.5rem;right:0;width:calc(100% - 4rem);max-width:32rem;padding:2rem;border-radius:0.8rem;background-color:#f5f5f5}
+.lyr-simple-remit .receiver .tooltip-msg.on {display:block}
+.lyr-simple-remit .receiver .tooltip-msg-header{margin-bottom:1.5rem;font-size:1.5rem;font-family:'SpoqaHanSansNeo-Bold';color:#111}
+.lyr-simple-remit .receiver .tooltip-msg .btn-close{background:transparent}
+.lyr-simple-remit .receiver .tooltip-msg-txt{font-size:1.3rem;color:#555}
+.lyr-simple-remit .receiver .tooltip-msg-txt .txt:not(:first-child){margin-top:1.2rem}
+
+.lyr-simple-remit .receiver-info {padding:4rem 2rem 3rem}
+.lyr-simple-remit .receiver-info-list {display:flex;justify-content:space-between;align-items:center} 
+.lyr-simple-remit .reserv-collect-wrap,
+.lyr-simple-remit .receiver-info-list:not(:first-of-type){margin-top:3rem}
+.lyr-simple-remit .receiver-info-list .txt-wrap {width:40%;padding-right:1rem;line-height:1.8rem;font-size:1.5rem;color:#111}
+.lyr-simple-remit .receiver-info-list .txt-wrap + .inp-box{width:60%}
+.lyr-simple-remit .receiver-info-list .inp-pair .front,
+.lyr-simple-remit .receiver-info-list .inp-pair .rear{padding:0} 
+.lyr-simple-remit .receiver-info-list .inp-pair .rear .inp-date{padding-left:1rem} 
+.lyr-simple-remit .reserv-collect-wrap {overflow:hidden;height:0;transition:0.3s ease}
+.lyr-simple-remit .reserv-collect-wrap.on {height:9rem}
+.lyr-simple-remit .reserv-collect-wrap.expand {height:15rem}
+.lyr-simple-remit .reserv-collect-btn {display:block;position:relative;margin-top:3rem;padding-right:2.6rem;background-color:transparent;font-size:1.3rem;color:#999} 
+.lyr-simple-remit .reserv-collect-btn:after {content:'';display:block;position:absolute;width:2rem;height:2rem;top:50%;right:0;background:url(/igtpay/ap/res/images/common/set.png) -3rem -18rem no-repeat;background-size:30rem auto;transform:translateY(-50%)} 
+.lyr-simple-remit .reserv-collect-btn.on:after {background-position:-6rem -18rem} 
+.lyr-simple-remit .reserv-remit-date{display:none;overflow:hidden;height:0rem} 
+.lyr-simple-remit .reserv-remit-date.on{display:block;height:4rem}  */
+
+/* 송금 정보 확인 바텀시트 */
+.remit-info-bottom-sheet .sheet-contents{padding:2rem}
+.remit-info-bottom-sheet .txt-wrap{margin-top:0.5rem;text-align:center;line-height:3rem}
+.remit-info-bottom-sheet .txt-confirm{margin-bottom:1.5rem;font-size:2.2rem;font-family:'SpoqaHanSansNeo-Light'}
+.remit-info-bottom-sheet .txt-wrap .num{font-family:'SpoqaHanSansNeo-Bold'}
+.remit-info-bottom-sheet .txt-wrap .receiver,
+.remit-info-bottom-sheet .txt-wrap .unit{font-family:'SpoqaHanSansNeo-Medium'}
+.remit-info-bottom-sheet .account-wrap {display:flex;justify-content:center;align-items:center}
+.remit-info-bottom-sheet .account-wrap .img-fnc{width:2.4rem;height:2.4rem;margin-right:0.8rem}
+.remit-info-bottom-sheet .account-wrap .img-fnc:before{background-position:0 0;background-size:10rem auto}
+.remit-info-bottom-sheet .remit-info-list-wrap{margin:2.5rem auto 3.5rem;padding:2rem;background-color:#eff5fe;border-radius:0.8rem}
+.remit-info-bottom-sheet .remit-info-list{display:flex;justify-content:space-between;align-items:center}
+.remit-info-bottom-sheet .remit-info-list:not(:first-of-type){margin-top:1rem}
+.remit-info-bottom-sheet .remit-info-list .name{color:#555}
+.remit-info-bottom-sheet .remit-info-list .value{color:#111;font-family:'SpoqaHanSansNeo-Medium'}
+
+/* 중복 송금 바텀시트 */
+.remit-duplicate-bottom-sheet .sheet-contents{padding:2rem}
+.remit-duplicate-bottom-sheet .txt-wrap{margin-top:0.5rem;text-align:center;line-height:3rem}
+.remit-duplicate-bottom-sheet .txt-confirm{margin-bottom:1.5rem;font-size:2.2rem;font-family:'SpoqaHanSansNeo-Medium'}
+.remit-duplicate-bottom-sheet .remit-duplicate-list-wrap{margin-bottom:3rem;border-top:0.1rem solid #555}
+.remit-duplicate-bottom-sheet .remit-duplicate-list{display:flex;justify-content:space-between;align-items:center;padding:1.4rem 0}
+.remit-duplicate-bottom-sheet .remit-duplicate-list{border-bottom:0.1rem solid #eee}
+.remit-duplicate-bottom-sheet .remit-duplicate-list .value{font-family:'SpoqaHanSansNeo-Medium'}
+
+/* 선불 공통 */
+.process-ppay .lyr-contents {padding:0}
+.process-ppay .box-msg {padding-top:1rem}
+.process-ppay .form-box2 .tit {font-size:1.6rem;padding-bottom:1rem}
+.process-ppay .input-wrap{margin-top:4rem}
+.process-ppay .inp-box .inp {padding:1rem 0}
+.process-ppay .inp-box .btn-delete{top:50%;transform:translateY(-50%)}
+.process-ppay .inp-box + .inp-box{margin-top:3rem}
+.process-ppay .tab{padding:0 2rem;border-bottom:0.1rem solid #f1f1f1}
+.process-ppay .tab span{margin:0 1.4rem}
+.process-ppay .value-wrap .value{display:flex;justify-content:center;align-items:center;text-align:center;height:4.4rem;background-color:#fafafa;font-size:1.8rem;color:#1748a5;font-family:'SpoqaHanSansNeo-Medium'}
+.process-ppay .value-wrap .value .num{margin-right:0.4rem}
+.process-ppay .terms-wrap .txt {font-family:'SpoqaHanSansNeo-Regular'}
+.process-ppay .terms-wrap button {width:100%;height:4.4rem;margin-top:2rem;border-color:#ddd;font-size:1.3rem;color:#555}
+.process-ppay.lyr-popup-terms-accept .inp-chk-ty2.round label{word-break: keep-all}
+.process-ppay.lyr-popup-terms-accept .content{padding-top:3rem}
+
+/* 선불 공통 : 이용안내 */
+.process-ppay .notice{overflow:hidden;margin:8rem 2rem 0;height:2rem;padding:1.1rem;background-color:#f5f6f7;border:0.1rem solid #eee;border-radius:0.6rem;transition:0.3s ease}
+.process-ppay .notice.on{height:18rem}
+.process-ppay .notice.on .expand-btn{background-position:-6rem -18rem}
+.process-ppay .notice-header{display:flex;align-items:center;margin-bottom:1.8rem}
+.process-ppay .notice-header .expand-btn{margin-left:auto;width:2rem;height:2rem;background:url(/igtpay/ap/res/images/common/set.png) -3rem -18rem no-repeat;background-size:30rem auto}
+.process-ppay .notice-content{font-size:1.3rem;color:#999}
+.process-ppay .notice .title{font-family:'SpoqaHanSansNeo-Bold';color:#111}
+.process-ppay .notice .icon{position:relative;padding-left:3rem}
+.process-ppay .notice .icon:after{content:'';position:absolute;top:0;left:0;display:block;width:2rem;height:2rem;background:url(/igtpay/ap/res/images/common/set.png) 0 -3rem no-repeat;background-size:30rem auto;transform:translateY(-50%)}
+
+/* 선불 공통 : 내 머니 */
+.process-ppay .my-money{margin:3rem 2rem 2rem;padding:1.5rem;border-radius: 0.8rem;background-color:#3269b6;font-size:1.4rem;font-family:'SpoqaHanSansNeo-Regular';color:#fff}
+.process-ppay .my-money-info-list{display:flex;justify-content:space-between;align-items:center}
+.process-ppay .my-money-info-list.list-main{flex-direction: column;margin-bottom:1rem}
+.process-ppay .my-money-info-list.list-main + .my-money-info-list{margin-top:2rem;padding-top:2rem;border-top: 0.1rem solid #fff;}
+.process-ppay .my-money-info-list.list-main .txt {margin-right:auto;margin-bottom:1rem}
+.process-ppay .my-money-info-list.list-main .value {margin-left:auto;position:relative;line-height:2rem}
+.process-ppay .my-money-info-list.list-main .balance {margin-right:1rem}
+.process-ppay .my-money-info-list.list-main .num{position:relative;top:0.4rem;font-size:2.7rem;font-family:'SpoqaHanSansNeo-Bold'}
+.process-ppay .my-money-info-list .unit{padding-left:0.5rem;}
+.process-ppay .my-money-info-list .num{font-size: 1.6rem;}
+.process-ppay .my-money-info-list:not(:first-of-type){margin-top:0.4rem}
+
+/* 선불 > 선불 충전 > 충전 > 충전 정보입력 */
+.lyr-ppay-charge .lyr-contents{padding:0}
+.lyr-ppay-charge .form-wrap{padding:0 2rem}
+.lyr-ppay-charge .input-wrap{margin-top:4rem}
+.lyr-ppay-charge .inp-bottom-util{display:flex;justify-content:space-between;align-items:flex-start;flex-direction:column;position:relative;margin-top:1rem;font-size:1.3rem}
+.lyr-ppay-my-account .lyr-contents{padding:0}
+.lyr-ppay-my-account .my-money{margin-bottom:1rem}
+.lyr-ppay-my-account .form-wrap{padding:0 2rem}
+.lyr-ppay-my-account .input-wrap{margin-top:4rem}
+.lyr-ppay-my-account .inp-bottom-util{display:flex;justify-content:space-between;align-items:flex-start;flex-direction:column;position:relative;margin-top:1rem;font-size:1.3rem}
+.lyr-ppay-my-account .inp-bottom-util .inp-chk{margin-top:2rem}
+
+/* 선불 > 선불 충전 > 자동충전 > 충전 정보입력 */
+.lyr-ppay-autocharge .condition-selection{padding:2rem;background-color:#f6faff;color:#111;font-family:'SpoqaHanSansNeo-Medium';border-radius:0.8rem}
+.lyr-ppay-autocharge .condition-selection > .txt{margin-bottom:1rem}
+.lyr-ppay-autocharge .condition-selection .input-wrap{display:flex;justify-content:space-between;align-items:center;margin:0}
+.lyr-ppay-autocharge .condition-selection .input-wrap:first-of-type{margin-bottom:1rem}
+.lyr-ppay-autocharge .condition-selection .input-wrap .txt{margin-right:auto;padding-left:1.6rem;min-width:50%}
+.lyr-ppay-autocharge .el-combobox{padding:1rem 0;border-bottom:0.1rem solid #111}
+.lyr-ppay-autocharge input[type="text"].combo{width:100%;background-color:transparent;font-size:1.8rem;font-family:'SpoqaHanSansNeo-Medium';color:#111;text-align:left}
+.lyr-ppay-autocharge input[type="text"].combo::placeholder{font-size:1.8rem;font-family:'SpoqaHanSansNeo-Medium';color:#111}
+
+/* 선불 > 충전 정보 확인 바텀시트 */
+.ppay-charge-bottom-sheet .sheet-contents {padding:2rem}
+.ppay-charge-bottom-sheet .icon-wrap {margin:5.4rem 0 5rem}
+.ppay-charge-bottom-sheet .icon {width:8.8rem;height:8.8rem;margin:0 auto;border-radius:100%;background:url(/igtpay/ap/res/images/contents/ppay_detail_charge.png) no-repeat;background-color:#DFF3FE;background-size:7rem;background-position:50% 50%}
+.ppay-charge-bottom-sheet .txt-wrap{margin-bottom:7.2rem;text-align:center}
+.ppay-charge-bottom-sheet .txt-wrap .account-wrap{margin-bottom:2rem}
+.ppay-charge-bottom-sheet .txt-wrap .account{font-size:2rem;font-family:'SpoqaHanSansNeo-Medium';color:#111}
+.ppay-charge-bottom-sheet .txt-wrap .account-name{margin-bottom:2rem;font-size:1.3rem;color:#999}
+.ppay-charge-bottom-sheet .txt-wrap .txt{font-size:2.2rem;font-family:'SpoqaHanSansNeo-Medium';color:#111}
+.ppay-charge-bottom-sheet .num-wrap{display:inline-flex;position:relative;margin-bottom:0.5rem;font-size:2.2rem;color:#111}
+.ppay-charge-bottom-sheet .num-wrap .num{z-index:1;font-family:'SpoqaHanSansNeo-Bold'}
+.ppay-charge-bottom-sheet .num-wrap:after{content:'';display:block;position:absolute;left:0;bottom:0;width:100%;height:1.2rem;background-color:#dff3ff}
+.ppay-charge-bottom-sheet .txt-confirm{font-size:1.8rem;color:#555}
+
+/* 선불 > OO 완료 */
+.lyr-ppay-complete .box-msg{padding-top:1rem}
+.lyr-ppay-complete .lyr-contents{padding:2rem}
+.lyr-ppay-complete .data-list-wrap{width:calc(100% - 4rem);position:absolute;bottom:11rem;margin-top:6.6rem;padding-top:3rem;border-top:0.1rem solid #111;font-size:1.5rem}
+.lyr-ppay-complete .data-list {display:flex;justify-content:space-between;align-items:center;padding:0.9rem 0}
+
+/* 선불 > 전환 */
+.lyr-ppay-transform .lyr-contents{padding:0}
+.lyr-ppay-transform .tab-container{margin-top:4rem}
+.lyr-ppay-transform .tab{margin-bottom:1rem;border-bottom:0.1rem solid #eee}
+.lyr-ppay-transform  .data-icon-list-wrap {margin-top:3rem}
+
+/* 선불 > 가져오기 & 내보내기 */
+.value-transform{padding:3rem 2rem 0;}
+.value-transform .title{margin-bottom:2rem;font-size:2.2rem;font-family:'SpoqaHanSansNeo-Medium'}
+.value-transform .item-wrap{display:flex;justify-content:flex-start;align-items:center;padding:2rem 1.5rem;border-radius:0.8rem;background-color:#eff5fe;color:#2b64ce}
+.value-transform .item-wrap .value{position:relative;margin-left:auto}
+.value-transform .item-wrap .value .num{font-size:2.2rem;font-family:'SpoqaHanSansNeo-Bold'}
+.value-transform .item-wrap .value .unit{font-size:1.5rem}
+
+.lyr-ppay-import .inp-bottom-util,
+.lyr-ppay-export .inp-bottom-util{margin-top:0.8rem;font-size:1.5rem;color:#999}
+
+/* 선불 >선물 */
+.lyr-ppay-present .inp-bottom-util .form-msg{margin-bottom:2rem}
+.lyr-ppay-present .my-money{margin-bottom:1rem}
+.lyr-ppay-present .inp-bottom-util{margin-top:1rem;color:#ccc}
+.lyr-ppay-present .inp-bottom-util label{font-size:1.5rem}
+.lyr-ppay-present .receiver{position:relative}
+.lyr-ppay-present .receiver .btn-import-contact{position:absolute;top:-0.2rem;right:-0.2rem;font-size:1.4rem}
+
+/* 선불 > 고객 확인 의무(CDD) */
+.lyr-ppay-cdd .cdd-header{margin-bottom:4rem}
+.lyr-ppay-cdd .cdd-header .title{font-size:2.7rem;font-family:'SpoqaHanSansNeo-Medium';color:#111;line-height:3.7rem;letter-spacing: -0.08rem;}
+.lyr-ppay-cdd .cdd-contents .radio-input-wrap{padding-bottom:2rem}
+.lyr-ppay-cdd .cdd-contents .radio-input-wrap .inp-rdo:first-child{margin-right:6.7rem}
+.lyr-ppay-cdd .cdd-contents .cdd-terms{margin-bottom:4rem;padding:2rem 0;border-top:0.1rem solid #eee;border-bottom:0.1rem solid #eee}
+.lyr-ppay-cdd .cdd-contents .cdd-terms p:not(:first-child){margin-top:1rem}
+
+/* 선불 > 주소찾기 팝업 */
+.popup-address-finder .popup-contents{padding-top:0}
+.popup-address-finder .form-box2 .tit{padding-bottom:1rem}
+.popup-address-finder .address-finder-header{padding:2rem;background-color:#fafafa}
+.popup-address-finder .address-finder-contents .section {padding:3rem 2rem}
+.popup-address-finder .address-sample-list-wrap{margin-top:1rem}
+.popup-address-finder .address-sample-list{display:flex;align-items:center;font-size:1.3rem}
+.popup-address-finder .address-sample-list:not(:first-child){margin-top:0.5rem}
+.popup-address-finder .address-sample-list .name{margin-left:1rem;width:6rem;color:#999}
+.popup-address-finder .address-finder-input{margin-top:3rem}
+.popup-address-finder .btn-wrap {margin-top:5rem;width:100%}
+.popup-address-finder .btn-wrap > *{width:100%;height:4.4rem;display:inline-flex;justify-content:center;align-items:center;font-family:'SpoqaHanSansNeo-Regular'}
+.popup-address-finder .btn-wrap > *:not(:first-child){margin-top:2rem}
+.popup-address-finder .result-empty{padding-bottom:6rem;font-size:1.5rem;color:#555;text-align:center}
+.popup-address-finder .address-result-list{position:relative;padding:2rem 0;line-height:2.3rem;border-bottom:0.1rem solid #eee}
+.popup-address-finder .address-result-list .zip-code{font-family:'SpoqaHanSansNeo-Medium'}
+.popup-address-finder .address-result-list .address-road-name,
+.popup-address-finder .address-result-list .address-lot-number {color:#999}
+.popup-address-finder .address-result-list .address-result-select-btn{position:absolute;top:0;right:0;padding:0 2.4rem}
+.popup-address-finder .address-detail-input{margin-top:2.8rem}
+
+/* 생활금융 > 소액신용한도신청 > 이용동의 */
+.lyr-credit-limit-accept .content .content-title{margin-bottom:2rem;font-size: 2.2rem;line-height: 3rem;letter-spacing: -0.06rem;}
+.lyr-credit-limit-accept .content .notice{margin-top:1rem;padding-top:1rem;font-size:1.3rem;color:#111;border-top:0.1rem solid #eee;}
+.lyr-credit-limit-accept .content .checkbox-wrap{margin-top:3rem}
+.lyr-credit-limit-accept .inp-checkbox{display: flex;}
+.lyr-credit-limit-accept .inp-checkbox .accordion{width:calc(100% - 3rem)}
+.lyr-credit-limit-accept .inp-checkbox .accordion .toggle-contents{position:relative;left:-3rem;width:calc(100% + 3rem)}
+.lyr-credit-limit-accept .inp-checkbox .accordion .terms-wrap{margin-top:2rem}
+.lyr-credit-limit-accept .table-wrap{border-top:0.1rem solid #111}
+.lyr-credit-limit-accept .personal-info-table{text-align:left;font-family:'SpoqaHanSansNeo-Regular';font-size:1.5rem}
+.lyr-credit-limit-accept .personal-info-table th,
+.lyr-credit-limit-accept .personal-info-table td {padding:1.5rem 1rem;border: 1px solid #eee;border-collapse:collapse}
+.lyr-credit-limit-accept .personal-info-table th{width:30%}
+.lyr-credit-limit-accept .personal-info-table tbody tr:first-child th,
+.lyr-credit-limit-accept .personal-info-table tbody tr:first-child td {border-top:0}
+.lyr-credit-limit-accept .personal-info-table th {border-left:0}
+.lyr-credit-limit-accept .personal-info-table td {border-right:0}
+.lyr-credit-limit-accept .terms-wrap .terms-area{font-family: 'SpoqaHanSansNeo-Regular'}
+.lyr-credit-limit-accept .terms-wrap .terms-area .terms-box{margin-top:1.6rem}
+.lyr-credit-limit-accept .terms-wrap .terms-area .terms-box .inp-rdo:first-child{margin-right: 6.7rem}
+.lyr-credit-limit-accept .text-type{margin-top:0;padding-top:0}
+.lyr-credit-limit-accept .terms-input-wrap .tit-nd{font-family:'SpoqaHanSansNeo-Regular'}
+.lyr-credit-limit-accept .terms-tit{margin-bottom:1rem}
+
+/* 생활금융 > 소앤신용한도 신청 > 카드인증 */
+.lyr-card-auth .content-title{margin-bottom:3rem;font-size: 2.2rem;line-height:3rem}
+.lyr-card-auth .form-box2 .tit{padding-bottom:1rem}
+.lyr-card-auth .inp-box{margin-top:1rem}
+.lyr-card-auth .card-combo{position:relative;display:flex;align-items:center;padding: 1rem 1.5rem;border: 0.1rem solid #ccc;border-radius:0.8rem}
+.lyr-card-auth .card-combo .combobox{width:100%}
+.lyr-card-auth .card-combo .combo-btn{right:0}
+.lyr-card-auth .card-combo .combo-btn:after{background-size:34rem auto;background-position: -3.6rem -20.4rem;}
+.lyr-card-auth .form-wrap [class^="form-box"]:not(:first-of-type){margin-top:3rem} 
+
+/* 생활금융 > 소앤신용한도 신청 > 소액신용한도 신청 결과 */
+.lyr-credit-limit-complete .box-msg2{padding-top:2rem}
+.lyr-credit-limit-complete .apply-card {margin-top:5rem;padding:0 2rem}
+.lyr-credit-limit-complete .apply-card .tit {padding-bottom: 1rem}
+.lyr-credit-limit-complete .apply-card .item-wrap {display:flex;align-items:center;padding:2rem 1.5rem;background-color: #eff5fe;border-radius: 0.8rem}
+.lyr-credit-limit-complete .apply-card .img-wrap {padding-right:1.6rem}
+.lyr-credit-limit-complete .apply-card .img-wrap .img {width:9.5rem;height:6rem}
+.lyr-credit-limit-complete .apply-card .txt-wrap .name {margin-bottom:0.6rem;color:#111}
+.lyr-credit-limit-complete .apply-card .txt-wrap .img {width:9.5rem;height:6rem}
+
+@media all and (max-width:359px) {
+  .lyr-ppay-autocharge .condition-selection .input-wrap{flex-direction:column}
+	.lyr-ppay-autocharge .condition-selection .input-wrap .el-combobox{margin-right:auto}
+  .lyr-ppay-autocharge .condition-selection .input-wrap .el-combobox + .txt{margin-top:1rem;padding-left:0}
+  .lyr-present-complete .data-list-wrap{bottom:8rem}
+  .lyr-ppay-complete .box-msg{margin-bottom:3rem}
+  .lyr-ppay-complete .data-list-wrap{position: relative;bottom:auto; margin:0 auto; width:100%}
+  .lyr-ppay-complete .btn-area{position:relative;padding:2rem 0}
+}
+
+@media all and (max-width:359px) {
+  .remit-key-pad .keypad-btn-wrap{width:32rem} 
+}

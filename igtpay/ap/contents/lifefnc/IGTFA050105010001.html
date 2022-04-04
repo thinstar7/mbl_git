@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>계좌 상세 조회 | 송금 | 생활/금융 | 우리페이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () { 
+    WIP.popup.open('LF15LP01'); //layer poup open
+    //WIP.popup.close('LF15LP01'); //layer poup open
+    
+    //WIP.popup.open('LF15TS01'); //계좌번호 복사 toast open
+    //WIP.popup.close('LF15TS01'); //계좌번호 복사 toast open
+});
+</script>
+</head>
+<body>
+    <!-- layer popup -->
+    <div class="lyr-popup" data-lyr-id="LF15LP01">
+        <div class="in-lyr">
+            <!-- layer popup header -->
+            <div class="lyr-header">
+                <div class="lyr-topper">
+                    <a href="javascript:void(0);" class="lyr-cntr-ty1"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                    <strong class="lyr-title">%제휴사% Pay</strong>
+                </div>
+                <div class="lyr-head">
+                    <h1 class="lyr-sub-title">계좌 상세 조회</h1>
+                    <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+                    <a href="javascript:void(0);" class="btn-close"><span class="blind">닫기</span></a>
+                </div>
+            </div>
+            <!-- //layer popup header -->
+            <!-- layer popup contents -->
+            <div class="lyr-contents pdt0 pdb0">
+                <div class="account-inquiry">
+                    <div class="box-lab">
+                        <span class="lab">입출금</span><span class="lab ty5">활동성</span>
+                    </div>
+                    <div class="box-inf">
+                        <div class="finance-info">
+                            <div class="img-fnc" data-fnc-code="020"></div>
+                            <div class="bank-inf text-ty1">
+                                <a href="javascript:void(0);" class="copy-account">
+                                    <span>우리은행</span>
+                                    <span class="ls-ini">12345678901234</span>
+                                </a>
+                            </div>
+                            <div class="bank-inf text-ty2 ellipsis">우리은행 SUPER 주거래통장</div>
+                            <button type="button" class="btn-arrow"><span class="blind">계좌 선택</span></button>
+                        </div>
+                        <div class="balance">
+                            <span class="txt">잔액</span><span class="ls-ini">26,400,000</span><span class="unit">원</span>
+                        </div>
+                    </div>
+                    <div class="box-btn">
+                        <button type="button" class="btn-ty3"><span>송금</span></button>
+                    </div>
+                </div>
+
+                <div class="tab-container ty-flex details-account">
+                    <div class="tab">
+                        <a href="javascript:void(0);" class="tab-menu crnt"><span>송금내역</span></a>
+                        <a href="javascript:void(0);" class="tab-menu"><span>거래내역</span></a>
+                    </div>
+                    <div class="filter-container">
+                        <div class="tab-conts">
+                            <!-- 송금내역 -->
+                            <div class="tab-cont crnt">
+                                <div class="filter-area">
+                                    <div class="util-wrap">
+                                        <p class="filter-apply"><span>1개월</span>·<span>전체(입금+출금)</span>·<span>최근순</span></p>
+                                        <button type="button" class="btn-filter" onclick="WIP.popup.open('')">
+                                            <span class="txt">필터</span>
+                                        </button>
+                                    </div>
+                                    <!-- 기간 -->
+                                    <div class="fillter-period">
+                                        <span class="period">2022.01.01 ~ 2022.01.31</span>
+                                    </div>
+                                    <!-- //기간 -->
+                                </div>
+                                
+                                <div class="data-lst2">
+                                    <ul>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-account">
+                                                    <span>우리은행</span>
+                                                    <span class="ls-ini">12345678901234</span>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="link">
+                                                <a href="javascript:void(0);" class="anc"><span>송금확인증</span></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-account">
+                                                    <span>우리은행</span>
+                                                    <span class="ls-ini">12345678901234</span>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="link">
+                                                <a href="javascript:void(0);" class="anc"><span>송금확인증</span></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-account">
+                                                    <span>우리은행</span>
+                                                    <span class="ls-ini">12345678901234</span>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="link">
+                                                <a href="javascript:void(0);" class="anc"><span>송금확인증</span></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-account">
+                                                    <span>우리은행</span>
+                                                    <span class="ls-ini">12345678901234</span>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="link">
+                                                <a href="javascript:void(0);" class="anc"><span>송금확인증</span></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-account">
+                                                    <span>우리은행</span>
+                                                    <span class="ls-ini">12345678901234</span>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="link">
+                                                <a href="javascript:void(0);" class="anc"><span>송금확인증</span></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    <!-- <div class="list-empty">
+                                        <p>송금내역이 없습니다.</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- //송금내역 -->
+
+                            <!-- 거래내역 -->
+                            <div class="tab-cont">
+                                <div class="filter-area">
+                                    <div class="util-wrap">
+                                        <p class="filter-apply"><span>1개월</span>·<span>전체(입금+출금)</span>·<span>최근순</span></p>
+                                        <button type="button" class="btn-filter" onclick="WIP.popup.open('')">
+                                            <span class="txt">필터</span>
+                                        </button>
+                                    </div>
+                                    <!-- 기간 -->
+                                    <div class="fillter-period">
+                                        <span class="period">2022.01.01 ~ 2022.01.31</span>
+                                    </div>
+                                    <!-- //기간 -->
+                                </div>
+                                
+                                <div class="data-lst2">
+                                    <ul>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-method">오픈뱅킹입</div>
+                                            </div>
+                                            <div class="price deposit">
+                                                <span class="txt">입금</span>
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="balance">
+                                                <span class="txt">잔액</span><span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-method">오픈뱅킹출</div>
+                                            </div>
+                                            <div class="price withdrawal">
+                                                <span class="txt">출금</span>
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="balance">
+                                                <span class="txt">잔액</span><span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-method">오픈뱅킹입</div>
+                                            </div>
+                                            <div class="price deposit">
+                                                <span class="txt">입금</span>
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="balance">
+                                                <span class="txt">잔액</span><span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-method">오픈뱅킹출</div>
+                                            </div>
+                                            <div class="price withdrawal">
+                                                <span class="txt">출금</span>
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="balance">
+                                                <span class="txt">잔액</span><span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-method">오픈뱅킹입</div>
+                                            </div>
+                                            <div class="price deposit">
+                                                <span class="txt">입금</span>
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="balance">
+                                                <span class="txt">잔액</span><span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infs">
+                                                <div class="inf-date">
+                                                    <span class="date">2021.12.31</span>
+                                                    <span class="time">17:17:55</span>
+                                                </div>
+                                                <div class="inf-name">김연세</div>
+                                                <div class="inf-method">오픈뱅킹출</div>
+                                            </div>
+                                            <div class="price withdrawal">
+                                                <span class="txt">출금</span>
+                                                <span class="num">40,000</span>
+                                                <span class="unit">원</span>
+                                            </div>
+                                            <div class="balance">
+                                                <span class="txt">잔액</span><span class="ls-ini">12,300,000</span><span class="unit">원</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    <!-- <div class="list-empty">
+                                        <p>거래내역이 없습니다.</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- //거래내역 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //layer popup contents -->
+        </div>
+    </div>
+    <!-- //layer popup -->
+
+    <!-- toast : 계좌번호 복사 -->
+    <div class="toast" data-lyr-id="LF15TS01">
+        <div class="in-wrap">
+            <p>계좌번호가 복사되었습니다.</p>
+        </div>
+    </div>
+    <!-- //toast -->
+</body>
+</html>

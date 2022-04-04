@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>내 계좌 입금 정보입력 | 내 계좌 입금 | 선불</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('PP12LP01'); //내 계좌 입금 layer poup open
+        //WIP.popup.close('PP12LP01'); //내 계좌 입금 layer poup open
+
+        // WIP.popup.open('PP01BS01'); //충전 계좌 선택 bottom sheet open
+        //WIP.popup.close('PP01BS01'); //충전 계좌 선택 bottom sheet close
+        WIP.remitKeypad(777);
+        WIP.noticeToggleBox();
+      });
+    </script>
+  </head>
+  <body>
+    <!-- layer popup -->
+    <div class="lyr-popup lyr-ppay-my-account process-ppay" data-lyr-id="PP12LP01">
+      <div class="in-lyr">
+        <!-- layer popup header -->
+        <div class="lyr-header">
+          <div class="lyr-topper">
+            <a href="javascript:void(0);" class="lyr-cntr-ty1"
+              ><span class="blind"
+                >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및
+                화면 닫기)</span
+              ></a
+            >
+            <strong class="lyr-title">연세 Pay</strong>
+          </div>
+          <div class="lyr-head">
+            <h1 class="lyr-sub-title">내 계좌 입금</h1>
+            <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+            <a href="javascript:void(0);" class="btn-close"
+              ><span class="blind">닫기</span></a
+            >
+          </div>
+        </div>
+        <!-- //layer popup header -->
+        <!-- layer popup contents -->
+        <div class="lyr-contents">
+          <div class="tab-container">
+            <div class="tab">
+              <!-- fixed -->
+              <a href="javascript:void(0);" class="tab-menu crnt"
+                ><span>바로충전</span></a
+              >
+              <a href="javascript:void(0);" class="tab-menu"
+                ><span>자동충전</span></a
+              >
+            </div>
+            <div class="tab-conts">
+              <!-- 바로충전 -->
+              <div class="tab-cont crnt">
+                <div class="my-money">
+                  <div class="my-money-info">
+                    <ul class="my-money-info-list-wrap">
+                      <li class="my-money-info-list list-main">
+                        <p class="txt">보유 머니</p>
+                        <p class="value">
+                          <span class="balance">잔액</span>
+                          <span class="num ls-ini">500,000</span
+                          ><span class="unit">머니</span>
+                        </p>
+                      </li>
+                      <li class="my-money-info-list">
+                        <p class="txt">입금 가능 머니</p>
+                        <p class="value">
+                          <span class="num ls-ini">1,500,000</span
+                          ><span class="unit">머니</span>
+                        </p>
+                      </li>
+                      <li class="my-money-info-list">
+                        <p class="txt">적립 머니</p>
+                        <p class="value">
+                          <span class="num ls-ini">2,000,000</span
+                          ><span class="unit">머니</span>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sec"><div class="tip txt-small"><p class="bu-ty1 txt">적립 머니는 내계좌 입금이 불가하며, 결제 시 사용할 수 있습니다.</p></div></div>
+
+                <div class="form-wrap">
+                  <div class="form-box2 input-wrap charge-account-select">
+                    <div class="txt-wrap">
+                      <p class="tit">입금 계좌 선택</p>
+                    </div>
+                    <div class="con">
+                      <div class="finance-input-box-wrap">
+                        <div class="finance-input-box" onclick="WIP.popup.open('PP01BS01')">
+                          <!-- 계좌 선택 전 -->
+                          <!-- <div class="value"><p>충전할 계좌를 선택해 주세요.</p></div> -->
+                          
+                          <!-- 계좌 선택 후 -->
+                          <div class="value">
+                            <div class="img-fnc" data-fnc-code="287"></div>
+                            <div class="finance-info">
+                              <div class="banknum">
+                                <span>우리은행</span>
+                                <span class="ls-ini">1234567890</span>
+                              </div>
+                              <p class="name ellipsis txt-small">우리은행 SUPER 주거래 통장</p>
+                              <div class="txt-wrap">
+                                <span class="txt">잔액</span>
+                                <span class="ls-ini">11,000,000</span>
+                                <span class="unit">원</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-msg"><p class="error">계좌에 잔액이 부족합니다.</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-box2 input-wrap">
+                    <div class="txt-wrap">
+                      <p class="tit">금액입력</p>
+                    </div>
+                    <div class="con">
+                      <div class="inp-wrap">
+                        <div class="inp-box be-del error">
+                          <span class="inp"><input type="number" max="8" title="금액입력" class="inp-remit" placeholder="얼마를 보낼까요?"></span>
+                          <button type="button" class="btn-delete" style="display: none;"><span class="blind">삭제</span></button>
+                        </div>
+                        <div class="inp-bottom-util">
+                          <!-- 예외처리 조건표 참고 -->
+                          <div class="form-msg"><p class="error">입금 가능 머니 한도 초과</p></div>
+                          <span class="inp-chk">
+                            <input type="checkbox" id="chkB01" name="chkB">
+                            <label for="chkB01">모두 전환</label>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="notice">
+                  <div class="notice-header">
+                    <div class="icon"></div>
+                    <p class="title">이용안내</p>
+                    <button type="button" class="expand-btn">
+                      <span class="blind">이용안내 열기</span>
+                    </button>
+                  </div>
+                  <div class="notice-content">
+                    <ul class="lst bu-ty1">
+                      <li>1원당 1머니가 충전됩니다.</li>
+                      <li>최대 <span class="ls-ini">200</span>만 머니(적립+충전)까지 보유 가능합니다.</li>
+                      <li>
+                        오픈뱅킹을 통해 내 계좌 연동을 한 경우에만 충전
+                        가능합니다.
+                      </li>
+                      <li>
+                        자세한 사항은 우리카드 고객센터 <span class="ls-ini">(1588-9955,1599-9955)</span>로
+                        문의 바랍니다.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="btn-area">
+                  <a href="javascript:void(0);" class="btn"
+                    ><span>충전</span></a
+                  >
+                </div>
+              </div>
+              <!-- //바로충전 -->
+
+              <!-- 자동충전 -->
+              <div class="tab-cont"></div>
+              <!-- //자동충전 -->
+            </div>
+          </div>
+        </div>
+        <!-- //layer popup contents -->
+      </div>
+    </div>
+    <!-- //layer popup -->
+
+    <!-- keypad -->
+    <div class="common-key-pad remit-key-pad">
+      <div class="remit-unit-wrap">
+        <button type="button" class="btn-ty2 remit-unit-btn" value="1">+1만</button>
+        <button type="button" class="btn-ty2 remit-unit-btn" value="5">+5만</button>
+        <button type="button" class="btn-ty2 remit-unit-btn" value="10">+10만</button>
+        <button type="button" class="btn-ty2 remit-unit-btn" value="100">+100만</button>
+        <button type="button" class="btn-ty2 remit-unit-btn" value="999">전액</button>
+      </div>
+      <div class="keypad-btn-wrap">
+        <button class="keypad-btn keypad-number-btn" value='1'>1</button>
+        <button class="keypad-btn keypad-number-btn" value='2'>2</button>
+        <button class="keypad-btn keypad-number-btn" value='3'>3</button>
+        <button class="keypad-btn keypad-number-btn" value='4'>4</button>
+        <button class="keypad-btn keypad-number-btn" value='5'>5</button>
+        <button class="keypad-btn keypad-number-btn" value='6'>6</button>
+        <button class="keypad-btn keypad-number-btn" value='7'>7</button>
+        <button class="keypad-btn keypad-number-btn" value='8'>8</button>
+        <button class="keypad-btn keypad-number-btn" value='9'>9</button>
+        <button class="keypad-btn keypad-btn-delete"></button>
+        <button class="keypad-btn keypad-number-btn" value='0'>0</button>
+        <!-- 받는분 계좌정보(은행/증권사명 + 계좌번호) 및 올바른 금액 입력 시 버튼 활성화. 활성화 시 on 클래스를 붙혀주세요. -->
+        <button class="keypad-btn keypad-btn-confirm on">확인</button>
+      </div>
+    </div>
+
+    <!-- bottom sheet -->
+    <div
+      class="bottom-sheet be-tab"
+      data-lyr-id="PP01BS01"
+    >
+      <div class="in-wrap">
+        <div class="sheet-head">
+          <a href="javascript:void(0);" class="lyr-cntr-ty2"
+            ><span class="blind"
+              >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면
+              닫기)</span
+            ></a
+          >
+          <a href="javascript:void(0);" class="sheet-close"
+            ><span class="blind">닫기</span></a
+          >
+          <div class="sheet-title">
+            <strong>충전 계좌 선택</strong>
+          </div>
+        </div>
+        <div class="sheet-contents pd-ini">
+          <div class="finance-account my-finance-account">
+            <div class="sec">
+              <ul class="account-list">
+                <li class="account-info">
+                  <a href="#">
+                    <div class="img-fnc" data-fnc-code="287"></div>
+                    <div class="finance-info">
+                      <p class="name ellipsis">우리은행 SUPER 주거래 통장</p>
+                      <div class="banknum">
+                        <span>우리은행</span>
+                        <span class="ls-ini">1234567890</span>
+                      </div>
+  
+                      <!-- 잔액 불러오기 전 상태 -->
+                      <!-- <div class="item-skeleton"></div> -->
+  
+                      <!-- 잔액 불러오기 완료 상태 -->
+                      <div class="item">
+                        <span class="txt">잔액</span>
+                        <span class="ls-ini">11,000,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="account-info">
+                  <a href="#">
+                    <div class="img-fnc" data-fnc-code="287"></div>
+                    <div class="finance-info">
+                      <p class="name ellipsis">우리은행 SUPER 주거래 통장</p>
+                      <div class="banknum">
+                        <span>우리은행</span>
+                        <span class="ls-ini">1234567890</span>
+                      </div>
+  
+                      <!-- 잔액 불러오기 전 상태 -->
+                      <!-- <div class="item-skeleton"></div> -->
+  
+                      <!-- 잔액 불러오기 완료 상태 -->
+                      <div class="item">
+                        <span class="txt">잔액</span>
+                        <span class="ls-ini">11,000,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //bottom sheet -->
+  </body>
+</html>

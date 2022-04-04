@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>결제수단 목록 | MY | 우리페이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('MY03LP01'); //결제수단 목록 layer popup open
+    //WIP.popup.close('MY03LP01'); //결제수단 목록 layer popup close  
+
+    //WIP.popup.open('MY03MD01'); //결제수단 등록 중단 confirm modal open
+    //WIP.popup.close('MY03MD01'); //결제수단 등록 중단 confirm modal close
+});
+</script>
+</head>
+<body>
+    <!-- layer popup -->
+    <div class="lyr-popup payment-method" data-lyr-id="MY03LP01">
+        <div class="in-lyr">
+            <!-- layer popup header -->
+            <div class="lyr-header">
+                <div class="lyr-topper">
+                    <a href="javascript:void(0);" class="lyr-cntr-ty1"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                    <!-- [통합결제플랫폼] : 텍스트 수정 2022.01.17 -->	
+                    <strong class="lyr-title">연세 Pay</strong>
+                    <!-- [통합결제플랫폼] -->
+                </div>
+                <div class="lyr-head">
+                    <h1 class="lyr-sub-title">결제수단 목록</h1>
+                    <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+                    <a href="javascript:void(0);" class="btn-close"><span class="blind">닫기</span></a>
+                </div>
+            </div>
+            <!-- //layer popup header -->
+            <!-- layer popup contents -->
+            <div class="lyr-contents">
+                <div class="sec">
+                    <div class="wrap-data-lst"><!-- [통합결제플랫폼] : 2022.02.23 -->
+                        <ul class="data-lst be-chk">
+                            <li>
+                                <a href="#" title="카드의 정석 UniMile 선택">
+                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card01.png" alt="카드의 정석 UniMile"></div>
+                                    <div class="inf">
+                                        <div class="box-lab">
+                                            <span class="lab">대표</span><span class="lab ty3">등록</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>카드의 정석 UniMile</p>
+                                        </div>
+                                        <div class="num">
+                                            <p>4214-****-****-1580</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="box-chk">
+                                    <span class="inp-chk-ty2 round single">
+                                        <input type="checkbox" title="카드의 정석 UniMile 선택" name="chk701S03">
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" title="WON POINT AIR 선택">
+                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card02.png" alt="WON POINT AIR"></div>
+                                    <div class="inf">
+                                        <div class="box-lab">
+                                            <span class="lab ty4">미등록</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>WON POINT AIR WON POINT AIRWON POINT</p>
+                                        </div>
+                                        <div class="num">
+                                            <p>4214-****-****-1580</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="box-chk">
+                                    <span class="inp-chk-ty2 round single">
+                                        <input type="checkbox" title="WON POINT AIR 선택" name="chk701S03">
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" title="WON POINT AIR2 선택">
+                                    <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card04.png" alt="WON POINT AIR2"></div>
+                                    <div class="inf">
+                                        <div class="box-lab">
+                                            <span class="lab ty3">등록</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>WON POINT AIR2</p>
+                                        </div>
+                                        <div class="num">
+                                            <p>4214-****-****-1580</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="box-chk">
+                                    <span class="inp-chk-ty2 round single">
+                                        <input type="checkbox" title="WON POINT AIR2 선택" name="chk701S03">
+                                    </span>
+                                </div>
+                            </li>
+                            <!--li>
+                                <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card01.png" alt="카드의 정석 UniMile"></div>
+                                <div class="inf">
+                                    <div class="box-lab">
+                                        <span class="lab">대표</span><span class="lab ty3">등록</span>
+                                    </div>
+                                    <div class="item">
+                                        <p>카드의 정석 UniMile</p>
+                                    </div>
+                                    <div class="num">
+                                        <p>4214-****-****-1580</p>
+                                    </div>
+                                </div>
+                                <div class="box-chk">
+                                    <span class="inp-chk-ty2 round single">
+                                        <input type="checkbox" title="카드의 정석 UniMile 선택" name="chk701S03">
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card02.png" alt="WON POINT AIR"></div>
+                                <div class="inf">
+                                    <div class="box-lab">
+                                        <span class="lab ty4">미등록</span>
+                                    </div>
+                                    <div class="item">
+                                        <p>WON POINT AIR WON POINT AIRWON POINT</p>
+                                    </div>
+                                    <div class="num">
+                                        <p>4214-****-****-1580</p>
+                                    </div>
+                                </div>
+                                <div class="box-chk">
+                                    <span class="inp-chk-ty2 round single">
+                                        <input type="checkbox" title="WON POINT AIR 선택" name="chk701S03">
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img"><img src="/igtpay/ap/res/images/temp/temp_card04.png" alt="WON POINT AIR2"></div>
+                                <div class="inf">
+                                    <div class="box-lab">
+                                        <span class="lab ty3">등록</span>
+                                    </div>
+                                    <div class="item">
+                                        <p>WON POINT AIR2</p>
+                                    </div>
+                                    <div class="num">
+                                        <p>4214-****-****-1580</p>
+                                    </div>
+                                </div>
+                                <div class="box-chk">
+                                    <span class="inp-chk-ty2 round single">
+                                        <input type="checkbox" title="WON POINT AIR2 선택" name="chk701S03">
+                                    </span>
+                                </div>
+                            </li-->
+                        </ul><!-- //[통합결제플랫폼] : 2022.02.23 -->
+                    </div>
+                    <div class="box-notice">
+                        <div class="in-box">
+                            <p class="str-main">등록가능한 결제수단이<br> 없습니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- button area -->
+                <div class="btn-area">
+                    <a href="javascript:void(0);" class="btn disabled"><span>등록</span></a>
+                    <!-- [통합결제플랫폼] : 텍스트 수정 2022.01.17 -->
+                    <!-- 
+                        1. 버튼의 class중 disabled를 삭제하면 활성화상태가 됨. 
+                        2. 버튼의 class중 hide를 추가하면 hidden상태가 됨.
+                    -->
+                    <!-- [통합결제플랫폼] -->
+                </div>
+                <!-- //button area -->                
+            </div>
+            <!-- //layer popup contents -->
+        </div>
+    </div>
+    <!-- //layer popup -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="MY03MD01">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p>
+                    결제수단 등록을 중단하시겠습니까?<br>
+                    취소하시면 입력하신 정보는<br>
+                    삭제됩니다.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn-cancel"><span>취소</span></a>
+                <a href="javascript:void(0);" class="p-btn"><span>계속 진행</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+</body>
+</html>

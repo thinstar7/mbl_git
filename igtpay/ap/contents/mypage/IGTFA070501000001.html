@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>이벤트 목록 | 이벤트</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('NE04LP01'); //FAQ layer poup open
+        //WIP.popup.close('NE04LP01'); //FAQ layer poup open
+        // WIP.popup.open('NE04MD01'); // modal open
+        //WIP.popup.close('NE04MD01'); // modal open
+        // WIP.popup.open('NE04MD02'); // modal open
+        //WIP.popup.close('NE04MD02'); // modal open
+
+        WIP.categorySelect();
+        WIP.categoryCheckBox();
+        WIP.boardSearchBar();
+        WIP.swiperTab();
+      });
+    </script>
+  </head>
+  <body>
+    <!-- layer popup -->
+    <div class="lyr-popup lyr-event-list" data-lyr-id="NE04LP01">
+      <div class="in-lyr">
+        <!-- layer popup header -->
+        <div class="lyr-header">
+          <div class="lyr-topper">
+            <a href="javascript:void(0);" class="lyr-cntr-ty1"
+              ><span class="blind"
+                >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및
+                화면 닫기)</span
+              ></a
+            >
+            <strong class="lyr-title">연세 Pay</strong>
+          </div>
+          <div class="lyr-head">
+            <h1 class="lyr-sub-title">이벤트</h1>
+            <!-- <a href="javascript:void(0);" class="btn-prev"><span class="blind">이전</span></a> -->
+            <a href="javascript:void(0);" class="btn-close"
+              ><span class="blind">닫기</span></a
+            >
+          </div>
+        </div>
+        <!-- //layer popup header -->
+        <!-- layer popup contents -->
+        <div class="lyr-contents">
+          <div class="tab-container">
+            <!-- Slider main container -->
+            <div class="swiper-tab tab">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <a href="javascript:void(0);" class="tab-menu crnt swiper-slide"
+                ><span>진행 중 이벤트</span></a
+                >
+                <a href="javascript:void(0);" class="tab-menu swiper-slide"
+                  ><span>종료 이벤트</span></a
+                >
+                <a href="javascript:void(0);" class="tab-menu swiper-slide" onclick="WIP.popup.open('NE04MD02')"><span>나의 응모내역</span></a
+                >
+              </div>
+            </div>
+            <!-- <div class="tab">
+              <a href="javascript:void(0);" class="tab-menu crnt swiper-slide"
+                ><span>진행 중 이벤트</span></a
+              >
+              <a href="javascript:void(0);" class="tab-menu swiper-slide"
+                ><span>종료 이벤트</span></a
+              >
+              <a href="javascript:void(0);" class="tab-menu swiper-slide"
+                ><span>나의 응모내역</span></a
+              >
+            </div> -->
+            <div class="tab-conts">
+              <!-- 진행 중 이벤트 -->
+              <div class="tab-cont crnt">
+                <div class="category-wrap">
+                  <div class="category-checkbox-wrap">
+                    <div class="checkbox-wrap">
+                      <div class="inp-btn-wrap">
+                        <span class="inp-btn">
+                          <input type="checkbox" name="ph-chk" class="all-check" id="allCheck"/>
+                          <label for="allCheck">전체</label>
+                        </span>
+                        <span class="inp-btn">
+                          <input type="checkbox" name="ph-chk" id="ph-chk01" />
+                          <label for="ph-chk01">생활</label>
+                        </span>
+                        <span class="inp-btn">
+                          <input type="checkbox" name="ph-chk" id="ph-chk02" />
+                          <label for="ph-chk02">자동차/교통</label>
+                        </span>
+                        <span class="inp-btn">
+                          <input type="checkbox" name="ph-chk" id="ph-chk03" />
+                          <label for="ph-chk03">여행/해외</label>
+                        </span>
+                        <span class="inp-btn">
+                          <input type="checkbox" name="ph-chk" id="ph-chk04" />
+                          <label for="ph-chk04">문화/교육</label>
+                        </span>
+                        <span class="inp-btn">
+                          <input type="checkbox" name="ph-chk" id="ph-chk05" />
+                          <label for="ph-chk05">자동납부</label>
+                        </span>
+                        <span class="inp-btn">
+                          <input type="checkbox" name="ph-chk" id="ph-chk06" />
+                          <label for="ph-chk06">카드</label>
+                        </span>
+                        <span class="inp-btn">
+                          <input type="checkbox" name="ph-chk" id="ph-chk07" />
+                          <label for="ph-chk07">금융</label>
+                        </span>
+                        <span class="inp-btn">
+                          <input type="checkbox" name="ph-chk" id="ph-chk08" />
+                          <label for="ph-chk08">쇼핑</label>
+                        </span>
+                        <span class="inp-btn">
+                          <input type="checkbox" name="ph-chk" id="ph-chk09" />
+                          <label for="ph-chk09">디지털</label>
+                        </span>
+                      </div>
+                      <div class="category-search-btn-wrap">
+                        <button type="button" class="reset-btn"><span>초기화</span></button>
+                        <button type="button" class="apply-btn"><span>적용</span></button>
+                      </div>
+                    </div>
+                    <button type="button" class="category-expand-btn"></button>
+                  </div>
+                </div>
+
+                <div class="board" data-board-type="card">
+                  <div class="board-lst">
+                    <div class="board-lst-header">
+                      <div class="board-search">
+                        <div class="search-input-wrap">
+                          <input type="text" title="검색어 입력" class="search-input board-search-input" placeholder="이벤트를 검색해주세요"/>
+                          <button type="button" class="search-input-icon"></button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 게시글  -->
+                    <div class="board-lst-post-area">
+                      <p class="board-search-count">
+                        총 <span class="count ls-ini">20</span>개
+                      </p>
+                      <ul class="board-lst-post-wrap">
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li><li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="btn-area">
+                        <button type="button" class="btn-ty2 more-btn">
+                          더보기
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- 검색어에 해당하는 결과가 없는 경우 -->
+                    <!-- <div class="board-search-result-empty on">
+                      <div class="box-notice">
+                        <div class="in-box">
+                          <p class="str-main">
+                            검색어를 찾을 수<br />
+                            없습니다
+                          </p>
+                        </div>
+                      </div>
+                    </div> -->
+
+                    <!-- 검색 결과 레이어 -->
+                    <div class="board-lst-post-area board-lst-post-result">
+                      <p class="board-search-count">
+                        총 <span class="count ls-ini">20</span>개
+                      </p>
+                      <ul class="board-lst-post-wrap">
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH <span class="board-search-keyword">알림서비스</span> 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH <span class="board-search-keyword">알림서비스</span> 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH <span class="board-search-keyword">알림서비스</span> 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH <span class="board-search-keyword">알림서비스</span> 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="btn-area">
+                        <button type="button" class="btn-ty2 more-btn">
+                          더보기
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //진행 중 이벤트 -->
+
+              <!-- 종료 이벤트 -->
+              <div class="tab-cont"></div>
+              <!-- //종료 이벤트 -->
+
+              <!-- 나의 응모내역 -->
+              <div class="tab-cont my-event">
+                <!-- 이벤트 응모내역이 없는 경우 -->
+                <!-- <div class="my-event-empty">
+                  <div class="box-notice">
+                    <div class="in-box">
+                      <p class="str-main">
+                        이벤트 응모내역이<br />
+                        없습니다
+                      </p>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- 응모 내역이 있는 경우 -->
+                <div class="notice"><p>※ 최근 <span class="emp-rd">3개월</span>의 내역만 조회합니다.</p></div>
+                <div class="board" data-board-type="card">
+                  <div class="board-lst">
+                    <div class="board-lst-post-area">
+                      <p class="board-search-count">
+                        총 <span class="count ls-ini">20</span>개
+                      </p>
+                      <ul class="board-lst-post-wrap">
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="board-lst-post">
+                          <a href="#" class="anchor">
+                            <div class="badge-wrap">
+                              <span class="lab">진행중</span>
+                              <span class="lab ty3">응모</span>
+                            </div>
+                            <div class="img-wrap">
+                              <div
+                                class="img"
+                                style="
+                                  background-image: url('https://via.placeholder.com/150x90');
+                                "
+                              ></div>
+                            </div>
+                            <div class="txt-wrap">
+                              <p class="title">PUSH 알림서비스 일시 중단 안내</p>
+                              <p class="date ls-ini">2022.01.12 ~ 2022.03.09</p>
+                            </div>
+                            <div class="type-wrap">
+                              <span class="type">#캐시백</span>
+                              <span class="type">#할인</span>
+                              <span class="type">#무이자</span>
+                              <span class="type">#증정</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="btn-area">
+                        <button type="button" class="btn-ty2 more-btn">
+                          더보기
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //나의 응모내역 -->
+            </div>
+          </div>
+        </div>
+        <!-- //layer popup contents -->
+      </div>
+    </div>
+    <!-- //layer popup -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="NE04MD01">
+      <div class="in-wrap">
+        <div class="modal-contents">
+          <p>
+            <!-- <p>의 텍스트가 4줄이하일 경우 : <p class="txt">으로 설정하여 텍스트 문단이 중심에 오도록 함. -->
+            이벤트 응모내역을 확인하기 위해<br />
+            로그인이 필요합니다.<br />
+            로그인 하시겠습니까?
+          </p>
+        </div>
+        <div class="p-btn-area">
+          <a href="javascript:void(0);" class="p-btn"><span>로그인</span></a>
+        </div>
+      </div>
+    </div>
+   
+    <div class="modal" data-lyr-id="NE04MD02">
+      <div class="in-wrap">
+          <div class="modal-contents">
+              <p><!-- <p>의 텍스트가 4줄이하일 경우 : <p class="txt">으로 설정하여 텍스트 문단이 중심에 오도록 함. -->
+                  이벤트 응모내역을 확인하기 위해<br>
+                  로그인이 필요합니다.<br>
+                  로그인 하시겠습니까?
+              </p>
+          </div>
+          <div class="p-btn-area">
+              <a href="javascript:void(0);" class="p-btn" onclick="WIP.popup.close('NE04MD02')"><span>로그인</span></a>
+          </div>
+      </div>
+  </div>
+  <!-- //modal -->
+  </body>
+</html>

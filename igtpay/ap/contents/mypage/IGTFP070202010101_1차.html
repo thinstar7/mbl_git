@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>history | MY | 우리페이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('MY14FP01'); //history layer poup open
+    //WIP.popup.close('MY14LP01'); //history layer poup open
+});
+</script>
+</head>
+<body>
+    <!-- layer popup -->
+    <!-- //layer popup -->
+
+    <!-- full popup : 필터선택 -->
+    <div class="popup popup-select-filter" data-lyr-id="MY14FP01"><!-- //[통합결제플랫폼] : class변경 2022.01.13 -->
+        <div class="popup-wrap">
+            <a href="javascript:void(0);" onclick="WIP.popup.close('MY14FP01')" class="popup-close"><span class="blind">닫기</span></a>
+            <div class="popup-title">
+                <strong>필터선택</strong>
+            </div>
+            <div class="popup-contents">
+                <div class="pop-sec">
+                    <div class="paycard">
+                        <div class="title">결제수단 선택</div>
+                        <!-- combobox -->
+                        <div class="el-combobox">
+                            <div class="combobox">
+                                <input type="text" role="combobox" readonly="true" class="combo" aria-autocomplete="list" aria-owns="pay-card" aria-haspopup="true" aria-readonly="true" aria-expanded="false" aria-activedescendant="" placeholder="전체" title="결제수단 선택">
+                                <button type="button" class="combo-btn"><span class="blind">선택 목록 열기</span></button>
+                            </div>
+                            
+                            <div class="combo-list">
+                                <div class="in-wrap">
+                                    <div class="opt-head">
+                                        <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                        <a href="javascript:void(0);" class="opt-close"><span class="blind">닫기</span></a>
+                                        <div class="opt-title">
+                                            <strong>결제수단 선택</strong>
+                                        </div>
+                                    </div>
+                                    <div class="opt-contents">
+                                        <ul id="pay-card" class="opt-list" role="listbox" aria-hidden="true" tabindex="-1">
+                                            <li id="pay-card-opt01" class="opt" role="option">전체</li>
+                                            <li id="pay-card-opt02" class="opt" role="option">카드의정석 UNTACT AIR</li>
+                                            <li id="pay-card-opt03" class="opt" role="option">우리WON멤버스카드</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //combobox -->
+                    </div>
+
+                    <!-- 이용기간 -->
+                    <div class="period-field field">
+                        <div class="title">이용기간</div>
+                        <div class="inp-btns">
+                            <span class="inp-btn">
+                                <input type="radio" name="ph-chk" id="ph-chk01" checked>
+                                <label for="ph-chk01">1주일</label>
+                            </span>
+                            <span class="inp-btn">
+                                <input type="radio" name="ph-chk" id="ph-chk02">
+                                <label for="ph-chk02">1개월</label>
+                            </span>
+                            <span class="inp-btn">
+                                <input type="radio" name="ph-chk" id="ph-chk03">
+                                <label for="ph-chk03">3개월</label>
+                            </span>
+                            <span class="inp-btn">
+                                <input type="radio" name="ph-chk" id="ph-chk04">
+                                <label for="ph-chk04">월단위</label>
+                            </span>
+                        </div>
+                        <p class="notice">최근 1년 이내만 조회 가능합니다.</p>
+                    </div>
+
+                    <div class="inp-pair">
+                        <div class="front">
+                            <div class="inp-date">
+                                <input type="text" class="inp" title="조회 기간 시작" value="2022.01.13">
+                                <button type="button" class="btn-calander">
+                                    <span class="blind">달력보기</span>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="coupler">-</span>
+                        <div class="rear">
+                            <div class="inp-date">
+                                <input type="text" class="inp" title="조회 기간 종료" value="2022.01.19">
+                                <button type="button" class="btn-calander">
+                                    <span class="blind">달력보기</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="month-wrap">
+                        <div class="el-combobox">
+                            <div class="combobox">
+                                <input type="text" role="combobox" readonly="true" class="combo" aria-autocomplete="list" aria-owns="month" aria-haspopup="true" aria-readonly="true" aria-expanded="false" aria-activedescendant="" placeholder="2022년 1월" title="결제수단 선택">
+                                <button type="button" class="combo-btn"><span class="blind">선택 목록 열기</span></button>
+                            </div>
+                            
+                            <div class="combo-list">
+                                <div class="in-wrap">
+                                    <div class="opt-head">
+                                        <a href="javascript:void(0);" class="lyr-cntr-ty2"><span class="blind">레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면 닫기)</span></a>
+                                        <a href="javascript:void(0);" class="opt-close"><span class="blind">닫기</span></a>
+                                        <div class="opt-title">
+                                            <strong>월별 선택</strong>
+                                        </div>
+                                    </div>
+                                    <div class="opt-contents">
+                                        <ul id="month" class="opt-list" role="listbox" aria-hidden="true" tabindex="-1">
+                                            <li id="month-opt01" class="opt" role="option">2022년 1월</li>
+                                            <li id="month-opt02" class="opt" role="option">2021년 12월</li>
+                                            <li id="month-opt03" class="opt" role="option">2021년 11월</li>
+                                            <li id="month-opt04" class="opt" role="option">2021년 10월</li>
+                                            <li id="month-opt05" class="opt" role="option">2021년 9월</li>
+                                            <li id="month-opt06" class="opt" role="option">2021년 8월</li>
+                                            <li id="month-opt07" class="opt" role="option">2021년 7월</li>
+                                            <li id="month-opt08" class="opt" role="option">2021년 6월</li>
+                                            <li id="month-opt09" class="opt" role="option">2021년 5월</li>
+                                            <li id="month-opt10" class="opt" role="option">2021년 4월</li>
+                                            <li id="month-opt11" class="opt" role="option">2021년 3월</li>
+                                            <li id="month-opt12" class="opt" role="option">2021년 2월</li>
+                                            <li id="month-opt13" class="opt" role="option">2021년 1월</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 이용구분 -->
+                    <div class="type-field field">
+                        <div class="title">이용구분</div>
+                        <div class="inp-btns">
+                            <span class="inp-btn">
+                                <input type="radio" name="ty-chk" id="ty-chk01" checked>
+                                <label for="ty-chk01">전체</label>
+                            </span>
+                            <span class="inp-btn">
+                                <input type="radio" name="ty-chk" id="ty-chk02">
+                                <label for="ty-chk02">일시불</label>
+                            </span>
+                            <span class="inp-btn">
+                                <input type="radio" name="ty-chk" id="ty-chk03">
+                                <label for="ty-chk03">할부</label>
+                            </span>
+                            <span class="inp-btn">
+                                <input type="radio" name="ty-chk" id="ty-chk04">
+                                <label for="ty-chk04">최소</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-area">
+                    <a href="javascript:void(0);" class="btn-cancel"><span>초기화</span></a>
+                    <a href="javascript:void(0);" class="btn"><span>적용</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //full popup -->
+
+    <!-- full popup : 이용 상세 -->
+    <!-- //full popup -->
+</body>
+</html>

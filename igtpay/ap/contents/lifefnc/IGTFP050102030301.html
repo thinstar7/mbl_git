@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>계좌 직접 입력 | 내 계좌 등록 | 오픈뱅킹 등록 | 송금 | 생활금융</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.png"><!-- android -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png"><!-- iphone -->
+<link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png"><!-- ipad -->
+<link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png"><!-- iphone[r] -->
+<link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png"><!-- iphone[r] -->
+<link rel="stylesheet" href="/igtpay/ap/res/css/ini.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/common.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/module.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/contents.css">
+<link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css">
+<script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+<script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+    WIP.popup.open('LF23FP01'); //history layer poup open
+    //WIP.popup.close('LF23FP01'); //history layer poup open
+
+    //WIP.popup.open('LF23MD01'); //popup open
+    //WIP.popup.close('LF23MD01'); //popup close
+    //WIP.popup.open('LF23MD02'); //popup open
+    //WIP.popup.close('LF23MD02'); //popup close
+});
+</script>
+</head>
+<body>
+    <!-- full popup : 계좌직접입력 -->
+    <div class="popup popup-account" data-lyr-id="LF23FP01">
+        <div class="popup-wrap">
+            <a href="javascript:void(0);" onclick="WIP.popup.close('MY14FP01')" class="popup-close"><span class="blind">닫기</span></a>
+            <div class="popup-title">
+                <strong>계좌 직접 입력</strong>
+            </div>
+            <div class="popup-contents">
+                <div class="pop-sec">
+                    <div class="box-desc align-l">
+                        <p>추가할 계좌 정보를 입력해 주세요.</p>
+                    </div>
+
+                    <div class="add-account">
+                        <div class="inp-account">
+                            <div class="account-selection">
+                                <button type="button" class="btn-fnc">
+                                    <span class="img-fnc small" data-fnc-code="020"></span>
+                                    <span class="name-fnc">우리은행</span>
+                                </button>
+                            </div>
+                            
+                            <div class="inp-box be-del">
+                                <span class="inp"><input type="tel" title="계좌번호" placeholder="계좌번호 입력"></span>
+                                <button type="button" class="btn-delete"><span class="blind">삭제</span></button>
+                            </div>
+                        </div>
+
+                        <div class="box-btn">
+                            <a href="javascript:void(0);" class="btn-ty4 large" onclick="WIP.popup.open('AU02MD01');"><span>계좌 추가</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 추가된계좌-->
+                <div class="pop-sec separation pad-bott">
+                    <div class="add-account-cont">
+                        <strong class="cont-title">추가된 계좌<span class="num emp">2</span></strong>
+                        <div class="wrap-info-list">
+                            <!-- 계좌리스트 -->
+                            <div class="account-contents">
+                                <div class="box-account">
+                                    <ul class="box-account-list">
+                                        <li class="accounts">
+                                            <div class="img-fnc no-img" data-fnc-code=""></div>
+                                            <div class="inf">우리은행<span class="ls-ini">12345678901234</span></div>
+                                            <button type="button" class="btn-elimination"><span class="blind">삭제</span></button>
+                                        </li>
+                                        <li class="accounts">
+                                            <div class="img-fnc all" data-fnc-code=""></div>
+                                            <div class="inf">국민은행<span class="ls-ini">12345678901234</span></div>
+                                            <button type="button" class="btn-elimination"><span class="blind">삭제</span></button>
+                                        </li>
+                                        <li class="accounts">
+                                            <div class="img-fnc" data-fnc-code="088"></div>
+                                            <div class="inf">신한은행<span class="ls-ini">12345678901234</span></div>
+                                            <button type="button" class="btn-elimination"><span class="blind">삭제</span></button>
+                                        </li>
+                                    </ul>
+                                    <div class="list-empty">
+                                        추가된 계좌가 없습니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //계좌리스트 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- //추가된계좌-->
+                <div class="btn-area">
+                    <a href="javascript:void(0);" class="btn"><span>등록</span></a>
+                    <!-- 버튼 class에 disabled를 추가하면 비활성화상태가 됨. -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //full popup -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="LF23MD01">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p class="txt">
+                    이미 등록 완료된 계좌 입니다.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="LF23MD02">
+        <div class="in-wrap">
+            <div class="modal-contents">
+                <p class="txt">
+                    추가된 계좌 목록에 있는 계좌와<br>
+                    동일합니다. 다시 입력해 주세요.
+                </p>
+            </div>
+            <div class="p-btn-area">
+                <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>받는 분 계좌 선택 | 송금 정보 입력 | 간편 송금 | 송금 | 생활금융</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- android -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon57x57.png" />
+    <!-- iphone -->
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon72x72.png" />
+    <!-- ipad -->
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon114x114.png" />
+    <!-- iphone[r] -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon144x144.png" />
+    <!-- iphone[r] -->
+    <link rel="stylesheet" href="/igtpay/ap/res/css/ini.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/common.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/module.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/contents.css" />
+    <link rel="stylesheet" href="/igtpay/ap/res/css/swiper.css" />
+    <script type="text/javascript" src="/igtpay/ap/res/js/jquery.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/swiper.js"></script>
+    <script type="text/javascript" src="/igtpay/ap/res/js/ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        WIP.popup.open('LF16BS01'); //받는분 계좌 선택 bottom sheet open
+        //WIP.popup.close('LF16BS01'); //받는분 계좌 선택 bottom sheet close
+        
+        // WIP.popup.open('LF14MD01'); //받는분 계좌 선택 bottom sheet open
+        //WIP.popup.close('LF14MD01'); //받는분 계좌 선택 bottom sheet close
+        WIP.receiverAccount();
+      });
+    </script>
+  </head>
+  <body>
+    <!-- bottom sheet -->
+    <div
+      class="bottom-sheet be-tab receiver-account-bottom-sheet"
+      data-lyr-id="LF16BS01"
+    >
+      <div class="in-wrap">
+        <div class="sheet-head">
+          <a href="javascript:void(0);" class="lyr-cntr-ty2"
+            ><span class="blind"
+              >레이어 제어(위로 밀기는 높이 확장, 아래 밀기는 높이 축소 및 화면
+              닫기)</span
+            ></a
+          >
+          <a href="javascript:void(0);" class="sheet-close"
+            ><span class="blind">닫기</span></a
+          >
+          <div class="sheet-title">
+            <strong>받는 분 계좌 선택</strong>
+          </div>
+        </div>
+        <div class="sheet-contents pd-ini">
+          <div class="tab-container">
+            <div class="tab">
+              <a href="javascript:void(0);" class="tab-menu crnt"
+                ><span>최근</span></a
+              >
+              <a href="javascript:void(0);" class="tab-menu"
+                ><span>자주</span></a
+              >
+              <a href="javascript:void(0);" class="tab-menu"
+                ><span>내계좌</span></a
+              >
+            </div>
+
+            <div class="tab-conts">
+              <!-- 최근 -->
+              <div class="tab-cont crnt">
+                <div class="finance-account">
+                  <ul class="account-list be-side">
+                    <!-- 데이터가 없는 경우 -->
+                    <!-- <li class="account-info">
+                      <p class="account-info-empty">최근 송금한 계좌가 없습니다.</p>
+                    </li> -->
+
+                    <li class="account-info">
+                      <a href="#">
+                        <div class="img-fnc" data-fnc-code="287"></div>
+                        <div class="finance-info">
+                          <div class="bank-inf text-ty1">
+                            <span>우리은행</span>
+                            <span class="ls-ini">1234567890</span>
+                          </div>
+                          <div class="bank-inf text-ty2">
+                            <span>홍길동</span>
+                            <span class="ls-ini">2022.01.18</span>
+                          </div>
+                          <div class="item emp">
+                            <span class="ls-ini">1,000,000</span>
+                            <span class="unit">원</span>
+                          </div>
+                        </div>
+                        <div class="util-btn-wrap">
+                          <button type="button" class="btn-elimination"><span class="blind">자주 쓰는(즐겨찾기) 계좌 삭제</span></button>
+                          <span class="inp-bookmark">
+                            <input type="checkbox" name="" title="자주 쓰는(즐겨찾기) 계좌">
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="account-info">
+                      <a href="#">
+                        <div class="img-fnc" data-fnc-code="287"></div>
+                        <div class="finance-info">
+                          <div class="bank-inf text-ty1">
+                            <span>우리은행</span>
+                            <span class="ls-ini">1234567890</span>
+                          </div>
+                          <div class="bank-inf text-ty2">
+                            <span>홍길동</span>
+                            <span class="ls-ini">2022.01.18</span>
+                          </div>
+                          <div class="item emp">
+                            <span class="ls-ini">1,000,000</span>
+                            <span class="unit">원</span>
+                          </div>
+                        </div>
+                        <div class="util-btn-wrap">
+                          <button type="button" class="btn-elimination"><span class="blind">자주 쓰는(즐겨찾기) 계좌 삭제</span></button>
+                          <span class="inp-bookmark">
+                            <input type="checkbox" name="" title="자주 쓰는(즐겨찾기) 계좌">
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="account-info">
+                      <a href="#">
+                        <div class="img-fnc" data-fnc-code="287"></div>
+                        <div class="finance-info">
+                          <div class="bank-inf text-ty1">
+                            <span>우리은행</span>
+                            <span class="ls-ini">1234567890</span>
+                          </div>
+                          <div class="bank-inf text-ty2">
+                            <span>홍길동</span>
+                            <span class="ls-ini">2022.01.18</span>
+                          </div>
+                          <div class="item emp">
+                            <span class="ls-ini">1,000,000</span>
+                            <span class="unit">원</span>
+                          </div>
+                        </div>
+                        <div class="util-btn-wrap">
+                          <button type="button" class="btn-elimination"><span class="blind">자주 쓰는(즐겨찾기) 계좌 삭제</span></button>
+                          <span class="inp-bookmark">
+                            <input type="checkbox" name="" title="자주 쓰는(즐겨찾기) 계좌">
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //최근 -->
+              <!-- 자주 -->
+              <div class="tab-cont">
+                <div class="finance-account">
+                  <ul class="account-list be-side">
+                    <!-- 데이터가 없는 경우 -->
+                    <!-- <li class="account-info">
+                      <p class="account-info-empty">자주 쓰는 계좌가 없습니다.</p>
+                    </li> -->
+
+                    <li class="account-info">
+                      <a href="#">
+                        <div class="img-fnc" data-fnc-code="287"></div>
+                        <div class="finance-info">
+                          <div class="bank-inf text-ty1">
+                            <span>우리은행</span>
+                            <span class="ls-ini">1234567890</span>
+                          </div>
+                          <div class="bank-inf text-ty2">
+                            <span>홍길동</span>
+                          </div>
+                        </div>
+                        <div class="util-btn-wrap">
+                          <button type="button" class="btn-elimination"><span class="blind">자주 쓰는(즐겨찾기) 계좌 삭제</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="account-info">
+                      <a href="#">
+                        <div class="img-fnc" data-fnc-code="287"></div>
+                        <div class="finance-info">
+                          <div class="bank-inf text-ty1">
+                            <span>우리은행</span>
+                            <span class="ls-ini">1234567890</span>
+                          </div>
+                          <div class="bank-inf text-ty2">
+                            <span>홍길동</span>
+                          </div>
+                        </div>
+                        <div class="util-btn-wrap">
+                          <button type="button" class="btn-elimination"><span class="blind">자주 쓰는(즐겨찾기) 계좌 삭제</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="account-info">
+                      <a href="#">
+                        <div class="img-fnc" data-fnc-code="287"></div>
+                        <div class="finance-info">
+                          <div class="bank-inf text-ty1">
+                            <span>우리은행</span>
+                            <span class="ls-ini">1234567890</span>
+                          </div>
+                          <div class="bank-inf text-ty2">
+                            <span>홍길동</span>
+                          </div>
+                        </div>
+                        <div class="util-btn-wrap">
+                          <button type="button" class="btn-elimination"><span class="blind">자주 쓰는(즐겨찾기) 계좌 삭제</span></button>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //자주 -->
+              <!-- 내계좌 -->
+              <div class="tab-cont">
+                <div class="finance-account my-finance-account">
+                  <ul class="account-list">
+                    <li class="account-info">
+                      <a href="#">
+                        <div class="img-fnc" data-fnc-code="287"></div>
+                        <div class="finance-info">
+                          <div class="bank-inf text-ty1">
+                            <span>우리은행</span>
+                            <span class="ls-ini">1234567890</span>
+                          </div>
+                          <p class="name text-ty2">우리은행 SUPER 주거래 통장</p>
+
+                          <!-- 잔액 불러오기 전 상태 -->
+                          <!-- <div class="item-skeleton"></div> -->
+
+                          <!-- 잔액 불러오기 완료 상태 -->
+                          <div class="item">
+                            <span class="txt">잔액</span>
+                            <span class="ls-ini">11,000,000</span>
+                            <span class="unit">원</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //내계좌 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //bottom sheet -->
+
+    <!-- modal -->
+    <div class="modal" data-lyr-id="LF14MD01">
+      <div class="in-wrap">
+          <div class="modal-contents">
+              <p class="txt"><!-- <p>의 텍스트가 4줄이하일 경우 : <p class="txt">으로 설정하여 텍스트 문단이 중심에 오도록 함. -->
+                  출금계좌와 입금계좌가 동일합니다.
+              </p>
+          </div>
+          <div class="p-btn-area">
+              <a href="javascript:void(0);" class="p-btn"><span>확인</span></a>
+          </div>
+      </div>
+  </div>
+  <!-- //modal -->
+  </body>
+</html>
